@@ -10,13 +10,13 @@ public:
 	char ActiveTimer : 0; // 0x264 (1)
 	int32_t RemainTime; // 0x268 (4)
 
-	struct FText Get_TextBlock_RemailTime_Text_1(); // Function UW-Timer.UW-Timer_C.Get_TextBlock_RemailTime_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Timer.UW-Timer_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibileState(enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.SetVisibileState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTimer(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.SetTimer(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Timer(int32_t EntryPoint); // Function UW-Timer.UW-Timer_C.ExecuteUbergraph_UW-Timer(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	struct FText Get_TextBlock_RemailTime_Text_1(); // Function UW-Timer.UW-Timer_C.Get_TextBlock_RemailTime_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Timer.UW-Timer_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetVisibileState(enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.SetVisibileState(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_2(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTimer(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.SetTimer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Timer(int32_t EntryPoint); // Function UW-Timer.UW-Timer_C.ExecuteUbergraph_UW-Timer(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Timer.UW-Timer_C.Get_TextBlock_RemailTime_Text_1

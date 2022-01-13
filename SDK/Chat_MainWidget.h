@@ -21,19 +21,19 @@ public:
 	int32_t Clear Messages at # Messages; // 0x2B4 (4)
 	char Show Mouse on Enter? : 0; // 0x2B8 (1)
 
-	struct FText Get Chat Input Hint Text(); // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void PushItem(struct FString UserName, struct FString Text, struct FString Group); // Function Chat_MainWidget.Chat_MainWidget_C.PushItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function Chat_MainWidget.Chat_MainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset Inactivity Timer(); // Function Chat_MainWidget.Chat_MainWidget_C.Reset Inactivity Timer(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Keyboard Focus(); // Function Chat_MainWidget.Chat_MainWidget_C.Set Keyboard Focus(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Widget Mouse Enter(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Enter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Widget Mouse Leave(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Leave(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	struct FText Get Chat Input Hint Text(); // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PushItem(struct FString UserName, struct FString Text, struct FString Group); // Function Chat_MainWidget.Chat_MainWidget_C.PushItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function Chat_MainWidget.Chat_MainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset Inactivity Timer(); // Function Chat_MainWidget.Chat_MainWidget_C.Reset Inactivity Timer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set Keyboard Focus(); // Function Chat_MainWidget.Chat_MainWidget_C.Set Keyboard Focus(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Widget Mouse Enter(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Enter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Widget Mouse Leave(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Leave(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text

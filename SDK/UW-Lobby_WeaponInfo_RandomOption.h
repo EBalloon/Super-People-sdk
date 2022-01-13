@@ -16,8 +16,8 @@ public:
 	struct UUW-Lobby_WeaponInfo_Option_Slot_Icon_C UW-Lobby_WeaponInfo_Buff_10; // 0x298 (8)
 	struct UWrapBox WrapBox_Options; // 0x2A0 (8)
 
-	void SetRandomOptionDesc(struct FText Desc); // Function UW-Lobby_WeaponInfo_RandomOption.UW-Lobby_WeaponInfo_RandomOption_C.SetRandomOptionDesc(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOptions(struct TArray<int32_t>& OptionIDList); // Function UW-Lobby_WeaponInfo_RandomOption.UW-Lobby_WeaponInfo_RandomOption_C.SetOptions(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetRandomOptionDesc(struct FText Desc); // Function UW-Lobby_WeaponInfo_RandomOption.UW-Lobby_WeaponInfo_RandomOption_C.SetRandomOptionDesc(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetOptions(struct TArray<int32_t>& OptionIDList); // Function UW-Lobby_WeaponInfo_RandomOption.UW-Lobby_WeaponInfo_RandomOption_C.SetOptions(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_WeaponInfo_RandomOption.UW-Lobby_WeaponInfo_RandomOption_C.SetRandomOptionDesc

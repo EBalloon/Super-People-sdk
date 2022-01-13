@@ -13,12 +13,12 @@ public:
 	struct UUW-Lobby_Craft_Success_Perk_Open_C UW-Lobby_Craft_Success_Perk_Open_3; // 0x280 (8)
 	struct FMulticastInlineDelegate EventDispatcher_OnClosePerkPopup; // 0x288 (16)
 
-	void SetOptionList(struct TArray<struct FItemOption>& OptionList); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_OpenPopup(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_OpenPopup(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void EventDispatcher_OnClosePerkPopup__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.EventDispatcher_OnClosePerkPopup__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetOptionList(struct TArray<struct FItemOption>& OptionList); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_OpenPopup(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_OpenPopup(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EventDispatcher_OnClosePerkPopup__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.EventDispatcher_OnClosePerkPopup__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_Success_Perk_OpenPopup.UW-Lobby_Craft_Success_Perk_OpenPopup_C.SetOptionList

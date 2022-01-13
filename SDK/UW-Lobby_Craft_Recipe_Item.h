@@ -18,14 +18,14 @@ public:
 	int32_t MaxCount; // 0x36C (4)
 	int32_t CurrentCount; // 0x370 (4)
 
-	void SetNotOwnRarityVisibility(int32_t Rarity); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetNotOwnRarityVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOwnInfo(); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetOwnInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOwnCount(); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetOwnCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemInfo(struct FGroupItemElement& GroupItemInfo, int32_t Index); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_2C8ACAFD450AD7D8B8267FA0203F2515(struct Object Loaded); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.OnLoaded_2C8ACAFD450AD7D8B8267FA0203F2515(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_Recipe_Item(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe_Item(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetNotOwnRarityVisibility(int32_t Rarity); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetNotOwnRarityVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetOwnInfo(); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetOwnInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetOwnCount(); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetOwnCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetItemInfo(struct FGroupItemElement& GroupItemInfo, int32_t Index); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_2C8ACAFD450AD7D8B8267FA0203F2515(struct Object Loaded); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.OnLoaded_2C8ACAFD450AD7D8B8267FA0203F2515(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_Recipe_Item(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe_Item(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_Recipe_Item.UW-Lobby_Craft_Recipe_Item_C.SetNotOwnRarityVisibility

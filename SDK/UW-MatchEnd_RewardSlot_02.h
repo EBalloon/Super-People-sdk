@@ -38,11 +38,11 @@ public:
 	struct FText LocalText; // 0x7D0 (24)
 	char bIsSmallIcon : 0; // 0x7E8 (1)
 
-	void IsMaterialData(struct FName ItemKey, char& bRet, int32_t& Index); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.IsMaterialData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetRarity(); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.SetRarity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct FRewardItemInfo ItemInfo, char UseSmallIcon); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-MatchEnd_RewardSlot_02(int32_t EntryPoint); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.ExecuteUbergraph_UW-MatchEnd_RewardSlot_02(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void IsMaterialData(struct FName ItemKey, char& bRet, int32_t& Index); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.IsMaterialData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRarity(); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.SetRarity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Init(struct FRewardItemInfo ItemInfo, char UseSmallIcon); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.Init(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-MatchEnd_RewardSlot_02(int32_t EntryPoint); // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.ExecuteUbergraph_UW-MatchEnd_RewardSlot_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-MatchEnd_RewardSlot_02.UW-MatchEnd_RewardSlot_02_C.IsMaterialData

@@ -17,14 +17,14 @@ public:
 	struct FBravoHotelBlackMarketDataType BlackmarketDataInfo; // 0x2B0 (280)
 	struct TArray<struct FString> ConsoleMultiCommandString; // 0x3C8 (16)
 
-	void SetConsoleMultiCommandString(struct TArray<struct FString>& Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemMultiCommand(struct FName ItemRowName, enum class EItemType ItemType, struct TArray<struct FString>& Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemMultiCommand(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetData(struct FBravoHotelBlackMarketDataType Data); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetAmmoInfoForWeapon(struct FName AmmoName, int32_t Count); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetAmmoInfoForWeapon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemType(enum class EItemType ItemType); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void RunCommand(); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.RunCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetConsoleCommandString(struct FString Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleCommandString(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemCommand(struct FName ItemRowName, enum class EItemType ItemType, struct FString Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetConsoleMultiCommandString(struct TArray<struct FString>& Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetItemMultiCommand(struct FName ItemRowName, enum class EItemType ItemType, struct TArray<struct FString>& Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemMultiCommand(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetData(struct FBravoHotelBlackMarketDataType Data); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetAmmoInfoForWeapon(struct FName AmmoName, int32_t Count); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetAmmoInfoForWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetItemType(enum class EItemType ItemType); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void RunCommand(); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.RunCommand(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetConsoleCommandString(struct FString Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleCommandString(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetItemCommand(struct FName ItemRowName, enum class EItemType ItemType, struct FString Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemCommand(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString

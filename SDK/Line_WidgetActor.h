@@ -7,9 +7,9 @@ public:
 	struct UWidgetComponent Widget1; // 0x320 (8)
 	struct USceneComponent DefaultSceneRoot; // 0x328 (8)
 
-	void SetLine(char Show, int32_t IconIndex); // Function Line_WidgetActor.Line_WidgetActor_C.SetLine(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetScale(float Scale); // Function Line_WidgetActor.Line_WidgetActor_C.SetScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_Line_WidgetActor(int32_t EntryPoint); // Function Line_WidgetActor.Line_WidgetActor_C.ExecuteUbergraph_Line_WidgetActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void SetLine(char Show, int32_t IconIndex); // Function Line_WidgetActor.Line_WidgetActor_C.SetLine(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetScale(float Scale); // Function Line_WidgetActor.Line_WidgetActor_C.SetScale(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_Line_WidgetActor(int32_t EntryPoint); // Function Line_WidgetActor.Line_WidgetActor_C.ExecuteUbergraph_Line_WidgetActor(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function Line_WidgetActor.Line_WidgetActor_C.SetLine

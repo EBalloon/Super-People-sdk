@@ -11,73 +11,74 @@ public:
 	struct UCanvasPanel CanvasPanel_StatupThird; // 0x2A0 (8)
 	struct UTextBlock T_GameVersion; // 0x2A8 (8)
 	struct UUW-CastingWidget_C UW-CastingWidget; // 0x2B0 (8)
-	struct UUW-CoreInfoWidget_C UW-DamageLogWidget; // 0x2B8 (8)
-	struct UUW-HUDMessageWidget_C UW-HUDMessageWidget; // 0x2C0 (8)
-	struct UUW-Inventory_Perk_C UW-Inventory_Perk; // 0x2C8 (8)
-	struct UUW-KillInfoWidget_C UW-KillInfoWidget; // 0x2D0 (8)
-	struct UUW-MinimapWidget_C UW-MinimapWidget; // 0x2D8 (8)
-	struct UUW-PlayerInfoWidget_Renew_C UW-PlayerInfoWidget_02; // 0x2E0 (8)
-	struct UUW-StatupWidget_C UW-StatupWidget; // 0x2E8 (8)
-	struct UUW-TeamInfoWidget_C UW-TeamInfoWidget; // 0x2F0 (8)
-	struct UUW-Volume_C UW-Volume; // 0x2F8 (8)
-	struct UVerticalBox Vertical_MinimapAndTeamInfo; // 0x300 (8)
-	struct ABravoHotelPlayerController PlayerController; // 0x308 (8)
-	struct UUW-Inventory_ItemSlotHover_C UW-Inventory_ItemSlotHover; // 0x310 (8)
-	struct UBravoHotelMainWidget MainWidget; // 0x318 (8)
-	enum class EPlayerState CurrentState; // 0x320 (1)
-	struct FDisplayAbility LastDisplayAbility; // 0x324 (12)
+	struct UUW-HUDMessageWidget_C UW-HUDMessageWidget; // 0x2B8 (8)
+	struct UUW-Inventory_Perk_C UW-Inventory_Perk; // 0x2C0 (8)
+	struct UUW-ListWidget_C UW-ListWidget_DamageLog; // 0x2C8 (8)
+	struct UUW-ListWidget_C UW-ListWidget_GainPerk; // 0x2D0 (8)
+	struct UUW-ListWidget_C UW-ListWidget_KillMessage; // 0x2D8 (8)
+	struct UUW-MinimapWidget_C UW-MinimapWidget; // 0x2E0 (8)
+	struct UUW-PlayerInfoWidget_Renew_C UW-PlayerInfoWidget_02; // 0x2E8 (8)
+	struct UUW-StatupWidget_C UW-StatupWidget; // 0x2F0 (8)
+	struct UUW-TeamInfoWidget_C UW-TeamInfoWidget; // 0x2F8 (8)
+	struct UUW-Volume_C UW-Volume; // 0x300 (8)
+	struct UVerticalBox Vertical_MinimapAndTeamInfo; // 0x308 (8)
+	struct ABravoHotelPlayerController PlayerController; // 0x310 (8)
+	struct UUW-Inventory_ItemSlotHover_C UW-Inventory_ItemSlotHover; // 0x318 (8)
+	struct UBravoHotelMainWidget MainWidget; // 0x320 (8)
+	enum class EPlayerState CurrentState; // 0x328 (1)
+	struct FDisplayAbility LastDisplayAbility; // 0x32C (12)
 
-	void ShowStatupAnim(struct FStatupAnimParameters& StatupParams); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckStatupAnim(struct FDisplayAbility& DisplayAbility); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckStatupAnim(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnShowNotRecorverHPMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void On Battle Royale State Changed(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.On Battle Royale State Changed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowAmmoReloadedMessage(int32_t ReloadedAmmoCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowAmmoReloadedMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowProgressMessage(int32_t Type, int32_t Time); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowProgressMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowKillMessage(struct FText WeaponName, struct FText Victim, char HeadShot, char TeamKill); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowKillMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetGameVersion(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetGameVersion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeWidgetVisibleByToggleType(enum class EToggleWidgetModeType CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct UUserWidget GetSlotHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetSlotHoverWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowFireModeLog(enum class EWeaponFireMode Mode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowFireModeLog(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetMainWidget(struct UBravoHotelMainWidget& MainWidget); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetWearableLevels(int32_t& HelmetLevel, int32_t& ArmorLevel, int32_t& BagLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetWearableLevels(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CreateHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	int32_t GetFinalAliveCount(int32_t AliveCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetFinalAliveCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEnergy(float energy); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetEnergy(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetArmorInfo(char bHasHelmet, float HelmetGauge, char bHasChest, float ChestGauge, char bHasBackpack, float BackpackGauge); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetArmorInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetMyInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetMyInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowNotRecorverHPMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCurrentWeaponFireMode(enum class EWeaponFireMode FireMode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetCurrentWeaponFireMode(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HidePerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HidePerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayReadyGivePerk(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayReadyGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayKillGivePerk(int32_t KillCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayKillGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckVisibilityPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckVisibilityPerkDeck(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddKillMessage(struct FKillBroadcastUIInfo& Info); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowCastingUI(struct FCastingInfo& CastingInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowCastingUI(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideCastingUI(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideCastingUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OpenInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OpenInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CloseInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CloseInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayShowAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayShowAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayHideAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayHideAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedPlayerInfos(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedPlayerInfos(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.K2_SetPerkInfo(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowMyKillCountMessage(char bIsKill, struct FText& Message); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowMyKillCountMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHitDamageLog(struct FHitDamageLogInfo& HitDamageLogInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHitDamageLog(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.LevelUpEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PreConstruct(char IsDesignTime); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-TopInfoWidget(int32_t EntryPoint); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ExecuteUbergraph_UW-TopInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ShowStatupAnim(struct FStatupAnimParameters& StatupParams); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckStatupAnim(struct FDisplayAbility& DisplayAbility); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckStatupAnim(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnShowNotRecorverHPMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void On Battle Royale State Changed(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.On Battle Royale State Changed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowAmmoReloadedMessage(int32_t ReloadedAmmoCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowAmmoReloadedMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowProgressMessage(int32_t Type, int32_t Time); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowProgressMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowKillMessage(struct FText WeaponName, struct FText Victim, char HeadShot, char TeamKill); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetGameVersion(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetGameVersion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ChangeWidgetVisibleByToggleType(enum class EToggleWidgetModeType CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct UUserWidget GetSlotHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetSlotHoverWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowFireModeLog(enum class EWeaponFireMode Mode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowFireModeLog(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetMainWidget(struct UBravoHotelMainWidget& MainWidget); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetWearableLevels(int32_t& HelmetLevel, int32_t& ArmorLevel, int32_t& BagLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetWearableLevels(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CreateHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	int32_t GetFinalAliveCount(int32_t AliveCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetFinalAliveCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetEnergy(float energy); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetEnergy(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetArmorInfo(char bHasHelmet, float HelmetGauge, char bHasChest, float ChestGauge, char bHasBackpack, float BackpackGauge); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetArmorInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetMyInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetMyInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowNotRecorverHPMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetCurrentWeaponFireMode(enum class EWeaponFireMode FireMode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetCurrentWeaponFireMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HidePerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HidePerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayReadyGivePerk(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayReadyGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayKillGivePerk(int32_t KillCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayKillGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckVisibilityPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckVisibilityPerkDeck(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddKillMessage(struct FKillBroadcastUIInfo& Info); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowCastingUI(struct FCastingInfo& CastingInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowCastingUI(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideCastingUI(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideCastingUI(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OpenInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OpenInventory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CloseInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CloseInventory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayShowAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayShowAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayHideAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayHideAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedPlayerInfos(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedPlayerInfos(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.K2_SetPerkInfo(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowMyKillCountMessage(char bIsKill, struct FText& Message); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowMyKillCountMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHitDamageLog(struct FHitDamageLogInfo& HitDamageLogInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHitDamageLog(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.LevelUpEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreConstruct(char IsDesignTime); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-TopInfoWidget(int32_t EntryPoint); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ExecuteUbergraph_UW-TopInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim

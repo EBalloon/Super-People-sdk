@@ -18,10 +18,10 @@ public:
 	struct TMap<struct FString, struct FLevelSequenceObject> PossessedObjects; // 0x440 (80)
 	struct UClass* DirectorClass; // 0x490 (8)
 
-	void RemoveMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1AF0>
-	struct Object FindOrAddMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
-	struct Object FindMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1450>
-	struct Object CopyMetaData(struct Object InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
+	void RemoveMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA1F0>
+	struct Object FindOrAddMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9B50>
+	struct Object FindMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9B50>
+	struct Object CopyMetaData(struct Object InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9B50>
 };
 
 // Class LevelSequence.LevelSequenceBurnInOptions
@@ -33,7 +33,7 @@ public:
 	struct FSoftClassPath BurnInClass; // 0x30 (24)
 	struct ULevelSequenceBurnInInitSettings Settings; // 0x48 (8)
 
-	void SetBurnIn(struct FSoftClassPath InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CD1EB0>
+	void SetBurnIn(struct FSoftClassPath InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA5B0>
 };
 
 // Class LevelSequence.LevelSequenceActor
@@ -55,25 +55,25 @@ public:
 	struct ULevelSequenceBurnIn BurnInInstance; // 0x398 (8)
 	char bShowBurnin : 0; // 0x3A0 (1)
 
-	void ShowBurnin(); // Function LevelSequence.LevelSequenceActor.ShowBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2210>
-	void SetSequence(struct ULevelSequence InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2190>
-	void SetReplicatePlayback(char ReplicatePlayback); // Function LevelSequence.LevelSequenceActor.SetReplicatePlayback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2100>
-	void SetEventReceivers(struct TArray<struct UActor> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1FB0>
-	void SetBindingByTag(struct FName BindingTag, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1D80>
-	void SetBinding(struct FMovieSceneObjectBindingID Binding, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1C30>
-	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1C10>
-	void ResetBinding(struct FMovieSceneObjectBindingID Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1B60>
-	void RemoveBindingByTag(struct FName Tag, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1A30>
-	void RemoveBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1940>
-	void OnLevelSequenceLoaded__DelegateSignature(); // DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct ULevelSequence LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD18D0>
-	void HideBurnin(); // Function LevelSequence.LevelSequenceActor.HideBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD18B0>
-	struct ULevelSequencePlayer GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1860>
-	struct ULevelSequence GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1810>
-	struct TArray<struct FMovieSceneObjectBindingID> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD16F0>
-	struct FMovieSceneObjectBindingID FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1640>
-	void AddBindingByTag(struct FName BindingTag, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1340>
-	void AddBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1200>
+	void ShowBurnin(); // Function LevelSequence.LevelSequenceActor.ShowBurnin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA910>
+	void SetSequence(struct ULevelSequence InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA890>
+	void SetReplicatePlayback(char ReplicatePlayback); // Function LevelSequence.LevelSequenceActor.SetReplicatePlayback(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA800>
+	void SetEventReceivers(struct TArray<struct UActor> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA6B0>
+	void SetBindingByTag(struct FName BindingTag, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA480>
+	void SetBinding(struct FMovieSceneObjectBindingID Binding, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA330>
+	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA310>
+	void ResetBinding(struct FMovieSceneObjectBindingID Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA260>
+	void RemoveBindingByTag(struct FName Tag, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA130>
+	void RemoveBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA040>
+	void OnLevelSequenceLoaded__DelegateSignature(); // DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct ULevelSequence LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9FD0>
+	void HideBurnin(); // Function LevelSequence.LevelSequenceActor.HideBurnin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9FB0>
+	struct ULevelSequencePlayer GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9F60>
+	struct ULevelSequence GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9F10>
+	struct TArray<struct FMovieSceneObjectBindingID> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9DF0>
+	struct FMovieSceneObjectBindingID FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9D40>
+	void AddBindingByTag(struct FName BindingTag, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9A40>
+	void AddBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9900>
 };
 
 // Class LevelSequence.LevelSequenceBurnIn
@@ -84,8 +84,8 @@ public:
 	struct FLevelSequencePlayerSnapshot FrameInformation; // 0x248 (184)
 	struct ALevelSequenceActor LevelSequenceActor; // 0x300 (8)
 
-	void SetSettings(struct Object InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct UClass* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x3CD1890>
+	void SetSettings(struct Object InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct UClass* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9F90>
 };
 
 // Class LevelSequence.LevelSequenceDirector
@@ -95,7 +95,7 @@ public:
 
 	struct ULevelSequencePlayer Player; // 0x28 (8)
 
-	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Class LevelSequence.LevelSequencePlayer
@@ -105,8 +105,8 @@ public:
 
 	struct FMulticastInlineDelegate OnCameraCut; // 0x890 (16)
 
-	struct UCameraComponent GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD17D0>
-	struct ULevelSequencePlayer CreateLevelSequencePlayer(struct Object WorldContextObject, struct ULevelSequence LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings, struct ALevelSequenceActor& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD14D0>
+	struct UCameraComponent GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9ED0>
+	struct ULevelSequencePlayer CreateLevelSequencePlayer(struct Object WorldContextObject, struct ULevelSequence LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings, struct ALevelSequenceActor& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9BD0>
 };
 
 // Class LevelSequence.LevelSequenceMediaController
@@ -118,11 +118,11 @@ public:
 	struct UMediaComponent MediaComponent; // 0x328 (8)
 	float ServerStartTimeSeconds; // 0x330 (4)
 
-	void SynchronizeToServer(float DesyncThresholdSeconds); // Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2230>
-	void Play(); // Function LevelSequence.LevelSequenceMediaController.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1920>
-	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <Game_BE.exe+0x3CD1900>
-	struct ALevelSequenceActor GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1840>
-	struct UMediaComponent GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A8C0>
+	void SynchronizeToServer(float DesyncThresholdSeconds); // Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA930>
+	void Play(); // Function LevelSequence.LevelSequenceMediaController.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA020>
+	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CDA000>
+	struct ALevelSequenceActor GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CD9F40>
+	struct UMediaComponent GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B72EA0>
 };
 
 // ScriptStruct LevelSequence.LevelSequenceCameraSettings

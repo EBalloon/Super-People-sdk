@@ -18,13 +18,13 @@ class UArchVisCharMovementComponent : public UCharacterMovementComponent {
 
 public:
 
-	struct FRotator RotationalAcceleration; // 0x6D8 (12)
-	struct FRotator RotationalDeceleration; // 0x6E4 (12)
-	struct FRotator MaxRotationalVelocity; // 0x6F0 (12)
-	float MinPitch; // 0x6FC (4)
-	float MaxPitch; // 0x700 (4)
-	float WalkingFriction; // 0x704 (4)
-	float WalkingSpeed; // 0x708 (4)
-	float WalkingAcceleration; // 0x70C (4)
+	struct FRotator RotationalAcceleration; // 0x6E0 (12)
+	struct FRotator RotationalDeceleration; // 0x6EC (12)
+	struct FRotator MaxRotationalVelocity; // 0x6F8 (12)
+	float MinPitch; // 0x704 (4)
+	float MaxPitch; // 0x708 (4)
+	float WalkingFriction; // 0x70C (4)
+	float WalkingSpeed; // 0x710 (4)
+	float WalkingAcceleration; // 0x714 (4)
 };
 

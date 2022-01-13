@@ -18,17 +18,17 @@ public:
 	struct UTextBlock TXT-Menu01; // 0x438 (8)
 	struct UTextBlock TXT-Menu02; // 0x440 (8)
 
-	void SetIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct FEventReply On_IMG-Over-Border_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.On_IMG-Over-Border_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_65481F2E4FBDAFF739C1CA99F79D422C(struct Object Loaded); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnLoaded_65481F2E4FBDAFF739C1CA99F79D422C(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AysncLoading(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SwitchMenu(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SwitchSlot(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-BlackMarket_Slot_Vehicle(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.ExecuteUbergraph_UW-BlackMarket_Slot_Vehicle(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FEventReply On_IMG-Over-Border_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.On_IMG-Over-Border_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_65481F2E4FBDAFF739C1CA99F79D422C(struct Object Loaded); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnLoaded_65481F2E4FBDAFF739C1CA99F79D422C(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AysncLoading(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SwitchMenu(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SwitchSlot(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-BlackMarket_Slot_Vehicle(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.ExecuteUbergraph_UW-BlackMarket_Slot_Vehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-BlackMarket_Slot_Vehicle.UW-BlackMarket_Slot_Vehicle_C.SetIconTexture

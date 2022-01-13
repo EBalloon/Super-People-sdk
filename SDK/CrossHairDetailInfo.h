@@ -7,8 +7,8 @@ public:
 	struct UImage 1-1; // 0x250 (8)
 	struct UTextBlock CurDesc; // 0x258 (8)
 
-	void SetData(struct FText Title, struct TSoftObjectPtr<UTexture2D> Image); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_CrossHairDetailInfo(int32_t EntryPoint); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.ExecuteUbergraph_CrossHairDetailInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetData(struct FText Title, struct TSoftObjectPtr<UTexture2D> Image); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_CrossHairDetailInfo(int32_t EntryPoint); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.ExecuteUbergraph_CrossHairDetailInfo(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData

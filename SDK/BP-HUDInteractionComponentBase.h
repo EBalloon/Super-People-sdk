@@ -19,25 +19,25 @@ public:
 	char bInputModeUI : 0; // 0x129 (1)
 	struct TArray<struct FName> InputActionsToBlock; // 0x130 (16)
 
-	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyCloseUI(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void InputCloseUI(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputCloseUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Callback(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.Callback(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMousePositionToCenter(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetMousePositionToCenter(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckInputState(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckInputState(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetActionBlocked(char WantsToBlock, struct TArray<struct FName>& ActionNames, struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char IsGlobalPostProcessVolume(struct Object Other); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetPostProcessVolumeDefaultOption(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetPostProcessVolumeDefaultOption(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitOptionWidget(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InitOptionWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsSpectating(char& IsSpectating); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsSpectating(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerHUD(char& IsAlive, struct ABravoHotelPlayerHUD& PlayerHUD); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void InputOptionMenu(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputOptionMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(float DeltaSeconds); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InputModeGame(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InputModeUI(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InputToggleIngameHUD(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputToggleIngameHUD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveBeginPlay(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-HUDInteractionComponentBase(int32_t EntryPoint); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ExecuteUbergraph_BP-HUDInteractionComponentBase(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyCloseUI(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InputCloseUI(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputCloseUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Callback(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.Callback(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetMousePositionToCenter(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetMousePositionToCenter(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckInputState(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckInputState(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetActionBlocked(char WantsToBlock, struct TArray<struct FName>& ActionNames, struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char IsGlobalPostProcessVolume(struct Object Other); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPostProcessVolumeDefaultOption(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetPostProcessVolumeDefaultOption(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitOptionWidget(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InitOptionWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsSpectating(char& IsSpectating); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsSpectating(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetPlayerHUD(char& IsAlive, struct ABravoHotelPlayerHUD& PlayerHUD); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InputOptionMenu(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputOptionMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveTick(float DeltaSeconds); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InputModeGame(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InputModeUI(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InputToggleIngameHUD(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputToggleIngameHUD(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveBeginPlay(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-HUDInteractionComponentBase(int32_t EntryPoint); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ExecuteUbergraph_BP-HUDInteractionComponentBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyAction

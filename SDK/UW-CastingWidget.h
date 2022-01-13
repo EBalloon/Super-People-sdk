@@ -27,17 +27,17 @@ public:
 	float KeySizeScale; // 0x4A8 (4)
 	int32_t CurrentLanguage; // 0x4AC (4)
 
-	void CheckLanguage(); // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsTarget(struct ABravoHotelCharacter Target, char& IsTarget); // Function UW-CastingWidget.UW-CastingWidget_C.IsTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void RefreshCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.RefreshCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateProgress(); // Function UW-CastingWidget.UW-CastingWidget_C.UpdateProgress(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.HideCastingUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowCastingUI(struct FCastingInfo CastingInfo); // Function UW-CastingWidget.UW-CastingWidget_C.ShowCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CastingWidget.UW-CastingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-CastingWidget.UW-CastingWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCancelMessage(struct FText Desc); // Function UW-CastingWidget.UW-CastingWidget_C.SetCancelMessage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PreConstruct(char IsDesignTime); // Function UW-CastingWidget.UW-CastingWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-CastingWidget(int32_t EntryPoint); // Function UW-CastingWidget.UW-CastingWidget_C.ExecuteUbergraph_UW-CastingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void CheckLanguage(); // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsTarget(struct ABravoHotelCharacter Target, char& IsTarget); // Function UW-CastingWidget.UW-CastingWidget_C.IsTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void RefreshCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.RefreshCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateProgress(); // Function UW-CastingWidget.UW-CastingWidget_C.UpdateProgress(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.HideCastingUI(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowCastingUI(struct FCastingInfo CastingInfo); // Function UW-CastingWidget.UW-CastingWidget_C.ShowCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CastingWidget.UW-CastingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-CastingWidget.UW-CastingWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetCancelMessage(struct FText Desc); // Function UW-CastingWidget.UW-CastingWidget_C.SetCancelMessage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreConstruct(char IsDesignTime); // Function UW-CastingWidget.UW-CastingWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-CastingWidget(int32_t EntryPoint); // Function UW-CastingWidget.UW-CastingWidget_C.ExecuteUbergraph_UW-CastingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage

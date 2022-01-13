@@ -27,26 +27,26 @@ public:
 	char IsPositionUpdated : 0; // 0x2F0 (1)
 	float DefaultCharacterZLocation; // 0x2F4 (4)
 
-	void SetEnableNameButton(char Enable); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.SetEnableNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnClickPlayerNameButton(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CorrectionScreenPositionByTeamPositionWidget(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdatePosition(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdatePosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsReplayTarget(char& IsTarget); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.IsReplayTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerViewPortPosition(struct FVector2D& ScreenPosition); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.GetPlayerViewPortPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetVisibilityWidget(char IsShow); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.SetVisibilityWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsShowUserNameTooltip(char& IsShow); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.IsShowUserNameTooltip(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateEquippedWeaponInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateEquippedWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateUsingItemInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateUsingItemInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateItemInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateItemInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateTeamInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateTeamInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateHP(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateHP(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateInfos(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_D53F762441681D4069F6ABB7A27DFBE8(struct Object Loaded); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.OnLoaded_D53F762441681D4069F6ABB7A27DFBE8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture, struct UImage ImgWidget); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW_UserNameTooltip(int32_t EntryPoint); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.ExecuteUbergraph_UW_UserNameTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetEnableNameButton(char Enable); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.SetEnableNameButton(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnClickPlayerNameButton(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CorrectionScreenPositionByTeamPositionWidget(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdatePosition(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdatePosition(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsReplayTarget(char& IsTarget); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.IsReplayTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetPlayerViewPortPosition(struct FVector2D& ScreenPosition); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.GetPlayerViewPortPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetVisibilityWidget(char IsShow); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.SetVisibilityWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsShowUserNameTooltip(char& IsShow); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.IsShowUserNameTooltip(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateEquippedWeaponInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateEquippedWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateUsingItemInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateUsingItemInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateItemInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateItemInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateTeamInfo(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateTeamInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateHP(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateHP(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateInfos(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_D53F762441681D4069F6ABB7A27DFBE8(struct Object Loaded); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.OnLoaded_D53F762441681D4069F6ABB7A27DFBE8(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture, struct UImage ImgWidget); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW_UserNameTooltip(int32_t EntryPoint); // Function UW_UserNameTooltip.UW_UserNameTooltip_C.ExecuteUbergraph_UW_UserNameTooltip(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW_UserNameTooltip.UW_UserNameTooltip_C.SetEnableNameButton

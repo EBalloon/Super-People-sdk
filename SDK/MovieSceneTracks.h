@@ -51,8 +51,8 @@ public:
 	struct FGuid ConstraintId; // 0xE0 (16)
 	struct FMovieSceneObjectBindingID ConstraintBindingID; // 0xF0 (24)
 
-	void SetConstraintBindingID(struct FMovieSceneObjectBindingID& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x3A5E350>
-	struct FMovieSceneObjectBindingID GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A5E2D0>
+	void SetConstraintBindingID(struct FMovieSceneObjectBindingID& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A66770>
+	struct FMovieSceneObjectBindingID GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A666F0>
 };
 
 // Class MovieSceneTracks.MovieScene3DAttachSection
@@ -135,10 +135,10 @@ public:
 	struct FMulticastInlineDelegate OnAudioFinished; // 0x310 (16)
 	struct FMulticastInlineDelegate OnAudioPlaybackPercent; // 0x320 (16)
 
-	void SetStartOffset(struct FFrameNumber InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3A5E490>
-	void SetSound(struct USoundBase InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3A5E410>
-	struct FFrameNumber GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A5E330>
-	struct USoundBase GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A5E310>
+	void SetStartOffset(struct FFrameNumber InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A668B0>
+	void SetSound(struct USoundBase InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A66830>
+	struct FFrameNumber GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A66750>
+	struct USoundBase GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A66730>
 };
 
 // Class MovieSceneTracks.MovieSceneAudioTrack
@@ -204,8 +204,8 @@ public:
 	struct FGuid CameraGuid; // 0xE0 (16)
 	struct FMovieSceneObjectBindingID CameraBindingID; // 0xF0 (24)
 
-	void SetCameraBindingID(struct FMovieSceneObjectBindingID& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3A65BC0>
-	struct FMovieSceneObjectBindingID GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A5E2D0>
+	void SetCameraBindingID(struct FMovieSceneObjectBindingID& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6E040>
+	struct FMovieSceneObjectBindingID GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A666F0>
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutTrack
@@ -245,8 +245,8 @@ public:
 	struct FString ShotDisplayName; // 0x158 (16)
 	struct FText DisplayName; // 0x168 (24)
 
-	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3A65D30>
-	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A65AC0>
+	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6E1B0>
+	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6DF40>
 };
 
 // Class MovieSceneTracks.MovieSceneColorSection
@@ -354,10 +354,10 @@ public:
 	enum class ELevelVisibility Visibility; // 0xE0 (1)
 	struct TArray<struct FName> LevelNames; // 0xE8 (16)
 
-	void SetVisibility(enum class ELevelVisibility InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3A65E30>
-	void SetLevelNames(struct TArray<struct FName>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3A65C80>
-	enum class ELevelVisibility GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A65B90>
-	struct TArray<struct FName> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3A65A90>
+	void SetVisibility(enum class ELevelVisibility InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6E2B0>
+	void SetLevelNames(struct TArray<struct FName>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6E100>
+	enum class ELevelVisibility GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6E010>
+	struct TArray<struct FName> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A6DF10>
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack

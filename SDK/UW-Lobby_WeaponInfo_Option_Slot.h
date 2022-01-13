@@ -7,7 +7,7 @@ public:
 	struct UUW-Lobby_WeaponInfo_Option_Slot_Icon_C UW-Lobby_WeaponInfo_RandomOption_Slot_3; // 0x250 (8)
 	struct FItemOption ItemOption; // 0x258 (184)
 
-	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption

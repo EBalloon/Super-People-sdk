@@ -68,9 +68,9 @@ class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStatic
 
 public:
 
-	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x708 (16)
-	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x718 (16)
-	struct FGuid GenerationGuid; // 0x728 (16)
+	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x710 (16)
+	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x720 (16)
+	struct FGuid GenerationGuid; // 0x730 (16)
 };
 
 // Class Foliage.FoliageSettings
@@ -222,7 +222,7 @@ public:
 	float MaxForce; // 0x37C (4)
 	float Mass; // 0x380 (4)
 
-	void CapsuleTouched(struct UPrimitiveComponent OverlappedComp, struct UActor Other, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x38EAF80>
+	void CapsuleTouched(struct UPrimitiveComponent OverlappedComp, struct UActor Other, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38F2A40>
 };
 
 // Class Foliage.ProceduralFoliageBlockingVolume
@@ -255,7 +255,7 @@ public:
 	float MinimumQuadTreeSize; // 0x34 (4)
 	struct TArray<struct FFoliageTypeObject> FoliageTypes; // 0x40 (16)
 
-	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x38EB400>
+	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38F2EC0>
 };
 
 // Class Foliage.ProceduralFoliageTile

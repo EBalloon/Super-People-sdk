@@ -43,20 +43,20 @@ public:
 	int32_t MaxSlotCount; // 0x370 (4)
 	char EnableShowExpertWeapon : 0; // 0x374 (1)
 
-	void Get Slot Index(int32_t Index, struct UUW-Inventory_MaterialIconSlot_C& Slot); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Update(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Update(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(struct FSelecteSearchMaterialItemInfo MaterialItemKey, char IsSelect); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Enable MaterialSearch(char EnableMaterialSearch); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Enable MaterialSearch(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_3(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_282_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_282_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateUI(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.UpdateUI(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(char EnableMaterialSearch); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_182_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_182_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-SearchingMaterial(int32_t EntryPoint); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.ExecuteUbergraph_UW-SearchingMaterial(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Get Slot Index(int32_t Index, struct UUW-Inventory_MaterialIconSlot_C& Slot); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Update(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Update(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_2(struct FSelecteSearchMaterialItemInfo MaterialItemKey, char IsSelect); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Enable MaterialSearch(char EnableMaterialSearch); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Enable MaterialSearch(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_3(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_282_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_282_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateUI(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.UpdateUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(char EnableMaterialSearch); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_182_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_182_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-SearchingMaterial(int32_t EntryPoint); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.ExecuteUbergraph_UW-SearchingMaterial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index

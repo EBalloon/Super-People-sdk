@@ -19,11 +19,11 @@ public:
 	struct FSoftObjectPath TemplateSequence; // 0x340 (24)
 	struct FTemplateSequenceBindingOverrideData BindingOverride; // 0x358 (12)
 
-	void SetSequence(struct UTemplateSequence InSequence); // Function TemplateSequence.TemplateSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18500F0>
-	void SetBinding(struct UActor Actor); // Function TemplateSequence.TemplateSequenceActor.SetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1850070>
-	struct UTemplateSequence LoadSequence(); // Function TemplateSequence.TemplateSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1850040>
-	struct UTemplateSequencePlayer GetSequencePlayer(); // Function TemplateSequence.TemplateSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1850010>
-	struct UTemplateSequence GetSequence(); // Function TemplateSequence.TemplateSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x184FFE0>
+	void SetSequence(struct UTemplateSequence InSequence); // Function TemplateSequence.TemplateSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1851D60>
+	void SetBinding(struct UActor Actor); // Function TemplateSequence.TemplateSequenceActor.SetBinding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1851CE0>
+	struct UTemplateSequence LoadSequence(); // Function TemplateSequence.TemplateSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1851CB0>
+	struct UTemplateSequencePlayer GetSequencePlayer(); // Function TemplateSequence.TemplateSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1851C80>
+	struct UTemplateSequence GetSequence(); // Function TemplateSequence.TemplateSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1851C50>
 };
 
 // ScriptStruct TemplateSequence.TemplateSequenceBindingOverrideData

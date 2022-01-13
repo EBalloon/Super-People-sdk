@@ -68,9 +68,9 @@ public:
 	struct TArray<struct FGameModeName> GameModeMapPrefixes; // 0xE8 (16)
 	struct TArray<struct FGameModeName> GameModeClassAliases; // 0xF8 (16)
 
-	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x33F83E0>
-	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x33F83B0>
-	struct UGameMapsSettings GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x33F8380>
+	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FFDC0>
+	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FFD90>
+	struct UGameMapsSettings GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FFD60>
 };
 
 // Class EngineSettings.GameNetworkManagerSettings

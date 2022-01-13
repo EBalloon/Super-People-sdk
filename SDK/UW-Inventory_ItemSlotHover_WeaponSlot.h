@@ -9,10 +9,10 @@ public:
 	struct UImage Image_Grade_Color_Line; // 0x260 (8)
 	struct UTextBlock TextBlock_445; // 0x268 (8)
 
-	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Object Loaded); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(int32_t EntryPoint); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Object Loaded); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(int32_t EntryPoint); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo

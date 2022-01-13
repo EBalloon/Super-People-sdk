@@ -10,9 +10,9 @@ public:
 	struct UTextBlock PriceValue; // 0x268 (8)
 	struct USizeBox SizeBox_2; // 0x270 (8)
 
-	void SetPriceData(struct FText ItemName, int32_t Price); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetPriceData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetData(struct FText Msg); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-SupplyToolTip(int32_t EntryPoint); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.ExecuteUbergraph_UW-SupplyToolTip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetPriceData(struct FText ItemName, int32_t Price); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetPriceData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetData(struct FText Msg); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-SupplyToolTip(int32_t EntryPoint); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.ExecuteUbergraph_UW-SupplyToolTip(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetPriceData

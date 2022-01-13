@@ -28,13 +28,13 @@ public:
 	struct UWrapBox WB-BoxList; // 0x2F8 (8)
 	struct UWrapBox WrapBox_1; // 0x300 (8)
 
-	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.DropItem(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CloseHover(); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.CloseHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetScrollSpeed(float Speed); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.SetScrollSpeed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_Proximity(int32_t EntryPoint); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.ExecuteUbergraph_UW-Inventory_Proximity(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.DropItem(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CloseHover(); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.CloseHover(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetScrollSpeed(float Speed); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.SetScrollSpeed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_Proximity(int32_t EntryPoint); // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.ExecuteUbergraph_UW-Inventory_Proximity(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_Proximity.UW-Inventory_Proximity_C.DropItem

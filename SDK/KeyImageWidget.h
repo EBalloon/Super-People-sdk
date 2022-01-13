@@ -23,18 +23,18 @@ public:
 	char OverrideFontSize : 0; // 0x2D0 (1)
 	int32_t FontSize; // 0x2D4 (4)
 
-	void SetFontSize(char Override); // Function KeyImageWidget.KeyImageWidget_C.SetFontSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetKeyNameFromKey(struct FKey Key, struct FString& Name, char& bRet); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Key(struct FInputActionKeyMapping Key); // Function KeyImageWidget.KeyImageWidget_C.Set Key(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set AxistKey(struct FInputAxisKeyMapping AxisKey); // Function KeyImageWidget.KeyImageWidget_C.Set AxistKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfo(struct FKey Key, char Shift, char Alt, char Ctrl); // Function KeyImageWidget.KeyImageWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEmpty(); // Function KeyImageWidget.KeyImageWidget_C.SetEmpty(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function KeyImageWidget.KeyImageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfoFromActionKeyMap(struct FInputActionKeyMapping ActionKeyMap); // Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetKeyType(enum class EKeySettingType KeyType); // Function KeyImageWidget.KeyImageWidget_C.SetKeyType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PreConstruct(char IsDesignTime); // Function KeyImageWidget.KeyImageWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void RefreshKey(); // Function KeyImageWidget.KeyImageWidget_C.RefreshKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_KeyImageWidget(int32_t EntryPoint); // Function KeyImageWidget.KeyImageWidget_C.ExecuteUbergraph_KeyImageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetFontSize(char Override); // Function KeyImageWidget.KeyImageWidget_C.SetFontSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name, char& bRet); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set Key(struct FInputActionKeyMapping Key); // Function KeyImageWidget.KeyImageWidget_C.Set Key(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set AxistKey(struct FInputAxisKeyMapping AxisKey); // Function KeyImageWidget.KeyImageWidget_C.Set AxistKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetInfo(struct FKey Key, char Shift, char Alt, char Ctrl); // Function KeyImageWidget.KeyImageWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetEmpty(); // Function KeyImageWidget.KeyImageWidget_C.SetEmpty(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function KeyImageWidget.KeyImageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetInfoFromActionKeyMap(struct FInputActionKeyMapping ActionKeyMap); // Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetKeyType(enum class EKeySettingType KeyType); // Function KeyImageWidget.KeyImageWidget_C.SetKeyType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreConstruct(char IsDesignTime); // Function KeyImageWidget.KeyImageWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void RefreshKey(); // Function KeyImageWidget.KeyImageWidget_C.RefreshKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_KeyImageWidget(int32_t EntryPoint); // Function KeyImageWidget.KeyImageWidget_C.ExecuteUbergraph_KeyImageWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function KeyImageWidget.KeyImageWidget_C.SetFontSize

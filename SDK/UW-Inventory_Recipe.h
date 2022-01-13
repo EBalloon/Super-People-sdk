@@ -11,18 +11,18 @@ public:
 	struct ABP-BravoHotel-PlayerController_C PlayerController; // 0x270 (8)
 	float SlotMaxHeight; // 0x278 (4)
 
-	void UpdateSlotMaxSize(int32_t SlotNum); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.UpdateSlotMaxSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DisableCarriedListHover(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverResetEquipSlotList(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_Recipe(int32_t EntryPoint); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.ExecuteUbergraph_UW-Inventory_Recipe(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void UpdateSlotMaxSize(int32_t SlotNum); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.UpdateSlotMaxSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DisableCarriedListHover(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverResetEquipSlotList(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_Recipe(int32_t EntryPoint); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.ExecuteUbergraph_UW-Inventory_Recipe(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.UpdateSlotMaxSize

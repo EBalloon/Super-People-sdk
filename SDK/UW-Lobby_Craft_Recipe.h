@@ -24,13 +24,13 @@ public:
 	struct UUW-ArmoryInput_C ArmoryInputRef; // 0x2E8 (8)
 	float CurrentOpacity; // 0x2F0 (4)
 
-	void SetOpacity(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckOwn(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitRecipeItemArray(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.InitRecipeItemArray(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetRecipeInfo(int32_t BaseItemID, int32_t MaterialGroupItemID); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetRecipeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_Recipe(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetOpacity(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckOwn(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitRecipeItemArray(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.InitRecipeItemArray(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRecipeInfo(int32_t BaseItemID, int32_t MaterialGroupItemID); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetRecipeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_Recipe(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity

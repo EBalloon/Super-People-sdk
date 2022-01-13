@@ -157,15 +157,15 @@ public:
 	float PrevMeshRotationYaw; // 0xAC34 (4)
 	float BoneDrivenValue; // 0xAC38 (4)
 
-	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Preview Character Mesh(struct USkeletalMeshComponent& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Get Current Preview Weapon(struct ABravoHotelWeaponBase& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Get Preview Character Mesh(struct USkeletalMeshComponent& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Get Current Preview Weapon(struct ABravoHotelWeaponBase& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph

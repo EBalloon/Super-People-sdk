@@ -8,11 +8,11 @@ public:
 	struct USpringArmComponent SpringArm; // 0x3E8 (8)
 	char bKillCam : 0; // 0x3F0 (1)
 
-	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetTargetByUID(int32_t UID, struct APawn& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetTargetByUID(int32_t UID, struct APawn& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting

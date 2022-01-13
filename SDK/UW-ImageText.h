@@ -11,13 +11,13 @@ public:
 	char HorizontalAlignment; // 0x4E0 (1)
 	float KeyImageScale; // 0x4E4 (4)
 
-	void ParseString(struct FString InputString); // Function UW-ImageText.UW-ImageText_C.ParseString(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ParseText(struct FString Inputtext); // Function UW-ImageText.UW-ImageText_C.ParseText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ParseSpace(struct FString TargetString, struct FString PreString, struct FString PostString); // Function UW-ImageText.UW-ImageText_C.ParseSpace(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-ImageText.UW-ImageText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetText(struct FText Inputtext); // Function UW-ImageText.UW-ImageText_C.SetText(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetAlignment(char Alignment); // Function UW-ImageText.UW-ImageText_C.SetAlignment(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ImageText(int32_t EntryPoint); // Function UW-ImageText.UW-ImageText_C.ExecuteUbergraph_UW-ImageText(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ParseString(struct FString InputString); // Function UW-ImageText.UW-ImageText_C.ParseString(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ParseText(struct FString Inputtext); // Function UW-ImageText.UW-ImageText_C.ParseText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ParseSpace(struct FString TargetString, struct FString PreString, struct FString PostString); // Function UW-ImageText.UW-ImageText_C.ParseSpace(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-ImageText.UW-ImageText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetText(struct FText Inputtext); // Function UW-ImageText.UW-ImageText_C.SetText(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetAlignment(char Alignment); // Function UW-ImageText.UW-ImageText_C.SetAlignment(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ImageText(int32_t EntryPoint); // Function UW-ImageText.UW-ImageText_C.ExecuteUbergraph_UW-ImageText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ImageText.UW-ImageText_C.ParseString

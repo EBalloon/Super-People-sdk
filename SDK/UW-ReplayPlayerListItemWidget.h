@@ -12,17 +12,17 @@ public:
 	char bIsTargetPawn : 0; // 0x2A0 (1)
 	char bIsAlive : 0; // 0x2A1 (1)
 
-	void UpdateHighlightNameColor(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateHighlightNameColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateSortInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateSortInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckAlive(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.CheckAlive(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateButton(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateHP(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateHP(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateDisable(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateDisable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateInfos(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__BT_PlayerName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.BndEvt__BT_PlayerName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ReplayPlayerListItemWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.ExecuteUbergraph_UW-ReplayPlayerListItemWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void UpdateHighlightNameColor(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateHighlightNameColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateSortInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateSortInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckAlive(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.CheckAlive(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateButton(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateButton(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateHP(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateHP(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateDisable(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateDisable(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateInfos(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Init(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__BT_PlayerName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.BndEvt__BT_PlayerName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ReplayPlayerListItemWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.ExecuteUbergraph_UW-ReplayPlayerListItemWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ReplayPlayerListItemWidget.UW-ReplayPlayerListItemWidget_C.UpdateHighlightNameColor

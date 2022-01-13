@@ -15,14 +15,14 @@ public:
 	struct FTimerHandle SingleTimerEvent; // 0x350 (8)
 	char IsSingleFiring : 0; // 0x358 (1)
 
-	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class ECharacterGroundState State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(float DeltaSeconds); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTarget(struct ABravoHotelCharacter TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CharacterMovementEvent(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnStartSimulateFire(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SingleStopEvent(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SingleStopEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-AmplifierEffect(int32_t EntryPoint); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ExecuteUbergraph_BP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class ECharacterGroundState State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveTick(float DeltaSeconds); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTarget(struct ABravoHotelCharacter TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CharacterMovementEvent(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnStartSimulateFire(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SingleStopEvent(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SingleStopEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-AmplifierEffect(int32_t EntryPoint); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ExecuteUbergraph_BP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1

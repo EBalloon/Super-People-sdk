@@ -13,10 +13,10 @@ public:
 	struct UMaterialInstanceDynamic PerkFxMaterialInstance; // 0x278 (8)
 	struct UTexture UltimatePerkFxTexture; // 0x280 (8)
 
-	void InitFxInfo(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_PerkSlot_FX(int32_t EntryPoint); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.ExecuteUbergraph_UW-Inventory_PerkSlot_FX(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void InitFxInfo(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_PerkSlot_FX(int32_t EntryPoint); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.ExecuteUbergraph_UW-Inventory_PerkSlot_FX(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo

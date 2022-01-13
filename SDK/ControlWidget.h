@@ -33,11 +33,11 @@ public:
 	struct USubTitleSlotWidget_C ¤…%)Ý; // 0x370 (8)
 	struct FTimerHandle ScrollBarTimer; // 0x378 (8)
 
-	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DelegateChangeValue_Event_1(struct UBravoHotelSettingSlotWidget Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function ControlWidget.ControlWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ä¤@t¤¸_1(); // Function ControlWidget.ControlWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_ControlWidget(int32_t EntryPoint); // Function ControlWidget.ControlWidget_C.ExecuteUbergraph_ControlWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DelegateChangeValue_Event_1(struct UBravoHotelSettingSlotWidget Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function ControlWidget.ControlWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ä¤@t¤¸_1(); // Function ControlWidget.ControlWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_ControlWidget(int32_t EntryPoint); // Function ControlWidget.ControlWidget_C.ExecuteUbergraph_ControlWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function ControlWidget.ControlWidget_C.Construct

@@ -39,11 +39,11 @@ public:
 	char bEnabled : 0; // 0xB4 (1)
 	struct APlayerState PlayerState; // 0xB8 (8)
 
-	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <Game_BE.exe+0x1222760>
-	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <Game_BE.exe+0x1222710>
-	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <Game_BE.exe+0x12226F0>
-	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <Game_BE.exe+0x12226D0>
-	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <Game_BE.exe+0x12226B0>
+	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1223AF0>
+	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1223AA0>
+	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1223A80>
+	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1223A60>
+	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1223A40>
 };
 
 // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing

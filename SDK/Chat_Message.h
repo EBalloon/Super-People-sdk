@@ -11,8 +11,8 @@ public:
 	struct FLinearColor Username Color; // 0x290 (16)
 	struct FLinearColor Message Color; // 0x2A0 (16)
 
-	void Construct(); // Function Chat_Message.Chat_Message_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function Chat_Message.Chat_Message_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function Chat_Message.Chat_Message_C.Construct

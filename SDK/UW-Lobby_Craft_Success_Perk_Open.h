@@ -14,9 +14,9 @@ public:
 	struct UMaterialInstanceDynamic RarityBGMaterialInstance; // 0x288 (8)
 	float CurrentAnim; // 0x290 (4)
 
-	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Open(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Open(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Open(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Open(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_Success_Perk_Open.UW-Lobby_Craft_Success_Perk_Open_C.SetItemOption

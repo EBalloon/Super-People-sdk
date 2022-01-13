@@ -27,8 +27,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x60 (16)
 
-	struct UFSM_SetState_Async FSM_SetState_Async(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, char Loop); // Function UFSM.FSM_SetState_Async.FSM_SetState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1203AA0>
-	void Execute(); // Function UFSM.FSM_SetState_Async.Execute(Final|Native|Private) // <Game_BE.exe+0x1202CD0>
+	struct UFSM_SetState_Async FSM_SetState_Async(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, char Loop); // Function UFSM.FSM_SetState_Async.FSM_SetState_Async(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204DC0>
+	void Execute(); // Function UFSM.FSM_SetState_Async.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203FF0>
 };
 
 // Class UFSM.FSM_SetStateID_Async
@@ -44,8 +44,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x60 (16)
 
-	struct UFSM_SetStateID_Async FSM_SetStateID_Async(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, char Loop); // Function UFSM.FSM_SetStateID_Async.FSM_SetStateID_Async(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1203370>
-	void Execute(); // Function UFSM.FSM_SetStateID_Async.Execute(Final|Native|Private) // <Game_BE.exe+0x1202C50>
+	struct UFSM_SetStateID_Async FSM_SetStateID_Async(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, char Loop); // Function UFSM.FSM_SetStateID_Async.FSM_SetStateID_Async(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204690>
+	void Execute(); // Function UFSM.FSM_SetStateID_Async.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203F70>
 };
 
 // Class UFSM.FSM_SetState_ConditionalAsync
@@ -62,8 +62,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x58 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x68 (16)
 
-	struct UFSM_SetState_ConditionalAsync FSM_SetState_ConditionalAsync(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, enum class FSM_Transition Condition, char Loop); // Function UFSM.FSM_SetState_ConditionalAsync.FSM_SetState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1203DF0>
-	void Execute(); // Function UFSM.FSM_SetState_ConditionalAsync.Execute(Final|Native|Private) // <Game_BE.exe+0x1202D10>
+	struct UFSM_SetState_ConditionalAsync FSM_SetState_ConditionalAsync(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, enum class FSM_Transition Condition, char Loop); // Function UFSM.FSM_SetState_ConditionalAsync.FSM_SetState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1205110>
+	void Execute(); // Function UFSM.FSM_SetState_ConditionalAsync.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204030>
 };
 
 // Class UFSM.FSM_SetStateID_ConditionalAsync
@@ -80,8 +80,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x60 (16)
 
-	struct UFSM_SetStateID_ConditionalAsync FSM_SetStateID_ConditionalAsync(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, enum class FSM_Transition Condition, char Loop); // Function UFSM.FSM_SetStateID_ConditionalAsync.FSM_SetStateID_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x12036D0>
-	void Execute(); // Function UFSM.FSM_SetStateID_ConditionalAsync.Execute(Final|Native|Private) // <Game_BE.exe+0x1202C90>
+	struct UFSM_SetStateID_ConditionalAsync FSM_SetStateID_ConditionalAsync(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, enum class FSM_Transition Condition, char Loop); // Function UFSM.FSM_SetStateID_ConditionalAsync.FSM_SetStateID_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12049F0>
+	void Execute(); // Function UFSM.FSM_SetStateID_ConditionalAsync.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203FB0>
 };
 
 // Class UFSM.FSM_SetState_AsyncWithCallbacks
@@ -99,8 +99,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x70 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x80 (16)
 
-	struct UFSM_SetState_AsyncWithCallbacks FSM_SetState_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_AsyncWithCallbacks.FSM_SetState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1203BE0>
-	void Execute(); // Function UFSM.FSM_SetState_AsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202CF0>
+	struct UFSM_SetState_AsyncWithCallbacks FSM_SetState_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_AsyncWithCallbacks.FSM_SetState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204F00>
+	void Execute(); // Function UFSM.FSM_SetState_AsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204010>
 };
 
 // Class UFSM.FSM_SetStateID_AsyncWithCallbacks
@@ -118,8 +118,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x70 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x80 (16)
 
-	struct UFSM_SetStateID_AsyncWithCallbacks FSM_SetStateID_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.FSM_SetStateID_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x12034B0>
-	void Execute(); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202C70>
+	struct UFSM_SetStateID_AsyncWithCallbacks FSM_SetStateID_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.FSM_SetStateID_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12047D0>
+	void Execute(); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203F90>
 };
 
 // Class UFSM.FSM_SetState_ConditionalAsyncWithCallbacks
@@ -138,8 +138,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x78 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x88 (16)
 
-	struct UFSM_SetState_ConditionalAsyncWithCallbacks FSM_SetState_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, enum class FSM_Transition Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_ConditionalAsyncWithCallbacks.FSM_SetState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1203F70>
-	void Execute(); // Function UFSM.FSM_SetState_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202D30>
+	struct UFSM_SetState_ConditionalAsyncWithCallbacks FSM_SetState_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FName Name, enum class FSM_Transition Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_ConditionalAsyncWithCallbacks.FSM_SetState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1205290>
+	void Execute(); // Function UFSM.FSM_SetState_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204050>
 };
 
 // Class UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks
@@ -158,8 +158,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x70 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x80 (16)
 
-	struct UFSM_SetStateID_ConditionalAsyncWithCallbacks FSM_SetStateID_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, enum class FSM_Transition Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.FSM_SetStateID_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1203850>
-	void Execute(); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202CB0>
+	struct UFSM_SetStateID_ConditionalAsyncWithCallbacks FSM_SetStateID_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, char ID, enum class FSM_Transition Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.FSM_SetStateID_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204B70>
+	void Execute(); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203FD0>
 };
 
 // Class UFSM.FSM_FinishState_Async
@@ -173,8 +173,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x48 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x58 (16)
 
-	struct UFSM_FinishState_Async FSM_FinishState_Async(struct UStateMachineComponent FSM, float WaitForSeconds); // Function UFSM.FSM_FinishState_Async.FSM_FinishState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1202D50>
-	void Execute(); // Function UFSM.FSM_FinishState_Async.Execute(Final|Native|Private) // <Game_BE.exe+0x1202BD0>
+	struct UFSM_FinishState_Async FSM_FinishState_Async(struct UStateMachineComponent FSM, float WaitForSeconds); // Function UFSM.FSM_FinishState_Async.FSM_FinishState_Async(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204070>
+	void Execute(); // Function UFSM.FSM_FinishState_Async.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203EF0>
 };
 
 // Class UFSM.FSM_FinishState_ConditionalAsync
@@ -190,8 +190,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x60 (16)
 
-	struct UFSM_FinishState_ConditionalAsync FSM_FinishState_ConditionalAsync(struct UStateMachineComponent FSM, enum class FSM_Transition Condition, float WaitForSeconds, struct FName Fallback); // Function UFSM.FSM_FinishState_ConditionalAsync.FSM_FinishState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1202FB0>
-	void Execute(); // Function UFSM.FSM_FinishState_ConditionalAsync.Execute(Final|Native|Private) // <Game_BE.exe+0x1202C10>
+	struct UFSM_FinishState_ConditionalAsync FSM_FinishState_ConditionalAsync(struct UStateMachineComponent FSM, enum class FSM_Transition Condition, float WaitForSeconds, struct FName Fallback); // Function UFSM.FSM_FinishState_ConditionalAsync.FSM_FinishState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12042D0>
+	void Execute(); // Function UFSM.FSM_FinishState_ConditionalAsync.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203F30>
 };
 
 // Class UFSM.FSM_FinishState_AsyncWithCallbacks
@@ -207,8 +207,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x68 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x78 (16)
 
-	struct UFSM_FinishState_AsyncWithCallbacks FSM_FinishState_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.FSM_FinishState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1202E20>
-	void Execute(); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202BF0>
+	struct UFSM_FinishState_AsyncWithCallbacks FSM_FinishState_AsyncWithCallbacks(struct UStateMachineComponent FSM, float WaitForSeconds, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.FSM_FinishState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204140>
+	void Execute(); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203F10>
 };
 
 // Class UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks
@@ -227,8 +227,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x80 (16)
 	struct FMulticastInlineDelegate OnAborted; // 0x90 (16)
 
-	struct UFSM_FinishState_ConditionalAsyncWithCallbacks FSM_FinishState_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, enum class FSM_Transition Condition, float WaitForSeconds, struct FName Fallback, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback, struct FDelegate& BeginFallbackStateCallback); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.FSM_FinishState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x12030F0>
-	void Execute(); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <Game_BE.exe+0x1202C30>
+	struct UFSM_FinishState_ConditionalAsyncWithCallbacks FSM_FinishState_ConditionalAsyncWithCallbacks(struct UStateMachineComponent FSM, enum class FSM_Transition Condition, float WaitForSeconds, struct FName Fallback, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback, struct FDelegate& BeginFallbackStateCallback); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.FSM_FinishState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1204410>
+	void Execute(); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.Execute(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1203F50>
 };
 
 // Class UFSM.BTTask_FSM_AddState
@@ -300,26 +300,26 @@ public:
 	struct FMulticastInlineDelegate _OnExit; // 0x80 (16)
 	struct TMap<struct FGuid, struct FMachinePayloadData> MachineData; // 0x90 (80)
 
-	void Update(float DeltaTime); // Function UFSM.ReactiveStateMachine.Update(Final|Native|Private) // <Game_BE.exe+0x1208830>
-	void OnUpdate(float DeltaTime); // Function UFSM.ReactiveStateMachine.OnUpdate(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnExit(); // Function UFSM.ReactiveStateMachine.OnExit(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnEntry(); // Function UFSM.ReactiveStateMachine.OnEntry(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnConstruct(); // Function UFSM.ReactiveStateMachine.OnConstruct(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char IsMachineActive(); // Function UFSM.ReactiveStateMachine.IsMachineActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1208410>
-	void Init(); // Function UFSM.ReactiveStateMachine.Init(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12080C0>
-	float GetStateMachineUpdateTime(); // Function UFSM.ReactiveStateMachine.GetStateMachineUpdateTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1208060>
-	struct UReactiveStateMachine GetOwnerAsStateMachine(); // Function UFSM.ReactiveStateMachine.GetOwnerAsStateMachine(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207EB0>
-	struct AHUD GetOwnerAsHUD(); // Function UFSM.ReactiveStateMachine.GetOwnerAsHUD(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1208000>
-	struct AGameModeBase GetOwnerAsGameMode(); // Function UFSM.ReactiveStateMachine.GetOwnerAsGameMode(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207FD0>
-	struct AAIController GetOwnerAsControllerAI(); // Function UFSM.ReactiveStateMachine.GetOwnerAsControllerAI(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207FA0>
-	struct APlayerController GetOwnerAsController(); // Function UFSM.ReactiveStateMachine.GetOwnerAsController(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207F70>
-	struct UActorComponent GetOwnerAsComponent(); // Function UFSM.ReactiveStateMachine.GetOwnerAsComponent(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207F40>
-	struct ACharacter GetOwnerAsCharacter(); // Function UFSM.ReactiveStateMachine.GetOwnerAsCharacter(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207F10>
-	struct UActor GetOwnerAsActor(); // Function UFSM.ReactiveStateMachine.GetOwnerAsActor(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207EE0>
-	struct Object GetOwner(); // Function UFSM.ReactiveStateMachine.GetOwner(Final|Native|Private|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1207E80>
-	void Exit(); // Function UFSM.ReactiveStateMachine.Exit(Final|Native|Private) // <Game_BE.exe+0x12063B0>
-	void Entry(); // Function UFSM.ReactiveStateMachine.Entry(Final|Native|Private) // <Game_BE.exe+0x1206390>
-	void End(); // Function UFSM.ReactiveStateMachine.End(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1206370>
+	void Update(float DeltaTime); // Function UFSM.ReactiveStateMachine.Update(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209B60>
+	void OnUpdate(float DeltaTime); // Function UFSM.ReactiveStateMachine.OnUpdate(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnExit(); // Function UFSM.ReactiveStateMachine.OnExit(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnEntry(); // Function UFSM.ReactiveStateMachine.OnEntry(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnConstruct(); // Function UFSM.ReactiveStateMachine.OnConstruct(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char IsMachineActive(); // Function UFSM.ReactiveStateMachine.IsMachineActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209740>
+	void Init(); // Function UFSM.ReactiveStateMachine.Init(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12093F0>
+	float GetStateMachineUpdateTime(); // Function UFSM.ReactiveStateMachine.GetStateMachineUpdateTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209390>
+	struct UReactiveStateMachine GetOwnerAsStateMachine(); // Function UFSM.ReactiveStateMachine.GetOwnerAsStateMachine(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12091E0>
+	struct AHUD GetOwnerAsHUD(); // Function UFSM.ReactiveStateMachine.GetOwnerAsHUD(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209330>
+	struct AGameModeBase GetOwnerAsGameMode(); // Function UFSM.ReactiveStateMachine.GetOwnerAsGameMode(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209300>
+	struct AAIController GetOwnerAsControllerAI(); // Function UFSM.ReactiveStateMachine.GetOwnerAsControllerAI(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12092D0>
+	struct APlayerController GetOwnerAsController(); // Function UFSM.ReactiveStateMachine.GetOwnerAsController(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12092A0>
+	struct UActorComponent GetOwnerAsComponent(); // Function UFSM.ReactiveStateMachine.GetOwnerAsComponent(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209270>
+	struct ACharacter GetOwnerAsCharacter(); // Function UFSM.ReactiveStateMachine.GetOwnerAsCharacter(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209240>
+	struct UActor GetOwnerAsActor(); // Function UFSM.ReactiveStateMachine.GetOwnerAsActor(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1209210>
+	struct Object GetOwner(); // Function UFSM.ReactiveStateMachine.GetOwner(Final|Native|Private|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12091B0>
+	void Exit(); // Function UFSM.ReactiveStateMachine.Exit(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12076E0>
+	void Entry(); // Function UFSM.ReactiveStateMachine.Entry(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12076C0>
+	void End(); // Function UFSM.ReactiveStateMachine.End(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12076A0>
 };
 
 // Class UFSM.FSMSettings
@@ -351,8 +351,8 @@ public:
 	struct FName TargetFSM; // 0x27C (8)
 	struct FName TargetASM; // 0x284 (8)
 
-	struct UStateMachineComponent GetFSMComponentByName(struct FName Name); // Function UFSM.StateMachineABP.GetFSMComponentByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CAA0>
-	struct UStateMachineComponent GetFSMComponent(); // Function UFSM.StateMachineABP.GetFSMComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CA70>
+	struct UStateMachineComponent GetFSMComponentByName(struct FName Name); // Function UFSM.StateMachineABP.GetFSMComponentByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DE20>
+	struct UStateMachineComponent GetFSMComponent(); // Function UFSM.StateMachineABP.GetFSMComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DDF0>
 };
 
 // Class UFSM.StateMachineComponent
@@ -392,83 +392,83 @@ public:
 	struct FMulticastInlineDelegate OnUpdate; // 0x258 (16)
 	struct FMulticastInlineDelegate OnExit; // 0x268 (16)
 
-	void Update(char UpState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Update(Native|Protected|HasOutParms) // <Game_BE.exe+0x120F810>
-	void SetStateWithCallbacks(struct FName Name, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120F230>
-	void SetStateValueWithCallbacks(struct FSM_State& Value, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateValueWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120EC60>
-	void SetStateValue_ConditionalWithCallbacks(struct FSM_State& Value, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateValue_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120EFE0>
-	void SetStateValue_Conditional(struct FSM_State& Value, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateValue_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120EE70>
-	void SetStateValue(struct FSM_State& Value, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateValue(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120EB20>
-	void SetStateIDWithCallbacks(char ID, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateIDWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120E690>
-	void SetStateID_ConditionalWithCallbacks(char ID, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateID_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120E940>
-	void SetStateID_Conditional(char ID, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateID_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120E830>
-	void SetStateID(char ID, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateID(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120E5C0>
-	void SetState_ConditionalWithCallbacks(struct FName Name, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetState_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120F4E0>
-	void SetState_Conditional(struct FName Name, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetState_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120F3D0>
-	void SetState(struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetState(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120E4F0>
-	void SERVER_SetStateValue(struct FSM_State Value, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetStateValue(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120E3A0>
-	void SERVER_SetStateID(char ID, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetStateID(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120E2A0>
-	void SERVER_SetState(struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120E1A0>
-	void SERVER_RemoveState(struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_RemoveState(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x120E0A0>
-	void SERVER_MakeStates(struct TArray<struct FName> NewStates, char Validate); // Function UFSM.StateMachineComponent.SERVER_MakeStates(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120DF80>
-	void SERVER_GoToFSM(struct UStateMachineComponent TargetMachine, char Validate); // Function UFSM.StateMachineComponent.SERVER_GoToFSM(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120DE80>
-	void SERVER_FinishState(char Validate); // Function UFSM.StateMachineComponent.SERVER_FinishState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120DDC0>
-	void SERVER_AddState(char ID, struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_AddState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120DC80>
-	void SERVER_ActivateFSM(char Validate); // Function UFSM.StateMachineComponent.SERVER_ActivateFSM(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <Game_BE.exe+0x120DBC0>
-	void RemoveState(struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.RemoveState(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120DAF0>
-	enum class FSM_Transition Pure_SetStateByID(char ID); // Function UFSM.StateMachineComponent.Pure_SetStateByID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120DA60>
-	enum class FSM_Transition Pure_SetState(struct FName Name); // Function UFSM.StateMachineComponent.Pure_SetState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120D9D0>
-	enum class FSM_Transition Pure_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.Pure_RemoveState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120D940>
-	enum class FSM_Transition Pure_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.Pure_AddState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120D880>
-	void OnREP_StateTime(float& Time); // Function UFSM.StateMachineComponent.OnREP_StateTime(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x120D7E0>
-	void OnREP_StateID(char& ID); // Function UFSM.StateMachineComponent.OnREP_StateID(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x120D740>
-	void OnREP_PreviousStateID(char& PreviousID); // Function UFSM.StateMachineComponent.OnREP_PreviousStateID(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x120D6A0>
-	void OnInitializedFSM(struct UStateMachineComponent Context); // Function UFSM.StateMachineComponent.OnInitializedFSM(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x120D610>
-	void OnAnyUpdateState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID, float WithStateTime); // Function UFSM.StateMachineComponent.OnAnyUpdateState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x120D4D0>
-	void OnAnyExitState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID); // Function UFSM.StateMachineComponent.OnAnyExitState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x120D3D0>
-	void OnAnyBeginState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID, char WithPrevious); // Function UFSM.StateMachineComponent.OnAnyBeginState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x120D290>
-	void MULTI_SetStateValue(struct FSM_State Value); // Function UFSM.StateMachineComponent.MULTI_SetStateValue(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120D0B0>
-	void MULTI_SetStateID(char ID); // Function UFSM.StateMachineComponent.MULTI_SetStateID(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120D030>
-	void MULTI_SetState(struct FName Name); // Function UFSM.StateMachineComponent.MULTI_SetState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CFA0>
-	void MULTI_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.MULTI_RemoveState(Net|NetReliableNative|Event|NetMulticast|Public) // <Game_BE.exe+0x120CF10>
-	void MULTI_MakeStates(struct TArray<struct FName> NewStates); // Function UFSM.StateMachineComponent.MULTI_MakeStates(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CE70>
-	void MULTI_GoToFSM(struct UStateMachineComponent TargetMachine); // Function UFSM.StateMachineComponent.MULTI_GoToFSM(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CDE0>
-	void MULTI_FinishState(); // Function UFSM.StateMachineComponent.MULTI_FinishState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CDC0>
-	void MULTI_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.MULTI_AddState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CCF0>
-	void MULTI_ActivateFSM(); // Function UFSM.StateMachineComponent.MULTI_ActivateFSM(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <Game_BE.exe+0x120CCD0>
-	void MakeStates(struct TArray<struct FName>& NewStates, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.MakeStates(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120D180>
-	char IsInitializedFSM(); // Function UFSM.StateMachineComponent.IsInitializedFSM(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CCB0>
-	void GoToFSM(struct UStateMachineComponent TargetMachine, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.GoToFSM(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120CBE0>
-	float GetTime(); // Function UFSM.StateMachineComponent.GetTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CBC0>
-	struct FName GetPreviousStateName(); // Function UFSM.StateMachineComponent.GetPreviousStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CB50>
-	char GetPreviousStateID(); // Function UFSM.StateMachineComponent.GetPreviousStateID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CB30>
-	struct FName GetCurrentStateName(); // Function UFSM.StateMachineComponent.GetCurrentStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CA40>
-	char GetCurrentStateID(); // Function UFSM.StateMachineComponent.GetCurrentStateID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120CA20>
-	struct FSM_State GetActiveState(); // Function UFSM.StateMachineComponent.GetActiveState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x120C9B0>
-	void FSM_UpdateArgs(struct FSM_UpdateEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_UpdateArgs(Final|Native|Private) // <Game_BE.exe+0x120C4E0>
-	void FSM_TransitionRule(enum class FSM_Transition& Condition); // Function UFSM.StateMachineComponent.FSM_TransitionRule(Final|Native|Private|HasOutParms) // <Game_BE.exe+0x120C470>
-	void FSM_ExitArgs(struct FSM_ExitEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_ExitArgs(Final|Native|Private) // <Game_BE.exe+0x120C400>
-	void FSM_BeginArgs(struct FSM_BeginEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_BeginArgs(Final|Native|Private) // <Game_BE.exe+0x120C400>
-	void FinishStateWithCallbacks(enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.FinishStateWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120C5D0>
-	void FinishState_ConditionalWithCallbacks(enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.FinishState_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120C810>
-	void FinishState_Conditional(enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.FinishState_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120C740>
-	void FinishState(enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.FinishState(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120C540>
-	char Exit(char ExitState, char NextState, enum class FSM_Transition& Transition, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Exit(Native|Protected|HasOutParms) // <Game_BE.exe+0x120C1A0>
-	void Event_OnUpdateState(char CurrentState, struct FName StateName, float StateTimer); // Function UFSM.StateMachineComponent.Event_OnUpdateState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Event_OnExitState(char CurrentState, struct FName StateName, enum class FSM_Transition Transition); // Function UFSM.StateMachineComponent.Event_OnExitState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Event_OnConstruct(); // Function UFSM.StateMachineComponent.Event_OnConstruct(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Event_OnBeginState(char CurrentState, char PreviousState, struct FName StateName, enum class FSM_Transition Transition); // Function UFSM.StateMachineComponent.Event_OnBeginState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Enter(char InState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Enter(Native|Protected|HasOutParms) // <Game_BE.exe+0x120BFF0>
-	void CLIENT_SetStateValue(struct FSM_State Value); // Function UFSM.StateMachineComponent.CLIENT_SetStateValue(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BF20>
-	void CLIENT_SetStateID(char ID); // Function UFSM.StateMachineComponent.CLIENT_SetStateID(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BEA0>
-	void CLIENT_SetState(struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_SetState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BE10>
-	void CLIENT_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_RemoveState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BD80>
-	void CLIENT_MakeStates(struct TArray<struct FName> NewStates); // Function UFSM.StateMachineComponent.CLIENT_MakeStates(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BCE0>
-	void CLIENT_GoToFSM(struct UStateMachineComponent TargetMachine); // Function UFSM.StateMachineComponent.CLIENT_GoToFSM(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BC50>
-	void CLIENT_FinishState(); // Function UFSM.StateMachineComponent.CLIENT_FinishState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BC30>
-	void CLIENT_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_AddState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BB60>
-	void CLIENT_ActivateFSM(); // Function UFSM.StateMachineComponent.CLIENT_ActivateFSM(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x120BB40>
-	struct FSM_State AddState(char ID, struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.AddState(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120B9F0>
-	void ActivateFSM(enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.ActivateFSM(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x120B960>
+	void Update(char UpState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Update(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1210B90>
+	void SetStateWithCallbacks(struct FName Name, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12105B0>
+	void SetStateValueWithCallbacks(struct FSM_State& Value, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateValueWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120FFE0>
+	void SetStateValue_ConditionalWithCallbacks(struct FSM_State& Value, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateValue_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1210360>
+	void SetStateValue_Conditional(struct FSM_State& Value, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateValue_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12101F0>
+	void SetStateValue(struct FSM_State& Value, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateValue(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120FEA0>
+	void SetStateIDWithCallbacks(char ID, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateIDWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120FA10>
+	void SetStateID_ConditionalWithCallbacks(char ID, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetStateID_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120FCC0>
+	void SetStateID_Conditional(char ID, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateID_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120FBB0>
+	void SetStateID(char ID, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetStateID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F940>
+	void SetState_ConditionalWithCallbacks(struct FName Name, enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.SetState_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1210860>
+	void SetState_Conditional(struct FName Name, enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetState_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1210750>
+	void SetState(struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.SetState(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F870>
+	void SERVER_SetStateValue(struct FSM_State Value, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetStateValue(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F720>
+	void SERVER_SetStateID(char ID, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetStateID(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F620>
+	void SERVER_SetState(struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_SetState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F520>
+	void SERVER_RemoveState(struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_RemoveState(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F420>
+	void SERVER_MakeStates(struct TArray<struct FName> NewStates, char Validate); // Function UFSM.StateMachineComponent.SERVER_MakeStates(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F300>
+	void SERVER_GoToFSM(struct UStateMachineComponent TargetMachine, char Validate); // Function UFSM.StateMachineComponent.SERVER_GoToFSM(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F200>
+	void SERVER_FinishState(char Validate); // Function UFSM.StateMachineComponent.SERVER_FinishState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F140>
+	void SERVER_AddState(char ID, struct FName Name, char Validate); // Function UFSM.StateMachineComponent.SERVER_AddState(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120F000>
+	void SERVER_ActivateFSM(char Validate); // Function UFSM.StateMachineComponent.SERVER_ActivateFSM(Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EF40>
+	void RemoveState(struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.RemoveState(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EE70>
+	enum class FSM_Transition Pure_SetStateByID(char ID); // Function UFSM.StateMachineComponent.Pure_SetStateByID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EDE0>
+	enum class FSM_Transition Pure_SetState(struct FName Name); // Function UFSM.StateMachineComponent.Pure_SetState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120ED50>
+	enum class FSM_Transition Pure_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.Pure_RemoveState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120ECC0>
+	enum class FSM_Transition Pure_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.Pure_AddState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EC00>
+	void OnREP_StateTime(float& Time); // Function UFSM.StateMachineComponent.OnREP_StateTime(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EB60>
+	void OnREP_StateID(char& ID); // Function UFSM.StateMachineComponent.OnREP_StateID(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EAC0>
+	void OnREP_PreviousStateID(char& PreviousID); // Function UFSM.StateMachineComponent.OnREP_PreviousStateID(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120EA20>
+	void OnInitializedFSM(struct UStateMachineComponent Context); // Function UFSM.StateMachineComponent.OnInitializedFSM(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E990>
+	void OnAnyUpdateState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID, float WithStateTime); // Function UFSM.StateMachineComponent.OnAnyUpdateState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E850>
+	void OnAnyExitState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID); // Function UFSM.StateMachineComponent.OnAnyExitState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E750>
+	void OnAnyBeginState(struct UStateMachineComponent Context, struct FName WithStateName, char WithStateID, char WithPrevious); // Function UFSM.StateMachineComponent.OnAnyBeginState(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E610>
+	void MULTI_SetStateValue(struct FSM_State Value); // Function UFSM.StateMachineComponent.MULTI_SetStateValue(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E430>
+	void MULTI_SetStateID(char ID); // Function UFSM.StateMachineComponent.MULTI_SetStateID(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E3B0>
+	void MULTI_SetState(struct FName Name); // Function UFSM.StateMachineComponent.MULTI_SetState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E320>
+	void MULTI_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.MULTI_RemoveState(Net|NetReliableNative|Event|NetMulticast|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E290>
+	void MULTI_MakeStates(struct TArray<struct FName> NewStates); // Function UFSM.StateMachineComponent.MULTI_MakeStates(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E1F0>
+	void MULTI_GoToFSM(struct UStateMachineComponent TargetMachine); // Function UFSM.StateMachineComponent.MULTI_GoToFSM(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E160>
+	void MULTI_FinishState(); // Function UFSM.StateMachineComponent.MULTI_FinishState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E140>
+	void MULTI_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.MULTI_AddState(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E070>
+	void MULTI_ActivateFSM(); // Function UFSM.StateMachineComponent.MULTI_ActivateFSM(Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E050>
+	void MakeStates(struct TArray<struct FName>& NewStates, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.MakeStates(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E500>
+	char IsInitializedFSM(); // Function UFSM.StateMachineComponent.IsInitializedFSM(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E030>
+	void GoToFSM(struct UStateMachineComponent TargetMachine, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.GoToFSM(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DF60>
+	float GetTime(); // Function UFSM.StateMachineComponent.GetTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DF40>
+	struct FName GetPreviousStateName(); // Function UFSM.StateMachineComponent.GetPreviousStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DED0>
+	char GetPreviousStateID(); // Function UFSM.StateMachineComponent.GetPreviousStateID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DEB0>
+	struct FName GetCurrentStateName(); // Function UFSM.StateMachineComponent.GetCurrentStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DDC0>
+	char GetCurrentStateID(); // Function UFSM.StateMachineComponent.GetCurrentStateID(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DDA0>
+	struct FSM_State GetActiveState(); // Function UFSM.StateMachineComponent.GetActiveState(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DD30>
+	void FSM_UpdateArgs(struct FSM_UpdateEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_UpdateArgs(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D860>
+	void FSM_TransitionRule(enum class FSM_Transition& Condition); // Function UFSM.StateMachineComponent.FSM_TransitionRule(Final|Native|Private|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D7F0>
+	void FSM_ExitArgs(struct FSM_ExitEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_ExitArgs(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D780>
+	void FSM_BeginArgs(struct FSM_BeginEvent StateInfo); // Function UFSM.StateMachineComponent.FSM_BeginArgs(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D780>
+	void FinishStateWithCallbacks(enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.FinishStateWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D950>
+	void FinishState_ConditionalWithCallbacks(enum class FSM_Transition Condition, enum class FSM_Transition& Transition, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.StateMachineComponent.FinishState_ConditionalWithCallbacks(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DB90>
+	void FinishState_Conditional(enum class FSM_Transition Condition, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.FinishState_Conditional(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120DAC0>
+	void FinishState(enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.FinishState(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D8C0>
+	char Exit(char ExitState, char NextState, enum class FSM_Transition& Transition, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Exit(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D520>
+	void Event_OnUpdateState(char CurrentState, struct FName StateName, float StateTimer); // Function UFSM.StateMachineComponent.Event_OnUpdateState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Event_OnExitState(char CurrentState, struct FName StateName, enum class FSM_Transition Transition); // Function UFSM.StateMachineComponent.Event_OnExitState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Event_OnConstruct(); // Function UFSM.StateMachineComponent.Event_OnConstruct(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Event_OnBeginState(char CurrentState, char PreviousState, struct FName StateName, enum class FSM_Transition Transition); // Function UFSM.StateMachineComponent.Event_OnBeginState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Enter(char InState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Enter(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D370>
+	void CLIENT_SetStateValue(struct FSM_State Value); // Function UFSM.StateMachineComponent.CLIENT_SetStateValue(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D2A0>
+	void CLIENT_SetStateID(char ID); // Function UFSM.StateMachineComponent.CLIENT_SetStateID(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D220>
+	void CLIENT_SetState(struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_SetState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D190>
+	void CLIENT_RemoveState(struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_RemoveState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D100>
+	void CLIENT_MakeStates(struct TArray<struct FName> NewStates); // Function UFSM.StateMachineComponent.CLIENT_MakeStates(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D060>
+	void CLIENT_GoToFSM(struct UStateMachineComponent TargetMachine); // Function UFSM.StateMachineComponent.CLIENT_GoToFSM(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CFD0>
+	void CLIENT_FinishState(); // Function UFSM.StateMachineComponent.CLIENT_FinishState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CFB0>
+	void CLIENT_AddState(char ID, struct FName Name); // Function UFSM.StateMachineComponent.CLIENT_AddState(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CEE0>
+	void CLIENT_ActivateFSM(); // Function UFSM.StateMachineComponent.CLIENT_ActivateFSM(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CEC0>
+	struct FSM_State AddState(char ID, struct FName Name, enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.AddState(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CD70>
+	void ActivateFSM(enum class FSM_Transition& Transition); // Function UFSM.StateMachineComponent.ActivateFSM(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120CCE0>
 };
 
 // ScriptStruct UFSM.SM_SetMachineState

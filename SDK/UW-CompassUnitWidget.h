@@ -7,8 +7,8 @@ public:
 	struct UInvalidationBox InvalidationBox_2; // 0x258 (8)
 	struct UTextBlock SpecialText; // 0x260 (8)
 
-	struct FText GetAngleText(int32_t Angle, char& IsNormal); // Function UW-CompassUnitWidget.UW-CompassUnitWidget_C.GetAngleText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Initialize(float Direction, int32_t NormalDirectionFontSize, int32_t SpecialDirectionFontSize); // Function UW-CompassUnitWidget.UW-CompassUnitWidget_C.Initialize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FText GetAngleText(int32_t Angle, char& IsNormal); // Function UW-CompassUnitWidget.UW-CompassUnitWidget_C.GetAngleText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Initialize(float Direction, int32_t NormalDirectionFontSize, int32_t SpecialDirectionFontSize); // Function UW-CompassUnitWidget.UW-CompassUnitWidget_C.Initialize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-CompassUnitWidget.UW-CompassUnitWidget_C.GetAngleText

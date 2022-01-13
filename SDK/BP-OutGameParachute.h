@@ -8,9 +8,9 @@ public:
 	struct USkeletalMeshComponent Parachute_SkeletalMesh; // 0x328 (8)
 	struct USceneComponent DefaultSceneRoot; // 0x330 (8)
 
-	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetSkinMaterial(struct UMaterialInterface Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetSkinMaterial(struct UMaterialInterface Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay

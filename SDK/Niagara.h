@@ -441,8 +441,8 @@ public:
 	struct UNiagaraComponent NiagaraComponent; // 0x318 (8)
 	char bDestroyOnSystemFinish : 0; // 0x320 (1)
 
-	void SetDestroyOnSystemFinish(char bShouldDestroyOnSystemFinish); // Function Niagara.NiagaraActor.SetDestroyOnSystemFinish(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D3E0>
-	void OnNiagaraSystemFinished(struct UNiagaraComponent FinishedComponent); // Function Niagara.NiagaraActor.OnNiagaraSystemFinished(Final|Native|Private) // <Game_BE.exe+0x151CF70>
+	void SetDestroyOnSystemFinish(char bShouldDestroyOnSystemFinish); // Function Niagara.NiagaraActor.SetDestroyOnSystemFinish(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E8C0>
+	void OnNiagaraSystemFinished(struct UNiagaraComponent FinishedComponent); // Function Niagara.NiagaraActor.OnNiagaraSystemFinished(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E450>
 };
 
 // Class Niagara.NiagaraComponent
@@ -450,73 +450,73 @@ class UNiagaraComponent : public UFXSystemComponent {
 
 public:
 
-	struct UNiagaraSystem Asset; // 0x4A8 (8)
-	enum class ENiagaraTickBehavior TickBehavior; // 0x4B0 (1)
-	struct FNiagaraUserRedirectionParameterStore OverrideParameters; // 0x4B8 (264)
-	char bForceSolo : 0; // 0x5C0 (1)
-	char bAutoDestroy : 0; // 0x5EC (1)
-	char bRenderingEnabled : 0; // 0x5EC (1)
-	char bAutoManageAttachment : 0; // 0x5EC (1)
-	char bAutoAttachWeldSimulatedBodies : 0; // 0x5EC (1)
-	float MaxTimeBeforeForceUpdateTransform; // 0x5F0 (4)
-	struct FMulticastInlineDelegate OnSystemFinished; // 0x5F8 (16)
-	struct TWeakObjectPtr<struct USceneComponent> AutoAttachParent; // 0x608 (8)
-	struct FName AutoAttachSocketName; // 0x610 (8)
-	enum class EAttachmentRule AutoAttachLocationRule; // 0x618 (1)
-	enum class EAttachmentRule AutoAttachRotationRule; // 0x619 (1)
-	enum class EAttachmentRule AutoAttachScaleRule; // 0x61A (1)
+	struct UNiagaraSystem Asset; // 0x4B0 (8)
+	enum class ENiagaraTickBehavior TickBehavior; // 0x4B8 (1)
+	struct FNiagaraUserRedirectionParameterStore OverrideParameters; // 0x4C0 (264)
+	char bForceSolo : 0; // 0x5C8 (1)
+	char bAutoDestroy : 0; // 0x5F4 (1)
+	char bRenderingEnabled : 0; // 0x5F4 (1)
+	char bAutoManageAttachment : 0; // 0x5F4 (1)
+	char bAutoAttachWeldSimulatedBodies : 0; // 0x5F4 (1)
+	float MaxTimeBeforeForceUpdateTransform; // 0x5F8 (4)
+	struct FMulticastInlineDelegate OnSystemFinished; // 0x600 (16)
+	struct TWeakObjectPtr<struct USceneComponent> AutoAttachParent; // 0x610 (8)
+	struct FName AutoAttachSocketName; // 0x618 (8)
+	enum class EAttachmentRule AutoAttachLocationRule; // 0x620 (1)
+	enum class EAttachmentRule AutoAttachRotationRule; // 0x621 (1)
+	enum class EAttachmentRule AutoAttachScaleRule; // 0x622 (1)
 
-	void SetVariableVec4(struct FName InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraComponent.SetVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151E810>
-	void SetVariableVec3(struct FName InVariableName, struct FVector InValue); // Function Niagara.NiagaraComponent.SetVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151E740>
-	void SetVariableVec2(struct FName InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraComponent.SetVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151E680>
-	void SetVariableQuat(struct FName InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraComponent.SetVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151E5B0>
-	void SetVariableObject(struct FName InVariableName, struct Object Object); // Function Niagara.NiagaraComponent.SetVariableObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E4F0>
-	void SetVariableMaterial(struct FName InVariableName, struct UMaterialInterface Object); // Function Niagara.NiagaraComponent.SetVariableMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E430>
-	void SetVariableLinearColor(struct FName InVariableName, struct FLinearColor& InValue); // Function Niagara.NiagaraComponent.SetVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151E360>
-	void SetVariableInt(struct FName InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetVariableInt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E2A0>
-	void SetVariableFloat(struct FName InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetVariableFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E1D0>
-	void SetVariableBool(struct FName InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetVariableBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E100>
-	void SetVariableActor(struct FName InVariableName, struct UActor Actor); // Function Niagara.NiagaraComponent.SetVariableActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151E040>
-	void SetSeekDelta(float InSeekDelta); // Function Niagara.NiagaraComponent.SetSeekDelta(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151DFC0>
-	void SetRenderingEnabled(char bInRenderingEnabled); // Function Niagara.NiagaraComponent.SetRenderingEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151DF30>
-	void SetPreviewLODDistance(char bEnablePreviewLODDistance, float PreviewLODDistance); // Function Niagara.NiagaraComponent.SetPreviewLODDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151DE60>
-	void SetPaused(char bInPaused); // Function Niagara.NiagaraComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151DDD0>
-	void SetNiagaraVariableVec4(struct FString InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151DCD0>
-	void SetNiagaraVariableVec3(struct FString InVariableName, struct FVector InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151DBE0>
-	void SetNiagaraVariableVec2(struct FString InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151DB00>
-	void SetNiagaraVariableQuat(struct FString InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151DA10>
-	void SetNiagaraVariableObject(struct FString InVariableName, struct Object Object); // Function Niagara.NiagaraComponent.SetNiagaraVariableObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D580>
-	void SetNiagaraVariableLinearColor(struct FString InVariableName, struct FLinearColor& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x151D920>
-	void SetNiagaraVariableInt(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableInt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D840>
-	void SetNiagaraVariableFloat(struct FString InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D750>
-	void SetNiagaraVariableBool(struct FString InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D660>
-	void SetNiagaraVariableActor(struct FString InVariableName, struct UActor Actor); // Function Niagara.NiagaraComponent.SetNiagaraVariableActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D580>
-	void SetMaxSimTime(float InMaxTime); // Function Niagara.NiagaraComponent.SetMaxSimTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D500>
-	void SetForceSolo(char bInForceSolo); // Function Niagara.NiagaraComponent.SetForceSolo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D470>
-	void SetDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SetDesiredAge(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D360>
-	void SetCanRenderWhileSeeking(char bInCanRenderWhileSeeking); // Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D2D0>
-	void SetAutoDestroy(char bInAutoDestroy); // Function Niagara.NiagaraComponent.SetAutoDestroy(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D240>
-	void SetAsset(struct UNiagaraSystem InAsset); // Function Niagara.NiagaraComponent.SetAsset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D1C0>
-	void SetAllowScalability(char bAllow); // Function Niagara.NiagaraComponent.SetAllowScalability(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D130>
-	void SetAgeUpdateMode(enum class ENiagaraAgeUpdateMode InAgeUpdateMode); // Function Niagara.NiagaraComponent.SetAgeUpdateMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D0B0>
-	void SeekToDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SeekToDesiredAge(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D030>
-	void ResetSystem(); // Function Niagara.NiagaraComponent.ResetSystem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151D010>
-	void ReinitializeSystem(); // Function Niagara.NiagaraComponent.ReinitializeSystem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151CFF0>
-	char IsPaused(); // Function Niagara.NiagaraComponent.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CF40>
-	float GetSeekDelta(); // Function Niagara.NiagaraComponent.GetSeekDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CF10>
-	char GetPreviewLODDistanceEnabled(); // Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CEF0>
-	int32_t GetPreviewLODDistance(); // Function Niagara.NiagaraComponent.GetPreviewLODDistance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CED0>
-	struct TArray<struct FVector> GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151CC30>
-	struct TArray<float> GetNiagaraParticleValues_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151CD80>
-	struct TArray<struct FVector> GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName); // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151CB40>
-	float GetMaxSimTime(); // Function Niagara.NiagaraComponent.GetMaxSimTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CB10>
-	char GetForceSolo(); // Function Niagara.NiagaraComponent.GetForceSolo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CAE0>
-	float GetDesiredAge(); // Function Niagara.NiagaraComponent.GetDesiredAge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151CAB0>
-	struct UNiagaraDataInterface GetDataInterface(struct FString Name); // Function Niagara.NiagaraComponent.GetDataInterface(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151CA00>
-	struct UNiagaraSystem GetAsset(); // Function Niagara.NiagaraComponent.GetAsset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151C9E0>
-	enum class ENiagaraAgeUpdateMode GetAgeUpdateMode(); // Function Niagara.NiagaraComponent.GetAgeUpdateMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x151C9B0>
-	void AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulationByTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151C8F0>
-	void AdvanceSimulation(int32_t TickCount, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x151C820>
+	void SetVariableVec4(struct FName InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraComponent.SetVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151FCF0>
+	void SetVariableVec3(struct FName InVariableName, struct FVector InValue); // Function Niagara.NiagaraComponent.SetVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151FC20>
+	void SetVariableVec2(struct FName InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraComponent.SetVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151FB60>
+	void SetVariableQuat(struct FName InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraComponent.SetVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151FA90>
+	void SetVariableObject(struct FName InVariableName, struct Object Object); // Function Niagara.NiagaraComponent.SetVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F9D0>
+	void SetVariableMaterial(struct FName InVariableName, struct UMaterialInterface Object); // Function Niagara.NiagaraComponent.SetVariableMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F910>
+	void SetVariableLinearColor(struct FName InVariableName, struct FLinearColor& InValue); // Function Niagara.NiagaraComponent.SetVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F840>
+	void SetVariableInt(struct FName InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F780>
+	void SetVariableFloat(struct FName InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F6B0>
+	void SetVariableBool(struct FName InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F5E0>
+	void SetVariableActor(struct FName InVariableName, struct UActor Actor); // Function Niagara.NiagaraComponent.SetVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F520>
+	void SetSeekDelta(float InSeekDelta); // Function Niagara.NiagaraComponent.SetSeekDelta(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F4A0>
+	void SetRenderingEnabled(char bInRenderingEnabled); // Function Niagara.NiagaraComponent.SetRenderingEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F410>
+	void SetPreviewLODDistance(char bEnablePreviewLODDistance, float PreviewLODDistance); // Function Niagara.NiagaraComponent.SetPreviewLODDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F340>
+	void SetPaused(char bInPaused); // Function Niagara.NiagaraComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F2B0>
+	void SetNiagaraVariableVec4(struct FString InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F1B0>
+	void SetNiagaraVariableVec3(struct FString InVariableName, struct FVector InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151F0C0>
+	void SetNiagaraVariableVec2(struct FString InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EFE0>
+	void SetNiagaraVariableQuat(struct FString InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EEF0>
+	void SetNiagaraVariableObject(struct FString InVariableName, struct Object Object); // Function Niagara.NiagaraComponent.SetNiagaraVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EA60>
+	void SetNiagaraVariableLinearColor(struct FString InVariableName, struct FLinearColor& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EE00>
+	void SetNiagaraVariableInt(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151ED20>
+	void SetNiagaraVariableFloat(struct FString InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EC30>
+	void SetNiagaraVariableBool(struct FString InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EB40>
+	void SetNiagaraVariableActor(struct FString InVariableName, struct UActor Actor); // Function Niagara.NiagaraComponent.SetNiagaraVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151EA60>
+	void SetMaxSimTime(float InMaxTime); // Function Niagara.NiagaraComponent.SetMaxSimTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E9E0>
+	void SetForceSolo(char bInForceSolo); // Function Niagara.NiagaraComponent.SetForceSolo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E950>
+	void SetDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SetDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E840>
+	void SetCanRenderWhileSeeking(char bInCanRenderWhileSeeking); // Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E7B0>
+	void SetAutoDestroy(char bInAutoDestroy); // Function Niagara.NiagaraComponent.SetAutoDestroy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E720>
+	void SetAsset(struct UNiagaraSystem InAsset); // Function Niagara.NiagaraComponent.SetAsset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E6A0>
+	void SetAllowScalability(char bAllow); // Function Niagara.NiagaraComponent.SetAllowScalability(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E610>
+	void SetAgeUpdateMode(enum class ENiagaraAgeUpdateMode InAgeUpdateMode); // Function Niagara.NiagaraComponent.SetAgeUpdateMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E590>
+	void SeekToDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SeekToDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E510>
+	void ResetSystem(); // Function Niagara.NiagaraComponent.ResetSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E4F0>
+	void ReinitializeSystem(); // Function Niagara.NiagaraComponent.ReinitializeSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E4D0>
+	char IsPaused(); // Function Niagara.NiagaraComponent.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E420>
+	float GetSeekDelta(); // Function Niagara.NiagaraComponent.GetSeekDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E3F0>
+	char GetPreviewLODDistanceEnabled(); // Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E3D0>
+	int32_t GetPreviewLODDistance(); // Function Niagara.NiagaraComponent.GetPreviewLODDistance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E3B0>
+	struct TArray<struct FVector> GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E110>
+	struct TArray<float> GetNiagaraParticleValues_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E260>
+	struct TArray<struct FVector> GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName); // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151E020>
+	float GetMaxSimTime(); // Function Niagara.NiagaraComponent.GetMaxSimTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DFF0>
+	char GetForceSolo(); // Function Niagara.NiagaraComponent.GetForceSolo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DFC0>
+	float GetDesiredAge(); // Function Niagara.NiagaraComponent.GetDesiredAge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DF90>
+	struct UNiagaraDataInterface GetDataInterface(struct FString Name); // Function Niagara.NiagaraComponent.GetDataInterface(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DEE0>
+	struct UNiagaraSystem GetAsset(); // Function Niagara.NiagaraComponent.GetAsset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DEC0>
+	enum class ENiagaraAgeUpdateMode GetAgeUpdateMode(); // Function Niagara.NiagaraComponent.GetAgeUpdateMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DE90>
+	void AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulationByTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DDD0>
+	void AdvanceSimulation(int32_t TickCount, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151DD00>
 };
 
 // Class Niagara.NiagaraComponentPool
@@ -885,22 +885,22 @@ public:
 	struct TArray<struct FNiagaraVariable> OverridenParameters; // 0x30 (16)
 	struct FNiagaraParameterStore ParameterStorage; // 0x40 (184)
 
-	void SetVectorParameter(struct FString InVariableName, struct FVector InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x152A270>
-	void SetVector4Parameter(struct FString InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x152A170>
-	void SetVector2DParameter(struct FString InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x152A090>
-	void SetQuatParameter(struct FString InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1529E90>
-	void SetIntParameter(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529DB0>
-	void SetFloatParameter(struct FString InVariableName, float InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529CC0>
-	void SetColorParameter(struct FString InVariableName, struct FLinearColor InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1529BD0>
-	void SetBoolParameter(struct FString InVariableName, char InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529AE0>
-	struct FVector GetVectorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x15296F0>
-	struct FVector4 GetVector4Parameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1529630>
-	struct FVector2D GetVector2DParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1529570>
-	struct FQuat GetQuatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x15294B0>
-	int32_t GetIntParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529340>
-	float GetFloatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529290>
-	struct FLinearColor GetColorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x15291D0>
-	char GetBoolParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1529120>
+	void SetVectorParameter(struct FString InVariableName, struct FVector InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B7B0>
+	void SetVector4Parameter(struct FString InVariableName, struct FVector4& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B6B0>
+	void SetVector2DParameter(struct FString InVariableName, struct FVector2D InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B5D0>
+	void SetQuatParameter(struct FString InVariableName, struct FQuat& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B3D0>
+	void SetIntParameter(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B2F0>
+	void SetFloatParameter(struct FString InVariableName, float InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B200>
+	void SetColorParameter(struct FString InVariableName, struct FLinearColor InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B110>
+	void SetBoolParameter(struct FString InVariableName, char InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152B020>
+	struct FVector GetVectorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152AC30>
+	struct FVector4 GetVector4Parameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152AB70>
+	struct FVector2D GetVector2DParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152AAB0>
+	struct FQuat GetQuatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152A9F0>
+	int32_t GetIntParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152A880>
+	float GetFloatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152A7D0>
+	struct FLinearColor GetColorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152A710>
+	char GetBoolParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152A660>
 };
 
 // Class Niagara.NiagaraParameterCollection
@@ -1002,10 +1002,10 @@ public:
 	int32_t NumY; // 0x34C (4)
 	struct TArray<struct UChildActorComponent> PreviewComponents; // 0x350 (16)
 
-	void SetPaused(char bPaused); // Function Niagara.NiagaraPreviewGrid.SetPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x15303B0>
-	void GetPreviews(struct TArray<struct UNiagaraComponent>& OutPreviews); // Function Niagara.NiagaraPreviewGrid.GetPreviews(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x15302B0>
-	void DeactivatePreviews(); // Function Niagara.NiagaraPreviewGrid.DeactivatePreviews(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530290>
-	void ActivatePreviews(char bReset); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530080>
+	void SetPaused(char bPaused); // Function Niagara.NiagaraPreviewGrid.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1531990>
+	void GetPreviews(struct TArray<struct UNiagaraComponent>& OutPreviews); // Function Niagara.NiagaraPreviewGrid.GetPreviews(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1531890>
+	void DeactivatePreviews(); // Function Niagara.NiagaraPreviewGrid.DeactivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1531870>
+	void ActivatePreviews(char bReset); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1531660>
 };
 
 // Class Niagara.NiagaraRibbonRendererProperties
@@ -1063,7 +1063,7 @@ public:
 	struct TArray<struct UNiagaraParameterCollection> CachedParameterCollectionReferences; // 0x500 (16)
 	struct TArray<struct FNiagaraScriptDataInterfaceInfo> CachedDefaultDataInterfaces; // 0x510 (16)
 
-	void RaiseOnGPUCompilationComplete(); // Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete(Final|Native|Public) // <Game_BE.exe+0x1530390>
+	void RaiseOnGPUCompilationComplete(); // Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1531970>
 };
 
 // Class Niagara.NiagaraSettings

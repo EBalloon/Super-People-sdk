@@ -13,17 +13,17 @@ public:
 	struct FMulticastInlineDelegate OnReleased; // 0x2A0 (16)
 	struct FMulticastInlineDelegate OnHovered; // 0x2B0 (16)
 
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PreConstruct(char IsDesignTime); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnInitialized(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-MatchEnd_ButtonBase(int32_t EntryPoint); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.ExecuteUbergraph_UW-MatchEnd_ButtonBase(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
-	void OnHovered__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnHovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnReleased__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnReleased__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnPressed__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnPressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnClicked__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreConstruct(char IsDesignTime); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnInitialized(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-MatchEnd_ButtonBase(int32_t EntryPoint); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.ExecuteUbergraph_UW-MatchEnd_ButtonBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnHovered__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnHovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnReleased__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnReleased__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnPressed__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnPressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnClicked__DelegateSignature(); // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.OnClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-MatchEnd_ButtonBase.UW-MatchEnd_ButtonBase_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature

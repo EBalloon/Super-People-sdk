@@ -26,13 +26,13 @@ public:
 	struct UTextBlock TextBlock_10; // 0x2E8 (8)
 	struct FTimerHandle Timer; // 0x2F0 (8)
 
-	void OnLoaded_395796F147F051B7CCBB17B8AB7F3577(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_395796F147F051B7CCBB17B8AB7F3577(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_9E09E1234991DF79517848BF7BB1AC45(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_9E09E1234991DF79517848BF7BB1AC45(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_4A9EA3EE453D348BBD4E76837B616AD3(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_4A9EA3EE453D348BBD4E76837B616AD3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Data(struct UBravoHotelWeightMapData WeightMap); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.Set Data(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Update(char Enable); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.Set Update(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-CheckWeightMap(int32_t EntryPoint); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.ExecuteUbergraph_BP-CheckWeightMap(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_395796F147F051B7CCBB17B8AB7F3577(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_395796F147F051B7CCBB17B8AB7F3577(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_9E09E1234991DF79517848BF7BB1AC45(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_9E09E1234991DF79517848BF7BB1AC45(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_4A9EA3EE453D348BBD4E76837B616AD3(struct Object Loaded); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_4A9EA3EE453D348BBD4E76837B616AD3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set Data(struct UBravoHotelWeightMapData WeightMap); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.Set Data(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set Update(char Enable); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.Set Update(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-CheckWeightMap(int32_t EntryPoint); // Function BP-CheckWeightMap.BP-CheckWeightMap_C.ExecuteUbergraph_BP-CheckWeightMap(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-CheckWeightMap.BP-CheckWeightMap_C.OnLoaded_395796F147F051B7CCBB17B8AB7F3577

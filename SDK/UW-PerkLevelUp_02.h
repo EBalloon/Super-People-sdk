@@ -55,38 +55,38 @@ public:
 	float UltimateAnimTime; // 0x640 (4)
 	struct UMaterialInstanceDynamic UltimateGetMaterialInstance; // 0x648 (8)
 
-	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetInfos(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelAndUtimate(int32_t Level, char bUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelAndUtimate(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class ESlateVisibility GetVisibility_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class ESlateVisibility GetVisibility_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void RemoveAllEffects(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.RemoveAllEffects(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelUpSound(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayCharacterLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayCharacterLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckUltimateSkill(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.CheckUltimateSkill(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct FSlateBrush Get_FinalitySkillThumb_Brush_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct FText Get_FSkill_Info_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Info_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct FText Get_FSkill_Title_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Title_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct FText Get_T_Desc_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_T_Desc_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct FText Get_T_PerkName_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_T_PerkName_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct FText GetText_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetText_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void PlayUltimateSkillAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayUltimateSkillAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlaySkillUnlockAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlaySkillUnlockAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelUpAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsOverUltimateLevel(char& IsUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.IsOverUltimateLevel(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void LevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.LevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartLevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddToQue(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelUpPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartUltimateUpdate(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetUltimateUpdate(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetUltimateUpdate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateUltimateMaterial(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.UpdateUltimateMaterial(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-PerkLevelUp_02(int32_t EntryPoint); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ExecuteUbergraph_UW-PerkLevelUp_02(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetInfos(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetInfos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayLevelAndUtimate(int32_t Level, char bUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelAndUtimate(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	enum class ESlateVisibility GetVisibility_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void RemoveAllEffects(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.RemoveAllEffects(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayLevelUpSound(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayCharacterLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayCharacterLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckUltimateSkill(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.CheckUltimateSkill(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FSlateBrush Get_FinalitySkillThumb_Brush_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText Get_FSkill_Info_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Info_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText Get_FSkill_Title_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Title_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText Get_T_Desc_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_T_Desc_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText Get_T_PerkName_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_T_PerkName_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText GetText_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetText_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayUltimateSkillAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayUltimateSkillAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlaySkillUnlockAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlaySkillUnlockAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayLevelUpAnimation(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsOverUltimateLevel(char& IsUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.IsOverUltimateLevel(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void LevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.LevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StartLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartLevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddToQue(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayLevelUpPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StartUltimateUpdate(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetUltimateUpdate(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetUltimateUpdate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateUltimateMaterial(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.UpdateUltimateMaterial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-PerkLevelUp_02(int32_t EntryPoint); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ExecuteUbergraph_UW-PerkLevelUp_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4

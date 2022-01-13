@@ -34,10 +34,10 @@ public:
 	struct UTextBlock TextBlock_Price; // 0x328 (8)
 	struct ABravoHotelCharacter TargetCharacter; // 0x330 (8)
 
-	void Construct(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_Cancle_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.BndEvt__Button_Cancle_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Revival_PayPopup(int32_t EntryPoint); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.ExecuteUbergraph_UW-Revival_PayPopup(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_Cancle_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.BndEvt__Button_Cancle_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Revival_PayPopup(int32_t EntryPoint); // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.ExecuteUbergraph_UW-Revival_PayPopup(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Revival_PayPopup.UW-Revival_PayPopup_C.Construct

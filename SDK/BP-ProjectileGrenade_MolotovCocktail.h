@@ -7,8 +7,8 @@ public:
 	float TextureScale; // 0x800 (4)
 	float CollisionSize; // 0x804 (4)
 
-	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_MolotovCocktail.BP-ProjectileGrenade_MolotovCocktail_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail(int32_t EntryPoint); // Function BP-ProjectileGrenade_MolotovCocktail.BP-ProjectileGrenade_MolotovCocktail_C.ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_MolotovCocktail.BP-ProjectileGrenade_MolotovCocktail_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail(int32_t EntryPoint); // Function BP-ProjectileGrenade_MolotovCocktail.BP-ProjectileGrenade_MolotovCocktail_C.ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-ProjectileGrenade_MolotovCocktail.BP-ProjectileGrenade_MolotovCocktail_C.ActiveThrowingProjectileMainEffect

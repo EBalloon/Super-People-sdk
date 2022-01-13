@@ -3,21 +3,21 @@ class ABP-SpectatorPC_C : public ABravoHotelSpectatorController {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1428 (8)
-	struct ABP-SpectatorPawn_C Observer; // 0x1430 (8)
-	char PlayingKillCam : 0; // 0x1438 (1)
-	struct UBP-SpectatorHUD_C AfterGameHUD; // 0x1440 (8)
-	struct UBravoHotelGameInstance GameInstanceRef; // 0x1448 (8)
-	char bKillCamFinish : 0; // 0x1450 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1410 (8)
+	struct ABP-SpectatorPawn_C Observer; // 0x1418 (8)
+	char PlayingKillCam : 0; // 0x1420 (1)
+	struct UBP-SpectatorHUD_C AfterGameHUD; // 0x1428 (8)
+	struct UBravoHotelGameInstance GameInstanceRef; // 0x1430 (8)
+	char bKillCamFinish : 0; // 0x1438 (1)
 
-	void SetObserver(); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetObserver(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveBeginPlay(); // Function BP-SpectatorPC.BP-SpectatorPC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void NextObservingTarget(); // Function BP-SpectatorPC.BP-SpectatorPC_C.NextObservingTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PreObservingTarget(); // Function BP-SpectatorPC.BP-SpectatorPC_C.PreObservingTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetKillCamStartTime(); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetKillCamStartTime(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnKillcamFinish(); // Function BP-SpectatorPC.BP-SpectatorPC_C.OnKillcamFinish(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTargetPlayerInfo(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetTargetPlayerInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-SpectatorPC(int32_t EntryPoint); // Function BP-SpectatorPC.BP-SpectatorPC_C.ExecuteUbergraph_BP-SpectatorPC(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetObserver(); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetObserver(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveBeginPlay(); // Function BP-SpectatorPC.BP-SpectatorPC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void NextObservingTarget(); // Function BP-SpectatorPC.BP-SpectatorPC_C.NextObservingTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreObservingTarget(); // Function BP-SpectatorPC.BP-SpectatorPC_C.PreObservingTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetKillCamStartTime(); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetKillCamStartTime(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnKillcamFinish(); // Function BP-SpectatorPC.BP-SpectatorPC_C.OnKillcamFinish(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTargetPlayerInfo(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorPC.BP-SpectatorPC_C.SetTargetPlayerInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-SpectatorPC(int32_t EntryPoint); // Function BP-SpectatorPC.BP-SpectatorPC_C.ExecuteUbergraph_BP-SpectatorPC(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-SpectatorPC.BP-SpectatorPC_C.SetObserver

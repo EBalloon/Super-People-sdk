@@ -25,14 +25,14 @@ public:
 	struct FButtonStyle RequestingButtonStyle; // 0x5A8 (632)
 	struct FButtonStyle CanRequestButtonStyle; // 0x820 (632)
 
-	void Init(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetRequestState(char bOnRequest); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetRequestState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPlayerController(struct ABravoHotelPlayerController& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	char Get_Button_Request_bIsEnabled_1(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Get_Button_Request_bIsEnabled_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPrice(int32_t Price); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetPrice(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-RequestResuscitation(int32_t EntryPoint); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.ExecuteUbergraph_UW-RequestResuscitation(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Init(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRequestState(char bOnRequest); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetRequestState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetPlayerController(struct ABravoHotelPlayerController& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char Get_Button_Request_bIsEnabled_1(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Get_Button_Request_bIsEnabled_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPrice(int32_t Price); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetPrice(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-RequestResuscitation(int32_t EntryPoint); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.ExecuteUbergraph_UW-RequestResuscitation(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init

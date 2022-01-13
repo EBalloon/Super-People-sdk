@@ -26,27 +26,27 @@ public:
 	float CurrentRevivingTime; // 0x32C (4)
 	char IsRequestResuscitation : 0; // 0x330 (1)
 
-	void Move Parameter(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Move Parameter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckRequestResuscitation(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.CheckRequestResuscitation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetHealthPercent(float& Percent); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.GetHealthPercent(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void UpdateKnockOutHealth(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateKnockOutHealth(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateCastingGauge(char& IsCasting); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateCastingGauge(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetNameVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetNameVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTeamNumInfo(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetTeamNumInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateRevivalGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateRevivalGauge(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateKnockOutGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateKnockOutGauge(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateGauge(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetIconSwitcher(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetIconSwitcher(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetRotationVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetRotationVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTeamColorVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetTeamColorVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPlayerName(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetPlayerName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedBehavior(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedBehavior(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedDisconnect(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedDisconnect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedIconIndex(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIconIndex(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedIsInViewport(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIsInViewport(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedPlayerState(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedPlayerState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-TeamPositionWidget(int32_t EntryPoint); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.ExecuteUbergraph_UW-TeamPositionWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Move Parameter(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Move Parameter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckRequestResuscitation(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.CheckRequestResuscitation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetHealthPercent(float& Percent); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.GetHealthPercent(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateKnockOutHealth(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateKnockOutHealth(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCastingGauge(char& IsCasting); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateCastingGauge(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetNameVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetNameVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTeamNumInfo(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetTeamNumInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateRevivalGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateRevivalGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateKnockOutGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateKnockOutGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateGauge(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.UpdateGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetIconSwitcher(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetIconSwitcher(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRotationVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetRotationVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTeamColorVisibility(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetTeamColorVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPlayerName(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.SetPlayerName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedBehavior(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedBehavior(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedDisconnect(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedDisconnect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedIconIndex(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIconIndex(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedIsInViewport(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIsInViewport(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedPlayerState(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedPlayerState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-TeamPositionWidget(int32_t EntryPoint); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.ExecuteUbergraph_UW-TeamPositionWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Move Parameter

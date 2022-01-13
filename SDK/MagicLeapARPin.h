@@ -27,27 +27,27 @@ class UMagicLeapARPinComponent : public USceneComponent {
 
 public:
 
-	struct FString ObjectUID; // 0x228 (16)
-	int32_t UserIndex; // 0x238 (4)
-	enum class EMagicLeapAutoPinType AutoPinType; // 0x23C (1)
-	char bShouldPinActor : 0; // 0x23D (1)
-	struct UClass* PinDataClass; // 0x240 (8)
-	struct FMulticastInlineDelegate OnPersistentEntityPinned; // 0x248 (16)
-	struct FMulticastInlineDelegate OnPersistentEntityPinLost; // 0x258 (16)
-	struct FGuid PinnedCFUID; // 0x268 (16)
-	struct USceneComponent PinnedSceneComponent; // 0x278 (8)
-	struct UMagicLeapARPinSaveGame PinData; // 0x280 (8)
+	struct FString ObjectUID; // 0x230 (16)
+	int32_t UserIndex; // 0x240 (4)
+	enum class EMagicLeapAutoPinType AutoPinType; // 0x244 (1)
+	char bShouldPinActor : 0; // 0x245 (1)
+	struct UClass* PinDataClass; // 0x248 (8)
+	struct FMulticastInlineDelegate OnPersistentEntityPinned; // 0x250 (16)
+	struct FMulticastInlineDelegate OnPersistentEntityPinLost; // 0x260 (16)
+	struct FGuid PinnedCFUID; // 0x270 (16)
+	struct USceneComponent PinnedSceneComponent; // 0x280 (8)
+	struct UMagicLeapARPinSaveGame PinData; // 0x288 (8)
 
-	void UnPin(); // Function MagicLeapARPin.MagicLeapARPinComponent.UnPin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF240>
-	char PinSceneComponent(struct USceneComponent ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF110>
-	char PinRestoredOrSynced(); // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CF0E0>
-	char PinActor(struct UActor ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF050>
-	void PersistentEntityPinned__DelegateSignature(char bRestoredOrSynced); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void PersistentEntityPinLost__DelegateSignature(); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	char IsPinned(); // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CEFF0>
-	char GetPinState(struct FMagicLeapARPinState& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CEE90>
-	char GetPinnedPinID(struct FGuid& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x17CEF40>
-	struct UMagicLeapARPinSaveGame GetPinData(struct UClass* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CEE00>
+	void UnPin(); // Function MagicLeapARPin.MagicLeapARPinComponent.UnPin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0DE0>
+	char PinSceneComponent(struct USceneComponent ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0CB0>
+	char PinRestoredOrSynced(); // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0C80>
+	char PinActor(struct UActor ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0BF0>
+	void PersistentEntityPinned__DelegateSignature(char bRestoredOrSynced); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PersistentEntityPinLost__DelegateSignature(); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char IsPinned(); // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0B90>
+	char GetPinState(struct FMagicLeapARPinState& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0A30>
+	char GetPinnedPinID(struct FGuid& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D0AE0>
+	struct UMagicLeapARPinSaveGame GetPinData(struct UClass* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D09A0>
 };
 
 // Class MagicLeapARPin.MagicLeapARPinSettings

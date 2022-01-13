@@ -11,14 +11,14 @@ public:
 	char IsFadeInOutEvent : 0; // 0x270 (1)
 	float CurrentFade; // 0x274 (4)
 
-	void SetMaterialParameter(float Opacity, float Speed, float Scale); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.SetMaterialParameter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EndAniEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.EndAniEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void FadeOutEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeOutEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void FadeInEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeInEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AmplifierEffectTikcEvent(float DeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.AmplifierEffectTikcEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_WBP-AmplifierEffect(int32_t EntryPoint); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.ExecuteUbergraph_WBP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetMaterialParameter(float Opacity, float Speed, float Scale); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.SetMaterialParameter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EndAniEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.EndAniEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void FadeOutEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeOutEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void FadeInEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeInEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AmplifierEffectTikcEvent(float DeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.AmplifierEffectTikcEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_WBP-AmplifierEffect(int32_t EntryPoint); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.ExecuteUbergraph_WBP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.SetMaterialParameter

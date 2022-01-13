@@ -10,23 +10,22 @@ public:
 	struct TArray<enum class EGuideWidgetType> GuideWidgetStack; // 0x8D8 (16)
 	enum class EHUDMessageType NewVar_2; // 0x8E8 (1)
 
-	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_SetMainAndSpectatorWidgetVisiblility(char bIsVisible, char bMainWidget, char bSpectatorWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate
@@ -280,25 +279,6 @@ inline void ABP-PlayerHUD_C::ShowHUDMessage(struct FBravoHotelHUDMessageRow Mess
 	}; ShowHUDMessage_Params Params;
 
 	Params.MessageRow = MessageRow;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
-// Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility
-inline void ABP-PlayerHUD_C::K2_SetMainAndSpectatorWidgetVisiblility(char bIsVisible, char bMainWidget, char bSpectatorWidget) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility");
-
-	struct K2_SetMainAndSpectatorWidgetVisiblility_Params {
-		char bIsVisible;
-		char bMainWidget;
-		char bSpectatorWidget;
-	}; K2_SetMainAndSpectatorWidgetVisiblility_Params Params;
-
-	Params.bIsVisible = bIsVisible;
-	Params.bMainWidget = bMainWidget;
-	Params.bSpectatorWidget = bSpectatorWidget;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);

@@ -3,17 +3,17 @@ class UBP-BHGameInstanceWithSettings_C : public UBravoHotelGameInstance {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x550 (8)
-	struct UBP_GameSettingsWrapper_C Game Settings Wrapper; // 0x558 (8)
-	struct FVector LastPCPosition; // 0x560 (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x548 (8)
+	struct UBP_GameSettingsWrapper_C Game Settings Wrapper; // 0x550 (8)
+	struct FVector LastPCPosition; // 0x558 (12)
 
-	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Run Console Command(struct FString Console Command, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StartRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StopRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StopRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveInit(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-BHGameInstanceWithSettings(int32_t EntryPoint); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.ExecuteUbergraph_BP-BHGameInstanceWithSettings(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Run Console Command(struct FString Console Command, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StartRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StartRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StopRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StopRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveInit(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.ReceiveInit(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-BHGameInstanceWithSettings(int32_t EntryPoint); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.ExecuteUbergraph_BP-BHGameInstanceWithSettings(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Update Audio Channel

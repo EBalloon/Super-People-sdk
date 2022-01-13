@@ -10,7 +10,7 @@ public:
 	char Attached : 0; // 0x80 (1)
 	struct FName SocketName; // 0x84 (8)
 
-	struct UFXSystemComponent GetSpawnedEffect(); // Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1539300>
+	struct UFXSystemComponent GetSpawnedEffect(); // Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x153AA10>
 };
 
 // Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect

@@ -3,65 +3,65 @@ class ABP-DefaultPawn_C : public ABravoHotelCharacterPrefab {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3B40 (8)
-	struct UBP-LadderComponent_C BP-LadderComponent; // 0x3B48 (8)
-	struct UParticleSystemComponent OutBlueZone; // 0x3B50 (8)
-	struct UBP-GrassCollision_Character_C BP-FoliageCollision; // 0x3B58 (8)
-	struct UChildActorComponent DevCamera_ChildActor; // 0x3B60 (8)
-	struct UTeamInfoUpdaterComponent TeamInfoUpdater; // 0x3B68 (8)
-	float VelocityZ_LandingDamage; // 0x3B70 (4)
-	struct ABP-CharacterRecording_C CharacterPreviewRef; // 0x3B78 (8)
-	struct AChat_System_C Chat System; // 0x3B80 (8)
-	char ShowChatToggle : 0; // 0x3B88 (1)
-	float CurrentViewportSizeX; // 0x3B8C (4)
-	float CurrentViewportSizeY; // 0x3B90 (4)
-	char OutScreenPosition : 0; // 0x3B94 (1)
-	int32_t SightNumForTset; // 0x3B98 (4)
-	char bDefaultAmplifier : 0; // 0x3B9C (1)
-	float CurrentTeamInfoHeight; // 0x3BA0 (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3B70 (8)
+	struct UBP-LadderComponent_C BP-LadderComponent; // 0x3B78 (8)
+	struct UParticleSystemComponent OutBlueZone; // 0x3B80 (8)
+	struct UBP-GrassCollision_Character_C BP-FoliageCollision; // 0x3B88 (8)
+	struct UChildActorComponent DevCamera_ChildActor; // 0x3B90 (8)
+	struct UTeamInfoUpdaterComponent TeamInfoUpdater; // 0x3B98 (8)
+	float VelocityZ_LandingDamage; // 0x3BA0 (4)
+	struct ABP-CharacterRecording_C CharacterPreviewRef; // 0x3BA8 (8)
+	struct AChat_System_C Chat System; // 0x3BB0 (8)
+	char ShowChatToggle : 0; // 0x3BB8 (1)
+	float CurrentViewportSizeX; // 0x3BBC (4)
+	float CurrentViewportSizeY; // 0x3BC0 (4)
+	char OutScreenPosition : 0; // 0x3BC4 (1)
+	int32_t SightNumForTset; // 0x3BC8 (4)
+	char bDefaultAmplifier : 0; // 0x3BCC (1)
+	float CurrentTeamInfoHeight; // 0x3BD0 (4)
 
-	void ForceInitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ForceInitRecordingCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckAimingCancelation(); // Function BP-DefaultPawn.BP-DefaultPawn_C.CheckAimingCancelation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CorrectionScreenPosition(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void LoadTableData(); // Function BP-DefaultPawn.BP-DefaultPawn_C.LoadTableData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UserConstructionScript(); // Function BP-DefaultPawn.BP-DefaultPawn_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Six_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Divide_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_EnterSceneOfWin(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_EnterSceneOfWin(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReadyTeleport(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReadyTeleport(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerPlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayTeleportEffect(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MultiPlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.MultiPlayTeleportEffect(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.PlayTeleportEffect(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DoTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoTeleportEffect(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerResetCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerResetCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnGoParachute(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_OnGoParachute(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerLaunch(struct FVector LaunchVelocity); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_Cheat_ToggleCharacterDebugCamera(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_Cheat_ToggleCharacterDebugCamera(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_FPSK_OnStartADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnStartADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_FPSK_OnEndADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnEndADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerSwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MulticastSwitchMovementMode(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DoPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MulticastPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveBeginPlay(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLanded(struct FHitResult& Hit); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveDestroyed(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.InitRecordingCharacter(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibleOutBlueZoneBlizzard(char Visible); // Function BP-DefaultPawn.BP-DefaultPawn_C.SetVisibleOutBlueZoneBlizzard(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_UpdateMutable_PreviewPawn(char bChangeGender); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_UpdateMutable_PreviewPawn(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDeath(); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnDeath(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCharacterRotation(float Val); // Function BP-DefaultPawn.BP-DefaultPawn_C.AddCharacterRotation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetRecordingCharacterTickRate(float TickRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.SetRecordingCharacterTickRate(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Spawn Chat on Server(); // Function BP-DefaultPawn.BP-DefaultPawn_C.Spawn Chat on Server(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-DefaultPawn(int32_t EntryPoint); // Function BP-DefaultPawn.BP-DefaultPawn_C.ExecuteUbergraph_BP-DefaultPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ForceInitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ForceInitRecordingCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckAimingCancelation(); // Function BP-DefaultPawn.BP-DefaultPawn_C.CheckAimingCancelation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CorrectionScreenPosition(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void LoadTableData(); // Function BP-DefaultPawn.BP-DefaultPawn_C.LoadTableData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UserConstructionScript(); // Function BP-DefaultPawn.BP-DefaultPawn_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_Six_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_Divide_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_EnterSceneOfWin(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_EnterSceneOfWin(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReadyTeleport(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReadyTeleport(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerPlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayTeleportEffect(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MultiPlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.MultiPlayTeleportEffect(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.PlayTeleportEffect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DoTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoTeleportEffect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerResetCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerResetCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnGoParachute(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_OnGoParachute(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerLaunch(struct FVector LaunchVelocity); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_Cheat_ToggleCharacterDebugCamera(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_Cheat_ToggleCharacterDebugCamera(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_FPSK_OnStartADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnStartADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_FPSK_OnEndADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnEndADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerSwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MulticastSwitchMovementMode(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DoPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ServerPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MulticastPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveBeginPlay(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLanded(struct FHitResult& Hit); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveDestroyed(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.InitRecordingCharacter(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetVisibleOutBlueZoneBlizzard(char Visible); // Function BP-DefaultPawn.BP-DefaultPawn_C.SetVisibleOutBlueZoneBlizzard(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_UpdateMutable_PreviewPawn(char bChangeGender); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_UpdateMutable_PreviewPawn(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDeath(); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnDeath(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddCharacterRotation(float Val); // Function BP-DefaultPawn.BP-DefaultPawn_C.AddCharacterRotation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRecordingCharacterTickRate(float TickRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.SetRecordingCharacterTickRate(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Spawn Chat on Server(); // Function BP-DefaultPawn.BP-DefaultPawn_C.Spawn Chat on Server(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-DefaultPawn(int32_t EntryPoint); // Function BP-DefaultPawn.BP-DefaultPawn_C.ExecuteUbergraph_BP-DefaultPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.ForceInitRecordingCharacter

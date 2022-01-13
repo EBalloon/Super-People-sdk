@@ -9,10 +9,10 @@ public:
 	struct UUW-ReplayMainWidget_C ReplayMainWidget; // 0x3E0 (8)
 	char ViewMode; // 0x3E8 (1)
 
-	void GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void ReceiveBeginPlay(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedCurrentSpeedLevel(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.OnChangedCurrentSpeedLevel(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-MK3DSpectatorPawn(int32_t EntryPoint); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ExecuteUbergraph_BP-MK3DSpectatorPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveBeginPlay(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedCurrentSpeedLevel(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.OnChangedCurrentSpeedLevel(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-MK3DSpectatorPawn(int32_t EntryPoint); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ExecuteUbergraph_BP-MK3DSpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget

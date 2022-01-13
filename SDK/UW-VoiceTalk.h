@@ -11,10 +11,10 @@ public:
 	struct UUW-VoiceTalkSlot_C UW-VoiceTalkSlot_196; // 0x270 (8)
 	struct TArray<struct ABravoHotelPlayerState> TempTeamPlayers; // 0x278 (16)
 
-	void CheckCreateSlot(char& bRet); // Function UW-VoiceTalk.UW-VoiceTalk_C.CheckCreateSlot(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-VoiceTalk.UW-VoiceTalk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeVolumeState(struct FVoiceTalkState VoiceTalkState); // Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-VoiceTalk(int32_t EntryPoint); // Function UW-VoiceTalk.UW-VoiceTalk_C.ExecuteUbergraph_UW-VoiceTalk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void CheckCreateSlot(char& bRet); // Function UW-VoiceTalk.UW-VoiceTalk_C.CheckCreateSlot(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-VoiceTalk.UW-VoiceTalk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ChangeVolumeState(struct FVoiceTalkState VoiceTalkState); // Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-VoiceTalk(int32_t EntryPoint); // Function UW-VoiceTalk.UW-VoiceTalk_C.ExecuteUbergraph_UW-VoiceTalk(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-VoiceTalk.UW-VoiceTalk_C.CheckCreateSlot

@@ -6,8 +6,8 @@ public:
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x290 (8)
 	struct UBorder MarkerBorder; // 0x298 (8)
 
-	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ReplayEventMarkerBasic(int32_t EntryPoint); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.ExecuteUbergraph_UW-ReplayEventMarkerBasic(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ReplayEventMarkerBasic(int32_t EntryPoint); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.ExecuteUbergraph_UW-ReplayEventMarkerBasic(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent

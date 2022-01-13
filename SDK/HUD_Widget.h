@@ -7,9 +7,9 @@ public:
 	struct UChat_MainWidget_C ChatWidget; // 0x250 (8)
 	struct AChat_System_C Chat System; // 0x258 (8)
 
-	void ShowHUDToggle(char ShowToggle); // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function HUD_Widget.HUD_Widget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_HUD_Widget(int32_t EntryPoint); // Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void ShowHUDToggle(char ShowToggle); // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function HUD_Widget.HUD_Widget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_HUD_Widget(int32_t EntryPoint); // Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle

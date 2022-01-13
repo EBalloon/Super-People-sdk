@@ -9,12 +9,12 @@ public:
 	struct URichTextBlock RichTextBlock_321; // 0x260 (8)
 	struct UUW-InventoryWidget_C InventoryRef; // 0x268 (8)
 
-	struct FEventReply OnMouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.HideInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowInfo(struct UUW-InventoryWidget_C InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ForceCloseInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ForceCloseInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(int32_t EntryPoint); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.HideInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowInfo(struct UUW-InventoryWidget_C InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ForceCloseInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ForceCloseInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(int32_t EntryPoint); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1

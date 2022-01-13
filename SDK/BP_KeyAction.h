@@ -7,11 +7,11 @@ public:
 	struct FString Category; // 0x38 (16)
 	struct TArray<struct UBP_KeyMapping_C> Key Mappings; // 0x48 (16)
 
-	void Get Mapping(struct FString Mapping Name, struct UBP_KeyMapping_C& Mapping, char& SUCCESS); // Function BP_KeyAction.BP_KeyAction_C.Get Mapping(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Load Action(struct UBP_GameSettings_C Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Load Action(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Save Action(struct UBP_GameSettings_C Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Save Action(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Key Action Current State(struct APlayerController Player Controller, float& Action Axis Value, char& Just Pressed, char& Just Released); // Function BP_KeyAction.BP_KeyAction_C.Key Action Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init Key Action(struct FSKeyAction Key Action, struct FString Action Name, struct UBP_KeyAction_C& Action); // Function BP_KeyAction.BP_KeyAction_C.Init Key Action(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Mapping(struct FString Mapping Name, struct UBP_KeyMapping_C& Mapping, char& SUCCESS); // Function BP_KeyAction.BP_KeyAction_C.Get Mapping(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Load Action(struct UBP_GameSettings_C Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Load Action(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Save Action(struct UBP_GameSettings_C Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Save Action(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Key Action Current State(struct APlayerController Player Controller, float& Action Axis Value, char& Just Pressed, char& Just Released); // Function BP_KeyAction.BP_KeyAction_C.Key Action Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Init Key Action(struct FSKeyAction Key Action, struct FString Action Name, struct UBP_KeyAction_C& Action); // Function BP_KeyAction.BP_KeyAction_C.Init Key Action(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP_KeyAction.BP_KeyAction_C.Get Mapping

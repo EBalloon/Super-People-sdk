@@ -34,9 +34,9 @@ public:
 	enum class ETaskResourceOverlapPolicy ResourceOverlapPolicy; // 0x3A (1)
 	struct UGameplayTask ChildTask; // 0x60 (8)
 
-	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x46877C0>
-	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687470>
+	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4691530>
+	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46911E0>
 };
 
 // Class GameplayTasks.GameplayTask_SpawnActor
@@ -48,9 +48,9 @@ public:
 	struct FMulticastInlineDelegate DidNotSpawn; // 0x78 (16)
 	struct UClass* ClassToSpawn; // 0xA0 (8)
 
-	struct UGameplayTask_SpawnActor SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x46877E0>
-	void FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687490>
-	char BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x46870A0>
+	struct UGameplayTask_SpawnActor SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4691550>
+	void FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4691200>
+	char BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4690E10>
 };
 
 // Class GameplayTasks.GameplayTask_TimeLimitedExecution
@@ -69,8 +69,8 @@ public:
 
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
-	struct UGameplayTask_WaitDelay TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687990>
-	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct UGameplayTask_WaitDelay TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4691700>
+	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Class GameplayTasks.GameplayTaskResource
@@ -95,8 +95,8 @@ public:
 	struct TArray<struct UGameplayTask> KnownTasks; // 0x100 (16)
 	struct FMulticastInlineDelegate OnClaimedResourcesChange; // 0x110 (16)
 
-	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game_BE.exe+0x46877A0>
-	enum class EGameplayTaskRunResult K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687560>
+	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4691510>
+	enum class EGameplayTaskRunResult K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46912D0>
 };
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation

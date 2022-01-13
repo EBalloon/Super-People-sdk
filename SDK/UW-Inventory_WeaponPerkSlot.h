@@ -9,10 +9,10 @@ public:
 	struct UImage Image_254; // 0x260 (8)
 	struct UImage Image_Grade_Color_Line; // 0x268 (8)
 
-	void SetBuffIcon(struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.SetBuffIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_F0D528FA4CCA8F059BD99488566476C1(struct Object Loaded); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.OnLoaded_F0D528FA4CCA8F059BD99488566476C1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_WeaponPerkSlot(int32_t EntryPoint); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.ExecuteUbergraph_UW-Inventory_WeaponPerkSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetBuffIcon(struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.SetBuffIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_F0D528FA4CCA8F059BD99488566476C1(struct Object Loaded); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.OnLoaded_F0D528FA4CCA8F059BD99488566476C1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_WeaponPerkSlot(int32_t EntryPoint); // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.ExecuteUbergraph_UW-Inventory_WeaponPerkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_WeaponPerkSlot.UW-Inventory_WeaponPerkSlot_C.SetBuffIcon

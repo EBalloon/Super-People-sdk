@@ -7,7 +7,7 @@ public:
 	struct UUW-Lobby_ItemName_C UW-Lobby_ItemName; // 0x250 (8)
 	struct UUW-Lobby_WeaponInfo_Stat_C UW-Lobby_WeaponInfo_Stat; // 0x258 (8)
 
-	void SetWeaponInfo(int32_t WeaponItemID); // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponInfo(int32_t WeaponItemID); // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo

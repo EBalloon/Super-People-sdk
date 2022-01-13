@@ -10,20 +10,20 @@ public:
 	struct UTextBlock TextBlock_Count; // 0x268 (8)
 	struct ABP-BravoHotel-PlayerController_C PlayerController; // 0x270 (8)
 
-	void HoverRecipeItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverRecipeItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverRecipeTree(struct FName ItemKey); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverRecipeTree(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CompleteItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DisableCarriedListHover(); // Function UW-Inventory_Material.UW-Inventory_Material_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Material.UW-Inventory_Material_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset(); // Function UW-Inventory_Material.UW-Inventory_Material_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverReset(); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverReset(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_Material.UW-Inventory_Material_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_Material(int32_t EntryPoint); // Function UW-Inventory_Material.UW-Inventory_Material_C.ExecuteUbergraph_UW-Inventory_Material(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void HoverRecipeItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverRecipeItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverRecipeTree(struct FName ItemKey); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverRecipeTree(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CompleteItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DisableCarriedListHover(); // Function UW-Inventory_Material.UW-Inventory_Material_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Material.UW-Inventory_Material_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset(); // Function UW-Inventory_Material.UW-Inventory_Material_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverReset(); // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverReset(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Material.UW-Inventory_Material_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_Material.UW-Inventory_Material_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_Material(int32_t EntryPoint); // Function UW-Inventory_Material.UW-Inventory_Material_C.ExecuteUbergraph_UW-Inventory_Material(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_Material.UW-Inventory_Material_C.HoverRecipeItems

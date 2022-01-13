@@ -30,20 +30,20 @@ public:
 	struct TArray<struct FRotator> SquadRotation_Far; // 0x4A0 (16)
 	struct FRotator CharacterOriginRotation; // 0x4B0 (12)
 
-	void ResetCharacter(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ResetCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void UpdateCharacterRotation(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.UpdateCharacterRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateCharacterLocation(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.UpdateCharacterLocation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void CheckWorldViewCameraLocationRange(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void PreventCameraWallCollision(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitReferences(char& bSuccess); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveBeginPlay(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(float DeltaSeconds); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Start Background Scene(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.Start Background Scene(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-TutorialEndCam(int32_t EntryPoint); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ExecuteUbergraph_BP-TutorialEndCam(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ResetCharacter(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ResetCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCharacterRotation(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.UpdateCharacterRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCharacterLocation(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.UpdateCharacterLocation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckWorldViewCameraLocationRange(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PreventCameraWallCollision(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitReferences(char& bSuccess); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveBeginPlay(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveTick(float DeltaSeconds); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Start Background Scene(); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.Start Background Scene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-TutorialEndCam(int32_t EntryPoint); // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ExecuteUbergraph_BP-TutorialEndCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-TutorialEndCam.BP-TutorialEndCam_C.ResetCharacter

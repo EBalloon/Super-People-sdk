@@ -25,13 +25,13 @@ public:
 	char NewVar_1 : 0; // 0x2E0 (1)
 	float DefalutScale; // 0x2E4 (4)
 
-	void SetFontSize(int32_t Size); // Function UW-KeyControl.UW-KeyControl_C.SetFontSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set KeyInfo(struct FName KeyString, struct FKey InputKey); // Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MK3DSpectatorPawn_Turn(); // Function UW-KeyControl.UW-KeyControl_C.MK3DSpectatorPawn_Turn(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Using Alpha Bg(char Using); // Function UW-KeyControl.UW-KeyControl_C.Set Using Alpha Bg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-KeyControl.UW-KeyControl_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-KeyControl(int32_t EntryPoint); // Function UW-KeyControl.UW-KeyControl_C.ExecuteUbergraph_UW-KeyControl(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetFontSize(int32_t Size); // Function UW-KeyControl.UW-KeyControl_C.SetFontSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set KeyInfo(struct FName KeyString, struct FKey InputKey); // Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MK3DSpectatorPawn_Turn(); // Function UW-KeyControl.UW-KeyControl_C.MK3DSpectatorPawn_Turn(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set Using Alpha Bg(char Using); // Function UW-KeyControl.UW-KeyControl_C.Set Using Alpha Bg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-KeyControl.UW-KeyControl_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-KeyControl(int32_t EntryPoint); // Function UW-KeyControl.UW-KeyControl_C.ExecuteUbergraph_UW-KeyControl(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-KeyControl.UW-KeyControl_C.SetFontSize

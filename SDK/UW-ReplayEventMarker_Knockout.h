@@ -6,8 +6,8 @@ public:
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2A0 (8)
 	struct UBorder VisualBorder; // 0x2A8 (8)
 
-	void Construct(); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ReplayEventMarker_Knockout(int32_t EntryPoint); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.ExecuteUbergraph_UW-ReplayEventMarker_Knockout(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ReplayEventMarker_Knockout(int32_t EntryPoint); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.ExecuteUbergraph_UW-ReplayEventMarker_Knockout(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct

@@ -22,39 +22,39 @@ public:
 	struct FMulticastInlineDelegate EventDispatcher_MoveToCrafting; // 0x570 (16)
 	struct FString CurrentTab; // 0x580 (16)
 
-	void CheckOptionChanged(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitArmoryMeshActor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitArmoryMeshActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddEffect(struct FVector Location, float Delay); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SendPlayTimeMsg(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMsg(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.UpdateCharacterInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CreateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CreateCharacterInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddWeaponInfo(struct FString Name, struct FVector Offset); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitWeapon(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitWeapon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideExitPopup(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowMouseCursor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMatchingSucceeded(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibleSelectGameMode(char bState); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SetVisibleSelectGameMode(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CustomEvent_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SendPlayTimeMessage(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(char Visible, struct FVector& Location); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.鉹@t元_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EquipmentSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EquipmentSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SlotHoverSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SlotHoverSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedArmoryTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedArmoryTab(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnReceiveCraftWeapon(struct FResponse_CraftWeapon_Data& CraftWeapon); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnReceiveCraftWeapon(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedWeaponList(struct TArray<struct FResponse_Weapon_List_Data>& ReceiveWeaponList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedWeaponList(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedMaterialList(struct TArray<struct FResponse_MaterialList_Data>& ReceiveMaterialList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedMaterialList(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnChangedGold(int32_t ReceiveGold); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedGold(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_MoveToCraftWeapon(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_MoveToCraftWeapon(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_Init(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_Init(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedMainTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangedMainTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangeProgress(struct FString PrefetchingProgressString); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangeProgress(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnPrefetchingProgressVisible(enum class ESlateVisibility InVisibility); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnPrefetchingProgressVisible(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnCleanCampaignJoined(char bJoined); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnCleanCampaignJoined(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-LobbyWidget_Web(int32_t EntryPoint); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ExecuteUbergraph_BP-LobbyWidget_Web(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void EventDispatcher_MoveToCrafting__DelegateSignature(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EventDispatcher_MoveToCrafting__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckOptionChanged(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitArmoryMeshActor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitArmoryMeshActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddEffect(struct FVector Location, float Delay); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SendPlayTimeMsg(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMsg(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.UpdateCharacterInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CreateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CreateCharacterInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddWeaponInfo(struct FString Name, struct FVector Offset); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitWeapon(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideExitPopup(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowMouseCursor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMatchingSucceeded(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetVisibleSelectGameMode(char bState); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SetVisibleSelectGameMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CustomEvent_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SendPlayTimeMessage(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(char Visible, struct FVector& Location); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.鉹@t元_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EquipmentSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EquipmentSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SlotHoverSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SlotHoverSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedArmoryTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedArmoryTab(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnReceiveCraftWeapon(struct FResponse_CraftWeapon_Data& CraftWeapon); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnReceiveCraftWeapon(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedWeaponList(struct TArray<struct FResponse_Weapon_List_Data>& ReceiveWeaponList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedWeaponList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedMaterialList(struct TArray<struct FResponse_MaterialList_Data>& ReceiveMaterialList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedMaterialList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnChangedGold(int32_t ReceiveGold); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedGold(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_MoveToCraftWeapon(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_MoveToCraftWeapon(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_Init(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_Init(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedMainTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangedMainTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangeProgress(struct FString PrefetchingProgressString); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangeProgress(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnPrefetchingProgressVisible(enum class ESlateVisibility InVisibility); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnPrefetchingProgressVisible(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_OnCleanCampaignJoined(char bJoined); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnCleanCampaignJoined(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-LobbyWidget_Web(int32_t EntryPoint); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ExecuteUbergraph_BP-LobbyWidget_Web(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EventDispatcher_MoveToCrafting__DelegateSignature(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EventDispatcher_MoveToCrafting__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged

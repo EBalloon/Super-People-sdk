@@ -21,18 +21,18 @@ public:
 	float CurrentPressedAnim; // 0x370 (4)
 	struct FMulticastInlineDelegate EventDispatcher_StartOpen; // 0x378 (16)
 
-	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_95_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.BndEvt__Button_95_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetIsOpened(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.SetIsOpened(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayPressed(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.PlayPressed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StopPressed(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.StopPressed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OpenPerk(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.OpenPerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_95_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.BndEvt__Button_95_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReversePerk(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.ReversePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Close(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Close(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void EventDispatcher_StartOpen__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.EventDispatcher_StartOpen__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EventDispatcher_EndOpen__DelegateSignature(struct FItemOption ItemOption); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.EventDispatcher_EndOpen__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_95_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.BndEvt__Button_95_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetIsOpened(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.SetIsOpened(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayPressed(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.PlayPressed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StopPressed(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.StopPressed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OpenPerk(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.OpenPerk(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_95_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.BndEvt__Button_95_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReversePerk(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.ReversePerk(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Close(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Close(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EventDispatcher_StartOpen__DelegateSignature(); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.EventDispatcher_StartOpen__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EventDispatcher_EndOpen__DelegateSignature(struct FItemOption ItemOption); // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.EventDispatcher_EndOpen__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_Success_Perk_Close.UW-Lobby_Craft_Success_Perk_Close_C.SetItemOption

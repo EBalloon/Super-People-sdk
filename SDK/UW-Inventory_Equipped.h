@@ -22,28 +22,27 @@ public:
 	struct ABP-BravoHotel-PlayerController_C PlayerController; // 0x2C8 (8)
 	struct TMap<enum class EWearableItemType, struct UUW-Inventory_EquippedSlot_C> EquipedSlots; // 0x2D0 (80)
 
-	void ShowStatupAnim(struct FStatupAnimParameters& StatParams, enum class EStatupAnimType StatType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverRecipeTree(struct FName ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverRecipeTree(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CompleteItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWearItemKey(enum class EWearableItemType ItemSlot, struct FName& ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class ESlateVisibility Get_btn_ArmorTree_Visibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class ESlateVisibility GetVisibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void DisableCarriedListHover(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverResetEquipSlotList(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEquippedSlot(struct UUW-InventoryWidget_C InventoryWidget, struct FInventoryItemInfo InventoryItemInfo); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_Equipped(int32_t EntryPoint); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ExecuteUbergraph_UW-Inventory_Equipped(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ShowStatupAnim(struct FStatupAnimParameters& StatParams, enum class EStatupAnimType StatType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverRecipeTree(struct FName ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverRecipeTree(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CompleteItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetWearItemKey(enum class EWearableItemType ItemSlot, struct FName& ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	enum class ESlateVisibility Get_btn_ArmorTree_Visibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DisableCarriedListHover(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HoverResetEquipSlotList(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetEquippedSlot(struct UUW-InventoryWidget_C InventoryWidget, struct FInventoryItemInfo InventoryItemInfo); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_Equipped(int32_t EntryPoint); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ExecuteUbergraph_UW-Inventory_Equipped(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim
@@ -142,24 +141,6 @@ inline enum class ESlateVisibility UUW-Inventory_Equipped_C::Get_btn_ArmorTree_V
 		enum class ESlateVisibility ReturnValue;
 
 	}; Get_btn_ArmorTree_Visibility_1_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-// Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1
-inline enum class ESlateVisibility UUW-Inventory_Equipped_C::GetVisibility_1() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1");
-
-	struct GetVisibility_1_Params {
-		
-		enum class ESlateVisibility ReturnValue;
-
-	}; GetVisibility_1_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

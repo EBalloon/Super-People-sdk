@@ -91,13 +91,13 @@ public:
 	struct UMaterialInterface DefaultMaterial; // 0x40 (8)
 	char CollisionSource; // 0x48 (1)
 
-	char IsValidKeyFrameIndex(int32_t Index); // Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A3100>
-	float GetTotalDuration(); // Function Paper2D.PaperFlipbook.GetTotalDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A3040>
-	struct UPaperSprite GetSpriteAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetSpriteAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2F70>
-	struct UPaperSprite GetSpriteAtFrame(int32_t FrameIndex); // Function Paper2D.PaperFlipbook.GetSpriteAtFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2EE0>
-	int32_t GetNumKeyFrames(); // Function Paper2D.PaperFlipbook.GetNumKeyFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2E30>
-	int32_t GetNumFrames(); // Function Paper2D.PaperFlipbook.GetNumFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2E00>
-	int32_t GetKeyFrameIndexAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2D30>
+	char IsValidKeyFrameIndex(int32_t Index); // Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4B10>
+	float GetTotalDuration(); // Function Paper2D.PaperFlipbook.GetTotalDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4A50>
+	struct UPaperSprite GetSpriteAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetSpriteAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4980>
+	struct UPaperSprite GetSpriteAtFrame(int32_t FrameIndex); // Function Paper2D.PaperFlipbook.GetSpriteAtFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A48F0>
+	int32_t GetNumKeyFrames(); // Function Paper2D.PaperFlipbook.GetNumKeyFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4840>
+	int32_t GetNumFrames(); // Function Paper2D.PaperFlipbook.GetNumFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4810>
+	int32_t GetKeyFrameIndexAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4740>
 };
 
 // Class Paper2D.PaperFlipbookActor
@@ -113,41 +113,41 @@ class UPaperFlipbookComponent : public UMeshComponent {
 
 public:
 
-	struct UPaperFlipbook SourceFlipbook; // 0x4D8 (8)
-	struct UMaterialInterface Material; // 0x4E0 (8)
-	float PlayRate; // 0x4E8 (4)
-	char bLooping : 0; // 0x4EC (1)
-	char bReversePlayback : 0; // 0x4EC (1)
-	char bPlaying : 0; // 0x4EC (1)
-	float AccumulatedTime; // 0x4F0 (4)
-	int32_t CachedFrameIndex; // 0x4F4 (4)
-	struct FLinearColor SpriteColor; // 0x4F8 (16)
-	struct UBodySetup CachedBodySetup; // 0x508 (8)
-	struct FMulticastInlineDelegate OnFinishedPlaying; // 0x510 (16)
+	struct UPaperFlipbook SourceFlipbook; // 0x4E0 (8)
+	struct UMaterialInterface Material; // 0x4E8 (8)
+	float PlayRate; // 0x4F0 (4)
+	char bLooping : 0; // 0x4F4 (1)
+	char bReversePlayback : 0; // 0x4F4 (1)
+	char bPlaying : 0; // 0x4F4 (1)
+	float AccumulatedTime; // 0x4F8 (4)
+	int32_t CachedFrameIndex; // 0x4FC (4)
+	struct FLinearColor SpriteColor; // 0x500 (16)
+	struct UBodySetup CachedBodySetup; // 0x510 (8)
+	struct FMulticastInlineDelegate OnFinishedPlaying; // 0x518 (16)
 
-	void Stop(); // Function Paper2D.PaperFlipbookComponent.Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3810>
-	void SetSpriteColor(struct FLinearColor NewColor); // Function Paper2D.PaperFlipbookComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A3700>
-	void SetPlayRate(float NewRate); // Function Paper2D.PaperFlipbookComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A34F0>
-	void SetPlaybackPositionInFrames(int32_t NewFramePosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3640>
-	void SetPlaybackPosition(float NewPosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3570>
-	void SetNewTime(float NewTime); // Function Paper2D.PaperFlipbookComponent.SetNewTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3470>
-	void SetLooping(char bNewLooping); // Function Paper2D.PaperFlipbookComponent.SetLooping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A33E0>
-	char SetFlipbook(struct UPaperFlipbook NewFlipbook); // Function Paper2D.PaperFlipbookComponent.SetFlipbook(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3340>
-	void ReverseFromEnd(); // Function Paper2D.PaperFlipbookComponent.ReverseFromEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3320>
-	void Reverse(); // Function Paper2D.PaperFlipbookComponent.Reverse(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3300>
-	void PlayFromStart(); // Function Paper2D.PaperFlipbookComponent.PlayFromStart(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3240>
-	void Play(); // Function Paper2D.PaperFlipbookComponent.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3220>
-	void OnRep_SourceFlipbook(struct UPaperFlipbook OldFlipbook); // Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook(Final|Native|Protected) // <Game_BE.exe+0x16A31A0>
-	char IsReversing(); // Function Paper2D.PaperFlipbookComponent.IsReversing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A30D0>
-	char IsPlaying(); // Function Paper2D.PaperFlipbookComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A30A0>
-	char IsLooping(); // Function Paper2D.PaperFlipbookComponent.IsLooping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A3070>
-	float GetPlayRate(); // Function Paper2D.PaperFlipbookComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2E50>
-	int32_t GetPlaybackPositionInFrames(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2EB0>
-	float GetPlaybackPosition(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2E80>
-	int32_t GetFlipbookLengthInFrames(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2B70>
-	float GetFlipbookLength(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2B40>
-	float GetFlipbookFramerate(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2B10>
-	struct UPaperFlipbook GetFlipbook(); // Function Paper2D.PaperFlipbookComponent.GetFlipbook(Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16A2AE0>
+	void Stop(); // Function Paper2D.PaperFlipbookComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5220>
+	void SetSpriteColor(struct FLinearColor NewColor); // Function Paper2D.PaperFlipbookComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5110>
+	void SetPlayRate(float NewRate); // Function Paper2D.PaperFlipbookComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4F00>
+	void SetPlaybackPositionInFrames(int32_t NewFramePosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5050>
+	void SetPlaybackPosition(float NewPosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4F80>
+	void SetNewTime(float NewTime); // Function Paper2D.PaperFlipbookComponent.SetNewTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4E80>
+	void SetLooping(char bNewLooping); // Function Paper2D.PaperFlipbookComponent.SetLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4DF0>
+	char SetFlipbook(struct UPaperFlipbook NewFlipbook); // Function Paper2D.PaperFlipbookComponent.SetFlipbook(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4D50>
+	void ReverseFromEnd(); // Function Paper2D.PaperFlipbookComponent.ReverseFromEnd(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4D30>
+	void Reverse(); // Function Paper2D.PaperFlipbookComponent.Reverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4D10>
+	void PlayFromStart(); // Function Paper2D.PaperFlipbookComponent.PlayFromStart(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4C50>
+	void Play(); // Function Paper2D.PaperFlipbookComponent.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4C30>
+	void OnRep_SourceFlipbook(struct UPaperFlipbook OldFlipbook); // Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4BB0>
+	char IsReversing(); // Function Paper2D.PaperFlipbookComponent.IsReversing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4AE0>
+	char IsPlaying(); // Function Paper2D.PaperFlipbookComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4AB0>
+	char IsLooping(); // Function Paper2D.PaperFlipbookComponent.IsLooping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4A80>
+	float GetPlayRate(); // Function Paper2D.PaperFlipbookComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4860>
+	int32_t GetPlaybackPositionInFrames(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A48C0>
+	float GetPlaybackPosition(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4890>
+	int32_t GetFlipbookLengthInFrames(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4580>
+	float GetFlipbookLength(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4550>
+	float GetFlipbookFramerate(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4520>
+	struct UPaperFlipbook GetFlipbook(); // Function Paper2D.PaperFlipbookComponent.GetFlipbook(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A44F0>
 };
 
 // Class Paper2D.PaperGroupedSpriteActor
@@ -163,17 +163,17 @@ class UPaperGroupedSpriteComponent : public UMeshComponent {
 
 public:
 
-	struct TArray<struct UMaterialInterface> InstanceMaterials; // 0x4D8 (16)
-	struct TArray<struct FSpriteInstanceData> PerInstanceSpriteData; // 0x4E8 (16)
+	struct TArray<struct UMaterialInterface> InstanceMaterials; // 0x4E0 (16)
+	struct TArray<struct FSpriteInstanceData> PerInstanceSpriteData; // 0x4F0 (16)
 
-	char UpdateInstanceTransform(int32_t InstanceIndex, struct FTransform& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A3940>
-	char UpdateInstanceColor(int32_t InstanceIndex, struct FLinearColor NewInstanceColor, char bMarkRenderStateDirty); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A3830>
-	void SortInstancesAlongAxis(struct FVector WorldSpaceSortAxis); // Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A3780>
-	char RemoveInstance(int32_t InstanceIndex); // Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3260>
-	char GetInstanceTransform(int32_t InstanceIndex, struct FTransform& OutInstanceTransform, char bWorldSpace); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2BD0>
-	int32_t GetInstanceCount(); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A2BA0>
-	void ClearInstances(); // Function Paper2D.PaperGroupedSpriteComponent.ClearInstances(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A2AC0>
-	int32_t AddInstance(struct FTransform& Transform, struct UPaperSprite Sprite, char bWorldSpace, struct FLinearColor Color); // Function Paper2D.PaperGroupedSpriteComponent.AddInstance(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A2900>
+	char UpdateInstanceTransform(int32_t InstanceIndex, struct FTransform& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5350>
+	char UpdateInstanceColor(int32_t InstanceIndex, struct FLinearColor NewInstanceColor, char bMarkRenderStateDirty); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5240>
+	void SortInstancesAlongAxis(struct FVector WorldSpaceSortAxis); // Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5190>
+	char RemoveInstance(int32_t InstanceIndex); // Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4C70>
+	char GetInstanceTransform(int32_t InstanceIndex, struct FTransform& OutInstanceTransform, char bWorldSpace); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A45E0>
+	int32_t GetInstanceCount(); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A45B0>
+	void ClearInstances(); // Function Paper2D.PaperGroupedSpriteComponent.ClearInstances(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A44D0>
+	int32_t AddInstance(struct FTransform& Transform, struct UPaperSprite Sprite, char bWorldSpace, struct FLinearColor Color); // Function Paper2D.PaperGroupedSpriteComponent.AddInstance(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4310>
 };
 
 // Class Paper2D.PaperRuntimeSettings
@@ -218,13 +218,13 @@ class UPaperSpriteComponent : public UMeshComponent {
 
 public:
 
-	struct UPaperSprite SourceSprite; // 0x4D8 (8)
-	struct UMaterialInterface MaterialOverride; // 0x4E0 (8)
-	struct FLinearColor SpriteColor; // 0x4E8 (16)
+	struct UPaperSprite SourceSprite; // 0x4E0 (8)
+	struct UMaterialInterface MaterialOverride; // 0x4E8 (8)
+	struct FLinearColor SpriteColor; // 0x4F0 (16)
 
-	void SetSpriteColor(struct FLinearColor NewColor); // Function Paper2D.PaperSpriteComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A6CD0>
-	char SetSprite(struct UPaperSprite NewSprite); // Function Paper2D.PaperSpriteComponent.SetSprite(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3340>
-	struct UPaperSprite GetSprite(); // Function Paper2D.PaperSpriteComponent.GetSprite(Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16A2AE0>
+	void SetSpriteColor(struct FLinearColor NewColor); // Function Paper2D.PaperSpriteComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8720>
+	char SetSprite(struct UPaperSprite NewSprite); // Function Paper2D.PaperSpriteComponent.SetSprite(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4D50>
+	struct UPaperSprite GetSprite(); // Function Paper2D.PaperSpriteComponent.GetSprite(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A44F0>
 };
 
 // Class Paper2D.PaperTerrainActor
@@ -242,19 +242,19 @@ class UPaperTerrainComponent : public UPrimitiveComponent {
 
 public:
 
-	struct UPaperTerrainMaterial TerrainMaterial; // 0x4A8 (8)
-	char bClosedSpline : 0; // 0x4B0 (1)
-	char bFilledSpline : 0; // 0x4B1 (1)
-	struct UPaperTerrainSplineComponent AssociatedSpline; // 0x4B8 (8)
-	int32_t RandomSeed; // 0x4C0 (4)
-	float SegmentOverlapAmount; // 0x4C4 (4)
-	struct FLinearColor TerrainColor; // 0x4C8 (16)
-	int32_t ReparamStepsPerSegment; // 0x4D8 (4)
-	char SpriteCollisionDomain; // 0x4DC (1)
-	float CollisionThickness; // 0x4E0 (4)
-	struct UBodySetup CachedBodySetup; // 0x4E8 (8)
+	struct UPaperTerrainMaterial TerrainMaterial; // 0x4B0 (8)
+	char bClosedSpline : 0; // 0x4B8 (1)
+	char bFilledSpline : 0; // 0x4B9 (1)
+	struct UPaperTerrainSplineComponent AssociatedSpline; // 0x4C0 (8)
+	int32_t RandomSeed; // 0x4C8 (4)
+	float SegmentOverlapAmount; // 0x4CC (4)
+	struct FLinearColor TerrainColor; // 0x4D0 (16)
+	int32_t ReparamStepsPerSegment; // 0x4E0 (4)
+	char SpriteCollisionDomain; // 0x4E4 (1)
+	float CollisionThickness; // 0x4E8 (4)
+	struct UBodySetup CachedBodySetup; // 0x4F0 (8)
 
-	void SetTerrainColor(struct FLinearColor NewColor); // Function Paper2D.PaperTerrainComponent.SetTerrainColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A6D50>
+	void SetTerrainColor(struct FLinearColor NewColor); // Function Paper2D.PaperTerrainComponent.SetTerrainColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A87A0>
 };
 
 // Class Paper2D.PaperTerrainMaterial
@@ -325,37 +325,37 @@ class UPaperTileMapComponent : public UMeshComponent {
 
 public:
 
-	int32_t MapWidth; // 0x4D8 (4)
-	int32_t MapHeight; // 0x4DC (4)
-	int32_t TileWidth; // 0x4E0 (4)
-	int32_t TileHeight; // 0x4E4 (4)
-	struct UPaperTileSet DefaultLayerTileSet; // 0x4E8 (8)
-	struct UMaterialInterface Material; // 0x4F0 (8)
-	struct TArray<struct UPaperTileLayer> TileLayers; // 0x4F8 (16)
-	struct FLinearColor TileMapColor; // 0x508 (16)
-	int32_t UseSingleLayerIndex; // 0x518 (4)
-	char bUseSingleLayer : 0; // 0x51C (1)
-	struct UPaperTileMap TileMap; // 0x520 (8)
+	int32_t MapWidth; // 0x4E0 (4)
+	int32_t MapHeight; // 0x4E4 (4)
+	int32_t TileWidth; // 0x4E8 (4)
+	int32_t TileHeight; // 0x4EC (4)
+	struct UPaperTileSet DefaultLayerTileSet; // 0x4F0 (8)
+	struct UMaterialInterface Material; // 0x4F8 (8)
+	struct TArray<struct UPaperTileLayer> TileLayers; // 0x500 (16)
+	struct FLinearColor TileMapColor; // 0x510 (16)
+	int32_t UseSingleLayerIndex; // 0x520 (4)
+	char bUseSingleLayer : 0; // 0x524 (1)
+	struct UPaperTileMap TileMap; // 0x528 (8)
 
-	void SetTileMapColor(struct FLinearColor NewColor); // Function Paper2D.PaperTileMapComponent.SetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A6F30>
-	char SetTileMap(struct UPaperTileMap NewTileMap); // Function Paper2D.PaperTileMapComponent.SetTileMap(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A3340>
-	void SetTile(int32_t X, int32_t Y, int32_t Layer, struct FPaperTileInfo NewValue); // Function Paper2D.PaperTileMapComponent.SetTile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A6DD0>
-	void SetLayerColor(struct FLinearColor NewColor, int32_t Layer); // Function Paper2D.PaperTileMapComponent.SetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16A6C00>
-	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A69E0>
-	void SetDefaultCollisionThickness(float Thickness, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A6910>
-	void ResizeMap(int32_t NewWidthInTiles, int32_t NewHeightInTiles); // Function Paper2D.PaperTileMapComponent.ResizeMap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A6850>
-	void RebuildCollision(); // Function Paper2D.PaperTileMapComponent.RebuildCollision(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A6830>
-	char OwnsTileMap(); // Function Paper2D.PaperTileMapComponent.OwnsTileMap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A6800>
-	void MakeTileMapEditable(); // Function Paper2D.PaperTileMapComponent.MakeTileMapEditable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A67E0>
-	void GetTilePolygon(int32_t TileX, int32_t TileY, struct TArray<struct FVector>& Points, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTilePolygon(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A6480>
-	struct FLinearColor GetTileMapColor(); // Function Paper2D.PaperTileMapComponent.GetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A6440>
-	struct FVector GetTileCornerPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCornerPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A62E0>
-	struct FVector GetTileCenterPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCenterPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A6180>
-	struct FPaperTileInfo GetTile(int32_t X, int32_t Y, int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetTile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A6070>
-	void GetMapSize(int32_t& MapWidth, int32_t& MapHeight, int32_t& NumLayers); // Function Paper2D.PaperTileMapComponent.GetMapSize(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16A5F30>
-	struct FLinearColor GetLayerColor(int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16A5E90>
-	void CreateNewTileMap(int32_t MapWidth, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer); // Function Paper2D.PaperTileMapComponent.CreateNewTileMap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A5CE0>
-	struct UPaperTileLayer AddNewLayer(); // Function Paper2D.PaperTileMapComponent.AddNewLayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A5CB0>
+	void SetTileMapColor(struct FLinearColor NewColor); // Function Paper2D.PaperTileMapComponent.SetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8980>
+	char SetTileMap(struct UPaperTileMap NewTileMap); // Function Paper2D.PaperTileMapComponent.SetTileMap(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A4D50>
+	void SetTile(int32_t X, int32_t Y, int32_t Layer, struct FPaperTileInfo NewValue); // Function Paper2D.PaperTileMapComponent.SetTile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8820>
+	void SetLayerColor(struct FLinearColor NewColor, int32_t Layer); // Function Paper2D.PaperTileMapComponent.SetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8650>
+	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8430>
+	void SetDefaultCollisionThickness(float Thickness, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8360>
+	void ResizeMap(int32_t NewWidthInTiles, int32_t NewHeightInTiles); // Function Paper2D.PaperTileMapComponent.ResizeMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A82A0>
+	void RebuildCollision(); // Function Paper2D.PaperTileMapComponent.RebuildCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8280>
+	char OwnsTileMap(); // Function Paper2D.PaperTileMapComponent.OwnsTileMap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8250>
+	void MakeTileMapEditable(); // Function Paper2D.PaperTileMapComponent.MakeTileMapEditable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A8230>
+	void GetTilePolygon(int32_t TileX, int32_t TileY, struct TArray<struct FVector>& Points, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTilePolygon(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7ED0>
+	struct FLinearColor GetTileMapColor(); // Function Paper2D.PaperTileMapComponent.GetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7E90>
+	struct FVector GetTileCornerPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCornerPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7D30>
+	struct FVector GetTileCenterPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCenterPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7BD0>
+	struct FPaperTileInfo GetTile(int32_t X, int32_t Y, int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetTile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7AC0>
+	void GetMapSize(int32_t& MapWidth, int32_t& MapHeight, int32_t& NumLayers); // Function Paper2D.PaperTileMapComponent.GetMapSize(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7980>
+	struct FLinearColor GetLayerColor(int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A78E0>
+	void CreateNewTileMap(int32_t MapWidth, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer); // Function Paper2D.PaperTileMapComponent.CreateNewTileMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7730>
+	struct UPaperTileLayer AddNewLayer(); // Function Paper2D.PaperTileMapComponent.AddNewLayer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7700>
 };
 
 // Class Paper2D.PaperTileSet

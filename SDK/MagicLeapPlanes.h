@@ -24,17 +24,17 @@ class UMagicLeapPlanesComponent : public USceneComponent {
 
 public:
 
-	struct TArray<enum class EMagicLeapPlaneQueryFlags> QueryFlags; // 0x228 (16)
-	struct UBoxComponent SearchVolume; // 0x238 (8)
-	int32_t MaxResults; // 0x240 (4)
-	float MinHolePerimeter; // 0x244 (4)
-	float MinPlaneArea; // 0x248 (4)
-	enum class EMagicLeapPlaneQueryType QueryType; // 0x24C (1)
-	float SimilarityThreshold; // 0x250 (4)
-	struct FMulticastInlineDelegate OnPlanesQueryResult; // 0x258 (16)
-	struct FMulticastInlineDelegate OnPersistentPlanesQueryResult; // 0x268 (16)
+	struct TArray<enum class EMagicLeapPlaneQueryFlags> QueryFlags; // 0x230 (16)
+	struct UBoxComponent SearchVolume; // 0x240 (8)
+	int32_t MaxResults; // 0x248 (4)
+	float MinHolePerimeter; // 0x24C (4)
+	float MinPlaneArea; // 0x250 (4)
+	enum class EMagicLeapPlaneQueryType QueryType; // 0x254 (1)
+	float SimilarityThreshold; // 0x258 (4)
+	struct FMulticastInlineDelegate OnPlanesQueryResult; // 0x260 (16)
+	struct FMulticastInlineDelegate OnPersistentPlanesQueryResult; // 0x270 (16)
 
-	char RequestPlanesAsync(); // Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1804C30>
+	char RequestPlanesAsync(); // Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1806890>
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundaries

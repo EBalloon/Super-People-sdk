@@ -6,36 +6,17 @@ public:
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
 	struct UWidgetAnimation FadeIn; // 0x250 (8)
 	struct UImage CharacterPreviewImage; // 0x258 (8)
-	struct UImage Image_1; // 0x260 (8)
+	struct UImage Image_CharacterSilBody; // 0x260 (8)
 	struct ABP-BravoHotel-PlayerController_C ControllerRef; // 0x268 (8)
 
-	enum class ESlateVisibility Get_CharacterPreviewImage_Visibility_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
-
-// Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1
-inline enum class ESlateVisibility UUW-Inventory_CharacterPreView_C::Get_CharacterPreviewImage_Visibility_1() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1");
-
-	struct Get_CharacterPreviewImage_Visibility_1_Params {
-		
-		enum class ESlateVisibility ReturnValue;
-
-	}; Get_CharacterPreviewImage_Visibility_1_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
 
 // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef
 inline void UUW-Inventory_CharacterPreView_C::GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef) {

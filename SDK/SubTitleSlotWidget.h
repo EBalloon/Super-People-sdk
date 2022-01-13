@@ -13,9 +13,9 @@ public:
 	struct UTextBlock TextBlock_1; // 0x280 (8)
 	struct FText Title; // 0x288 (24)
 
-	void Construct(); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set SubType(enum class EKeySettingSubType SubType); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Set SubType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_SubTitleSlotWidget(int32_t EntryPoint); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.ExecuteUbergraph_SubTitleSlotWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Set SubType(enum class EKeySettingSubType SubType); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Set SubType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_SubTitleSlotWidget(int32_t EntryPoint); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.ExecuteUbergraph_SubTitleSlotWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct

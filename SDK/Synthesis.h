@@ -337,67 +337,67 @@ class UModularSynthComponent : public USynthComponent {
 
 public:
 
-	int32_t VoiceCount; // 0x700 (4)
+	int32_t VoiceCount; // 0x710 (4)
 
-	void SetSynthPreset(struct FModularSynthPreset& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EDB10>
-	void SetSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EDA90>
-	void SetStereoDelayWetlevel(float DelayWetlevel); // Function Synthesis.ModularSynthComponent.SetStereoDelayWetlevel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EDA10>
-	void SetStereoDelayTime(float DelayTimeMsec); // Function Synthesis.ModularSynthComponent.SetStereoDelayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED990>
-	void SetStereoDelayRatio(float DelayRatio); // Function Synthesis.ModularSynthComponent.SetStereoDelayRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED910>
-	void SetStereoDelayMode(enum class ESynthStereoDelayMode StereoDelayMode); // Function Synthesis.ModularSynthComponent.SetStereoDelayMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED890>
-	void SetStereoDelayIsEnabled(char StereoDelayEnabled); // Function Synthesis.ModularSynthComponent.SetStereoDelayIsEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED800>
-	void SetStereoDelayFeedback(float DelayFeedback); // Function Synthesis.ModularSynthComponent.SetStereoDelayFeedback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED780>
-	void SetSpread(float Spread); // Function Synthesis.ModularSynthComponent.SetSpread(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED700>
-	void SetReleaseTime(float ReleaseTimeMsec); // Function Synthesis.ModularSynthComponent.SetReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED680>
-	void SetPortamento(float Portamento); // Function Synthesis.ModularSynthComponent.SetPortamento(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED600>
-	void SetPitchBend(float PitchBend); // Function Synthesis.ModularSynthComponent.SetPitchBend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED580>
-	void SetPan(float Pan); // Function Synthesis.ModularSynthComponent.SetPan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED500>
-	void SetOscType(int32_t OscIndex, enum class ESynth1OscType OscType); // Function Synthesis.ModularSynthComponent.SetOscType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED440>
-	void SetOscSync(char bIsSynced); // Function Synthesis.ModularSynthComponent.SetOscSync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED3B0>
-	void SetOscSemitones(int32_t OscIndex, float Semitones); // Function Synthesis.ModularSynthComponent.SetOscSemitones(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED2E0>
-	void SetOscPulsewidth(int32_t OscIndex, float Pulsewidth); // Function Synthesis.ModularSynthComponent.SetOscPulsewidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED210>
-	void SetOscOctave(int32_t OscIndex, float Octave); // Function Synthesis.ModularSynthComponent.SetOscOctave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED140>
-	void SetOscGainMod(int32_t OscIndex, float OscGainMod); // Function Synthesis.ModularSynthComponent.SetOscGainMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED070>
-	void SetOscGain(int32_t OscIndex, float OscGain); // Function Synthesis.ModularSynthComponent.SetOscGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECFA0>
-	void SetOscFrequencyMod(int32_t OscIndex, float OscFreqMod); // Function Synthesis.ModularSynthComponent.SetOscFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECED0>
-	void SetOscCents(int32_t OscIndex, float Cents); // Function Synthesis.ModularSynthComponent.SetOscCents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECE00>
-	void SetModEnvSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetModEnvSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECD80>
-	void SetModEnvReleaseTime(float Release); // Function Synthesis.ModularSynthComponent.SetModEnvReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECD00>
-	void SetModEnvPatch(enum class ESynthModEnvPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECC80>
-	void SetModEnvInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECBF0>
-	void SetModEnvDepth(float Depth); // Function Synthesis.ModularSynthComponent.SetModEnvDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECB70>
-	void SetModEnvDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECAF0>
-	void SetModEnvBiasPatch(enum class ESynthModEnvBiasPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECA70>
-	void SetModEnvBiasInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvBiasInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC9E0>
-	void SetModEnvAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC960>
-	void SetLFOType(int32_t LFOIndex, enum class ESynthLFOType LFOType); // Function Synthesis.ModularSynthComponent.SetLFOType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC8A0>
-	void SetLFOPatch(int32_t LFOIndex, enum class ESynthLFOPatchType LFOPatchType); // Function Synthesis.ModularSynthComponent.SetLFOPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC7E0>
-	void SetLFOMode(int32_t LFOIndex, enum class ESynthLFOMode LFOMode); // Function Synthesis.ModularSynthComponent.SetLFOMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC720>
-	void SetLFOGainMod(int32_t LFOIndex, float GainMod); // Function Synthesis.ModularSynthComponent.SetLFOGainMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC650>
-	void SetLFOGain(int32_t LFOIndex, float Gain); // Function Synthesis.ModularSynthComponent.SetLFOGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC580>
-	void SetLFOFrequencyMod(int32_t LFOIndex, float FrequencyModHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC4B0>
-	void SetLFOFrequency(int32_t LFOIndex, float FrequencyHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC3E0>
-	void SetGainDb(float GainDb); // Function Synthesis.ModularSynthComponent.SetGainDb(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC360>
-	void SetFilterType(enum class ESynthFilterType FilterType); // Function Synthesis.ModularSynthComponent.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC2E0>
-	void SetFilterQMod(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC260>
-	void SetFilterQ(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQ(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC1E0>
-	void SetFilterFrequencyMod(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC160>
-	void SetFilterFrequency(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC0E0>
-	void SetFilterAlgorithm(enum class ESynthFilterAlgorithm FilterAlgorithm); // Function Synthesis.ModularSynthComponent.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC060>
-	void SetEnableUnison(char EnableUnison); // Function Synthesis.ModularSynthComponent.SetEnableUnison(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBFD0>
-	void SetEnableRetrigger(char RetriggerEnabled); // Function Synthesis.ModularSynthComponent.SetEnableRetrigger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBF40>
-	void SetEnablePolyphony(char bEnablePolyphony); // Function Synthesis.ModularSynthComponent.SetEnablePolyphony(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBEB0>
-	char SetEnablePatch(struct FPatchId PatchId, char bIsEnabled); // Function Synthesis.ModularSynthComponent.SetEnablePatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBDE0>
-	void SetEnableLegato(char LegatoEnabled); // Function Synthesis.ModularSynthComponent.SetEnableLegato(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBD50>
-	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBCD0>
-	void SetChorusFrequency(float Frequency); // Function Synthesis.ModularSynthComponent.SetChorusFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBC50>
-	void SetChorusFeedback(float Feedback); // Function Synthesis.ModularSynthComponent.SetChorusFeedback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBBD0>
-	void SetChorusEnabled(char EnableChorus); // Function Synthesis.ModularSynthComponent.SetChorusEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBB40>
-	void SetChorusDepth(float Depth); // Function Synthesis.ModularSynthComponent.SetChorusDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBAC0>
-	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBA40>
-	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.ModularSynthComponent.NoteOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EB930>
-	void NoteOff(float Note, char bAllNotesOff, char bKillAllNotes); // Function Synthesis.ModularSynthComponent.NoteOff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EB820>
-	struct FPatchId CreatePatch(enum class ESynth1PatchSource PatchSource, struct TArray<struct FSynth1PatchCable>& PatchCables, char bEnableByDefault); // Function Synthesis.ModularSynthComponent.CreatePatch(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EB6D0>
+	void SetSynthPreset(struct FModularSynthPreset& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF970>
+	void SetSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF8F0>
+	void SetStereoDelayWetlevel(float DelayWetlevel); // Function Synthesis.ModularSynthComponent.SetStereoDelayWetlevel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF870>
+	void SetStereoDelayTime(float DelayTimeMsec); // Function Synthesis.ModularSynthComponent.SetStereoDelayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF7F0>
+	void SetStereoDelayRatio(float DelayRatio); // Function Synthesis.ModularSynthComponent.SetStereoDelayRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF770>
+	void SetStereoDelayMode(enum class ESynthStereoDelayMode StereoDelayMode); // Function Synthesis.ModularSynthComponent.SetStereoDelayMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF6F0>
+	void SetStereoDelayIsEnabled(char StereoDelayEnabled); // Function Synthesis.ModularSynthComponent.SetStereoDelayIsEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF660>
+	void SetStereoDelayFeedback(float DelayFeedback); // Function Synthesis.ModularSynthComponent.SetStereoDelayFeedback(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF5E0>
+	void SetSpread(float Spread); // Function Synthesis.ModularSynthComponent.SetSpread(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF560>
+	void SetReleaseTime(float ReleaseTimeMsec); // Function Synthesis.ModularSynthComponent.SetReleaseTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF4E0>
+	void SetPortamento(float Portamento); // Function Synthesis.ModularSynthComponent.SetPortamento(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF460>
+	void SetPitchBend(float PitchBend); // Function Synthesis.ModularSynthComponent.SetPitchBend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF3E0>
+	void SetPan(float Pan); // Function Synthesis.ModularSynthComponent.SetPan(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF360>
+	void SetOscType(int32_t OscIndex, enum class ESynth1OscType OscType); // Function Synthesis.ModularSynthComponent.SetOscType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF2A0>
+	void SetOscSync(char bIsSynced); // Function Synthesis.ModularSynthComponent.SetOscSync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF210>
+	void SetOscSemitones(int32_t OscIndex, float Semitones); // Function Synthesis.ModularSynthComponent.SetOscSemitones(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF140>
+	void SetOscPulsewidth(int32_t OscIndex, float Pulsewidth); // Function Synthesis.ModularSynthComponent.SetOscPulsewidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EF070>
+	void SetOscOctave(int32_t OscIndex, float Octave); // Function Synthesis.ModularSynthComponent.SetOscOctave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEFA0>
+	void SetOscGainMod(int32_t OscIndex, float OscGainMod); // Function Synthesis.ModularSynthComponent.SetOscGainMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEED0>
+	void SetOscGain(int32_t OscIndex, float OscGain); // Function Synthesis.ModularSynthComponent.SetOscGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEE00>
+	void SetOscFrequencyMod(int32_t OscIndex, float OscFreqMod); // Function Synthesis.ModularSynthComponent.SetOscFrequencyMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EED30>
+	void SetOscCents(int32_t OscIndex, float Cents); // Function Synthesis.ModularSynthComponent.SetOscCents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEC60>
+	void SetModEnvSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetModEnvSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEBE0>
+	void SetModEnvReleaseTime(float Release); // Function Synthesis.ModularSynthComponent.SetModEnvReleaseTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEB60>
+	void SetModEnvPatch(enum class ESynthModEnvPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvPatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEAE0>
+	void SetModEnvInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EEA50>
+	void SetModEnvDepth(float Depth); // Function Synthesis.ModularSynthComponent.SetModEnvDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE9D0>
+	void SetModEnvDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE950>
+	void SetModEnvBiasPatch(enum class ESynthModEnvBiasPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE8D0>
+	void SetModEnvBiasInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvBiasInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE840>
+	void SetModEnvAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE7C0>
+	void SetLFOType(int32_t LFOIndex, enum class ESynthLFOType LFOType); // Function Synthesis.ModularSynthComponent.SetLFOType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE700>
+	void SetLFOPatch(int32_t LFOIndex, enum class ESynthLFOPatchType LFOPatchType); // Function Synthesis.ModularSynthComponent.SetLFOPatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE640>
+	void SetLFOMode(int32_t LFOIndex, enum class ESynthLFOMode LFOMode); // Function Synthesis.ModularSynthComponent.SetLFOMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE580>
+	void SetLFOGainMod(int32_t LFOIndex, float GainMod); // Function Synthesis.ModularSynthComponent.SetLFOGainMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE4B0>
+	void SetLFOGain(int32_t LFOIndex, float Gain); // Function Synthesis.ModularSynthComponent.SetLFOGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE3E0>
+	void SetLFOFrequencyMod(int32_t LFOIndex, float FrequencyModHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE310>
+	void SetLFOFrequency(int32_t LFOIndex, float FrequencyHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE240>
+	void SetGainDb(float GainDb); // Function Synthesis.ModularSynthComponent.SetGainDb(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE1C0>
+	void SetFilterType(enum class ESynthFilterType FilterType); // Function Synthesis.ModularSynthComponent.SetFilterType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE140>
+	void SetFilterQMod(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE0C0>
+	void SetFilterQ(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQ(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EE040>
+	void SetFilterFrequencyMod(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequencyMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDFC0>
+	void SetFilterFrequency(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDF40>
+	void SetFilterAlgorithm(enum class ESynthFilterAlgorithm FilterAlgorithm); // Function Synthesis.ModularSynthComponent.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDEC0>
+	void SetEnableUnison(char EnableUnison); // Function Synthesis.ModularSynthComponent.SetEnableUnison(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDE30>
+	void SetEnableRetrigger(char RetriggerEnabled); // Function Synthesis.ModularSynthComponent.SetEnableRetrigger(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDDA0>
+	void SetEnablePolyphony(char bEnablePolyphony); // Function Synthesis.ModularSynthComponent.SetEnablePolyphony(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDD10>
+	char SetEnablePatch(struct FPatchId PatchId, char bIsEnabled); // Function Synthesis.ModularSynthComponent.SetEnablePatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDC40>
+	void SetEnableLegato(char LegatoEnabled); // Function Synthesis.ModularSynthComponent.SetEnableLegato(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDBB0>
+	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDB30>
+	void SetChorusFrequency(float Frequency); // Function Synthesis.ModularSynthComponent.SetChorusFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDAB0>
+	void SetChorusFeedback(float Feedback); // Function Synthesis.ModularSynthComponent.SetChorusFeedback(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18EDA30>
+	void SetChorusEnabled(char EnableChorus); // Function Synthesis.ModularSynthComponent.SetChorusEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED9A0>
+	void SetChorusDepth(float Depth); // Function Synthesis.ModularSynthComponent.SetChorusDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED920>
+	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED8A0>
+	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.ModularSynthComponent.NoteOn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED790>
+	void NoteOff(float Note, char bAllNotesOff, char bKillAllNotes); // Function Synthesis.ModularSynthComponent.NoteOff(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED680>
+	struct FPatchId CreatePatch(enum class ESynth1PatchSource PatchSource, struct TArray<struct FSynth1PatchCable>& PatchCables, char bEnableByDefault); // Function Synthesis.ModularSynthComponent.CreatePatch(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ED530>
 };
 
 // Class Synthesis.SourceEffectBitCrusherPreset
@@ -407,7 +407,7 @@ public:
 
 	struct FSourceEffectBitCrusherSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct FSourceEffectBitCrusherSettings& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F56C0>
+	void SetSettings(struct FSourceEffectBitCrusherSettings& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7580>
 };
 
 // Class Synthesis.SourceEffectChorusPreset
@@ -417,7 +417,7 @@ public:
 
 	struct FSourceEffectChorusSettings Settings; // 0x80 (24)
 
-	void SetSettings(struct FSourceEffectChorusSettings& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5770>
+	void SetSettings(struct FSourceEffectChorusSettings& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7630>
 };
 
 // Class Synthesis.SourceEffectDynamicsProcessorPreset
@@ -427,7 +427,7 @@ public:
 
 	struct FSourceEffectDynamicsProcessorSettings Settings; // 0x90 (40)
 
-	void SetSettings(struct FSourceEffectDynamicsProcessorSettings& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5820>
+	void SetSettings(struct FSourceEffectDynamicsProcessorSettings& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F76E0>
 };
 
 // Class Synthesis.EnvelopeFollowerListener
@@ -445,9 +445,9 @@ public:
 
 	struct FSourceEffectEnvelopeFollowerSettings Settings; // 0x74 (12)
 
-	void UnregisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5FA0>
-	void SetSettings(struct FSourceEffectEnvelopeFollowerSettings& InSettings); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5980>
-	void RegisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5640>
+	void UnregisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7E60>
+	void SetSettings(struct FSourceEffectEnvelopeFollowerSettings& InSettings); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7840>
+	void RegisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7500>
 };
 
 // Class Synthesis.SourceEffectEQPreset
@@ -457,7 +457,7 @@ public:
 
 	struct FSourceEffectEQSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct FSourceEffectEQSettings& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F58D0>
+	void SetSettings(struct FSourceEffectEQSettings& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7790>
 };
 
 // Class Synthesis.SourceEffectFilterPreset
@@ -467,7 +467,7 @@ public:
 
 	struct FSourceEffectFilterSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct FSourceEffectFilterSettings& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5A30>
+	void SetSettings(struct FSourceEffectFilterSettings& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F78F0>
 };
 
 // Class Synthesis.SourceEffectFoldbackDistortionPreset
@@ -477,7 +477,7 @@ public:
 
 	struct FSourceEffectFoldbackDistortionSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct FSourceEffectFoldbackDistortionSettings& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5AE0>
+	void SetSettings(struct FSourceEffectFoldbackDistortionSettings& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F79A0>
 };
 
 // Class Synthesis.SourceEffectMidSideSpreaderPreset
@@ -487,7 +487,7 @@ public:
 
 	struct FSourceEffectMidSideSpreaderSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct FSourceEffectMidSideSpreaderSettings& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5B90>
+	void SetSettings(struct FSourceEffectMidSideSpreaderSettings& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7A50>
 };
 
 // Class Synthesis.SourceEffectPannerPreset
@@ -497,7 +497,7 @@ public:
 
 	struct FSourceEffectPannerSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct FSourceEffectPannerSettings& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
+	void SetSettings(struct FSourceEffectPannerSettings& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7B00>
 };
 
 // Class Synthesis.SourceEffectPhaserPreset
@@ -507,7 +507,7 @@ public:
 
 	struct FSourceEffectPhaserSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct FSourceEffectPhaserSettings& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5CF0>
+	void SetSettings(struct FSourceEffectPhaserSettings& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7BB0>
 };
 
 // Class Synthesis.SourceEffectRingModulationPreset
@@ -517,7 +517,7 @@ public:
 
 	struct FSourceEffectRingModulationSettings Settings; // 0x7C (20)
 
-	void SetSettings(struct FSourceEffectRingModulationSettings& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5DB0>
+	void SetSettings(struct FSourceEffectRingModulationSettings& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7C70>
 };
 
 // Class Synthesis.SourceEffectSimpleDelayPreset
@@ -527,7 +527,7 @@ public:
 
 	struct FSourceEffectSimpleDelaySettings Settings; // 0x80 (24)
 
-	void SetSettings(struct FSourceEffectSimpleDelaySettings& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5E50>
+	void SetSettings(struct FSourceEffectSimpleDelaySettings& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7D10>
 };
 
 // Class Synthesis.SourceEffectStereoDelayPreset
@@ -537,7 +537,7 @@ public:
 
 	struct FSourceEffectStereoDelaySettings Settings; // 0x7C (20)
 
-	void SetSettings(struct FSourceEffectStereoDelaySettings& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5F00>
+	void SetSettings(struct FSourceEffectStereoDelaySettings& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7DC0>
 };
 
 // Class Synthesis.SourceEffectWaveShaperPreset
@@ -547,7 +547,7 @@ public:
 
 	struct FSourceEffectWaveShaperSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct FSourceEffectWaveShaperSettings& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
+	void SetSettings(struct FSourceEffectWaveShaperSettings& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F7B00>
 };
 
 // Class Synthesis.AudioImpulseResponse
@@ -572,8 +572,8 @@ public:
 	enum class ESubmixEffectConvolutionReverbBlockSize BlockSize; // 0x68 (1)
 	char bEnableHardwareAcceleration : 0; // 0x69 (1)
 
-	void SetSettings(struct FSubmixEffectConvolutionReverbSettings& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB0D0>
-	void SetImpulseResponse(struct UAudioImpulseResponse InImpulseResponse); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FABA0>
+	void SetSettings(struct FSubmixEffectConvolutionReverbSettings& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCFB0>
+	void SetImpulseResponse(struct UAudioImpulseResponse InImpulseResponse); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCA80>
 };
 
 // Class Synthesis.SubmixEffectDelayPreset
@@ -584,10 +584,10 @@ public:
 	struct FSubmixEffectDelaySettings Settings; // 0x74 (12)
 	struct FSubmixEffectDelaySettings DynamicSettings; // 0x80 (12)
 
-	void SetSettings(struct FSubmixEffectDelaySettings& InSettings); // Function Synthesis.SubmixEffectDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB170>
-	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FACB0>
-	void SetDelay(float Length); // Function Synthesis.SubmixEffectDelayPreset.SetDelay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA3A0>
-	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F9E50>
+	void SetSettings(struct FSubmixEffectDelaySettings& InSettings); // Function Synthesis.SubmixEffectDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD050>
+	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCB90>
+	void SetDelay(float Length); // Function Synthesis.SubmixEffectDelayPreset.SetDelay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC280>
+	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBD30>
 };
 
 // Class Synthesis.SubmixEffectFilterPreset
@@ -597,13 +597,13 @@ public:
 
 	struct FSubmixEffectFilterSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct FSubmixEffectFilterSettings& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB230>
-	void SetFilterType(enum class ESubmixFilterType InType); // Function Synthesis.SubmixEffectFilterPreset.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA6A0>
-	void SetFilterQMod(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA620>
-	void SetFilterQ(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQ(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA5A0>
-	void SetFilterCutoffFrequencyMod(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA520>
-	void SetFilterCutoffFrequency(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA4A0>
-	void SetFilterAlgorithm(enum class ESubmixFilterAlgorithm InAlgorithm); // Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA420>
+	void SetSettings(struct FSubmixEffectFilterSettings& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD110>
+	void SetFilterType(enum class ESubmixFilterType InType); // Function Synthesis.SubmixEffectFilterPreset.SetFilterType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC580>
+	void SetFilterQMod(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC500>
+	void SetFilterQ(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQ(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC480>
+	void SetFilterCutoffFrequencyMod(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequencyMod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC400>
+	void SetFilterCutoffFrequency(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC380>
+	void SetFilterAlgorithm(enum class ESubmixFilterAlgorithm InAlgorithm); // Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC300>
 };
 
 // Class Synthesis.SubmixEffectFlexiverbPreset
@@ -613,7 +613,7 @@ public:
 
 	struct FSubmixEffectFlexiverbSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct FSubmixEffectFlexiverbSettings& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB2E0>
+	void SetSettings(struct FSubmixEffectFlexiverbSettings& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD1C0>
 };
 
 // Class Synthesis.SubmixEffectTapDelayPreset
@@ -623,14 +623,14 @@ public:
 
 	struct FSubmixEffectTapDelaySettings Settings; // 0x80 (24)
 
-	void SetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB660>
-	void SetSettings(struct FSubmixEffectTapDelaySettings& InSettings); // Function Synthesis.SubmixEffectTapDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB3A0>
-	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectTapDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAD30>
-	void RemoveTap(int32_t TapId); // Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA2A0>
-	void GetTapIds(struct TArray<int32_t>& TapIds); // Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9FA0>
-	void GetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.GetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9EC0>
-	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectTapDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F9E70>
-	void AddTap(int32_t& TapId); // Function Synthesis.SubmixEffectTapDelayPreset.AddTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9D90>
+	void SetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD540>
+	void SetSettings(struct FSubmixEffectTapDelaySettings& InSettings); // Function Synthesis.SubmixEffectTapDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD280>
+	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectTapDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCC10>
+	void RemoveTap(int32_t TapId); // Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC180>
+	void GetTapIds(struct TArray<int32_t>& TapIds); // Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBE80>
+	void GetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.GetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBDA0>
+	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectTapDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBD50>
+	void AddTap(int32_t& TapId); // Function Synthesis.SubmixEffectTapDelayPreset.AddTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBC70>
 };
 
 // Class Synthesis.Synth2DSlider
@@ -655,12 +655,12 @@ public:
 	struct FMulticastInlineDelegate OnValueChangedX; // 0x448 (16)
 	struct FMulticastInlineDelegate OnValueChangedY; // 0x458 (16)
 
-	void SetValue(struct FVector2D InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB740>
-	void SetStepSize(float InValue); // Function Synthesis.Synth2DSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB560>
-	void SetSliderHandleColor(struct FLinearColor InValue); // Function Synthesis.Synth2DSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB460>
-	void SetLocked(char InValue); // Function Synthesis.Synth2DSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FADB0>
-	void SetIndentHandle(char InValue); // Function Synthesis.Synth2DSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAC20>
-	struct FVector2D GetValue(); // Function Synthesis.Synth2DSlider.GetValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FA050>
+	void SetValue(struct FVector2D InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD620>
+	void SetStepSize(float InValue); // Function Synthesis.Synth2DSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD440>
+	void SetSliderHandleColor(struct FLinearColor InValue); // Function Synthesis.Synth2DSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD340>
+	void SetLocked(char InValue); // Function Synthesis.Synth2DSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCC90>
+	void SetIndentHandle(char InValue); // Function Synthesis.Synth2DSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCB00>
+	struct FVector2D GetValue(); // Function Synthesis.Synth2DSlider.GetValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBF30>
 };
 
 // Class Synthesis.GranularSynth
@@ -668,28 +668,28 @@ class UGranularSynth : public USynthComponent {
 
 public:
 
-	struct USoundWave GranulatedSoundWave; // 0x700 (8)
+	struct USoundWave GranulatedSoundWave; // 0x710 (8)
 
-	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB5E0>
-	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.GranularSynth.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB4E0>
-	void SetScrubMode(char bScrubMode); // Function Synthesis.GranularSynth.SetScrubMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB040>
-	void SetReleaseTimeMsec(float ReleaseTimeMsec); // Function Synthesis.GranularSynth.SetReleaseTimeMsec(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAFC0>
-	void SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class EGranularSynthSeekType SeekType); // Function Synthesis.GranularSynth.SetPlayheadTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAEC0>
-	void SetPlaybackSpeed(float InPlayheadRate); // Function Synthesis.GranularSynth.SetPlaybackSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAE40>
-	void SetGrainVolume(float BaseVolume, struct FVector2D VolumeRange); // Function Synthesis.GranularSynth.SetGrainVolume(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FAA60>
-	void SetGrainsPerSecond(float InGrainsPerSecond); // Function Synthesis.GranularSynth.SetGrainsPerSecond(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAB20>
-	void SetGrainProbability(float InGrainProbability); // Function Synthesis.GranularSynth.SetGrainProbability(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA9E0>
-	void SetGrainPitch(float BasePitch, struct FVector2D PitchRange); // Function Synthesis.GranularSynth.SetGrainPitch(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA920>
-	void SetGrainPan(float BasePan, struct FVector2D PanRange); // Function Synthesis.GranularSynth.SetGrainPan(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA860>
-	void SetGrainEnvelopeType(enum class EGranularSynthEnvelopeType EnvelopeType); // Function Synthesis.GranularSynth.SetGrainEnvelopeType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA7E0>
-	void SetGrainDuration(float BaseDurationMsec, struct FVector2D DurationRange); // Function Synthesis.GranularSynth.SetGrainDuration(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA720>
-	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.GranularSynth.SetDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA320>
-	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.GranularSynth.SetAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA320>
-	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.GranularSynth.NoteOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA190>
-	void NoteOff(float Note, char bKill); // Function Synthesis.GranularSynth.NoteOff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA0C0>
-	char IsLoaded(); // Function Synthesis.GranularSynth.IsLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FA090>
-	float GetSampleDuration(); // Function Synthesis.GranularSynth.GetSampleDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18F9E90>
-	float GetCurrentPlayheadTime(); // Function Synthesis.GranularSynth.GetCurrentPlayheadTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18F9E20>
+	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD4C0>
+	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.GranularSynth.SetSoundWave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FD3C0>
+	void SetScrubMode(char bScrubMode); // Function Synthesis.GranularSynth.SetScrubMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCF20>
+	void SetReleaseTimeMsec(float ReleaseTimeMsec); // Function Synthesis.GranularSynth.SetReleaseTimeMsec(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCEA0>
+	void SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class EGranularSynthSeekType SeekType); // Function Synthesis.GranularSynth.SetPlayheadTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCDA0>
+	void SetPlaybackSpeed(float InPlayheadRate); // Function Synthesis.GranularSynth.SetPlaybackSpeed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCD20>
+	void SetGrainVolume(float BaseVolume, struct FVector2D VolumeRange); // Function Synthesis.GranularSynth.SetGrainVolume(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC940>
+	void SetGrainsPerSecond(float InGrainsPerSecond); // Function Synthesis.GranularSynth.SetGrainsPerSecond(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FCA00>
+	void SetGrainProbability(float InGrainProbability); // Function Synthesis.GranularSynth.SetGrainProbability(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC8C0>
+	void SetGrainPitch(float BasePitch, struct FVector2D PitchRange); // Function Synthesis.GranularSynth.SetGrainPitch(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC800>
+	void SetGrainPan(float BasePan, struct FVector2D PanRange); // Function Synthesis.GranularSynth.SetGrainPan(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC740>
+	void SetGrainEnvelopeType(enum class EGranularSynthEnvelopeType EnvelopeType); // Function Synthesis.GranularSynth.SetGrainEnvelopeType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC6C0>
+	void SetGrainDuration(float BaseDurationMsec, struct FVector2D DurationRange); // Function Synthesis.GranularSynth.SetGrainDuration(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC600>
+	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.GranularSynth.SetDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC200>
+	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.GranularSynth.SetAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC200>
+	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.GranularSynth.NoteOn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FC070>
+	void NoteOff(float Note, char bKill); // Function Synthesis.GranularSynth.NoteOff(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBFA0>
+	char IsLoaded(); // Function Synthesis.GranularSynth.IsLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBF70>
+	float GetSampleDuration(); // Function Synthesis.GranularSynth.GetSampleDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBD70>
+	float GetCurrentPlayheadTime(); // Function Synthesis.GranularSynth.GetCurrentPlayheadTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FBD00>
 };
 
 // Class Synthesis.MonoWaveTableSynthPreset
@@ -710,55 +710,55 @@ class USynthComponentMonoWaveTable : public USynthComponent {
 
 public:
 
-	struct FMulticastInlineDelegate OnTableAltered; // 0x700 (16)
-	struct FMulticastInlineDelegate OnNumTablesChanged; // 0x710 (16)
-	struct UMonoWaveTableSynthPreset CurrentPreset; // 0x720 (8)
+	struct FMulticastInlineDelegate OnTableAltered; // 0x710 (16)
+	struct FMulticastInlineDelegate OnNumTablesChanged; // 0x720 (16)
+	struct UMonoWaveTableSynthPreset CurrentPreset; // 0x730 (8)
 
-	void SetWaveTablePosition(float InPosition); // Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEDC0>
-	void SetSustainPedalState(char InSustainPedalState); // Function Synthesis.SynthComponentMonoWaveTable.SetSustainPedalState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FECB0>
-	void SetPosLfoType(enum class ESynthLFOType InLfoType); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE600>
-	void SetPosLfoFrequency(float InLfoFrequency); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE580>
-	void SetPosLfoDepth(float InLfoDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE500>
-	void SetPositionEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEA20>
-	void SetPositionEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE9A0>
-	void SetPositionEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE910>
-	void SetPositionEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE890>
-	void SetPositionEnvelopeDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE810>
-	void SetPositionEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE780>
-	void SetPositionEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE700>
-	void SetPositionEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE680>
-	void SetLowPassFilterResonance(float InNewQ); // Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterResonance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE3C0>
-	void SetLowPassFilterFrequency(float InNewFrequency); // Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE340>
-	void SetFrequencyWithMidiNote(float InMidiNote); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyWithMidiNote(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE230>
-	void SetFrequencyPitchBend(float FrequencyOffsetCents); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyPitchBend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE1B0>
-	void SetFrequency(float FrequencyHz); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE130>
-	void SetFilterEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE030>
-	void SetFilterEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDFB0>
-	void SetFilterEnvelopenDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopenDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE0B0>
-	void SetFilterEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDF20>
-	void SetFilterEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDEA0>
-	void SetFilterEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDE10>
-	void SetFilterEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDD90>
-	void SetFilterEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDD10>
-	char SetCurveValue(int32_t TableIndex, int32_t KeyframeIndex, float NewValue); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDC10>
-	char SetCurveTangent(int32_t TableIndex, float InNewTangent); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDB40>
-	char SetCurveInterpolationType(enum class CurveInterpolationType InterpolationType, int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDA80>
-	void SetAmpEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDA00>
-	void SetAmpEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD980>
-	void SetAmpEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD8F0>
-	void SetAmpEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD870>
-	void SetAmpEnvelopeDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD7F0>
-	void SetAmpEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD760>
-	void SetAmpEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD6E0>
-	void SetAmpEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD660>
-	void RefreshWaveTable(int32_t Index); // Function Synthesis.SynthComponentMonoWaveTable.RefreshWaveTable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD4D0>
-	void RefreshAllWaveTables(); // Function Synthesis.SynthComponentMonoWaveTable.RefreshAllWaveTables(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD4B0>
-	void NoteOn(float InMidiNote, float InVelocity); // Function Synthesis.SynthComponentMonoWaveTable.NoteOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD3F0>
-	void NoteOff(float InMidiNote); // Function Synthesis.SynthComponentMonoWaveTable.NoteOff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD370>
-	int32_t GetNumTableEntries(); // Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD2B0>
-	int32_t GetMaxTableIndex(); // Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD270>
-	struct TArray<float> GetKeyFrameValuesForTable(float TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD190>
-	float GetCurveTangent(int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD100>
+	void SetWaveTablePosition(float InPosition); // Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900CA0>
+	void SetSustainPedalState(char InSustainPedalState); // Function Synthesis.SynthComponentMonoWaveTable.SetSustainPedalState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900B90>
+	void SetPosLfoType(enum class ESynthLFOType InLfoType); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19004E0>
+	void SetPosLfoFrequency(float InLfoFrequency); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900460>
+	void SetPosLfoDepth(float InLfoDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19003E0>
+	void SetPositionEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900900>
+	void SetPositionEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900880>
+	void SetPositionEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19007F0>
+	void SetPositionEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900770>
+	void SetPositionEnvelopeDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19006F0>
+	void SetPositionEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900660>
+	void SetPositionEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19005E0>
+	void SetPositionEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900560>
+	void SetLowPassFilterResonance(float InNewQ); // Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterResonance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x19002A0>
+	void SetLowPassFilterFrequency(float InNewFrequency); // Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900220>
+	void SetFrequencyWithMidiNote(float InMidiNote); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyWithMidiNote(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900110>
+	void SetFrequencyPitchBend(float FrequencyOffsetCents); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyPitchBend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900090>
+	void SetFrequency(float FrequencyHz); // Function Synthesis.SynthComponentMonoWaveTable.SetFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900010>
+	void SetFilterEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFF10>
+	void SetFilterEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFE90>
+	void SetFilterEnvelopenDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopenDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFF90>
+	void SetFilterEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFE00>
+	void SetFilterEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFD80>
+	void SetFilterEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFCF0>
+	void SetFilterEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFC70>
+	void SetFilterEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFBF0>
+	char SetCurveValue(int32_t TableIndex, int32_t KeyframeIndex, float NewValue); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFAF0>
+	char SetCurveTangent(int32_t TableIndex, float InNewTangent); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FFA20>
+	char SetCurveInterpolationType(enum class CurveInterpolationType InterpolationType, int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF960>
+	void SetAmpEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF8E0>
+	void SetAmpEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF860>
+	void SetAmpEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF7D0>
+	void SetAmpEnvelopeDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF750>
+	void SetAmpEnvelopeDecayTime(float InDecayTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDecayTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF6D0>
+	void SetAmpEnvelopeBiasInvert(char bInBiasInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasInvert(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF640>
+	void SetAmpEnvelopeBiasDepth(float InDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF5C0>
+	void SetAmpEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF540>
+	void RefreshWaveTable(int32_t Index); // Function Synthesis.SynthComponentMonoWaveTable.RefreshWaveTable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF3B0>
+	void RefreshAllWaveTables(); // Function Synthesis.SynthComponentMonoWaveTable.RefreshAllWaveTables(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF390>
+	void NoteOn(float InMidiNote, float InVelocity); // Function Synthesis.SynthComponentMonoWaveTable.NoteOn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF2D0>
+	void NoteOff(float InMidiNote); // Function Synthesis.SynthComponentMonoWaveTable.NoteOff(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF250>
+	int32_t GetNumTableEntries(); // Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF190>
+	int32_t GetMaxTableIndex(); // Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF150>
+	struct TArray<float> GetKeyFrameValuesForTable(float TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF070>
+	float GetCurveTangent(int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FEFE0>
 };
 
 // Class Synthesis.SynthSamplePlayer
@@ -766,19 +766,19 @@ class USynthSamplePlayer : public USynthComponent {
 
 public:
 
-	struct USoundWave SoundWave; // 0x700 (8)
-	struct FMulticastInlineDelegate OnSampleLoaded; // 0x708 (16)
-	struct FMulticastInlineDelegate OnSamplePlaybackProgress; // 0x718 (16)
+	struct USoundWave SoundWave; // 0x710 (8)
+	struct FMulticastInlineDelegate OnSampleLoaded; // 0x718 (16)
+	struct FMulticastInlineDelegate OnSamplePlaybackProgress; // 0x728 (16)
 
-	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEBB0>
-	void SetScrubTimeWidth(float InScrubTimeWidthSec); // Function Synthesis.SynthSamplePlayer.SetScrubTimeWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEB30>
-	void SetScrubMode(char bScrubMode); // Function Synthesis.SynthSamplePlayer.SetScrubMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEAA0>
-	void SetPitch(float InPitch, float TimeSec); // Function Synthesis.SynthSamplePlayer.SetPitch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE440>
-	void SeekToTime(float TimeSec, enum class ESamplePlayerSeekType SeekType, char bWrap); // Function Synthesis.SynthSamplePlayer.SeekToTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD550>
-	char IsLoaded(); // Function Synthesis.SynthSamplePlayer.IsLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD340>
-	float GetSampleDuration(); // Function Synthesis.SynthSamplePlayer.GetSampleDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD2E0>
-	float GetCurrentPlaybackProgressTime(); // Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD0D0>
-	float GetCurrentPlaybackProgressPercent(); // Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressPercent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD0A0>
+	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900A90>
+	void SetScrubTimeWidth(float InScrubTimeWidthSec); // Function Synthesis.SynthSamplePlayer.SetScrubTimeWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900A10>
+	void SetScrubMode(char bScrubMode); // Function Synthesis.SynthSamplePlayer.SetScrubMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900980>
+	void SetPitch(float InPitch, float TimeSec); // Function Synthesis.SynthSamplePlayer.SetPitch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900320>
+	void SeekToTime(float TimeSec, enum class ESamplePlayerSeekType SeekType, char bWrap); // Function Synthesis.SynthSamplePlayer.SeekToTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF430>
+	char IsLoaded(); // Function Synthesis.SynthSamplePlayer.IsLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF220>
+	float GetSampleDuration(); // Function Synthesis.SynthSamplePlayer.GetSampleDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF1C0>
+	float GetCurrentPlaybackProgressTime(); // Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FEFB0>
+	float GetCurrentPlaybackProgressPercent(); // Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressPercent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FEF80>
 };
 
 // Class Synthesis.SynthKnob
@@ -803,10 +803,10 @@ public:
 	struct FMulticastInlineDelegate OnControllerCaptureEnd; // 0x3D0 (16)
 	struct FMulticastInlineDelegate OnValueChanged; // 0x3E0 (16)
 
-	void SetValue(float InValue); // Function Synthesis.SynthKnob.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FED40>
-	void SetStepSize(float InValue); // Function Synthesis.SynthKnob.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEC30>
-	void SetLocked(char InValue); // Function Synthesis.SynthKnob.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE2B0>
-	float GetValue(); // Function Synthesis.SynthKnob.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD310>
+	void SetValue(float InValue); // Function Synthesis.SynthKnob.SetValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900C20>
+	void SetStepSize(float InValue); // Function Synthesis.SynthKnob.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900B10>
+	void SetLocked(char InValue); // Function Synthesis.SynthKnob.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1900190>
+	float GetValue(); // Function Synthesis.SynthKnob.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18FF1F0>
 };
 
 // ScriptStruct Synthesis.ModularSynthPresetBankEntry
@@ -1028,7 +1028,7 @@ struct FSubmixEffectConvolutionReverbSettings {
 	char bSurroundRearChannelFlip : 0; // 0x9 (1)
 	float SurroundRearChannelBleedAmount; // 0xC (4)
 	struct UAudioImpulseResponse ImpulseResponse; // 0x10 (8)
-	char pad_14_0 : 3; // 0x14 (1)
+	char pad_14_0 : 4; // 0x14 (1)
 	char AllowHArdwareAcceleration : 1; // 0x18 (1)
 };
 

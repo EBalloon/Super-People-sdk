@@ -51,10 +51,10 @@ public:
 	struct UImage Image_248; // 0x3C0 (8)
 	struct URichTextBlock RichT_ResustingOwnerName; // 0x3C8 (8)
 	struct URichTextBlock ShowMessage<Red18>Free<>; // 0x3D0 (8)
-	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget; // 0x3D8 (8)
-	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget_2; // 0x3E0 (8)
-	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget_243; // 0x3E8 (8)
-	struct UUW-GuideWidget_C UW-GuideWidget; // 0x3F0 (8)
+	struct UUW-GuideWidget_C UW-GuideWidget; // 0x3D8 (8)
+	struct UUW-ListWidget_C UW-ListWidget_CoreInfo; // 0x3E0 (8)
+	struct UUW-ListWidget_C UW-ListWidget_MyKillMessage; // 0x3E8 (8)
+	struct UUW-ListWidget_C UW-ListWidget_Request; // 0x3F0 (8)
 	struct UUW-MyKillCountMessageWidget_C UW-MyKillCountMessageWidget; // 0x3F8 (8)
 	struct UUW-Timer_C UW-Timer; // 0x400 (8)
 	struct TMap<enum class EHUDMessageType, int32_t> LastPriority; // 0x408 (80)
@@ -66,32 +66,32 @@ public:
 	int32_t TeamKillWarningAnimLoopNum; // 0x4D0 (4)
 	struct FText CheatMessage; // 0x4D8 (24)
 
-	void GetMyKillCountMessageWidget(struct UUW-MyKillCountMessageWidget_C& KillCountWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void ShowCustomAnim(struct UPanelWidget PanelWidget, struct UWidgetAnimation CustomAnim); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowResuscitatingWidget(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowResuscitatingWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetRequestMessageWidget(struct UUW-CoreInfoWidget_C& Result); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddCoreInfoWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetCoreInfoWidget(struct UUW-CoreInfoWidget_C& CoreInfoWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void ShowGuideWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayTeamKillWarningAnim(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayTeamKillWarningAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetPriority(enum class EHUDMessageType MessageType, struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddToTimerList(struct UPanelWidget Panel, float Time); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CalcTimerCount(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CalcTimerCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayHideAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayHideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayShowAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayShowAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMessageText(struct UPanelWidget PanelWidget, struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckPriority(enum class EHUDMessageType MessageType, int32_t Priority, char& CanMessage); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPanelWidget(enum class EHUDMessageType MessageType, struct UPanelWidget& PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessageAtNum(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<enum class ESettingType>& List); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-HUDMessageWidget(int32_t EntryPoint); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ExecuteUbergraph_UW-HUDMessageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void GetMyKillCountMessageWidget(struct UUW-MyKillCountMessageWidget_C& KillCountWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowCustomAnim(struct UPanelWidget PanelWidget, struct UWidgetAnimation CustomAnim); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowResuscitatingWidget(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowResuscitatingWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Get Request Message Widget(struct UUW-ListWidget_C& Result); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Get Request Message Widget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddCoreInfoWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddCoreInfoWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetCoreInfoWidget(struct UUW-ListWidget_C& CoreInfoWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowGuideWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayTeamKillWarningAnim(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayTeamKillWarningAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetPriority(enum class EHUDMessageType MessageType, struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddToTimerList(struct UPanelWidget Panel, float Time); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CalcTimerCount(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CalcTimerCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayHideAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayHideAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayShowAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayShowAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetMessageText(struct UPanelWidget PanelWidget, struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckPriority(enum class EHUDMessageType MessageType, int32_t Priority, char& CanMessage); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetPanelWidget(enum class EHUDMessageType MessageType, struct UPanelWidget& PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowHUDMessageAtNum(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<enum class ESettingType>& List); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-HUDMessageWidget(int32_t EntryPoint); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ExecuteUbergraph_UW-HUDMessageWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget
@@ -142,13 +142,13 @@ inline void UUW-HUDMessageWidget_C::ShowResuscitatingWidget() {
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget
-inline void UUW-HUDMessageWidget_C::GetRequestMessageWidget(struct UUW-CoreInfoWidget_C& Result) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget");
+// Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Get Request Message Widget
+inline void UUW-HUDMessageWidget_C::Get Request Message Widget(struct UUW-ListWidget_C& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Get Request Message Widget");
 
-	struct GetRequestMessageWidget_Params {
-		struct UUW-CoreInfoWidget_C& Result;
-	}; GetRequestMessageWidget_Params Params;
+	struct Get Request Message Widget_Params {
+		struct UUW-ListWidget_C& Result;
+	}; Get Request Message Widget_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -175,11 +175,11 @@ inline void UUW-HUDMessageWidget_C::AddCoreInfoWidget(struct FText Message) {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget
-inline void UUW-HUDMessageWidget_C::GetCoreInfoWidget(struct UUW-CoreInfoWidget_C& CoreInfoWidget) {
+inline void UUW-HUDMessageWidget_C::GetCoreInfoWidget(struct UUW-ListWidget_C& CoreInfoWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget");
 
 	struct GetCoreInfoWidget_Params {
-		struct UUW-CoreInfoWidget_C& CoreInfoWidget;
+		struct UUW-ListWidget_C& CoreInfoWidget;
 	}; GetCoreInfoWidget_Params Params;
 
 

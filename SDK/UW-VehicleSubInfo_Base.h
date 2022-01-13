@@ -7,9 +7,9 @@ public:
 	struct UCanvasPanel WheelGroup; // 0x258 (8)
 	struct UCanvasPanel SeatGroup; // 0x260 (8)
 
-	void Setup(struct ABravoHotelVehicle VehicleInstance); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowSeatIcon(int32_t SeatIndex, char bShow, char bIsMine); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowSeatIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowWreckedWheelIcon(int32_t WheelIndex, char bShow); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowWreckedWheelIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Setup(struct ABravoHotelVehicle VehicleInstance); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowSeatIcon(int32_t SeatIndex, char bShow, char bIsMine); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowSeatIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowWreckedWheelIcon(int32_t WheelIndex, char bShow); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowWreckedWheelIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup

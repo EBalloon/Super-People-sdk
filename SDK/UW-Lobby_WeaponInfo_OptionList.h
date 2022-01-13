@@ -10,10 +10,10 @@ public:
 	struct UUW-Lobby_WeaponInfo_Option_Slot_C UW-Lobby_WeaponInfo_Option_Slot_4; // 0x268 (8)
 	struct UVerticalBox VerticalBox_OptionList; // 0x270 (8)
 
-	void AddOptionList(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOptionList(struct TArray<int32_t>& OptionIDList); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void AddOptionList(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetOptionList(struct TArray<int32_t>& OptionIDList); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList

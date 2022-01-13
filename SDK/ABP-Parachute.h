@@ -26,10 +26,10 @@ public:
 	struct FVector RightHandleLocation; // 0x9D8 (12)
 	struct FVector LeftHandleLocation; // 0x9E4 (12)
 
-	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-Parachute.ABP-Parachute_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(); // Function ABP-Parachute.ABP-Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AnimNotify_ResetSkipTransitionFlag(); // Function ABP-Parachute.ABP-Parachute_C.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_ABP-Parachute(int32_t EntryPoint); // Function ABP-Parachute.ABP-Parachute_C.ExecuteUbergraph_ABP-Parachute(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-Parachute.ABP-Parachute_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(); // Function ABP-Parachute.ABP-Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AnimNotify_ResetSkipTransitionFlag(); // Function ABP-Parachute.ABP-Parachute_C.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_ABP-Parachute(int32_t EntryPoint); // Function ABP-Parachute.ABP-Parachute_C.ExecuteUbergraph_ABP-Parachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function ABP-Parachute.ABP-Parachute_C.AnimGraph

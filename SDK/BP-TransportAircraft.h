@@ -5,8 +5,8 @@ public:
 
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x6D0 (8)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick

@@ -3,19 +3,19 @@ class UMagicLeapImageTrackerComponent : public USceneComponent {
 
 public:
 
-	struct UTexture2D TargetImageTexture; // 0x228 (8)
-	struct FString Name; // 0x230 (16)
-	float LongerDimension; // 0x240 (4)
-	char bIsStationary : 0; // 0x244 (1)
-	char bUseUnreliablePose : 0; // 0x245 (1)
-	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; // 0x248 (16)
-	struct FMulticastInlineDelegate OnSetImageTargetFailed; // 0x258 (16)
-	struct FMulticastInlineDelegate OnImageTargetFound; // 0x268 (16)
-	struct FMulticastInlineDelegate OnImageTargetLost; // 0x278 (16)
-	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x288 (16)
+	struct UTexture2D TargetImageTexture; // 0x230 (8)
+	struct FString Name; // 0x238 (16)
+	float LongerDimension; // 0x248 (4)
+	char bIsStationary : 0; // 0x24C (1)
+	char bUseUnreliablePose : 0; // 0x24D (1)
+	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; // 0x250 (16)
+	struct FMulticastInlineDelegate OnSetImageTargetFailed; // 0x260 (16)
+	struct FMulticastInlineDelegate OnImageTargetFound; // 0x270 (16)
+	struct FMulticastInlineDelegate OnImageTargetLost; // 0x280 (16)
+	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x290 (16)
 
-	char SetTargetAsync(struct UTexture2D ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1801250>
-	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18011B0>
+	char SetTargetAsync(struct UTexture2D ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1802E90>
+	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1802DF0>
 };
 
 // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync

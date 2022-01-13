@@ -137,80 +137,79 @@ public:
 	char EnableSupplyBtn : 0; // 0x748 (1)
 	struct FTimerHandle FreeSupplyTimer; // 0x750 (8)
 	struct FTimerHandle NotEnoughtGoldTimer; // 0x758 (8)
-	struct TArray<struct UUW-GainPerk_C> GainPerkPopups; // 0x760 (16)
+	struct TArray<struct UUW-ListWidget_GainPerk_C> GainPerkPopups; // 0x760 (16)
 	char IsPlayingUltimateSound : 0; // 0x770 (1)
 	int32_t LastLevel; // 0x774 (4)
 	struct FPerkDeckClassInfo PerkDeckClassInfo; // 0x778 (40)
 
-	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEnabledInvalidationbox(char Enabled); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetUltimateSound(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetUltimateSound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddGainPerkPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateInvalidationbox(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedToggleType(enum class EToggleWidgetModeType ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateStatsInfo(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateStatsInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetUltimateSkillKeyIcon(struct TArray<enum class EKeySettingType>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayAbilityCountSoundEnd(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayAbilityCountSoundStart(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundStart(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowStatusHovered(struct UWidget InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetAbilityAnimation(struct FTimerHandle& Handle, int32_t Value, struct UWidgetAnimation Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.InitAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DefenseCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.DefenseCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SpeedCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SpeedCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PowerCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PowerCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlaySoundBonusLevelUp(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundBonusLevelUp(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlaySoundTimeBonus(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundTimeBonus(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPositionTargetPerk(enum class EPerkSlotFlag PerkSlot, int32_t PerkIndex, char& Result, struct FVector2D& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class EPerkSlotFlag& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddUltimateSkillUnlockEffect(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddUltimateSkillUnlockEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetPerkCells(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetPerkCells(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetClassLevelText(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetClassLevelText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PerkLevelUpEffect(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerkdeckWidget(char State); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerkdeckWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowUltimatePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowUltimatePerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayStatsLevelUpAnim(struct FDisplayAbility IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelTextAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayLevelTextAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckUltimateOpen(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckUltimateOpen(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetUltimateSkillInfo(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPriceFontColor(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPriceFontColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct FText Get_TextBlock_Price_Text_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Get_TextBlock_Price_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void CreatePerkDeck(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CreatePerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerks(struct UUW-Inventory_ItemSlotHover_C HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct FPerkDeckClassInfo PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncCohIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StopReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StopReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncClassIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AbilityPowerAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityPowerAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AbilitySpeedAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilitySpeedAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void LevelUpAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.LevelUpAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayKillGivePerk(int32_t KillCount); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayKillGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnHoveredWidget(struct UWidget HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AbilityDefenseAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityDefenseAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckFreeSupply(char IsInventoryOpen); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckFreeSupply(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartUltimateAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StartUltimateAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateUnlockLevel(int32_t NewLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateUnlockLevel(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_RefreshPerkDeck(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.K2_RefreshPerkDeck(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_3(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEnoughGold(char IsEnough); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnoughGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_Perk(int32_t EntryPoint); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ExecuteUbergraph_UW-Inventory_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetEnabledInvalidationbox(char Enabled); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetUltimateSound(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetUltimateSound(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateInvalidationbox(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedToggleType(enum class EToggleWidgetModeType ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateStatsInfo(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateStatsInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetUltimateSkillKeyIcon(struct TArray<enum class EKeySettingType>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayAbilityCountSoundEnd(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayAbilityCountSoundStart(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundStart(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowStatusHovered(struct UWidget InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetAbilityAnimation(struct FTimerHandle& Handle, int32_t Value, struct UWidgetAnimation Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.InitAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void DefenseCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.DefenseCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SpeedCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SpeedCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PowerCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PowerCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlaySoundBonusLevelUp(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundBonusLevelUp(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlaySoundTimeBonus(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundTimeBonus(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetPositionTargetPerk(enum class EPerkSlotFlag PerkSlot, int32_t PerkIndex, char& Result, struct FVector2D& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class EPerkSlotFlag& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddUltimateSkillUnlockEffect(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddUltimateSkillUnlockEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetPerkCells(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetPerkCells(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetClassLevelText(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetClassLevelText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PerkLevelUpEffect(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPerkdeckWidget(char State); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerkdeckWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowUltimatePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowUltimatePerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayStatsLevelUpAnim(struct FDisplayAbility IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayLevelTextAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayLevelTextAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckUltimateOpen(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckUltimateOpen(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel, char& UltimateSound); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetUltimateSkillInfo(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPriceFontColor(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPriceFontColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	struct FText Get_TextBlock_Price_Text_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Get_TextBlock_Price_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CreatePerkDeck(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CreatePerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetPerks(struct UUW-Inventory_ItemSlotHover_C HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct FPerkDeckClassInfo PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncCohIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayReadyGivePerk(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StopReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StopReadyGivePerk(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncClassIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AbilityPowerAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityPowerAnimationFinished(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AbilitySpeedAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilitySpeedAnimationFinished(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void LevelUpAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.LevelUpAnimationFinished(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayKillGivePerk(int32_t KillCount); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayKillGivePerk(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnHoveredWidget(struct UWidget HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AbilityDefenseAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityDefenseAnimationFinished(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckFreeSupply(char IsInventoryOpen); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckFreeSupply(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void StartUltimateAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StartUltimateAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateUnlockLevel(int32_t NewLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateUnlockLevel(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void K2_RefreshPerkDeck(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.K2_RefreshPerkDeck(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_3(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetEnoughGold(char IsEnough); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnoughGold(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_Perk(int32_t EntryPoint); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ExecuteUbergraph_UW-Inventory_Perk(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2
@@ -264,25 +263,6 @@ inline void UUW-Inventory_Perk_C::ResetUltimateSound() {
 		
 	}; ResetUltimateSound_Params Params;
 
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
-// Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup
-inline void UUW-Inventory_Perk_C::AddGainPerkPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup");
-
-	struct AddGainPerkPopup_Params {
-		struct FPerkUIInfo PerkInfo;
-		int32_t CurrentLevel;
-		int32_t LastLevel;
-	}; AddGainPerkPopup_Params Params;
-
-	Params.PerkInfo = PerkInfo;
-	Params.CurrentLevel = CurrentLevel;
-	Params.LastLevel = LastLevel;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -721,13 +701,14 @@ inline void UUW-Inventory_Perk_C::CheckUltimateOpen(int32_t CurrentLevel) {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp
-inline void UUW-Inventory_Perk_C::PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
+inline void UUW-Inventory_Perk_C::PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel, char& UltimateSound) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp");
 
 	struct PerkLevelUp_Params {
 		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 		int32_t LastLevel;
+		char& UltimateSound;
 	}; PerkLevelUp_Params Params;
 
 	Params.PerkInfo = PerkInfo;
@@ -737,6 +718,9 @@ inline void UUW-Inventory_Perk_C::PerkLevelUp(struct FPerkUIInfo PerkInfo, int32
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
+
+	UltimateSound = Params.UltimateSound;
+
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo

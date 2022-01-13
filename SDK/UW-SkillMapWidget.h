@@ -33,20 +33,20 @@ public:
 	struct FVector2D MapBackGroundPosition; // 0x328 (8)
 	struct FVector2D RadarDummyPosition; // 0x330 (8)
 
-	void MapClickEvent(struct FVector ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CalcAllMapRatioByTargetRadius(float& Ratio); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CalcAllMapRatioByTargetRadius(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnMapLeftClick(struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayRadarOpenSound(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.PlayRadarOpenSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckPositionChanged(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CheckPositionChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetSkillMapRate(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.SetSkillMapRate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSkillMapStart(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnSkillMapStart(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetMapPlayers(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-SkillMapWidget(int32_t EntryPoint); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ExecuteUbergraph_UW-SkillMapWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void MapClickEvent(struct FVector ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CalcAllMapRatioByTargetRadius(float& Ratio); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CalcAllMapRatioByTargetRadius(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMapLeftClick(struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PlayRadarOpenSound(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.PlayRadarOpenSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckPositionChanged(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CheckPositionChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetSkillMapRate(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.SetSkillMapRate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnSkillMapStart(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnSkillMapStart(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetMapPlayers(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-SkillMapWidget(int32_t EntryPoint); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ExecuteUbergraph_UW-SkillMapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent

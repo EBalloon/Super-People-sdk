@@ -15,14 +15,14 @@ public:
 	struct UUW-ItemRecipeTree_C UW-ItemRecipeTree; // 0x290 (8)
 	struct FTimerHandle Timer; // 0x298 (8)
 
-	void Construct(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemKey(struct FName ItemKey, struct FName HaveItemKey); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.SetItemKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(struct FText Message); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_3(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ItemRecipeTreePopup(int32_t EntryPoint); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.ExecuteUbergraph_UW-ItemRecipeTreePopup(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetItemKey(struct FName ItemKey, struct FName HaveItemKey); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.SetItemKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_1(struct FText Message); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_2(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void 鉹@t元_3(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ItemRecipeTreePopup(int32_t EntryPoint); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.ExecuteUbergraph_UW-ItemRecipeTreePopup(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Construct

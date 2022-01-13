@@ -12,10 +12,10 @@ public:
 	struct TArray<struct FInventoryItemInfo> ItemInfos; // 0x288 (16)
 	struct UUW-InventoryWidget_C InventoryWidget; // 0x298 (8)
 
-	void CreateSlots(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.CreateSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Event_TitleVisible(char Visible); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Event_TitleVisible(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(int32_t EntryPoint); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
+	void CreateSlots(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.CreateSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Event_TitleVisible(char Visible); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Event_TitleVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(int32_t EntryPoint); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.CreateSlots

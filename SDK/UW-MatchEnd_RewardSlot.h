@@ -14,16 +14,16 @@ public:
 	struct FRewardItemInfo ItemInfo; // 0x288 (8)
 	struct FInventoryItemDetailInfo ItemDetailInfo; // 0x290 (1168)
 
-	void SetRarity(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.SetRarity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetHoverPosition(struct FVector2D ViewportSize, struct FVector2D MousePosition, struct FVector2D HoverSize, struct FVector2D& Out); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct FRewardItemInfo ItemInfo); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_476BD37943992650800406AA289D7379(struct Object Loaded); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-MatchEnd_RewardSlot(int32_t EntryPoint); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.ExecuteUbergraph_UW-MatchEnd_RewardSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetRarity(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.SetRarity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetHoverPosition(struct FVector2D ViewportSize, struct FVector2D MousePosition, struct FVector2D HoverSize, struct FVector2D& Out); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Init(struct FRewardItemInfo ItemInfo); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_476BD37943992650800406AA289D7379(struct Object Loaded); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-MatchEnd_RewardSlot(int32_t EntryPoint); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.ExecuteUbergraph_UW-MatchEnd_RewardSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.SetRarity

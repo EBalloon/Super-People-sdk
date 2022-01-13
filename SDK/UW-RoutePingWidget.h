@@ -17,20 +17,20 @@ public:
 	struct FVector2D GuideLinePos; // 0x2C0 (8)
 	char IsUpdate : 0; // 0x2C8 (1)
 
-	void InitGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ResetGuideLine(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateGuideLine(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsValidGuideLine(char& Valid); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.IsValidGuideLine(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetLineInfo(struct UUW-RoutePingWidget_Line_C LineRef, struct FVector2D CurrentPos, struct FVector2D NextPos); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetAngleCurrentToNext(struct FVector2D CurrentPos, struct FVector2D NextPos, float& Angle); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.GetAngleCurrentToNext(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetRouteWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetRouteWidgets(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTeamColor(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MakeWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.MakeWidgets(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Initialize(struct ABravoHotelPlayerState PlayerState); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateRoutePing(struct UBravoHotelMapCompWidget MapCompWidget, struct TArray<struct FVector2D>& Positions, char IsUpdate); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateRoutePing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-RoutePingWidget(int32_t EntryPoint); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ExecuteUbergraph_UW-RoutePingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ResetGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ResetGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void IsValidGuideLine(char& Valid); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.IsValidGuideLine(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetLineInfo(struct UUW-RoutePingWidget_Line_C LineRef, struct FVector2D CurrentPos, struct FVector2D NextPos); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetAngleCurrentToNext(struct FVector2D CurrentPos, struct FVector2D NextPos, float& Angle); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.GetAngleCurrentToNext(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetRouteWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetRouteWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTeamColor(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MakeWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.MakeWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Initialize(struct ABravoHotelPlayerState PlayerState); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateRoutePing(struct UBravoHotelMapCompWidget MapCompWidget, struct TArray<struct FVector2D>& Positions, char IsUpdate); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateRoutePing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-RoutePingWidget(int32_t EntryPoint); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ExecuteUbergraph_UW-RoutePingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine

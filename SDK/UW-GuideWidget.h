@@ -35,20 +35,22 @@ public:
 	struct UHorizontalBox WorldMap; // 0x330 (8)
 	struct UHorizontalBox WorldMap_Always; // 0x338 (8)
 	struct UCanvasPanel WorldMap_Pannel; // 0x340 (8)
+	enum class EToggleWidgetModeType CurrentToggleWidgetType; // 0x348 (1)
 
-	void UpdateWorldMapGuideOpacity(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckMainVisibility(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckMainVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void RefreshKeys(); // Function UW-GuideWidget.UW-GuideWidget_C.RefreshKeys(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckADSMode(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckADSMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateVisibleSpectateWidget(); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateVisibleSpectateWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetGuideMode(struct FText Message); // Function UW-GuideWidget.UW-GuideWidget_C.SetGuideMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibilityByUserSettings(); // Function UW-GuideWidget.UW-GuideWidget_C.SetVisibilityByUserSettings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Construct(); // Function UW-GuideWidget.UW-GuideWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedPlayerInfosDelegate_Event_1(); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangedPlayerInfosDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function UW-GuideWidget.UW-GuideWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnGameUserSettingsApply_Key_Event_1(struct TArray<enum class EKeySettingType>& List); // Function UW-GuideWidget.UW-GuideWidget_C.OnGameUserSettingsApply_Key_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangeWorldMapZoomLevelDelegate_Event_1(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangeWorldMapZoomLevelDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-GuideWidget(int32_t EntryPoint); // Function UW-GuideWidget.UW-GuideWidget_C.ExecuteUbergraph_UW-GuideWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void UpdateWorldMapGuideOpacity(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckMainVisibility(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckMainVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void RefreshKeys(); // Function UW-GuideWidget.UW-GuideWidget_C.RefreshKeys(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckADSMode(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckADSMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateVisibleSpectateWidget(); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateVisibleSpectateWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetGuideMode(struct FText Message); // Function UW-GuideWidget.UW-GuideWidget_C.SetGuideMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetVisibilityByUserSettings(); // Function UW-GuideWidget.UW-GuideWidget_C.SetVisibilityByUserSettings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Construct(); // Function UW-GuideWidget.UW-GuideWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangedPlayerInfosDelegate_Event_1(); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangedPlayerInfosDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function UW-GuideWidget.UW-GuideWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnGameUserSettingsApply_Key_Event_1(struct TArray<enum class EKeySettingType>& List); // Function UW-GuideWidget.UW-GuideWidget_C.OnGameUserSettingsApply_Key_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnChangeWorldMapZoomLevelDelegate_Event_1(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangeWorldMapZoomLevelDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnToggleWidgetDelegate_Event_1(enum class EToggleWidgetModeType& ToggleType); // Function UW-GuideWidget.UW-GuideWidget_C.OnToggleWidgetDelegate_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-GuideWidget(int32_t EntryPoint); // Function UW-GuideWidget.UW-GuideWidget_C.ExecuteUbergraph_UW-GuideWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity
@@ -227,6 +229,23 @@ inline void UUW-GuideWidget_C::OnChangeWorldMapZoomLevelDelegate_Event_1(int32_t
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
+}
+
+// Function UW-GuideWidget.UW-GuideWidget_C.OnToggleWidgetDelegate_Event_1
+inline void UUW-GuideWidget_C::OnToggleWidgetDelegate_Event_1(enum class EToggleWidgetModeType& ToggleType) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-GuideWidget.UW-GuideWidget_C.OnToggleWidgetDelegate_Event_1");
+
+	struct OnToggleWidgetDelegate_Event_1_Params {
+		enum class EToggleWidgetModeType& ToggleType;
+	}; OnToggleWidgetDelegate_Event_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ToggleType = Params.ToggleType;
+
 }
 
 // Function UW-GuideWidget.UW-GuideWidget_C.ExecuteUbergraph_UW-GuideWidget

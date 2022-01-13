@@ -25,18 +25,18 @@ public:
 	struct UPaperSprite PressedDefaultImage; // 0x2D0 (8)
 	struct UPaperSprite PressedHoverImage; // 0x2D8 (8)
 
-	void SetNew(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.SetNew(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetButtonImage(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.SetButtonImage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckSlotAnim(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CheckSlotAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckOwn(char& OutIsOwn, char& IsOwnAny); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CheckOwn(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCraftingWeapon(struct FItemCrafting& CraftingID); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.AddCraftingWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitCategoryInfo(struct FItemCrafting& CraftingInfo, struct UUW-Lobby_Craft_List_C ParentWidgetRef); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.InitCategoryInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_Category_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.BndEvt__Button_Category_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CloseList(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CloseList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OpenList(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.OpenList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Button_Category_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.BndEvt__Button_Category_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_Craft_List_Category(int32_t EntryPoint); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.ExecuteUbergraph_UW-Lobby_Craft_List_Category(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetNew(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.SetNew(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetButtonImage(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.SetButtonImage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckSlotAnim(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CheckSlotAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CheckOwn(char& OutIsOwn, char& IsOwnAny); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CheckOwn(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AddCraftingWeapon(struct FItemCrafting& CraftingID); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.AddCraftingWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void InitCategoryInfo(struct FItemCrafting& CraftingInfo, struct UUW-Lobby_Craft_List_C ParentWidgetRef); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.InitCategoryInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_Category_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.BndEvt__Button_Category_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void CloseList(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.CloseList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OpenList(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.OpenList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void BndEvt__Button_Category_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.BndEvt__Button_Category_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_Craft_List_Category(int32_t EntryPoint); // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.ExecuteUbergraph_UW-Lobby_Craft_List_Category(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_Craft_List_Category.UW-Lobby_Craft_List_Category_C.SetNew

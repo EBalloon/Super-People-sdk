@@ -8,7 +8,7 @@ public:
 	struct UWidgetSwitcher Switcher; // 0x258 (8)
 	float OwnDirection; // 0x260 (4)
 
-	void Initialize(float Direction); // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Initialize(float Direction); // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize

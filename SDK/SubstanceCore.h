@@ -77,23 +77,23 @@ public:
 	struct TMap<uint32_t, struct USubstanceOutputData> OutputInstances; // 0x108 (80)
 	char bIsFrozen : 0; // 0x158 (1)
 
-	void SetInputString(struct FString Identifier, struct FString Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8660>
-	void SetInputInt(struct FString Identifier, struct TArray<int32_t>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D8500>
-	char SetInputImg(struct FString InputName, struct Object Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputImg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8410>
-	void SetInputFloat(struct FString Identifier, struct TArray<float>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D82B0>
-	void SetInputColor(struct FString Identifier, struct FLinearColor& Color); // Function SubstanceCore.SubstanceGraphInstance.SetInputColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D8160>
-	void SetInputBool(struct FString Identifier, char Bool); // Function SubstanceCore.SubstanceGraphInstance.SetInputBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8020>
-	struct FSubstanceIntInputDesc GetIntInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D79D0>
-	struct FSubstanceInstanceDesc GetInstanceDesc(); // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D78A0>
-	char GetInputType(struct FString InputName); // Function SubstanceCore.SubstanceGraphInstance.GetInputType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D77A0>
-	struct FString GetInputString(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7660>
-	struct TArray<struct FString> GetInputNames(); // Function SubstanceCore.SubstanceGraphInstance.GetInputNames(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7580>
-	struct TArray<int32_t> GetInputInt(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputInt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7440>
-	struct TArray<float> GetInputFloat(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7300>
-	struct FLinearColor GetInputColor(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D71F0>
-	char GetInputBool(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D70F0>
-	struct FSubstanceFloatInputDesc GetFloatInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6DF0>
-	struct UMaterialInstanceDynamic GetDynamicMaterialInstance(struct FName Name, struct UMaterial InParentMaterial); // Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6C60>
+	void SetInputString(struct FString Identifier, struct FString Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputString(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D98C0>
+	void SetInputInt(struct FString Identifier, struct TArray<int32_t>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D9760>
+	char SetInputImg(struct FString InputName, struct Object Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputImg(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D9670>
+	void SetInputFloat(struct FString Identifier, struct TArray<float>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D9510>
+	void SetInputColor(struct FString Identifier, struct FLinearColor& Color); // Function SubstanceCore.SubstanceGraphInstance.SetInputColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D93C0>
+	void SetInputBool(struct FString Identifier, char Bool); // Function SubstanceCore.SubstanceGraphInstance.SetInputBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D9280>
+	struct FSubstanceIntInputDesc GetIntInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8C30>
+	struct FSubstanceInstanceDesc GetInstanceDesc(); // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8B00>
+	char GetInputType(struct FString InputName); // Function SubstanceCore.SubstanceGraphInstance.GetInputType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8A00>
+	struct FString GetInputString(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputString(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D88C0>
+	struct TArray<struct FString> GetInputNames(); // Function SubstanceCore.SubstanceGraphInstance.GetInputNames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D87E0>
+	struct TArray<int32_t> GetInputInt(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D86A0>
+	struct TArray<float> GetInputFloat(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8560>
+	struct FLinearColor GetInputColor(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8450>
+	char GetInputBool(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8350>
+	struct FSubstanceFloatInputDesc GetFloatInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D8050>
+	struct UMaterialInstanceDynamic GetDynamicMaterialInstance(struct FName Name, struct UMaterial InParentMaterial); // Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10D7EC0>
 };
 
 // Class SubstanceCore.SubstanceInstanceFactory

@@ -8,11 +8,11 @@ public:
 	struct UImage Image_Grade_Color_Line; // 0x258 (8)
 	struct FItemOption ItemOption; // 0x260 (184)
 
-	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Object Loaded); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Object Loaded); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption

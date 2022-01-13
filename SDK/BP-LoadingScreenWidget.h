@@ -18,19 +18,39 @@ public:
 	int32_t ImageIndex; // 0x308 (4)
 	int32_t TitleIndex; // 0x30C (4)
 
-	void SetInfo(enum class ELoadingScreenType Type, struct FSelectLoadingScreenData& OutData); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Object Loaded); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoad(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveEndAfterLoading(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ReceiveEndAfterLoading(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Update(struct FSelectLoadingScreenData& Data); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetDesc(struct FString Desc); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetDesc(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTitle(struct FText Title); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetTitle(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetImage(struct UTexture2D Imgae); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Load(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Destruct(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowDesc(float DelayTime); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ShowDesc(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_BP-LoadingScreenWidget(int32_t EntryPoint); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ExecuteUbergraph_BP-LoadingScreenWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Get ImageIndex(int32_t RandomIdx, int32_t& Index); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Get ImageIndex(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetInfo(enum class ELoadingScreenType Type, struct FSelectLoadingScreenData& OutData); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Object Loaded); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void AsyncLoad(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ReceiveEndAfterLoading(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ReceiveEndAfterLoading(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Update(struct FSelectLoadingScreenData& Data); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetDesc(struct FString Desc); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetDesc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetTitle(struct FText Title); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetTitle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetImage(struct UTexture2D Imgae); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Load(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Destruct(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ShowDesc(float DelayTime); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ShowDesc(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_BP-LoadingScreenWidget(int32_t EntryPoint); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ExecuteUbergraph_BP-LoadingScreenWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
+
+// Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Get ImageIndex
+inline void UBP-LoadingScreenWidget_C::Get ImageIndex(int32_t RandomIdx, int32_t& Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Get ImageIndex");
+
+	struct Get ImageIndex_Params {
+		int32_t RandomIdx;
+		int32_t& Index;
+	}; Get ImageIndex_Params Params;
+
+	Params.RandomIdx = RandomIdx;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Index = Params.Index;
+
+}
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo
 inline void UBP-LoadingScreenWidget_C::SetInfo(enum class ELoadingScreenType Type, struct FSelectLoadingScreenData& OutData) {

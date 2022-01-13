@@ -17,20 +17,20 @@ public:
 	float EndFocusDist; // 0x2B0 (4)
 	float CurrentFocusDist; // 0x2B4 (4)
 
-	void UpdateMouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateMouseY(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateMouseX(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateCharacter(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateCamera(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PercentDist(float CurDist, float& Percent); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.PercentDist(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Reset(char ForceSnap); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Hide(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Show(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-CustomizedCharacter(int32_t EntryPoint); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.ExecuteUbergraph_UW-CustomizedCharacter(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void UpdateMouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateMouseY(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateMouseX(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCharacter(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void UpdateCamera(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void PercentDist(float CurDist, float& Percent); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.PercentDist(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void MouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Reset(char ForceSnap); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Hide(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Show(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-CustomizedCharacter(int32_t EntryPoint); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.ExecuteUbergraph_UW-CustomizedCharacter(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel

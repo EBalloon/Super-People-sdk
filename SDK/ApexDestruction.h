@@ -27,10 +27,10 @@ public:
 	struct FMulticastInlineDelegate OnComponentFracture; // 0x720 (16)
 	struct FMulticastInlineDelegate OnFractureEffectSpawned; // 0x730 (16)
 
-	void SetDestructibleMesh(struct UDestructibleMesh NewMesh); // Function ApexDestruction.DestructibleComponent.SetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E30>
-	struct UDestructibleMesh GetDestructibleMesh(); // Function ApexDestruction.DestructibleComponent.GetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E00>
-	void ApplyRadiusDamage(float BaseDamage, struct FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage); // Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7C50>
-	void ApplyDamage(float DamageAmount, struct FVector& HitLocation, struct FVector& ImpulseDir, float ImpulseStrength); // Function ApexDestruction.DestructibleComponent.ApplyDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7AE0>
+	void SetDestructibleMesh(struct UDestructibleMesh NewMesh); // Function ApexDestruction.DestructibleComponent.SetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10A9040>
+	struct UDestructibleMesh GetDestructibleMesh(); // Function ApexDestruction.DestructibleComponent.GetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10A9010>
+	void ApplyRadiusDamage(float BaseDamage, struct FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage); // Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10A8E60>
+	void ApplyDamage(float DamageAmount, struct FVector& HitLocation, struct FVector& ImpulseDir, float ImpulseStrength); // Function ApexDestruction.DestructibleComponent.ApplyDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10A8CF0>
 };
 
 // Class ApexDestruction.DestructibleFractureSettings
@@ -52,8 +52,8 @@ class UDestructibleMesh : public USkeletalMesh {
 
 public:
 
-	struct FDestructibleParameters DefaultDestructibleParameters; // 0x3A8 (136)
-	struct TArray<struct FFractureEffect> FractureEffects; // 0x430 (16)
+	struct FDestructibleParameters DefaultDestructibleParameters; // 0x398 (136)
+	struct TArray<struct FFractureEffect> FractureEffects; // 0x420 (16)
 };
 
 // ScriptStruct ApexDestruction.DestructibleChunkParameters

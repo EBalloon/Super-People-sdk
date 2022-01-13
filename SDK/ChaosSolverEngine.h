@@ -43,8 +43,8 @@ public:
 	struct UBillboardComponent SpriteComponent; // 0x378 (8)
 	struct UChaosGameplayEventDispatcher GameplayEventDispatcherComponent; // 0x398 (8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <Game_BE.exe+0x47D9D30>
-	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47D9D10>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47E3D40>
+	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47E3D20>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings

@@ -7,7 +7,7 @@ public:
 	struct UTextBlock TextBlock_Selected; // 0x250 (8)
 	int32_t PlayerIndex; // 0x258 (4)
 
-	void SetTeamIndex(int32_t PlayerIndex); // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTeamIndex(int32_t PlayerIndex); // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex

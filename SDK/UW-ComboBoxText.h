@@ -10,9 +10,9 @@ public:
 	struct UTextBlock TextBlock_67; // 0x268 (8)
 	struct FText Text; // 0x270 (24)
 
-	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetSelect(char IsSelect); // Function UW-ComboBoxText.UW-ComboBoxText_C.SetSelect(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExecuteUbergraph_UW-ComboBoxText(int32_t EntryPoint); // Function UW-ComboBoxText.UW-ComboBoxText_C.ExecuteUbergraph_UW-ComboBoxText(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void SetSelect(char IsSelect); // Function UW-ComboBoxText.UW-ComboBoxText_C.SetSelect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
+	void ExecuteUbergraph_UW-ComboBoxText(int32_t EntryPoint); // Function UW-ComboBoxText.UW-ComboBoxText_C.ExecuteUbergraph_UW-ComboBoxText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B87A30>
 };
 
 // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature
