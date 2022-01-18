@@ -1,0 +1,1724 @@
+// BlueprintGeneratedClass LV-Title_Alternative.LV-Title_Alternative_C
+class ALV-Title_Alternative_C : public ALevelScriptActor {
+
+public:
+
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x308 (8)
+	struct UBP-TitleWidget_C TitleWidgetRef; // 0x310 (8)
+	struct UBP-LobbyWidget_Web_C LobbyWidgetRef; // 0x318 (8)
+	struct TArray<struct ACharacter> LobbyPawns; // 0x320 (16)
+	struct TSoftClassPtr<UObject> LobbyPawnClass; // 0x330 (40)
+	struct FKey SkipKey; // 0x358 (24)
+	char bSkip : 0; // 0x370 (1)
+	char bNotFirstTime : 0; // 0x371 (1)
+	struct ACharacter LobbyCustomizePawn; // 0x378 (8)
+	char IsCharacterAppearance : 0; // 0x380 (1)
+	struct ACineCameraActor TargetWearableCamera; // 0x388 (8)
+	struct FString CurrentArmorySceneState; // 0x390 (16)
+	float SurveyUPanValue; // 0x3A0 (4)
+	float GunSurveyMovingValue; // 0x3A4 (4)
+	struct UMaterialInstanceDynamic SurveyUPan; // 0x3A8 (8)
+	struct UMaterialInstanceDynamic GunSurveyMoving; // 0x3B0 (8)
+	struct FTimerHandle IdentifiedTimer; // 0x3B8 (8)
+	struct FString CurrentTab; // 0x3C0 (16)
+	struct UMaterialInstanceDynamic PP-OutlineGlow; // 0x3D0 (8)
+	struct FAudioPlayingHandle AudioIndex_BGM; // 0x3D8 (4)
+	struct FAudioPlayingHandle AudioIndex_Ambience; // 0x3DC (4)
+	struct FAudioPlayingHandle AudioIndex_Analyze; // 0x3E0 (4)
+	char PendingPartyInfoChange : 0; // 0x3E4 (1)
+	struct FTimerHandle EnhanceTimerHandle; // 0x3E8 (8)
+	struct FTimerHandle ProceedingTimerHandle; // 0x3F0 (8)
+	struct UBP-CreateCharacterWidget_Web_C CreateCharacterRef; // 0x3F8 (8)
+	struct UUW-IntroBackground_C IntroBGWidget; // 0x400 (8)
+	struct UMediaSoundComponent MediaSoundComponent; // 0x408 (8)
+	char bPlaySoloSequencePlayer : 0; // 0x410 (1)
+	struct FString CurrentArmoryTab; // 0x418 (16)
+	struct UUW-LoginWidget_C LoginWidget; // 0x428 (8)
+	char bFinished_SequencePlayer_Endgame : 0; // 0x430 (1)
+	struct ASkeletalMeshActor ANIM-Lobby01_5_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x438 (8)
+	struct ASkeletalMeshActor ANIM-Lobby02_8_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x440 (8)
+	struct ASkeletalMeshActor ANIM-Lobby03_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x448 (8)
+	struct ASkeletalMeshActor ANIM-Lobby04_11_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x450 (8)
+	struct ASkeletalMeshActor SK-Body_Female_5_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x458 (8)
+	struct ALevelSequenceActor Title_TowerBridge_Squard_5_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x460 (8)
+	struct ASkeletalMeshActor SK-Body_Female_Ranking_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x468 (8)
+	struct ABravoHotelAmbientSound Ak-LobbySound_1_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x470 (8)
+	struct ALevelSequenceActor Title_TowerBridge_Endgame_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x478 (8)
+	struct ALevelSequenceActor Title_TowerBridge_Readyshot_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x480 (8)
+	struct ALevelSequenceActor Character_Creation_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x488 (8)
+	struct AExponentialHeightFog ExponentialHeightFog3_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x490 (8)
+	struct AExponentialHeightFog ExponentialHeightFog_1_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x498 (8)
+	struct ACineCameraActor CineCameraActor_1_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4A0 (8)
+	struct ACineCameraActor CineCamera_Supplybox_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4A8 (8)
+	struct ACineCameraActor CineCamera_All_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4B0 (8)
+	struct ALevelSequenceActor Character_Customization_Face_3_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4B8 (8)
+	struct ALevelSequenceActor Supplybox_Lobby_4_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4C0 (8)
+	struct ALevelSequenceActor Supplybox_Lobby_3_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4C8 (8)
+	struct ACineCameraActor CineCamera_Target_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4D0 (8)
+	struct ACineCameraActor CineCamera_Rank_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4D8 (8)
+	struct ALevelSequenceActor Title_Rank_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4E0 (8)
+	struct AStaticMeshActor Gun_Survey_Plane_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4E8 (8)
+	struct ALevelSequenceActor Weapon_Lobby_01_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4F0 (8)
+	struct ACineCameraActor CineCamera_Face3_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x4F8 (8)
+	struct ALevelSequenceActor Screen_Transition_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x500 (8)
+	struct ALevelSequenceActor Character_Fade_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x508 (8)
+	struct AEmitter PS-LobbyRay1_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x510 (8)
+	struct AEmitter PS-LobbyRay2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x518 (8)
+	struct AEmitter PS-LobbyRay3_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x520 (8)
+	struct AEmitter PS-LobbyRay4_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x528 (8)
+	struct AEmitter PS-LobbyRay5_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x530 (8)
+	struct AEmitter PS-LobbyRay6_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x538 (8)
+	struct AEmitter PS-LobbyRay7_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x540 (8)
+	struct AEmitter PS-LobbyRay8_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x548 (8)
+	struct ALevelSequenceActor Weapon_Lobby_Disassemble_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x550 (8)
+	struct ALevelSequenceActor Weapon_Lobby_Repair_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x558 (8)
+	struct ACineCameraActor CineCamera_Weapon_Customization02_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x560 (8)
+	struct ACineCameraActor CineCamera_Weapon_Customization_2_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x568 (8)
+	struct ALevelSequenceActor Weapon_Lobby_Custom_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x570 (8)
+	struct ASkeletalMeshActor SK-Body_Female_Creation_ExecuteUbergraph_LV-Title_Alternative_RefProperty; // 0x578 (8)
+	struct ACineCameraActor CineCameraActor_1_EdGraph_4_RefProperty; // 0x580 (8)
+	struct AStaticMeshActor Gun_Survey_Plane_EdGraph_11_RefProperty; // 0x588 (8)
+	struct AStaticMeshActor Gun_Survey_Plane_EdGraph_12_RefProperty; // 0x590 (8)
+	struct AStaticMeshActor Gun_Survey_Plane_EdGraph_13_RefProperty; // 0x598 (8)
+	struct APostProcessVolume PostProcessVolume2_EdGraph_14_RefProperty; // 0x5A0 (8)
+	struct APostProcessVolume PostProcessVolume2_EdGraph_15_RefProperty; // 0x5A8 (8)
+	struct ALevelSequenceActor Supplybox_Lobby_4_EdGraph_16_RefProperty; // 0x5B0 (8)
+	struct ALevelSequenceActor Title_Rank_2_EdGraph_16_RefProperty; // 0x5B8 (8)
+	struct ALevelSequenceActor Character_Customization_Face_3_EdGraph_16_RefProperty; // 0x5C0 (8)
+	struct ALevelSequenceActor Supplybox_Lobby_3_EdGraph_16_RefProperty; // 0x5C8 (8)
+	struct AStaticMeshActor Plane_3_EdGraph_27_RefProperty; // 0x5D0 (8)
+	struct AStaticMeshActor Plane_2_EdGraph_27_RefProperty; // 0x5D8 (8)
+	struct AStaticMeshActor Plane_4_EdGraph_27_RefProperty; // 0x5E0 (8)
+
+	void SetSequecePanelColor(int32_t WeaponRarity); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ChangeMenu(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangeMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTutorial(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayLobbySound(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdatePartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdatePartyInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetGammaSettings(struct UUW-StartGammaSetting_C& GammaWidget); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetGammaSettings(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetTitleWdiget(struct UBP-TitleWidget_C& HUD); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetTitleWdiget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void StopArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAnalyzeSound(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAnalyzeSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void StopArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void StopSequence(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopSequence(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetOutlineGlow(float Value); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetOutlineGlow(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void InitPostProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitPostProcess(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void FinishIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.FinishIdentified(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ResetIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ResetIdentified(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdateIdentifiedEffect(float DeltaTime); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdateIdentifiedEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SequencePlay(struct UMovieSceneSequencePlayer Sequence, int32_t StartFrame, int32_t Duration); // Function LV-Title_Alternative.LV-Title_Alternative_C.SequencePlay(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void StopLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayMoveLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayMoveLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayBGM(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayBGM(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ShowLobbyWidget(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.ShowLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetCamera(char bLogin); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCamera(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void LoadSavedData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.LoadSavedData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SaveUserData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SaveUserData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTitleWidget(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTitleWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void InitData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BindPartyEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnPartyInfoChanged(struct FBravoHotelPartyInfo& PartyInfo); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnPartyInfoChanged(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetPartyView(char bIsParty); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetPartyView(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BindPartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_5(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_5(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnMatchingSucceeded(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BindLoginProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLoginProcess(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnTriedToLogin(struct FName UserName, struct FString Password); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnTriedToLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetLobbyAkComponent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetLobbyAkComponent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void InitFlow(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitFlow(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneNotice(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneNotice(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneGammaSettings(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneGammaSettings(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneCompanyLogo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCompanyLogo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneSupportProgram(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneSupportProgram(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneLogin(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneOpeningMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneOpeningMovie(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneTermsConditions(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTermsConditions(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneCreateCharacter(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCreateCharacter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneTutorialMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTutorialMovie(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ChangedSceneDelegate_Event_1(enum class ESceneType SceneType); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_13(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_13(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ChangedLoginDelegate_Event_1(enum class ELoginFlow LoginFlow); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedLoginDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveLoginFlowServicePlatform(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowServicePlatform(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneLobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLobby(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_15(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_15(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveLoginFlowWaitingTicket(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowWaitingTicket(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveNextScene(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveNextScene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_16(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_16(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveSceneStartScenarioMode(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneStartScenarioMode(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveScenePlayTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveScenePlayTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnFinished_Event_3(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveLoginFlowCatalogue(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowCatalogue(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Lobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Lobby(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Armory(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Armory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event SupplyBox(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event SupplyBox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Character(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Character(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Rank(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Rank(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnFinished_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnFinished_Event_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Identified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Identified(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event Replay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Replay(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BindLobbyCharacterMenu(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLobbyCharacterMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void EventMoveLobbyCharacterWearable(struct FString WearableMenu); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterWearable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void EventMoveLobbyCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterAppearance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void EventChangeTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_Enhance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Enhance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_Proceeding(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Proceeding(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_EnhanceResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_EnhanceResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void EventChangeArmmyScene(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeArmmyScene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_ArmoryEx(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_ArmoryEx(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void EventSeasonChangedSubTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventSeasonChangedSubTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_4(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_4(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ArmoryUI(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ArmoryUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_6(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_6(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_8(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_8(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_7(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_7(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_9(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_9(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ApplyChangeTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ApplyChangeTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_11(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_11(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_12(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_12(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent_10(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_10(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveLobbyCharacterAppearanceDelegate_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLobbyCharacterAppearanceDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveCreateCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterAppearance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void MoveCreateCharacterWearable(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterWearable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnChangedArmoryTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnChangedArmoryTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_Craft(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Craft(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CustomEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Event_CraftResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_CraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetCurrentArmoryCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCurrentArmoryCamera(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetArmorySequenceCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetArmorySequenceCamera(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void InitArmoryTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitArmoryTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveTick(float DeltaSeconds); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveDestroyed(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveEndPlay(char EndPlayReason); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ExecuteUbergraph_LV-Title_Alternative(int32_t EntryPoint); // Function LV-Title_Alternative.LV-Title_Alternative_C.ExecuteUbergraph_LV-Title_Alternative(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+};
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor
+inline void ALV-Title_Alternative_C::SetSequecePanelColor(int32_t WeaponRarity) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor");
+
+	struct SetSequecePanelColor_Params {
+		int32_t WeaponRarity;
+	}; SetSequecePanelColor_Params Params;
+
+	Params.WeaponRarity = WeaponRarity;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ChangeMenu
+inline void ALV-Title_Alternative_C::ChangeMenu(struct FString Menu) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ChangeMenu");
+
+	struct ChangeMenu_Params {
+		struct FString Menu;
+	}; ChangeMenu_Params Params;
+
+	Params.Menu = Menu;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetTutorial
+inline void ALV-Title_Alternative_C::SetTutorial() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetTutorial");
+
+	struct SetTutorial_Params {
+		
+	}; SetTutorial_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayLobbySound
+inline void ALV-Title_Alternative_C::PlayLobbySound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayLobbySound");
+
+	struct PlayLobbySound_Params {
+		
+	}; PlayLobbySound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.UpdatePartyInfo
+inline void ALV-Title_Alternative_C::UpdatePartyInfo() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.UpdatePartyInfo");
+
+	struct UpdatePartyInfo_Params {
+		
+	}; UpdatePartyInfo_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.GetGammaSettings
+inline void ALV-Title_Alternative_C::GetGammaSettings(struct UUW-StartGammaSetting_C& GammaWidget) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.GetGammaSettings");
+
+	struct GetGammaSettings_Params {
+		struct UUW-StartGammaSetting_C& GammaWidget;
+	}; GetGammaSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	GammaWidget = Params.GammaWidget;
+
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.GetTitleWdiget
+inline void ALV-Title_Alternative_C::GetTitleWdiget(struct UBP-TitleWidget_C& HUD) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.GetTitleWdiget");
+
+	struct GetTitleWdiget_Params {
+		struct UBP-TitleWidget_C& HUD;
+	}; GetTitleWdiget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	HUD = Params.HUD;
+
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAnalyzeSound
+inline void ALV-Title_Alternative_C::StopArmoryAnalyzeSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAnalyzeSound");
+
+	struct StopArmoryAnalyzeSound_Params {
+		
+	}; StopArmoryAnalyzeSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAnalyzeSound
+inline void ALV-Title_Alternative_C::PlayArmoryAnalyzeSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAnalyzeSound");
+
+	struct PlayArmoryAnalyzeSound_Params {
+		
+	}; PlayArmoryAnalyzeSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAmbienceSound
+inline void ALV-Title_Alternative_C::StopArmoryAmbienceSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAmbienceSound");
+
+	struct StopArmoryAmbienceSound_Params {
+		
+	}; StopArmoryAmbienceSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAmbienceSound
+inline void ALV-Title_Alternative_C::PlayArmoryAmbienceSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAmbienceSound");
+
+	struct PlayArmoryAmbienceSound_Params {
+		
+	}; PlayArmoryAmbienceSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.StopSequence
+inline void ALV-Title_Alternative_C::StopSequence() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.StopSequence");
+
+	struct StopSequence_Params {
+		
+	}; StopSequence_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetOutlineGlow
+inline void ALV-Title_Alternative_C::SetOutlineGlow(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetOutlineGlow");
+
+	struct SetOutlineGlow_Params {
+		float Value;
+	}; SetOutlineGlow_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.InitPostProcess
+inline void ALV-Title_Alternative_C::InitPostProcess() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.InitPostProcess");
+
+	struct InitPostProcess_Params {
+		
+	}; InitPostProcess_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.FinishIdentified
+inline void ALV-Title_Alternative_C::FinishIdentified() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.FinishIdentified");
+
+	struct FinishIdentified_Params {
+		
+	}; FinishIdentified_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ResetIdentified
+inline void ALV-Title_Alternative_C::ResetIdentified() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ResetIdentified");
+
+	struct ResetIdentified_Params {
+		
+	}; ResetIdentified_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.UpdateIdentifiedEffect
+inline void ALV-Title_Alternative_C::UpdateIdentifiedEffect(float DeltaTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.UpdateIdentifiedEffect");
+
+	struct UpdateIdentifiedEffect_Params {
+		float DeltaTime;
+	}; UpdateIdentifiedEffect_Params Params;
+
+	Params.DeltaTime = DeltaTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SequencePlay
+inline void ALV-Title_Alternative_C::SequencePlay(struct UMovieSceneSequencePlayer Sequence, int32_t StartFrame, int32_t Duration) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SequencePlay");
+
+	struct SequencePlay_Params {
+		struct UMovieSceneSequencePlayer Sequence;
+		int32_t StartFrame;
+		int32_t Duration;
+	}; SequencePlay_Params Params;
+
+	Params.Sequence = Sequence;
+	Params.StartFrame = StartFrame;
+	Params.Duration = Duration;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.StopLobbySound
+inline void ALV-Title_Alternative_C::StopLobbySound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.StopLobbySound");
+
+	struct StopLobbySound_Params {
+		
+	}; StopLobbySound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayMoveLobbySound
+inline void ALV-Title_Alternative_C::PlayMoveLobbySound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayMoveLobbySound");
+
+	struct PlayMoveLobbySound_Params {
+		
+	}; PlayMoveLobbySound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayAmbienceSound
+inline void ALV-Title_Alternative_C::PlayAmbienceSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayAmbienceSound");
+
+	struct PlayAmbienceSound_Params {
+		
+	}; PlayAmbienceSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.PlayBGM
+inline void ALV-Title_Alternative_C::PlayBGM() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.PlayBGM");
+
+	struct PlayBGM_Params {
+		
+	}; PlayBGM_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ShowLobbyWidget
+inline void ALV-Title_Alternative_C::ShowLobbyWidget(char IsConnectedLoginServer) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ShowLobbyWidget");
+
+	struct ShowLobbyWidget_Params {
+		char IsConnectedLoginServer;
+	}; ShowLobbyWidget_Params Params;
+
+	Params.IsConnectedLoginServer = IsConnectedLoginServer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetCamera
+inline void ALV-Title_Alternative_C::SetCamera(char bLogin) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetCamera");
+
+	struct SetCamera_Params {
+		char bLogin;
+	}; SetCamera_Params Params;
+
+	Params.bLogin = bLogin;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.LoadSavedData
+inline void ALV-Title_Alternative_C::LoadSavedData() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.LoadSavedData");
+
+	struct LoadSavedData_Params {
+		
+	}; LoadSavedData_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SaveUserData
+inline void ALV-Title_Alternative_C::SaveUserData() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SaveUserData");
+
+	struct SaveUserData_Params {
+		
+	}; SaveUserData_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetTitleWidget
+inline void ALV-Title_Alternative_C::SetTitleWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetTitleWidget");
+
+	struct SetTitleWidget_Params {
+		
+	}; SetTitleWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.InitData
+inline void ALV-Title_Alternative_C::InitData() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.InitData");
+
+	struct InitData_Params {
+		
+	}; InitData_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyEvent
+inline void ALV-Title_Alternative_C::BindPartyEvent() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyEvent");
+
+	struct BindPartyEvent_Params {
+		
+	}; BindPartyEvent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnPartyInfoChanged
+inline void ALV-Title_Alternative_C::OnPartyInfoChanged(struct FBravoHotelPartyInfo& PartyInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnPartyInfoChanged");
+
+	struct OnPartyInfoChanged_Params {
+		struct FBravoHotelPartyInfo& PartyInfo;
+	}; OnPartyInfoChanged_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PartyInfo = Params.PartyInfo;
+
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetPartyView
+inline void ALV-Title_Alternative_C::SetPartyView(char bIsParty) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetPartyView");
+
+	struct SetPartyView_Params {
+		char bIsParty;
+	}; SetPartyView_Params Params;
+
+	Params.bIsParty = bIsParty;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyInfo
+inline void ALV-Title_Alternative_C::BindPartyInfo() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyInfo");
+
+	struct BindPartyInfo_Params {
+		
+	}; BindPartyInfo_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_5
+inline void ALV-Title_Alternative_C::CustomEvent_5() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_5");
+
+	struct CustomEvent_5_Params {
+		
+	}; CustomEvent_5_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnMatchingSucceeded
+inline void ALV-Title_Alternative_C::OnMatchingSucceeded() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnMatchingSucceeded");
+
+	struct OnMatchingSucceeded_Params {
+		
+	}; OnMatchingSucceeded_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.BindLoginProcess
+inline void ALV-Title_Alternative_C::BindLoginProcess() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.BindLoginProcess");
+
+	struct BindLoginProcess_Params {
+		
+	}; BindLoginProcess_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnTriedToLogin
+inline void ALV-Title_Alternative_C::OnTriedToLogin(struct FName UserName, struct FString Password) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnTriedToLogin");
+
+	struct OnTriedToLogin_Params {
+		struct FName UserName;
+		struct FString Password;
+	}; OnTriedToLogin_Params Params;
+
+	Params.UserName = UserName;
+	Params.Password = Password;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetLobbyAkComponent
+inline void ALV-Title_Alternative_C::SetLobbyAkComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetLobbyAkComponent");
+
+	struct SetLobbyAkComponent_Params {
+		
+	}; SetLobbyAkComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.InitFlow
+inline void ALV-Title_Alternative_C::InitFlow(char IsConnectedLoginServer) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.InitFlow");
+
+	struct InitFlow_Params {
+		char IsConnectedLoginServer;
+	}; InitFlow_Params Params;
+
+	Params.IsConnectedLoginServer = IsConnectedLoginServer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneNotice
+inline void ALV-Title_Alternative_C::MoveSceneNotice() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneNotice");
+
+	struct MoveSceneNotice_Params {
+		
+	}; MoveSceneNotice_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneGammaSettings
+inline void ALV-Title_Alternative_C::MoveSceneGammaSettings() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneGammaSettings");
+
+	struct MoveSceneGammaSettings_Params {
+		
+	}; MoveSceneGammaSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCompanyLogo
+inline void ALV-Title_Alternative_C::MoveSceneCompanyLogo() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCompanyLogo");
+
+	struct MoveSceneCompanyLogo_Params {
+		
+	}; MoveSceneCompanyLogo_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneSupportProgram
+inline void ALV-Title_Alternative_C::MoveSceneSupportProgram() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneSupportProgram");
+
+	struct MoveSceneSupportProgram_Params {
+		
+	}; MoveSceneSupportProgram_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLogin
+inline void ALV-Title_Alternative_C::MoveSceneLogin() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLogin");
+
+	struct MoveSceneLogin_Params {
+		
+	}; MoveSceneLogin_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneOpeningMovie
+inline void ALV-Title_Alternative_C::MoveSceneOpeningMovie() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneOpeningMovie");
+
+	struct MoveSceneOpeningMovie_Params {
+		
+	}; MoveSceneOpeningMovie_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTermsConditions
+inline void ALV-Title_Alternative_C::MoveSceneTermsConditions() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTermsConditions");
+
+	struct MoveSceneTermsConditions_Params {
+		
+	}; MoveSceneTermsConditions_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCreateCharacter
+inline void ALV-Title_Alternative_C::MoveSceneCreateCharacter() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCreateCharacter");
+
+	struct MoveSceneCreateCharacter_Params {
+		
+	}; MoveSceneCreateCharacter_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTutorialMovie
+inline void ALV-Title_Alternative_C::MoveSceneTutorialMovie() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTutorialMovie");
+
+	struct MoveSceneTutorialMovie_Params {
+		
+	}; MoveSceneTutorialMovie_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedSceneDelegate_Event_1
+inline void ALV-Title_Alternative_C::ChangedSceneDelegate_Event_1(enum class ESceneType SceneType) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedSceneDelegate_Event_1");
+
+	struct ChangedSceneDelegate_Event_1_Params {
+		enum class ESceneType SceneType;
+	}; ChangedSceneDelegate_Event_1_Params Params;
+
+	Params.SceneType = SceneType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_13
+inline void ALV-Title_Alternative_C::CustomEvent_13() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_13");
+
+	struct CustomEvent_13_Params {
+		
+	}; CustomEvent_13_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedLoginDelegate_Event_1
+inline void ALV-Title_Alternative_C::ChangedLoginDelegate_Event_1(enum class ELoginFlow LoginFlow) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedLoginDelegate_Event_1");
+
+	struct ChangedLoginDelegate_Event_1_Params {
+		enum class ELoginFlow LoginFlow;
+	}; ChangedLoginDelegate_Event_1_Params Params;
+
+	Params.LoginFlow = LoginFlow;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowServicePlatform
+inline void ALV-Title_Alternative_C::MoveLoginFlowServicePlatform() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowServicePlatform");
+
+	struct MoveLoginFlowServicePlatform_Params {
+		
+	}; MoveLoginFlowServicePlatform_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLobby
+inline void ALV-Title_Alternative_C::MoveSceneLobby() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLobby");
+
+	struct MoveSceneLobby_Params {
+		
+	}; MoveSceneLobby_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_15
+inline void ALV-Title_Alternative_C::CustomEvent_15() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_15");
+
+	struct CustomEvent_15_Params {
+		
+	}; CustomEvent_15_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowWaitingTicket
+inline void ALV-Title_Alternative_C::MoveLoginFlowWaitingTicket() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowWaitingTicket");
+
+	struct MoveLoginFlowWaitingTicket_Params {
+		
+	}; MoveLoginFlowWaitingTicket_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveNextScene
+inline void ALV-Title_Alternative_C::MoveNextScene() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveNextScene");
+
+	struct MoveNextScene_Params {
+		
+	}; MoveNextScene_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_16
+inline void ALV-Title_Alternative_C::CustomEvent_16() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_16");
+
+	struct CustomEvent_16_Params {
+		
+	}; CustomEvent_16_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneStartScenarioMode
+inline void ALV-Title_Alternative_C::MoveSceneStartScenarioMode() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneStartScenarioMode");
+
+	struct MoveSceneStartScenarioMode_Params {
+		
+	}; MoveSceneStartScenarioMode_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveScenePlayTutorial
+inline void ALV-Title_Alternative_C::MoveScenePlayTutorial() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveScenePlayTutorial");
+
+	struct MoveScenePlayTutorial_Params {
+		
+	}; MoveScenePlayTutorial_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_3
+inline void ALV-Title_Alternative_C::OnFinished_Event_3() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_3");
+
+	struct OnFinished_Event_3_Params {
+		
+	}; OnFinished_Event_3_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowCatalogue
+inline void ALV-Title_Alternative_C::MoveLoginFlowCatalogue() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowCatalogue");
+
+	struct MoveLoginFlowCatalogue_Params {
+		
+	}; MoveLoginFlowCatalogue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Lobby
+inline void ALV-Title_Alternative_C::Event Lobby() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Lobby");
+
+	struct Event Lobby_Params {
+		
+	}; Event Lobby_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Armory
+inline void ALV-Title_Alternative_C::Event Armory() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Armory");
+
+	struct Event Armory_Params {
+		
+	}; Event Armory_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event SupplyBox
+inline void ALV-Title_Alternative_C::Event SupplyBox() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event SupplyBox");
+
+	struct Event SupplyBox_Params {
+		
+	}; Event SupplyBox_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Character
+inline void ALV-Title_Alternative_C::Event Character() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Character");
+
+	struct Event Character_Params {
+		
+	}; Event Character_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Rank
+inline void ALV-Title_Alternative_C::Event Rank() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Rank");
+
+	struct Event Rank_Params {
+		
+	}; Event Rank_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_1
+inline void ALV-Title_Alternative_C::OnFinished_Event_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_1");
+
+	struct OnFinished_Event_1_Params {
+		
+	}; OnFinished_Event_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_2
+inline void ALV-Title_Alternative_C::OnFinished_Event_2() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_2");
+
+	struct OnFinished_Event_2_Params {
+		
+	}; OnFinished_Event_2_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Identified
+inline void ALV-Title_Alternative_C::Event Identified() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Identified");
+
+	struct Event Identified_Params {
+		
+	}; Event Identified_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_2
+inline void ALV-Title_Alternative_C::CustomEvent_2() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_2");
+
+	struct CustomEvent_2_Params {
+		
+	}; CustomEvent_2_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event Replay
+inline void ALV-Title_Alternative_C::Event Replay() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event Replay");
+
+	struct Event Replay_Params {
+		
+	}; Event Replay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.BindLobbyCharacterMenu
+inline void ALV-Title_Alternative_C::BindLobbyCharacterMenu() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.BindLobbyCharacterMenu");
+
+	struct BindLobbyCharacterMenu_Params {
+		
+	}; BindLobbyCharacterMenu_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterWearable
+inline void ALV-Title_Alternative_C::EventMoveLobbyCharacterWearable(struct FString WearableMenu) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterWearable");
+
+	struct EventMoveLobbyCharacterWearable_Params {
+		struct FString WearableMenu;
+	}; EventMoveLobbyCharacterWearable_Params Params;
+
+	Params.WearableMenu = WearableMenu;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterAppearance
+inline void ALV-Title_Alternative_C::EventMoveLobbyCharacterAppearance() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterAppearance");
+
+	struct EventMoveLobbyCharacterAppearance_Params {
+		
+	}; EventMoveLobbyCharacterAppearance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeTab
+inline void ALV-Title_Alternative_C::EventChangeTab(struct FString TabName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeTab");
+
+	struct EventChangeTab_Params {
+		struct FString TabName;
+	}; EventChangeTab_Params Params;
+
+	Params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Enhance
+inline void ALV-Title_Alternative_C::Event_Enhance() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Enhance");
+
+	struct Event_Enhance_Params {
+		
+	}; Event_Enhance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Proceeding
+inline void ALV-Title_Alternative_C::Event_Proceeding() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Proceeding");
+
+	struct Event_Proceeding_Params {
+		
+	}; Event_Proceeding_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_EnhanceResult
+inline void ALV-Title_Alternative_C::Event_EnhanceResult() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_EnhanceResult");
+
+	struct Event_EnhanceResult_Params {
+		
+	}; Event_EnhanceResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeArmmyScene
+inline void ALV-Title_Alternative_C::EventChangeArmmyScene(struct FString SceneName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeArmmyScene");
+
+	struct EventChangeArmmyScene_Params {
+		struct FString SceneName;
+	}; EventChangeArmmyScene_Params Params;
+
+	Params.SceneName = SceneName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_ArmoryEx
+inline void ALV-Title_Alternative_C::Event_ArmoryEx() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_ArmoryEx");
+
+	struct Event_ArmoryEx_Params {
+		
+	}; Event_ArmoryEx_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_1
+inline void ALV-Title_Alternative_C::CustomEvent_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_1");
+
+	struct CustomEvent_1_Params {
+		
+	}; CustomEvent_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.EventSeasonChangedSubTab
+inline void ALV-Title_Alternative_C::EventSeasonChangedSubTab(struct FString TabName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.EventSeasonChangedSubTab");
+
+	struct EventSeasonChangedSubTab_Params {
+		struct FString TabName;
+	}; EventSeasonChangedSubTab_Params Params;
+
+	Params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_4
+inline void ALV-Title_Alternative_C::CustomEvent_4() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_4");
+
+	struct CustomEvent_4_Params {
+		
+	}; CustomEvent_4_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ArmoryUI
+inline void ALV-Title_Alternative_C::ArmoryUI() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ArmoryUI");
+
+	struct ArmoryUI_Params {
+		
+	}; ArmoryUI_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_6
+inline void ALV-Title_Alternative_C::CustomEvent_6() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_6");
+
+	struct CustomEvent_6_Params {
+		
+	}; CustomEvent_6_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_8
+inline void ALV-Title_Alternative_C::CustomEvent_8(struct FString Menu) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_8");
+
+	struct CustomEvent_8_Params {
+		struct FString Menu;
+	}; CustomEvent_8_Params Params;
+
+	Params.Menu = Menu;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_7
+inline void ALV-Title_Alternative_C::CustomEvent_7() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_7");
+
+	struct CustomEvent_7_Params {
+		
+	}; CustomEvent_7_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_9
+inline void ALV-Title_Alternative_C::CustomEvent_9(struct FString TabName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_9");
+
+	struct CustomEvent_9_Params {
+		struct FString TabName;
+	}; CustomEvent_9_Params Params;
+
+	Params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ApplyChangeTab
+inline void ALV-Title_Alternative_C::ApplyChangeTab() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ApplyChangeTab");
+
+	struct ApplyChangeTab_Params {
+		
+	}; ApplyChangeTab_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_11
+inline void ALV-Title_Alternative_C::CustomEvent_11(struct FString TabName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_11");
+
+	struct CustomEvent_11_Params {
+		struct FString TabName;
+	}; CustomEvent_11_Params Params;
+
+	Params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_12
+inline void ALV-Title_Alternative_C::CustomEvent_12(struct FString SceneName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_12");
+
+	struct CustomEvent_12_Params {
+		struct FString SceneName;
+	}; CustomEvent_12_Params Params;
+
+	Params.SceneName = SceneName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_10
+inline void ALV-Title_Alternative_C::CustomEvent_10(struct FString Menu) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_10");
+
+	struct CustomEvent_10_Params {
+		struct FString Menu;
+	}; CustomEvent_10_Params Params;
+
+	Params.Menu = Menu;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLobbyCharacterAppearanceDelegate_Event_1
+inline void ALV-Title_Alternative_C::MoveLobbyCharacterAppearanceDelegate_Event_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLobbyCharacterAppearanceDelegate_Event_1");
+
+	struct MoveLobbyCharacterAppearanceDelegate_Event_1_Params {
+		
+	}; MoveLobbyCharacterAppearanceDelegate_Event_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterAppearance
+inline void ALV-Title_Alternative_C::MoveCreateCharacterAppearance() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterAppearance");
+
+	struct MoveCreateCharacterAppearance_Params {
+		
+	}; MoveCreateCharacterAppearance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterWearable
+inline void ALV-Title_Alternative_C::MoveCreateCharacterWearable() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterWearable");
+
+	struct MoveCreateCharacterWearable_Params {
+		
+	}; MoveCreateCharacterWearable_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.OnChangedArmoryTab
+inline void ALV-Title_Alternative_C::OnChangedArmoryTab(struct FString TabName) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.OnChangedArmoryTab");
+
+	struct OnChangedArmoryTab_Params {
+		struct FString TabName;
+	}; OnChangedArmoryTab_Params Params;
+
+	Params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Craft
+inline void ALV-Title_Alternative_C::Event_Craft() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Craft");
+
+	struct Event_Craft_Params {
+		
+	}; Event_Craft_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent
+inline void ALV-Title_Alternative_C::CustomEvent() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent");
+
+	struct CustomEvent_Params {
+		
+	}; CustomEvent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.Event_CraftResult
+inline void ALV-Title_Alternative_C::Event_CraftResult() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.Event_CraftResult");
+
+	struct Event_CraftResult_Params {
+		
+	}; Event_CraftResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetCurrentArmoryCamera
+inline void ALV-Title_Alternative_C::SetCurrentArmoryCamera() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetCurrentArmoryCamera");
+
+	struct SetCurrentArmoryCamera_Params {
+		
+	}; SetCurrentArmoryCamera_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.SetArmorySequenceCamera
+inline void ALV-Title_Alternative_C::SetArmorySequenceCamera() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.SetArmorySequenceCamera");
+
+	struct SetArmorySequenceCamera_Params {
+		
+	}; SetArmorySequenceCamera_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.InitArmoryTab
+inline void ALV-Title_Alternative_C::InitArmoryTab() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.InitArmoryTab");
+
+	struct InitArmoryTab_Params {
+		
+	}; InitArmoryTab_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveBeginPlay
+inline void ALV-Title_Alternative_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveTick
+inline void ALV-Title_Alternative_C::ReceiveTick(float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveDestroyed
+inline void ALV-Title_Alternative_C::ReceiveDestroyed() {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveDestroyed");
+
+	struct ReceiveDestroyed_Params {
+		
+	}; ReceiveDestroyed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveEndPlay
+inline void ALV-Title_Alternative_C::ReceiveEndPlay(char EndPlayReason) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveEndPlay");
+
+	struct ReceiveEndPlay_Params {
+		char EndPlayReason;
+	}; ReceiveEndPlay_Params Params;
+
+	Params.EndPlayReason = EndPlayReason;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LV-Title_Alternative.LV-Title_Alternative_C.ExecuteUbergraph_LV-Title_Alternative
+inline void ALV-Title_Alternative_C::ExecuteUbergraph_LV-Title_Alternative(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function LV-Title_Alternative.LV-Title_Alternative_C.ExecuteUbergraph_LV-Title_Alternative");
+
+	struct ExecuteUbergraph_LV-Title_Alternative_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_LV-Title_Alternative_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
