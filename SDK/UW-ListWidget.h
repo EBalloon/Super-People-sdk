@@ -11,21 +11,21 @@ public:
 	char Alignment; // 0x268 (1)
 	struct FMargin SlotPadding; // 0x26C (16)
 
-	void AddKillMessage(struct FKillBroadcastUIInfo BroadCastKillInfo); // Function UW-ListWidget.UW-ListWidget_C.AddKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeMaxCount(int32_t NewMaxCount); // Function UW-ListWidget.UW-ListWidget_C.ChangeMaxCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckCanStackDamageLog(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack); // Function UW-ListWidget.UW-ListWidget_C.CheckCanStackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddCoreInfoDamageLog(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoDamageLog(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddMyKillMessage(struct FText Message); // Function UW-ListWidget.UW-ListWidget_C.AddMyKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddRequestMessage(struct FText Message, struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddRequestMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoRequestResuscitation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoRouteping(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoSmartping(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddCoreInfoMessage(struct FText Message, struct FString Type); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddGainPerk(struct FPerkUIInfo& PerkUIInfo, int32_t CurrentLevel, int32_t LastLevel, char IsPlayingUltimateSound); // Function UW-ListWidget.UW-ListWidget_C.AddGainPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowNewWidget(float RemainTime, struct UWidget& OutWidget); // Function UW-ListWidget.UW-ListWidget_C.ShowNewWidget(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitChildListWidget(); // Function UW-ListWidget.UW-ListWidget_C.InitChildListWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreConstruct(char IsDesignTime); // Function UW-ListWidget.UW-ListWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ListWidget(int32_t EntryPoint); // Function UW-ListWidget.UW-ListWidget_C.ExecuteUbergraph_UW-ListWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void AddKillMessage(struct FKillBroadcastUIInfo BroadCastKillInfo); // Function UW-ListWidget.UW-ListWidget_C.AddKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeMaxCount(int32_t NewMaxCount); // Function UW-ListWidget.UW-ListWidget_C.ChangeMaxCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckCanStackDamageLog(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack); // Function UW-ListWidget.UW-ListWidget_C.CheckCanStackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddCoreInfoDamageLog(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoDamageLog(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddMyKillMessage(struct FText Message); // Function UW-ListWidget.UW-ListWidget_C.AddMyKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddRequestMessage(struct FText Message, struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddRequestMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoRequestResuscitation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoRouteping(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoSmartping(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddCoreInfoMessage(struct FText Message, struct FString Type); // Function UW-ListWidget.UW-ListWidget_C.AddCoreInfoMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddGainPerk(struct FPerkUIInfo& PerkUIInfo, int32_t CurrentLevel, int32_t LastLevel, char IsPlayingUltimateSound); // Function UW-ListWidget.UW-ListWidget_C.AddGainPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowNewWidget(float RemainTime, struct UWidget& OutWidget); // Function UW-ListWidget.UW-ListWidget_C.ShowNewWidget(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitChildListWidget(); // Function UW-ListWidget.UW-ListWidget_C.InitChildListWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreConstruct(char IsDesignTime); // Function UW-ListWidget.UW-ListWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ListWidget(int32_t EntryPoint); // Function UW-ListWidget.UW-ListWidget_C.ExecuteUbergraph_UW-ListWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget.UW-ListWidget_C.AddKillMessage

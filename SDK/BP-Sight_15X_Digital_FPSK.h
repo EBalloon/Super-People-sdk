@@ -3,7 +3,7 @@ class ABP-Sight_15X_Digital_FPSK_C : public ABP-Sight_Base_C {
 
 public:
 
-	struct UWidgetComponent ScopeWidget_Background; // 0x410 (8)
-	struct UStaticMeshComponent Cube; // 0x418 (8)
+	struct UWidgetComponent ScopeWidget_Background; // 0x438 (8)
+	struct UStaticMeshComponent Cube; // 0x440 (8)
 };
 

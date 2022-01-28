@@ -5,14 +5,14 @@ public:
 
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
 	struct UButton Button_43; // 0x250 (8)
-	struct UImage Off; // 0x258 (8)
+	struct UImage off; // 0x258 (8)
 	struct UImage On; // 0x260 (8)
 	struct UTextBlock TextBlock_67; // 0x268 (8)
 	struct FText Text; // 0x270 (24)
 
-	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSelect(char IsSelect); // Function UW-ComboBoxText.UW-ComboBoxText_C.SetSelect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ComboBoxText(int32_t EntryPoint); // Function UW-ComboBoxText.UW-ComboBoxText_C.ExecuteUbergraph_UW-ComboBoxText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSelect(char IsSelect); // Function UW-ComboBoxText.UW-ComboBoxText_C.SetSelect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ComboBoxText(int32_t EntryPoint); // Function UW-ComboBoxText.UW-ComboBoxText_C.ExecuteUbergraph_UW-ComboBoxText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature

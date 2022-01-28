@@ -8,11 +8,11 @@ public:
 	struct FMulticastInlineDelegate OnMarkerClicked; // 0x258 (16)
 	char IsLastPoint : 0; // 0x268 (1)
 
-	void SetGuideLine(); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetGuideLine(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Line Visibility(char IsLastPoint); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.Set Line Visibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetLineLength(float Length); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetLineLength(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTeamColor(struct FLinearColor LinearColor); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetGuideLine(); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetGuideLine(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Line Visibility(char IsLastPoint); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.Set Line Visibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetLineLength(float Length); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetLineLength(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTeamColor(struct FLinearColor LinearColor); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-RoutePingWidget_Line.UW-RoutePingWidget_Line_C.SetGuideLine

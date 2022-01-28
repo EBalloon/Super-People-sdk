@@ -3,16 +3,16 @@ class ABP-AircraftBomber_TypeC_C : public ABravoHotelAircraftBomber {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x310 (8)
-	struct UParticleSystemComponent ParticleSystem; // 0x318 (8)
-	struct UStaticMeshComponent SM-Aricraft001__WheelFolding; // 0x320 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x328 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x338 (8)
+	struct UParticleSystemComponent ParticleSystem; // 0x340 (8)
+	struct UStaticMeshComponent SM-Aricraft001__WheelFolding; // 0x348 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x350 (8)
 
-	void ReceiveBeginPlay(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveDestroyed(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(struct FHitResult& ImpactResult, float Time); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-AircraftBomber_TypeC(int32_t EntryPoint); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ExecuteUbergraph_BP-AircraftBomber_TypeC(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveDestroyed(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(struct FHitResult& ImpactResult, float Time); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-AircraftBomber_TypeC(int32_t EntryPoint); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ExecuteUbergraph_BP-AircraftBomber_TypeC(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay

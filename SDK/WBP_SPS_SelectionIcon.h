@@ -15,14 +15,14 @@ public:
 	struct FBravoHotelSmartPingIconSettings Settings; // 0x2A8 (184)
 	struct FName TableID; // 0x360 (8)
 
-	void Construct(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Unselected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unselected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Selected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Selected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(struct FBravoHotelSmartPingIconSettings Data); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_WBP_SPS_SelectionIcon(int32_t EntryPoint); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.ExecuteUbergraph_WBP_SPS_SelectionIcon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Pressed__DelegateSignature(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Pressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Unhovered__DelegateSignature(int32_t Index); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unhovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Hovered__DelegateSignature(int32_t Index, struct FBravoHotelSmartPingIconSettings Settings); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Unselected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unselected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Selected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Selected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(struct FBravoHotelSmartPingIconSettings Data); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_WBP_SPS_SelectionIcon(int32_t EntryPoint); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.ExecuteUbergraph_WBP_SPS_SelectionIcon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Pressed__DelegateSignature(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Pressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Unhovered__DelegateSignature(int32_t Index); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unhovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Hovered__DelegateSignature(int32_t Index, struct FBravoHotelSmartPingIconSettings Settings); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Construct

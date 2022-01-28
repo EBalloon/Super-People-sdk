@@ -26,10 +26,10 @@ public:
 	struct FVector RightHandleLocation; // 0x9D8 (12)
 	struct FVector LeftHandleLocation; // 0x9E4 (12)
 
-	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-Parachute.ABP-Parachute_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(); // Function ABP-Parachute.ABP-Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AnimNotify_ResetSkipTransitionFlag(); // Function ABP-Parachute.ABP-Parachute_C.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_ABP-Parachute(int32_t EntryPoint); // Function ABP-Parachute.ABP-Parachute_C.ExecuteUbergraph_ABP-Parachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-Parachute.ABP-Parachute_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(); // Function ABP-Parachute.ABP-Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Parachute_AnimGraphNode_TransitionResult_DFAECCE14753957E23B3978C5E705C11(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AnimNotify_ResetSkipTransitionFlag(); // Function ABP-Parachute.ABP-Parachute_C.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_ABP-Parachute(int32_t EntryPoint); // Function ABP-Parachute.ABP-Parachute_C.ExecuteUbergraph_ABP-Parachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function ABP-Parachute.ABP-Parachute_C.AnimGraph

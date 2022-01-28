@@ -11,11 +11,11 @@ public:
 	struct UImage Image_237; // 0x2D8 (8)
 	struct UUW-MapComp_C MapCompRef; // 0x2E0 (8)
 
-	void StopAirCraftAnimation(); // Function UW-Route.UW-Route_C.StopAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateAirCraftScaleByMouseWheel(float Delta); // Function UW-Route.UW-Route_C.UpdateAirCraftScaleByMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartAirCraftAnimation(); // Function UW-Route.UW-Route_C.StartAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateAircraftAngle(float Angle); // Function UW-Route.UW-Route_C.UpdateAircraftAngle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Route(int32_t EntryPoint); // Function UW-Route.UW-Route_C.ExecuteUbergraph_UW-Route(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void StopAirCraftAnimation(); // Function UW-Route.UW-Route_C.StopAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateAirCraftScaleByMouseWheel(float Delta); // Function UW-Route.UW-Route_C.UpdateAirCraftScaleByMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartAirCraftAnimation(); // Function UW-Route.UW-Route_C.StartAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateAircraftAngle(float Angle); // Function UW-Route.UW-Route_C.UpdateAircraftAngle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Route(int32_t EntryPoint); // Function UW-Route.UW-Route_C.ExecuteUbergraph_UW-Route(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Route.UW-Route_C.StopAirCraftAnimation

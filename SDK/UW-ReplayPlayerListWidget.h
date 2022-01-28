@@ -10,13 +10,13 @@ public:
 	struct UTextBlock T_SortType; // 0x300 (8)
 	struct UVerticalBox VB_ListMain; // 0x308 (8)
 
-	struct UUserWidget CreatePlayerListGroup(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.CreatePlayerListGroup(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSortTypeText(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.SetSortTypeText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct UUserWidget CreatePlayerButton(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.CreatePlayerButton(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__BT_ListPrev_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.BndEvt__BT_ListPrev_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Bt_ListNext_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.BndEvt__Bt_ListNext_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ReplayPlayerListWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.ExecuteUbergraph_UW-ReplayPlayerListWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UUserWidget CreatePlayerListGroup(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.CreatePlayerListGroup(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSortTypeText(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.SetSortTypeText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct UUserWidget CreatePlayerButton(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.CreatePlayerButton(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__BT_ListPrev_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.BndEvt__BT_ListPrev_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Bt_ListNext_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.BndEvt__Bt_ListNext_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ReplayPlayerListWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.ExecuteUbergraph_UW-ReplayPlayerListWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReplayPlayerListWidget.UW-ReplayPlayerListWidget_C.CreatePlayerListGroup

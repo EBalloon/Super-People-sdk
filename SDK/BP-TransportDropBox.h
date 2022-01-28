@@ -3,38 +3,38 @@ class ABP-TransportDropBox_C : public ABravoHotelTransportDropBoxActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x490 (8)
-	float OverWater_CV_OverWater_77012AB948B572A268E63583418444D0; // 0x498 (4)
-	char OverWater__Direction_77012AB948B572A268E63583418444D0; // 0x49C (1)
-	struct UTimelineComponent OverWater; // 0x4A0 (8)
-	float HittingWater_CV_OverWater_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4A8 (4)
-	char HittingWater__Direction_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4AC (1)
-	struct UTimelineComponent HittingWater; // 0x4B0 (8)
-	float LandingTimer; // 0x4B8 (4)
-	struct TArray<struct FSpawnItemResult> ItemResult; // 0x4C0 (16)
-	float ParachuteTimer; // 0x4D0 (4)
-	float LandingDelay; // 0x4D4 (4)
-	float ForceLandingDelaySeconds; // 0x4D8 (4)
-	char bLandedOnGround : 0; // 0x4DC (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x4B8 (8)
+	float OverWater_CV_OverWater_77012AB948B572A268E63583418444D0; // 0x4C0 (4)
+	char OverWater__Direction_77012AB948B572A268E63583418444D0; // 0x4C4 (1)
+	struct UTimelineComponent OverWater; // 0x4C8 (8)
+	float HittingWater_CV_OverWater_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4D0 (4)
+	char HittingWater__Direction_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4D4 (1)
+	struct UTimelineComponent HittingWater; // 0x4D8 (8)
+	float LandingTimer; // 0x4E0 (4)
+	struct TArray<struct FSpawnItemResult> ItemResult; // 0x4E8 (16)
+	float ParachuteTimer; // 0x4F8 (4)
+	float LandingDelay; // 0x4FC (4)
+	float ForceLandingDelaySeconds; // 0x500 (4)
+	char bLandedOnGround : 0; // 0x504 (1)
 
-	void UserConstructionScript(); // Function BP-TransportDropBox.BP-TransportDropBox_C.UserConstructionScript(Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OverWater__FinishedFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OverWater__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OverWater__UpdateFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OverWater__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HittingWater__FinishedFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.HittingWater__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HittingWater__UpdateFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.HittingWater__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void NormalHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.NormalHitSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void WaterHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.WaterHitSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnActivated(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnActivated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetLastPosition(struct FVector Location, struct FRotator Rotation); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Cutoff(); // Function BP-TransportDropBox.BP-TransportDropBox_C.Cutoff(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OpenDropBoxEvent(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OpenDropBoxEvent(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnOverWater(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnOverWater(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnHittingWater(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnHittingWater(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GenerateItems(struct FName ItemKey); // Function BP-TransportDropBox.BP-TransportDropBox_C.GenerateItems(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetItemInBlueprint(struct FName& ItemKey); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetItemInBlueprint(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void LandedOnWaterEvent(); // Function BP-TransportDropBox.BP-TransportDropBox_C.LandedOnWaterEvent(Event|Protected|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-TransportDropBox.BP-TransportDropBox_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-TransportDropBox(int32_t EntryPoint); // Function BP-TransportDropBox.BP-TransportDropBox_C.ExecuteUbergraph_BP-TransportDropBox(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UserConstructionScript(); // Function BP-TransportDropBox.BP-TransportDropBox_C.UserConstructionScript(Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OverWater__FinishedFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OverWater__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OverWater__UpdateFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OverWater__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HittingWater__FinishedFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.HittingWater__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HittingWater__UpdateFunc(); // Function BP-TransportDropBox.BP-TransportDropBox_C.HittingWater__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void NormalHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.NormalHitSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void WaterHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.WaterHitSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnActivated(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnActivated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetLastPosition(struct FVector Location, struct FRotator Rotation); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Cutoff(); // Function BP-TransportDropBox.BP-TransportDropBox_C.Cutoff(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OpenDropBoxEvent(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OpenDropBoxEvent(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnOverWater(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnOverWater(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnHittingWater(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnHittingWater(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GenerateItems(struct FName ItemKey); // Function BP-TransportDropBox.BP-TransportDropBox_C.GenerateItems(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetItemInBlueprint(struct FName& ItemKey); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetItemInBlueprint(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void LandedOnWaterEvent(); // Function BP-TransportDropBox.BP-TransportDropBox_C.LandedOnWaterEvent(Event|Protected|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-TransportDropBox.BP-TransportDropBox_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-TransportDropBox(int32_t EntryPoint); // Function BP-TransportDropBox.BP-TransportDropBox_C.ExecuteUbergraph_BP-TransportDropBox(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-TransportDropBox.BP-TransportDropBox_C.UserConstructionScript

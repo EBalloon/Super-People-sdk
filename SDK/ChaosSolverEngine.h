@@ -23,28 +23,28 @@ class AChaosSolverActor : public UActor {
 
 public:
 
-	float TimeStepMultiplier; // 0x300 (4)
-	int32_t CollisionIterations; // 0x304 (4)
-	int32_t PushOutIterations; // 0x308 (4)
-	int32_t PushOutPairIterations; // 0x30C (4)
-	float ClusterConnectionFactor; // 0x310 (4)
-	enum class EClusterConnectionTypeEnum ClusterUnionConnectionType; // 0x314 (1)
-	char DoGenerateCollisionData : 0; // 0x315 (1)
-	struct FSolverCollisionFilterSettings CollisionFilterSettings; // 0x318 (16)
-	char DoGenerateBreakingData : 0; // 0x328 (1)
-	struct FSolverBreakingFilterSettings BreakingFilterSettings; // 0x32C (16)
-	char DoGenerateTrailingData : 0; // 0x33C (1)
-	struct FSolverTrailingFilterSettings TrailingFilterSettings; // 0x340 (16)
-	char bHasFloor : 0; // 0x350 (1)
-	float FloorHeight; // 0x354 (4)
-	float MassScale; // 0x358 (4)
-	char bGenerateContactGraph : 0; // 0x35C (1)
-	struct FChaosDebugSubstepControl ChaosDebugSubstepControl; // 0x35D (3)
-	struct UBillboardComponent SpriteComponent; // 0x360 (8)
-	struct UChaosGameplayEventDispatcher GameplayEventDispatcherComponent; // 0x380 (8)
+	float TimeStepMultiplier; // 0x328 (4)
+	int32_t CollisionIterations; // 0x32C (4)
+	int32_t PushOutIterations; // 0x330 (4)
+	int32_t PushOutPairIterations; // 0x334 (4)
+	float ClusterConnectionFactor; // 0x338 (4)
+	enum class EClusterConnectionTypeEnum ClusterUnionConnectionType; // 0x33C (1)
+	char DoGenerateCollisionData : 0; // 0x33D (1)
+	struct FSolverCollisionFilterSettings CollisionFilterSettings; // 0x340 (16)
+	char DoGenerateBreakingData : 0; // 0x350 (1)
+	struct FSolverBreakingFilterSettings BreakingFilterSettings; // 0x354 (16)
+	char DoGenerateTrailingData : 0; // 0x364 (1)
+	struct FSolverTrailingFilterSettings TrailingFilterSettings; // 0x368 (16)
+	char bHasFloor : 0; // 0x378 (1)
+	float FloorHeight; // 0x37C (4)
+	float MassScale; // 0x380 (4)
+	char bGenerateContactGraph : 0; // 0x384 (1)
+	struct FChaosDebugSubstepControl ChaosDebugSubstepControl; // 0x385 (3)
+	struct UBillboardComponent SpriteComponent; // 0x388 (8)
+	struct UChaosGameplayEventDispatcher GameplayEventDispatcherComponent; // 0x3A8 (8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47DAD90>
-	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47DAD70>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47FD2D0>
+	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47FD2B0>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings

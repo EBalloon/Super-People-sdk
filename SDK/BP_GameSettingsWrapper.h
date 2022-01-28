@@ -6,7 +6,7 @@ public:
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x28 (8)
 	struct UBP_GameSettings_C Game Settings; // 0x30 (8)
 
-	void ExecuteUbergraph_BP_GameSettingsWrapper(int32_t EntryPoint); // Function BP_GameSettingsWrapper.BP_GameSettingsWrapper_C.ExecuteUbergraph_BP_GameSettingsWrapper(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ExecuteUbergraph_BP_GameSettingsWrapper(int32_t EntryPoint); // Function BP_GameSettingsWrapper.BP_GameSettingsWrapper_C.ExecuteUbergraph_BP_GameSettingsWrapper(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP_GameSettingsWrapper.BP_GameSettingsWrapper_C.ExecuteUbergraph_BP_GameSettingsWrapper

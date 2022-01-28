@@ -21,19 +21,19 @@ public:
 	int32_t Clear Messages at # Messages; // 0x2B4 (4)
 	char Show Mouse on Enter? : 0; // 0x2B8 (1)
 
-	struct FText Get Chat Input Hint Text(); // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PushItem(struct FString UserName, struct FString Text, struct FString Group); // Function Chat_MainWidget.Chat_MainWidget_C.PushItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function Chat_MainWidget.Chat_MainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Reset Inactivity Timer(); // Function Chat_MainWidget.Chat_MainWidget_C.Reset Inactivity Timer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Keyboard Focus(); // Function Chat_MainWidget.Chat_MainWidget_C.Set Keyboard Focus(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Widget Mouse Enter(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Enter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Widget Mouse Leave(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Leave(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FText Get Chat Input Hint Text(); // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PushItem(struct FString UserName, struct FString Text, struct FString Group); // Function Chat_MainWidget.Chat_MainWidget_C.PushItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function Chat_MainWidget.Chat_MainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Reset Inactivity Timer(); // Function Chat_MainWidget.Chat_MainWidget_C.Reset Inactivity Timer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Keyboard Focus(); // Function Chat_MainWidget.Chat_MainWidget_C.Set Keyboard Focus(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Widget Mouse Enter(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Enter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Widget Mouse Leave(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Leave(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function Chat_MainWidget.Chat_MainWidget_C.Get Chat Input Hint Text

@@ -7,9 +7,9 @@ public:
 	struct UWidgetAnimation Anim_KillMessage; // 0x268 (8)
 	struct UTextBlock T_Message; // 0x270 (8)
 
-	void SetMyKillMessage(struct FText Message); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.SetMyKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayKillMessageAnim(); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.PlayKillMessageAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ListWidget_MyKillMessage(int32_t EntryPoint); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.ExecuteUbergraph_UW-ListWidget_MyKillMessage(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetMyKillMessage(struct FText Message); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.SetMyKillMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayKillMessageAnim(); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.PlayKillMessageAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ListWidget_MyKillMessage(int32_t EntryPoint); // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.ExecuteUbergraph_UW-ListWidget_MyKillMessage(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget_MyKillMessage.UW-ListWidget_MyKillMessage_C.SetMyKillMessage

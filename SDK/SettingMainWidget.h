@@ -11,91 +11,90 @@ public:
 	struct USettingSubButtonWidget_C Audio; // 0x400 (8)
 	struct UCanvasPanel CanvasPanel_61; // 0x408 (8)
 	struct UCanvasPanel CanvasPanel_279; // 0x410 (8)
-	struct UTextBlock ChangeLock; // 0x418 (8)
-	struct USettingSubButtonWidget_C Control; // 0x420 (8)
-	struct UVerticalBox CrossHair; // 0x428 (8)
-	struct UCrossHairDetailInfo_C CrossHairDetailInfo; // 0x430 (8)
-	struct UCrossHairDetailInfo_C CrossHairDetailInfo_2; // 0x438 (8)
-	struct UCrossHairDetailInfo_C CrossHairDetailInfo_3; // 0x440 (8)
-	struct UCrossHairDetailInfo_C CrossHairDetailInfo_4; // 0x448 (8)
-	struct UTextBlock CurDesc; // 0x450 (8)
-	struct UTextBlock CurDesc2; // 0x458 (8)
-	struct UTextBlock CurTitle; // 0x460 (8)
-	struct UButtomButtonWidget_C DefaultButton; // 0x468 (8)
-	struct USettingSubButtonWidget_C Dev; // 0x470 (8)
-	struct USettingSubButtonWidget_C GamePlay; // 0x478 (8)
-	struct UButtomButtonWidget_C GoBackButton; // 0x480 (8)
-	struct USettingSubButtonWidget_C Graphic; // 0x488 (8)
-	struct UImage Image; // 0x490 (8)
-	struct UImage Image_2; // 0x498 (8)
-	struct UImage Image_3; // 0x4A0 (8)
-	struct UImage Image_4; // 0x4A8 (8)
-	struct UImage Image_109; // 0x4B0 (8)
-	struct UImage Image_128; // 0x4B8 (8)
-	struct UImage Image_129; // 0x4C0 (8)
-	struct UImage Image_154; // 0x4C8 (8)
-	struct UImage Image_323; // 0x4D0 (8)
-	struct UImage Image_417; // 0x4D8 (8)
-	struct UImage Image_951; // 0x4E0 (8)
-	struct UImage Image_953; // 0x4E8 (8)
-	struct USettingSubButtonWidget_C Key; // 0x4F0 (8)
-	struct UKeyImageWidget_C KeyImageMain; // 0x4F8 (8)
-	struct UProgressBar ProgressBar_317; // 0x500 (8)
-	struct USlider Slider_299; // 0x508 (8)
-	struct UTextBlock TextBlock; // 0x510 (8)
-	struct UTextBlock TextBlock_1; // 0x518 (8)
-	struct UTextBlock TextBlock_2; // 0x520 (8)
-	struct UTextBlock TextBlock_3; // 0x528 (8)
-	struct UTextBlock TextBlock_5; // 0x530 (8)
-	struct UTextBlock TextBlock_7; // 0x538 (8)
-	struct UVerticalBox VerticalBox_149; // 0x540 (8)
-	struct UWidgetSwitcher WidgetSwitcher_113; // 0x548 (8)
-	struct FMulticastInlineDelegate EnableButtonEventDispatcher; // 0x550 (16)
-	struct UBP_GameSettings_C Game Settings; // 0x560 (8)
-	struct TMap<enum class ESettingType, struct UBravoHotelSettingSlotWidget> SlotList_1; // 0x568 (80)
-	struct UGraphicWidget_C GraphicWidget; // 0x5B8 (8)
-	struct UAudioWidget_C AudioWidget; // 0x5C0 (8)
-	struct UControlWidget_C ControlWidget; // 0x5C8 (8)
-	struct UKeyWidget_C KeyWidget; // 0x5D0 (8)
-	struct UGamePlayWidget_C GamePlayWidget; // 0x5D8 (8)
-	struct USettingDevWidget_C SettingDevWidget; // 0x5E0 (8)
-	int32_t GraphicSwitcherIndex; // 0x5E8 (4)
-	int32_t AudioSwitcherIndex; // 0x5EC (4)
-	int32_t ControlSwitcherIndex; // 0x5F0 (4)
-	int32_t KeySwitcherIndex; // 0x5F4 (4)
-	int32_t SettingDevSwitcherIndex; // 0x5F8 (4)
-	int32_t GamePlaySwitcherIndex; // 0x5FC (4)
-	struct FTimerHandle KeyNotiTimer; // 0x600 (8)
-	float KeyNotiMessageShowTime; // 0x608 (4)
-	struct TSoftObjectPtr<UTexture2D> TempImg; // 0x610 (40)
-	struct UBravoHotelSettingSlotWidget SavedDescData; // 0x638 (8)
+	struct USettingSubButtonWidget_C Control; // 0x418 (8)
+	struct UVerticalBox CrossHair; // 0x420 (8)
+	struct UCrossHairDetailInfo_C CrossHairDetailInfo; // 0x428 (8)
+	struct UCrossHairDetailInfo_C CrossHairDetailInfo_2; // 0x430 (8)
+	struct UCrossHairDetailInfo_C CrossHairDetailInfo_3; // 0x438 (8)
+	struct UCrossHairDetailInfo_C CrossHairDetailInfo_4; // 0x440 (8)
+	struct UTextBlock CurDesc; // 0x448 (8)
+	struct UTextBlock CurDesc2; // 0x450 (8)
+	struct UTextBlock CurTitle; // 0x458 (8)
+	struct UButtomButtonWidget_C DefaultButton; // 0x460 (8)
+	struct USettingSubButtonWidget_C Dev; // 0x468 (8)
+	struct USettingSubButtonWidget_C GamePlay; // 0x470 (8)
+	struct UButtomButtonWidget_C GoBackButton; // 0x478 (8)
+	struct USettingSubButtonWidget_C Graphic; // 0x480 (8)
+	struct UImage Image; // 0x488 (8)
+	struct UImage Image_2; // 0x490 (8)
+	struct UImage Image_3; // 0x498 (8)
+	struct UImage Image_4; // 0x4A0 (8)
+	struct UImage Image_109; // 0x4A8 (8)
+	struct UImage Image_128; // 0x4B0 (8)
+	struct UImage Image_129; // 0x4B8 (8)
+	struct UImage Image_154; // 0x4C0 (8)
+	struct UImage Image_323; // 0x4C8 (8)
+	struct UImage Image_417; // 0x4D0 (8)
+	struct UImage Image_951; // 0x4D8 (8)
+	struct UImage Image_953; // 0x4E0 (8)
+	struct USettingSubButtonWidget_C Key; // 0x4E8 (8)
+	struct UKeyImageWidget_C KeyImageMain; // 0x4F0 (8)
+	struct UProgressBar ProgressBar_317; // 0x4F8 (8)
+	struct USlider Slider_299; // 0x500 (8)
+	struct UTextBlock TextBlock; // 0x508 (8)
+	struct UTextBlock TextBlock_1; // 0x510 (8)
+	struct UTextBlock TextBlock_2; // 0x518 (8)
+	struct UTextBlock TextBlock_3; // 0x520 (8)
+	struct UTextBlock TextBlock_5; // 0x528 (8)
+	struct UTextBlock TextBlock_7; // 0x530 (8)
+	struct UVerticalBox VerticalBox_149; // 0x538 (8)
+	struct UWidgetSwitcher WidgetSwitcher_113; // 0x540 (8)
+	struct FMulticastInlineDelegate EnableButtonEventDispatcher; // 0x548 (16)
+	struct UBP_GameSettings_C Game Settings; // 0x558 (8)
+	struct TMap<enum class ESettingType, struct UBravoHotelSettingSlotWidget> SlotList_1; // 0x560 (80)
+	struct UGraphicWidget_C GraphicWidget; // 0x5B0 (8)
+	struct UAudioWidget_C AudioWidget; // 0x5B8 (8)
+	struct UControlWidget_C ControlWidget; // 0x5C0 (8)
+	struct UKeyWidget_C KeyWidget; // 0x5C8 (8)
+	struct UGamePlayWidget_C GamePlayWidget; // 0x5D0 (8)
+	struct USettingDevWidget_C SettingDevWidget; // 0x5D8 (8)
+	int32_t GraphicSwitcherIndex; // 0x5E0 (4)
+	int32_t AudioSwitcherIndex; // 0x5E4 (4)
+	int32_t ControlSwitcherIndex; // 0x5E8 (4)
+	int32_t KeySwitcherIndex; // 0x5EC (4)
+	int32_t SettingDevSwitcherIndex; // 0x5F0 (4)
+	int32_t GamePlaySwitcherIndex; // 0x5F4 (4)
+	struct FTimerHandle KeyNotiTimer; // 0x5F8 (8)
+	float KeyNotiMessageShowTime; // 0x600 (4)
+	struct TSoftObjectPtr<UTexture2D> TempImg; // 0x608 (40)
+	struct UBravoHotelSettingSlotWidget SavedDescData; // 0x630 (8)
 
-	void CreateWidgetImpl(struct UClass* WidgetClass, struct UBravoHotelSettingSubWidget& OutWidget, int32_t& OutSwitcherIndex, int32_t& RealIndex); // Function SettingMainWidget.SettingMainWidget_C.CreateWidgetImpl(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckConfirmPopup(int32_t Index, enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.CheckConfirmPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct TArray<struct UBravoHotelSettingSubWidget> GetSubList(); // Function SettingMainWidget.SettingMainWidget_C.GetSubList(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateWidget(int32_t Index, int32_t& RealIndex); // Function SettingMainWidget.SettingMainWidget_C.CreateWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function SettingMainWidget.SettingMainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Select Menu(int32_t Index, enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.Select Menu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Binding(); // Function SettingMainWidget.SettingMainWidget_C.Binding(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@ t元_1(struct UBravoHotelSettingSlotWidget Value); // Function SettingMainWidget.SettingMainWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RefreshDeve(); // Function SettingMainWidget.SettingMainWidget_C.RefreshDeve(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Slider_298_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Slider_298_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckHaveApplyList(enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.CheckHaveApplyList(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Close Menu(); // Function SettingMainWidget.SettingMainWidget_C.Close Menu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_112_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Button_112_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateConfirmWidget(int32_t TabIdx, enum class ESettingBigType SelectTabType, int32_t PopupType); // Function SettingMainWidget.SettingMainWidget_C.CreateConfirmWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ApplyImpl(char UseConfimPopup); // Function SettingMainWidget.SettingMainWidget_C.ApplyImpl(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Desc(struct UBravoHotelSettingSlotWidget Slot); // Function SettingMainWidget.SettingMainWidget_C.Set Desc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(struct UBravoHotelSettingSlotWidget Value, char IsSubKey); // Function SettingMainWidget.SettingMainWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void KeyNotiMessage(char IsDuplicate, struct FInputChord Key, struct FText KeyName); // Function SettingMainWidget.SettingMainWidget_C.KeyNotiMessage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_2(); // Function SettingMainWidget.SettingMainWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Update Localization(int32_t LanguageIndex); // Function SettingMainWidget.SettingMainWidget_C.Update Localization(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateVideoMemoryUsageGraph(int32_t UsedVideoMemory, int32_t TotalVideoMemory, int32_t CurrentProcessUsage, int32_t OtherProcessUsage); // Function SettingMainWidget.SettingMainWidget_C.UpdateVideoMemoryUsageGraph(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_SettingMainWidget(int32_t EntryPoint); // Function SettingMainWidget.SettingMainWidget_C.ExecuteUbergraph_SettingMainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EnableButtonEventDispatcher__DelegateSignature(); // Function SettingMainWidget.SettingMainWidget_C.EnableButtonEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CreateWidgetImpl(struct UClass* WidgetClass, struct UBravoHotelSettingSubWidget& OutWidget, int32_t& OutSwitcherIndex, int32_t& RealIndex); // Function SettingMainWidget.SettingMainWidget_C.CreateWidgetImpl(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckConfirmPopup(int32_t Index, enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.CheckConfirmPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct TArray<struct UBravoHotelSettingSubWidget> GetSubList(); // Function SettingMainWidget.SettingMainWidget_C.GetSubList(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateWidget(int32_t Index, int32_t& RealIndex); // Function SettingMainWidget.SettingMainWidget_C.CreateWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function SettingMainWidget.SettingMainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Select Menu(int32_t Index, enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.Select Menu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Binding(); // Function SettingMainWidget.SettingMainWidget_C.Binding(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@ t元_1(struct UBravoHotelSettingSlotWidget Value); // Function SettingMainWidget.SettingMainWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RefreshDeve(); // Function SettingMainWidget.SettingMainWidget_C.RefreshDeve(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Slider_298_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Slider_298_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckHaveApplyList(enum class ESettingBigType Type); // Function SettingMainWidget.SettingMainWidget_C.CheckHaveApplyList(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Close Menu(); // Function SettingMainWidget.SettingMainWidget_C.Close Menu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_112_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Button_112_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateConfirmWidget(int32_t TabIdx, enum class ESettingBigType SelectTabType, int32_t PopupType); // Function SettingMainWidget.SettingMainWidget_C.CreateConfirmWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ApplyImpl(char UseConfimPopup); // Function SettingMainWidget.SettingMainWidget_C.ApplyImpl(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Desc(struct UBravoHotelSettingSlotWidget Slot); // Function SettingMainWidget.SettingMainWidget_C.Set Desc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(struct UBravoHotelSettingSlotWidget Value, char IsSubKey); // Function SettingMainWidget.SettingMainWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void KeyNotiMessage(char IsDuplicate, struct FInputChord Key, struct FText KeyName); // Function SettingMainWidget.SettingMainWidget_C.KeyNotiMessage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_2(); // Function SettingMainWidget.SettingMainWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Update Localization(int32_t LanguageIndex); // Function SettingMainWidget.SettingMainWidget_C.Update Localization(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateVideoMemoryUsageGraph(int32_t UsedVideoMemory, int32_t TotalVideoMemory, int32_t CurrentProcessUsage, int32_t OtherProcessUsage); // Function SettingMainWidget.SettingMainWidget_C.UpdateVideoMemoryUsageGraph(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_SettingMainWidget(int32_t EntryPoint); // Function SettingMainWidget.SettingMainWidget_C.ExecuteUbergraph_SettingMainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EnableButtonEventDispatcher__DelegateSignature(); // Function SettingMainWidget.SettingMainWidget_C.EnableButtonEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function SettingMainWidget.SettingMainWidget_C.CreateWidgetImpl

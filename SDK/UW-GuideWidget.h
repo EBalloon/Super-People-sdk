@@ -37,20 +37,20 @@ public:
 	struct UCanvasPanel WorldMap_Pannel; // 0x340 (8)
 	enum class EToggleWidgetModeType CurrentToggleWidgetType; // 0x348 (1)
 
-	void UpdateWorldMapGuideOpacity(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckMainVisibility(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckMainVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RefreshKeys(); // Function UW-GuideWidget.UW-GuideWidget_C.RefreshKeys(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckADSMode(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckADSMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateVisibleSpectateWidget(); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateVisibleSpectateWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetGuideMode(struct FText Message); // Function UW-GuideWidget.UW-GuideWidget_C.SetGuideMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetVisibilityByUserSettings(); // Function UW-GuideWidget.UW-GuideWidget_C.SetVisibilityByUserSettings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-GuideWidget.UW-GuideWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedPlayerInfosDelegate_Event_1(); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangedPlayerInfosDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Destruct(); // Function UW-GuideWidget.UW-GuideWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnGameUserSettingsApply_Key_Event_1(struct TArray<enum class EKeySettingType>& List); // Function UW-GuideWidget.UW-GuideWidget_C.OnGameUserSettingsApply_Key_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangeWorldMapZoomLevelDelegate_Event_1(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangeWorldMapZoomLevelDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnToggleWidgetDelegate_Event_1(enum class EToggleWidgetModeType& ToggleType); // Function UW-GuideWidget.UW-GuideWidget_C.OnToggleWidgetDelegate_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-GuideWidget(int32_t EntryPoint); // Function UW-GuideWidget.UW-GuideWidget_C.ExecuteUbergraph_UW-GuideWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdateWorldMapGuideOpacity(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckMainVisibility(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckMainVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RefreshKeys(); // Function UW-GuideWidget.UW-GuideWidget_C.RefreshKeys(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckADSMode(); // Function UW-GuideWidget.UW-GuideWidget_C.CheckADSMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateVisibleSpectateWidget(); // Function UW-GuideWidget.UW-GuideWidget_C.UpdateVisibleSpectateWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetGuideMode(struct FText Message); // Function UW-GuideWidget.UW-GuideWidget_C.SetGuideMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetVisibilityByUserSettings(); // Function UW-GuideWidget.UW-GuideWidget_C.SetVisibilityByUserSettings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-GuideWidget.UW-GuideWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedPlayerInfosDelegate_Event_1(); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangedPlayerInfosDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Destruct(); // Function UW-GuideWidget.UW-GuideWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnGameUserSettingsApply_Key_Event_1(struct TArray<enum class EKeySettingType>& List); // Function UW-GuideWidget.UW-GuideWidget_C.OnGameUserSettingsApply_Key_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangeWorldMapZoomLevelDelegate_Event_1(int32_t PreZoomLevel, int32_t NewZoomLevel); // Function UW-GuideWidget.UW-GuideWidget_C.OnChangeWorldMapZoomLevelDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnToggleWidgetDelegate_Event_1(enum class EToggleWidgetModeType& ToggleType); // Function UW-GuideWidget.UW-GuideWidget_C.OnToggleWidgetDelegate_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-GuideWidget(int32_t EntryPoint); // Function UW-GuideWidget.UW-GuideWidget_C.ExecuteUbergraph_UW-GuideWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-GuideWidget.UW-GuideWidget_C.UpdateWorldMapGuideOpacity

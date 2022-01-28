@@ -3,10 +3,10 @@ class ABP-Weapon_M16A4_LV7_A_C : public ABP-Weapon_M16A4_LV1_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x22E0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2370 (8)
 
-	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV7_A.BP-Weapon_M16A4_LV7_A_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Weapon_M16A4_LV7_A(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV7_A.BP-Weapon_M16A4_LV7_A_C.ExecuteUbergraph_BP-Weapon_M16A4_LV7_A(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV7_A.BP-Weapon_M16A4_LV7_A_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Weapon_M16A4_LV7_A(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV7_A.BP-Weapon_M16A4_LV7_A_C.ExecuteUbergraph_BP-Weapon_M16A4_LV7_A(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Weapon_M16A4_LV7_A.BP-Weapon_M16A4_LV7_A_C.ReceiveBeginPlay

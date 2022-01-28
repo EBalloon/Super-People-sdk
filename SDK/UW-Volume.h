@@ -11,11 +11,11 @@ public:
 	struct UWidgetSwitcher WidgetSwitcher_LogOut; // 0x270 (8)
 	struct FTimerHandle Timer; // 0x278 (8)
 
-	void Construct(); // Function UW-Volume.UW-Volume_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(float VolumeOnOff, float Volume); // Function UW-Volume.UW-Volume_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Destruct(); // Function UW-Volume.UW-Volume_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_2(); // Function UW-Volume.UW-Volume_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Volume(int32_t EntryPoint); // Function UW-Volume.UW-Volume_C.ExecuteUbergraph_UW-Volume(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function UW-Volume.UW-Volume_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(float VolumeOnOff, float Volume); // Function UW-Volume.UW-Volume_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Destruct(); // Function UW-Volume.UW-Volume_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_2(); // Function UW-Volume.UW-Volume_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Volume(int32_t EntryPoint); // Function UW-Volume.UW-Volume_C.ExecuteUbergraph_UW-Volume(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Volume.UW-Volume_C.Construct

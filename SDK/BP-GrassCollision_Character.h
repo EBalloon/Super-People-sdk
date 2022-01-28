@@ -15,9 +15,9 @@ public:
 	char IsTickStart : 0; // 0xEC (1)
 	struct ABravoHotelCharacter TargetCharacter; // 0xF0 (8)
 
-	void DrawGrassCollision(struct ABravoHotelCharacter TargetCharacter); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ClearRenderTarget(); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ClearRenderTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-GrassCollision_Character(int32_t EntryPoint); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ExecuteUbergraph_BP-GrassCollision_Character(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void DrawGrassCollision(struct ABravoHotelCharacter TargetCharacter); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ClearRenderTarget(); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ClearRenderTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-GrassCollision_Character(int32_t EntryPoint); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ExecuteUbergraph_BP-GrassCollision_Character(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision

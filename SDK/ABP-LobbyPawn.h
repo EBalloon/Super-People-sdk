@@ -97,13 +97,13 @@ public:
 	float DeltaTimeX; // 0x65B0 (4)
 	float HairAnimDynamicsAlpha; // 0x65B4 (4)
 
-	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateAnimDynamicsAlpha(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.UpdateAnimDynamicsAlpha(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsNeedToApplyLeftHandIK(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.IsNeedToApplyLeftHandIK(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_ABP-LobbyPawn(int32_t EntryPoint); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.ExecuteUbergraph_ABP-LobbyPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateAnimDynamicsAlpha(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.UpdateAnimDynamicsAlpha(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsNeedToApplyLeftHandIK(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.IsNeedToApplyLeftHandIK(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_ABP-LobbyPawn(int32_t EntryPoint); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.ExecuteUbergraph_ABP-LobbyPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph

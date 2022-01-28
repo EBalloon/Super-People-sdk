@@ -3,18 +3,18 @@ class ABP-LobbyPawn_C : public ABravoHotelLobbyCharacter {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3AF0 (8)
-	struct UBoxComponent Box; // 0x3AF8 (8)
-	int32_t PawnIndex; // 0x3B00 (4)
-	struct UClass* BravoHotelPlayerStateClass; // 0x3B08 (8)
-	char bReady : 0; // 0x3B10 (1)
-	char bMatchSuccess : 0; // 0x3B11 (1)
-	char bIsFaceCustomizing : 0; // 0x3B12 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3B40 (8)
+	struct UBoxComponent Box; // 0x3B48 (8)
+	int32_t PawnIndex; // 0x3B50 (4)
+	struct UClass* BravoHotelPlayerStateClass; // 0x3B58 (8)
+	char bReady : 0; // 0x3B60 (1)
+	char bMatchSuccess : 0; // 0x3B61 (1)
+	char bIsFaceCustomizing : 0; // 0x3B62 (1)
 
-	void ReceiveBeginPlay(); // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnEquipWeapon(); // Function BP-LobbyPawn.BP-LobbyPawn_C.OnEquipWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitCustomizableObjectInstance(); // Function BP-LobbyPawn.BP-LobbyPawn_C.InitCustomizableObjectInstance(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-LobbyPawn(int32_t EntryPoint); // Function BP-LobbyPawn.BP-LobbyPawn_C.ExecuteUbergraph_BP-LobbyPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnEquipWeapon(); // Function BP-LobbyPawn.BP-LobbyPawn_C.OnEquipWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitCustomizableObjectInstance(); // Function BP-LobbyPawn.BP-LobbyPawn_C.InitCustomizableObjectInstance(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-LobbyPawn(int32_t EntryPoint); // Function BP-LobbyPawn.BP-LobbyPawn_C.ExecuteUbergraph_BP-LobbyPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay

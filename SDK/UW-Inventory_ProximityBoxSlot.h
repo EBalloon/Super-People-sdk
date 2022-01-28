@@ -11,13 +11,13 @@ public:
 	struct UUW-InventoryWidget_C InventoryWidget; // 0x270 (8)
 	char bUsed : 0; // 0x278 (1)
 
-	void SetUsed(char Used); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.SetUsed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetBoxName(struct FText BoxName); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.SetBoxName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Box Info(struct UActor TargetActor); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Set Box Info(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AllHiddenChildSlots(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.AllHiddenChildSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Event_TitleVisible(char Visible); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Event_TitleVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(int32_t EntryPoint); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetUsed(char Used); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.SetUsed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetBoxName(struct FText BoxName); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.SetBoxName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Box Info(struct UActor TargetActor); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Set Box Info(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AllHiddenChildSlots(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.AllHiddenChildSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Event_TitleVisible(char Visible); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Event_TitleVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(int32_t EntryPoint); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.ExecuteUbergraph_UW-Inventory_ProximityBoxSlot(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.SetUsed

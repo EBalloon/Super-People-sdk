@@ -3,12 +3,12 @@ class ABP-Weapon-MolotovCocktail_C : public ABP-GrenadeWeaponBase_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1FA0 (8)
-	struct UParticleSystemComponent ParticleSystem; // 0x1FA8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2050 (8)
+	struct UParticleSystemComponent ParticleSystem; // 0x2058 (8)
 
-	void K2_OnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnUnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Weapon-MolotovCocktail(int32_t EntryPoint); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.ExecuteUbergraph_BP-Weapon-MolotovCocktail(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void K2_OnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnUnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Weapon-MolotovCocktail(int32_t EntryPoint); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.ExecuteUbergraph_BP-Weapon-MolotovCocktail(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip

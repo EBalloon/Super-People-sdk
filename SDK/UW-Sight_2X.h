@@ -8,8 +8,8 @@ public:
 	struct UImage Image_1; // 0x258 (8)
 	struct FVector2D NewVar_1; // 0x260 (8)
 
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_2X.UW-Sight_2X_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Sight_2X(int32_t EntryPoint); // Function UW-Sight_2X.UW-Sight_2X_C.ExecuteUbergraph_UW-Sight_2X(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_2X.UW-Sight_2X_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Sight_2X(int32_t EntryPoint); // Function UW-Sight_2X.UW-Sight_2X_C.ExecuteUbergraph_UW-Sight_2X(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Sight_2X.UW-Sight_2X_C.SetScopeImageAngle

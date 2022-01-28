@@ -3,47 +3,47 @@ class ABP-WinCam_C : public UActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct UCameraComponent WorldViewCamera; // 0x308 (8)
-	struct UCameraComponent FarCamera; // 0x310 (8)
-	struct UCameraComponent NearCamera; // 0x318 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x320 (8)
-	struct ABravoHotelCharacter CharacterRef; // 0x328 (8)
-	struct FTransform TargetNearCameraTransform; // 0x330 (48)
-	float DeltaTime; // 0x360 (4)
-	struct FTransform TargetFarCameraTransform; // 0x370 (48)
-	struct ABravoHotelPlayerController PlayerControllerRef; // 0x3A0 (8)
-	char bIsBackgroundScene : 0; // 0x3A8 (1)
-	struct TArray<struct ABravoHotelCharacter> WinTeamCharacters; // 0x3B0 (16)
-	struct TArray<struct FVector> DuoLocation_Near; // 0x3C0 (16)
-	struct FVector CharacterOriginLocation; // 0x3D0 (12)
-	struct TArray<struct FRotator> DuoRotation_Near; // 0x3E0 (16)
-	struct TArray<struct FVector> DuoLocation_Far; // 0x3F0 (16)
-	struct TArray<struct FRotator> DuoRotation_Far; // 0x400 (16)
-	struct TArray<struct FVector> TrioLocation_Near; // 0x410 (16)
-	struct TArray<struct FRotator> TrioRotation_Near; // 0x420 (16)
-	struct TArray<struct FVector> TrioLocation_Far; // 0x430 (16)
-	struct TArray<struct FRotator> TrioRotation_Far; // 0x440 (16)
-	struct TArray<struct FVector> SquadLocation_Near; // 0x450 (16)
-	struct TArray<struct FRotator> SquadRotation_Near; // 0x460 (16)
-	struct TArray<struct FVector> SquadLocation_Far; // 0x470 (16)
-	struct TArray<struct FRotator> SquadRotation_Far; // 0x480 (16)
-	struct FRotator CharacterOriginRotation; // 0x490 (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct UCameraComponent WorldViewCamera; // 0x330 (8)
+	struct UCameraComponent FarCamera; // 0x338 (8)
+	struct UCameraComponent NearCamera; // 0x340 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x348 (8)
+	struct ABravoHotelCharacter CharacterRef; // 0x350 (8)
+	struct FTransform TargetNearCameraTransform; // 0x360 (48)
+	float DeltaTime; // 0x390 (4)
+	struct FTransform TargetFarCameraTransform; // 0x3A0 (48)
+	struct ABravoHotelPlayerController PlayerControllerRef; // 0x3D0 (8)
+	char bIsBackgroundScene : 0; // 0x3D8 (1)
+	struct TArray<struct ABravoHotelCharacter> WinTeamCharacters; // 0x3E0 (16)
+	struct TArray<struct FVector> DuoLocation_Near; // 0x3F0 (16)
+	struct FVector CharacterOriginLocation; // 0x400 (12)
+	struct TArray<struct FRotator> DuoRotation_Near; // 0x410 (16)
+	struct TArray<struct FVector> DuoLocation_Far; // 0x420 (16)
+	struct TArray<struct FRotator> DuoRotation_Far; // 0x430 (16)
+	struct TArray<struct FVector> TrioLocation_Near; // 0x440 (16)
+	struct TArray<struct FRotator> TrioRotation_Near; // 0x450 (16)
+	struct TArray<struct FVector> TrioLocation_Far; // 0x460 (16)
+	struct TArray<struct FRotator> TrioRotation_Far; // 0x470 (16)
+	struct TArray<struct FVector> SquadLocation_Near; // 0x480 (16)
+	struct TArray<struct FRotator> SquadRotation_Near; // 0x490 (16)
+	struct TArray<struct FVector> SquadLocation_Far; // 0x4A0 (16)
+	struct TArray<struct FRotator> SquadRotation_Far; // 0x4B0 (16)
+	struct FRotator CharacterOriginRotation; // 0x4C0 (12)
 
-	void GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation); // Function BP-WinCam.BP-WinCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCharacterRotation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCharacterLocation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterLocation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter); // Function BP-WinCam.BP-WinCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage); // Function BP-WinCam.BP-WinCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckWorldViewCameraLocationRange(); // Function BP-WinCam.BP-WinCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-WinCam.BP-WinCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreventCameraWallCollision(); // Function BP-WinCam.BP-WinCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitReferences(char& bSuccess); // Function BP-WinCam.BP-WinCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-WinCam.BP-WinCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-WinCam.BP-WinCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Start Background Scene(); // Function BP-WinCam.BP-WinCam_C.Start Background Scene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnFinishMatchEndAnimation(); // Function BP-WinCam.BP-WinCam_C.OnFinishMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-WinCam(int32_t EntryPoint); // Function BP-WinCam.BP-WinCam_C.ExecuteUbergraph_BP-WinCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation); // Function BP-WinCam.BP-WinCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCharacterRotation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCharacterLocation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterLocation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter); // Function BP-WinCam.BP-WinCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage); // Function BP-WinCam.BP-WinCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckWorldViewCameraLocationRange(); // Function BP-WinCam.BP-WinCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-WinCam.BP-WinCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreventCameraWallCollision(); // Function BP-WinCam.BP-WinCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitReferences(char& bSuccess); // Function BP-WinCam.BP-WinCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-WinCam.BP-WinCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-WinCam.BP-WinCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Start Background Scene(); // Function BP-WinCam.BP-WinCam_C.Start Background Scene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnFinishMatchEndAnimation(); // Function BP-WinCam.BP-WinCam_C.OnFinishMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-WinCam(int32_t EntryPoint); // Function BP-WinCam.BP-WinCam_C.ExecuteUbergraph_BP-WinCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-WinCam.BP-WinCam_C.GetFloorLocation

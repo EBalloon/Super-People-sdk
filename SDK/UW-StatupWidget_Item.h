@@ -12,10 +12,10 @@ public:
 	struct UTextBlock T_Value; // 0x278 (8)
 	struct FText Text_StatName; // 0x280 (24)
 
-	void SetStatValue(int32_t Type, float Value); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetStatName(struct FString NewParam); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatName(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreConstruct(char IsDesignTime); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-StatupWidget_Item(int32_t EntryPoint); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.ExecuteUbergraph_UW-StatupWidget_Item(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetStatValue(int32_t Type, float Value); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetStatName(struct FString NewParam); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatName(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreConstruct(char IsDesignTime); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-StatupWidget_Item(int32_t EntryPoint); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.ExecuteUbergraph_UW-StatupWidget_Item(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue

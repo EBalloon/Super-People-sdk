@@ -9,12 +9,12 @@ public:
 	struct FResponse_Weapon_List_Data ItemWeaponInfo; // 0x260 (136)
 	struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget; // 0x2E8 (8)
 
-	void SetButtonEnabled(char InIsEnabled); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetButtonEnabled(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetWeaponInfo(struct FResponse_Weapon_List_Data& ItemWeaponInfo, struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.ResetButton(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SelectButton(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Lobby_Craft_WeaponSelect_Slot(int32_t EntryPoint); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.ExecuteUbergraph_UW-Lobby_Craft_WeaponSelect_Slot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetButtonEnabled(char InIsEnabled); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetButtonEnabled(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWeaponInfo(struct FResponse_Weapon_List_Data& ItemWeaponInfo, struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.ResetButton(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SelectButton(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Lobby_Craft_WeaponSelect_Slot(int32_t EntryPoint); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.ExecuteUbergraph_UW-Lobby_Craft_WeaponSelect_Slot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetButtonEnabled

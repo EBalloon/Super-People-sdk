@@ -30,7 +30,7 @@ class ADDGIVolume : public UActor {
 
 public:
 
-	struct UDDGIVolumeComponent DDGIVolumeComponent; // 0x300 (8)
+	struct UDDGIVolumeComponent DDGIVolumeComponent; // 0x328 (8)
 };
 
 // Class RTXGI.DDGIVolumeComponent
@@ -38,37 +38,37 @@ class UDDGIVolumeComponent : public USceneComponent {
 
 public:
 
-	enum class EDDGIRaysPerProbe RaysPerProbe; // 0x228 (1)
-	struct FIntVector ProbeCounts; // 0x22C (12)
-	int32_t LightingPriority; // 0x238 (4)
-	float UpdatePriority; // 0x23C (4)
-	float ProbeMaxRayDistance; // 0x240 (4)
-	float ProbeHysteresis; // 0x244 (4)
-	float ViewBias; // 0x248 (4)
-	float NormalBias; // 0x24C (4)
-	struct FLightingChannels LightingChannels; // 0x250 (1)
-	float VolumeBlendDistance; // 0x254 (4)
-	float VolumeBlendDistanceBlack; // 0x258 (4)
-	char EnableProbeRelocation : 0; // 0x25C (1)
-	char EnableProbeScrolling : 0; // 0x25D (1)
-	char EnableViewDependentVolumeScrolling : 0; // 0x25E (1)
-	float ViewDependentVolumeScrollingOffset; // 0x260 (4)
-	char EnableVolume : 0; // 0x264 (1)
-	char RuntimeStatic : 0; // 0x265 (1)
-	float probeDistanceExponent; // 0x268 (4)
-	float probeIrradianceEncodingGamma; // 0x26C (4)
-	float probeChangeThreshold; // 0x270 (4)
-	float probeBrightnessThreshold; // 0x274 (4)
-	float ProbeMinFrontfaceDistance; // 0x278 (4)
-	float ProbeBackfaceThreshold; // 0x27C (4)
-	float LightMultiplier; // 0x280 (4)
-	float EmissiveMultiplier; // 0x284 (4)
-	float IrradianceScalar; // 0x288 (4)
-	char SkyLight : 0; // 0x28C (1)
-	struct FVector LastOrigin; // 0x290 (12)
-	struct FIntVector ProbeScrollOffset; // 0x29C (12)
+	enum class EDDGIRaysPerProbe RaysPerProbe; // 0x238 (1)
+	struct FIntVector ProbeCounts; // 0x23C (12)
+	int32_t LightingPriority; // 0x248 (4)
+	float UpdatePriority; // 0x24C (4)
+	float ProbeMaxRayDistance; // 0x250 (4)
+	float ProbeHysteresis; // 0x254 (4)
+	float ViewBias; // 0x258 (4)
+	float NormalBias; // 0x25C (4)
+	struct FLightingChannels LightingChannels; // 0x260 (1)
+	float VolumeBlendDistance; // 0x264 (4)
+	float VolumeBlendDistanceBlack; // 0x268 (4)
+	char EnableProbeRelocation : 0; // 0x26C (1)
+	char EnableProbeScrolling : 0; // 0x26D (1)
+	char EnableViewDependentVolumeScrolling : 0; // 0x26E (1)
+	float ViewDependentVolumeScrollingOffset; // 0x270 (4)
+	char EnableVolume : 0; // 0x274 (1)
+	char RuntimeStatic : 0; // 0x275 (1)
+	float probeDistanceExponent; // 0x278 (4)
+	float probeIrradianceEncodingGamma; // 0x27C (4)
+	float probeChangeThreshold; // 0x280 (4)
+	float probeBrightnessThreshold; // 0x284 (4)
+	float ProbeMinFrontfaceDistance; // 0x288 (4)
+	float ProbeBackfaceThreshold; // 0x28C (4)
+	float LightMultiplier; // 0x290 (4)
+	float EmissiveMultiplier; // 0x294 (4)
+	float IrradianceScalar; // 0x298 (4)
+	char SkyLight : 0; // 0x29C (1)
+	struct FVector LastOrigin; // 0x2A0 (12)
+	struct FIntVector ProbeScrollOffset; // 0x2AC (12)
 
-	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1665D30>
+	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1674690>
 };
 
 // Class RTXGI.RTXGIPluginSettings

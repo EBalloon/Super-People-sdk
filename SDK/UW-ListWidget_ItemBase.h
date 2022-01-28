@@ -7,11 +7,11 @@ public:
 	struct UWidgetAnimation Anim_Remove; // 0x250 (8)
 	struct FTimerHandle Timer_StartRemove; // 0x258 (8)
 
-	void PlayUpDownAnim(); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.PlayUpDownAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRemoveTimer(float RemainTime); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.SetRemoveTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartRemove(); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.StartRemove(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ListWidget_ItemBase(int32_t EntryPoint); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.ExecuteUbergraph_UW-ListWidget_ItemBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayUpDownAnim(); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.PlayUpDownAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRemoveTimer(float RemainTime); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.SetRemoveTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartRemove(); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.StartRemove(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ListWidget_ItemBase(int32_t EntryPoint); // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.ExecuteUbergraph_UW-ListWidget_ItemBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget_ItemBase.UW-ListWidget_ItemBase_C.PlayUpDownAnim

@@ -19,14 +19,14 @@ public:
 	struct FInventoryItemInfo WeaponItemInfo; // 0xDD8 (152)
 	int32_t CurrentCount; // 0xE70 (4)
 
-	void SetOwnInfo(); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetOwnInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetNotOwnRarityVisibility(int32_t Rarity); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetNotOwnRarityVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetOwnCount(); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetOwnCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetWeaponInfo(struct FItemWeapon& ItemWeaponInfo, int32_t ItemWeaponID); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_F85F803F469568E218532398152F6C76(struct Object Loaded); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.OnLoaded_F85F803F469568E218532398152F6C76(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Lobby_Craft_Recipe_Weapon(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe_Weapon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetOwnInfo(); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetOwnInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetNotOwnRarityVisibility(int32_t Rarity); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetNotOwnRarityVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetOwnCount(); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetOwnCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWeaponInfo(struct FItemWeapon& ItemWeaponInfo, int32_t ItemWeaponID); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_F85F803F469568E218532398152F6C76(struct Object Loaded); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.OnLoaded_F85F803F469568E218532398152F6C76(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Lobby_Craft_Recipe_Weapon(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe_Weapon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Lobby_Craft_Recipe_Weapon.UW-Lobby_Craft_Recipe_Weapon_C.SetOwnInfo

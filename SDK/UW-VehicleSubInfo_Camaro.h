@@ -7,8 +7,8 @@ public:
 	struct UCanvasPanel SeatIcons; // 0x270 (8)
 	struct UCanvasPanel WheelIcons; // 0x278 (8)
 
-	void Setup(struct ABravoHotelVehicle VehicleInstance); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-VehicleSubInfo_Camaro(int32_t EntryPoint); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.ExecuteUbergraph_UW-VehicleSubInfo_Camaro(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Setup(struct ABravoHotelVehicle VehicleInstance); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-VehicleSubInfo_Camaro(int32_t EntryPoint); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.ExecuteUbergraph_UW-VehicleSubInfo_Camaro(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup

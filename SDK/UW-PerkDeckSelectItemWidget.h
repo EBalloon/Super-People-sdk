@@ -25,29 +25,29 @@ public:
 	struct FMulticastInlineDelegate HoverClass; // 0x300 (16)
 	char bIsLocalSelected : 0; // 0x310 (1)
 	char bIsSelected : 0; // 0x311 (1)
-	struct FPerkDeckData CurrentPerkDeckData; // 0x318 (1208)
-	char bIsDuplicateSelectPossible : 0; // 0x7D0 (1)
-	char bButtonDisabled : 0; // 0x7D1 (1)
-	char bNoUpdatedDisabled : 0; // 0x7D2 (1)
-	char bIsBlocked : 0; // 0x7D3 (1)
+	struct FPerkDeckData CurrentPerkDeckData; // 0x318 (1200)
+	char bIsDuplicateSelectPossible : 0; // 0x7C8 (1)
+	char bButtonDisabled : 0; // 0x7C9 (1)
+	char bNoUpdatedDisabled : 0; // 0x7CA (1)
+	char bIsBlocked : 0; // 0x7CB (1)
 
-	void SetBlocked(char IsBlocked, char ComingSoon); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetBlocked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DisableWithoutSelected(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.DisableWithoutSelected(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateButtonDisabled(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.UpdateButtonDisabled(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateOutLine(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.UpdateOutLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSelectedInfo(struct ABravoHotelPlayerState& PlayerState); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetSelectedInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetSelected(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ResetSelected(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPerkDeckClassInfoByRowName(struct FName RowName); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetPerkDeckClassInfoByRowName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPerkDeckClassInfo(struct FPerkDeckClassInfo& PerkDeckClassInfo, int32_t ClassIndex); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetPerkDeckClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_4ECB692A48B41C9343CA15BDA4F3DA1C(struct Object Loaded); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.OnLoaded_4ECB692A48B41C9343CA15BDA4F3DA1C(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_101_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_101_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_101_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_101_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Main_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_Main_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AsyncLoadingClassSelectIcon(struct TSoftObjectPtr<Object> Texture); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.AsyncLoadingClassSelectIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-PerkDeckSelectItemWidget(int32_t EntryPoint); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ExecuteUbergraph_UW-PerkDeckSelectItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HoverClass__DelegateSignature(int32_t ClassIndex, char IsHoverd); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.HoverClass__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChooseClass__DelegateSignature(int32_t ClassIndex); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ChooseClass__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetBlocked(char IsBlocked, char ComingSoon); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetBlocked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DisableWithoutSelected(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.DisableWithoutSelected(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateButtonDisabled(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.UpdateButtonDisabled(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateOutLine(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.UpdateOutLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSelectedInfo(struct ABravoHotelPlayerState& PlayerState); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetSelectedInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetSelected(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ResetSelected(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPerkDeckClassInfoByRowName(struct FName RowName); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetPerkDeckClassInfoByRowName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPerkDeckClassInfo(struct FPerkDeckClassInfo& PerkDeckClassInfo, int32_t ClassIndex); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetPerkDeckClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_4ECB692A48B41C9343CA15BDA4F3DA1C(struct Object Loaded); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.OnLoaded_4ECB692A48B41C9343CA15BDA4F3DA1C(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_101_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_101_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_101_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_101_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Main_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.BndEvt__Button_Main_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AsyncLoadingClassSelectIcon(struct TSoftObjectPtr<Object> Texture); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.AsyncLoadingClassSelectIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-PerkDeckSelectItemWidget(int32_t EntryPoint); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ExecuteUbergraph_UW-PerkDeckSelectItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HoverClass__DelegateSignature(int32_t ClassIndex, char IsHoverd); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.HoverClass__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChooseClass__DelegateSignature(int32_t ClassIndex); // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.ChooseClass__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-PerkDeckSelectItemWidget.UW-PerkDeckSelectItemWidget_C.SetBlocked

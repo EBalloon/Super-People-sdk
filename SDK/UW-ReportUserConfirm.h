@@ -10,10 +10,10 @@ public:
 	struct UTextBlock txt_description; // 0x278 (8)
 	struct UImage uw-bg; // 0x280 (8)
 
-	void PreConstruct(char IsDesignTime); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnReportSended(enum class EBeginReportWidgetType InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ReportUserConfirm(int32_t EntryPoint); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.ExecuteUbergraph_UW-ReportUserConfirm(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PreConstruct(char IsDesignTime); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnReportSended(enum class EBeginReportWidgetType InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ReportUserConfirm(int32_t EntryPoint); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.ExecuteUbergraph_UW-ReportUserConfirm(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct

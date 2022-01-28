@@ -3,19 +3,19 @@ class ABP-ATV_C : public ABP-DefaultGroundVehicle_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD80 (8)
-	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_RR; // 0xD88 (8)
-	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_RL; // 0xD90 (8)
-	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_FR; // 0xD98 (8)
-	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_FL; // 0xDA0 (8)
-	struct UBravoHotelVehicleSeatCollisionComponent VehicleSeatCollision1; // 0xDA8 (8)
-	struct UBravoHotelVehicleSeatCollisionComponent VehicleSeatCollision; // 0xDB0 (8)
-	struct UBravoHotelVehicleSeatComponent BravoHotelVehicleSeat02; // 0xDB8 (8)
-	struct UMaterialInstanceDynamic M-Vehicle_Spin; // 0xDC0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD90 (8)
+	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_RR; // 0xD98 (8)
+	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_RL; // 0xDA0 (8)
+	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_FR; // 0xDA8 (8)
+	struct UBravoHotelVehicleTireComponent BravoHotelVehicleTire_FL; // 0xDB0 (8)
+	struct UBravoHotelVehicleSeatCollisionComponent VehicleSeatCollision1; // 0xDB8 (8)
+	struct UBravoHotelVehicleSeatCollisionComponent VehicleSeatCollision; // 0xDC0 (8)
+	struct UBravoHotelVehicleSeatComponent BravoHotelVehicleSeat02; // 0xDC8 (8)
+	struct UMaterialInstanceDynamic M-Vehicle_Spin; // 0xDD0 (8)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-ATV.BP-ATV_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-ATV.BP-ATV_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-ATV(int32_t EntryPoint); // Function BP-ATV.BP-ATV_C.ExecuteUbergraph_BP-ATV(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-ATV.BP-ATV_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-ATV.BP-ATV_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-ATV(int32_t EntryPoint); // Function BP-ATV.BP-ATV_C.ExecuteUbergraph_BP-ATV(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-ATV.BP-ATV_C.ReceiveTick

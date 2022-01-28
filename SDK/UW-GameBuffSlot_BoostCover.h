@@ -7,8 +7,8 @@ public:
 	struct UUW-GameBuffSlot_Boost_C UW-GameBuffSlot_Boost; // 0x250 (8)
 	struct UUW-Inventory_ItemSlotHover_C HoverWidget; // 0x258 (8)
 
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-GameBuffSlot_BoostCover(int32_t EntryPoint); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.ExecuteUbergraph_UW-GameBuffSlot_BoostCover(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-GameBuffSlot_BoostCover(int32_t EntryPoint); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.ExecuteUbergraph_UW-GameBuffSlot_BoostCover(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter

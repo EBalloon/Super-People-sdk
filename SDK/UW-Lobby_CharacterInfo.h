@@ -28,12 +28,12 @@ public:
 	int32_t LastSeaponTierId; // 0x2F8 (4)
 	float WidgetHalfSizeX; // 0x2FC (4)
 
-	void Set Position(char IsLeft, char IsSoloMode, struct ABravoHotelCharacter CharacterRef, struct FBravoHotelPartyMemberInfo MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(struct FBravoHotelPartyMemberInfo PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Object Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AsyncIcon(struct TSoftObjectPtr<Object> Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Lobby_CharacterInfo(int32_t EntryPoint); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.ExecuteUbergraph_UW-Lobby_CharacterInfo(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Set Position(char IsLeft, char IsSoloMode, struct ABravoHotelCharacter CharacterRef, struct FBravoHotelPartyMemberInfo MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(struct FBravoHotelPartyMemberInfo PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Object Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AsyncIcon(struct TSoftObjectPtr<Object> Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Lobby_CharacterInfo(int32_t EntryPoint); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.ExecuteUbergraph_UW-Lobby_CharacterInfo(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position

@@ -25,19 +25,19 @@ public:
 	struct UFileMediaSource Media; // 0x2E0 (8)
 	char NextScene : 0; // 0x2E8 (1)
 
-	void PlayMedia(); // Function UW-Tutorial.UW-Tutorial_C.PlayMedia(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ToggleExitPopup(); // Function UW-Tutorial.UW-Tutorial_C.ToggleExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Move Next Scene(); // Function UW-Tutorial.UW-Tutorial_C.Move Next Scene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UW-Tutorial.UW-Tutorial_C.OnKeyDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-Tutorial.UW-Tutorial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Tutorial.UW-Tutorial_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CustomEvent_1(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CustomEvent_2(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Focus2_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__Button_Focus2_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Tutorial(int32_t EntryPoint); // Function UW-Tutorial.UW-Tutorial_C.ExecuteUbergraph_UW-Tutorial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayMedia(); // Function UW-Tutorial.UW-Tutorial_C.PlayMedia(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ToggleExitPopup(); // Function UW-Tutorial.UW-Tutorial_C.ToggleExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Move Next Scene(); // Function UW-Tutorial.UW-Tutorial_C.Move Next Scene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UW-Tutorial.UW-Tutorial_C.OnKeyDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-Tutorial.UW-Tutorial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Tutorial.UW-Tutorial_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CustomEvent_1(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CustomEvent_2(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Focus2_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__Button_Focus2_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Tutorial(int32_t EntryPoint); // Function UW-Tutorial.UW-Tutorial_C.ExecuteUbergraph_UW-Tutorial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Tutorial.UW-Tutorial_C.PlayMedia
@@ -148,13 +148,13 @@ inline void UUW-Tutorial_C::CustomEvent_1() {
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-inline void UUW-Tutorial_C::BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+// Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+inline void UUW-Tutorial_C::BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	struct BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params {
+	struct BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params {
 		
-	}; BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Params;
+	}; BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

@@ -16,184 +16,187 @@ public:
 	struct UImage BrightSpot_03; // 0x298 (8)
 	struct UImage BrightSpot_04; // 0x2A0 (8)
 	struct UImage BrightSpot_05; // 0x2A8 (8)
-	struct UButton Button_DeathCam_2; // 0x2B0 (8)
-	struct UButton Button_Exit; // 0x2B8 (8)
-	struct UButton Button_KillCam; // 0x2C0 (8)
-	struct UButton Button_Report; // 0x2C8 (8)
-	struct UButton Button_Spectate; // 0x2D0 (8)
-	struct UCanvasPanel CanvasPanel_3; // 0x2D8 (8)
-	struct UCanvasPanel CanvasPanel_9; // 0x2E0 (8)
-	struct UCanvasPanel CanvasPanel_1174; // 0x2E8 (8)
-	struct UCanvasPanel CanvasPanel_1384; // 0x2F0 (8)
-	struct UImage Glow1; // 0x2F8 (8)
-	struct UImage Glow2; // 0x300 (8)
-	struct UImage Glow3; // 0x308 (8)
-	struct UImage Glow_01; // 0x310 (8)
-	struct UImage GlowLine; // 0x318 (8)
-	struct UImage Gold; // 0x320 (8)
-	struct UImage Image_26; // 0x328 (8)
-	struct UImage Image_27; // 0x330 (8)
-	struct UImage Image_28; // 0x338 (8)
-	struct UImage Image_29; // 0x340 (8)
-	struct UImage Image_216; // 0x348 (8)
-	struct UImage Image_223; // 0x350 (8)
-	struct UImage Image_458; // 0x358 (8)
-	struct UImage Image_559; // 0x360 (8)
-	struct UImage Image_CurrentRANK; // 0x368 (8)
-	struct UImage Image_DownRANK; // 0x370 (8)
-	struct UImage Image_UpRANK; // 0x378 (8)
-	struct UImage L_Wing01; // 0x380 (8)
-	struct UImage L_Wing01_2; // 0x388 (8)
-	struct UImage L_Wing01_5; // 0x390 (8)
-	struct UImage L_Wing02; // 0x398 (8)
-	struct UImage L_Wing02_2; // 0x3A0 (8)
-	struct UImage L_Wing02_5; // 0x3A8 (8)
-	struct UImage L_Wing03; // 0x3B0 (8)
-	struct UImage L_Wing03_2; // 0x3B8 (8)
-	struct UImage L_Wing03_5; // 0x3C0 (8)
-	struct UImage L_WingLine; // 0x3C8 (8)
-	struct UImage L_WingLine_3; // 0x3D0 (8)
-	struct UImage Light_2; // 0x3D8 (8)
-	struct UImage Light_01; // 0x3E0 (8)
-	struct UImage Light_02; // 0x3E8 (8)
-	struct UImage Light_03; // 0x3F0 (8)
-	struct UImage Light_04; // 0x3F8 (8)
-	struct UImage Light_05; // 0x400 (8)
-	struct UImage Light_06; // 0x408 (8)
-	struct UOverlay Overlay; // 0x410 (8)
-	struct UOverlay Overlay_2; // 0x418 (8)
-	struct UOverlay Overlay_264; // 0x420 (8)
-	struct UOverlay Overlay_Report; // 0x428 (8)
-	struct UOverlay Overlay_Spectate; // 0x430 (8)
-	struct UImage R_Wing01; // 0x438 (8)
-	struct UImage R_Wing01_2; // 0x440 (8)
-	struct UImage R_Wing01_5; // 0x448 (8)
-	struct UImage R_Wing01_6; // 0x450 (8)
-	struct UImage R_Wing02; // 0x458 (8)
-	struct UImage R_Wing02_2; // 0x460 (8)
-	struct UImage R_Wing02_5; // 0x468 (8)
-	struct UImage R_Wing02_6; // 0x470 (8)
-	struct UImage R_Wing03; // 0x478 (8)
-	struct UImage R_Wing03_2; // 0x480 (8)
-	struct UImage R_Wing03_5; // 0x488 (8)
-	struct UImage R_Wing03_6; // 0x490 (8)
-	struct UImage R_WingLine; // 0x498 (8)
-	struct UImage R_WingLine_3; // 0x4A0 (8)
-	struct UImage Ribbon; // 0x4A8 (8)
-	struct UImage ring; // 0x4B0 (8)
-	struct UImage RIng_Glow_01; // 0x4B8 (8)
-	struct UScrollBox ScrollBox_2; // 0x4C0 (8)
-	struct UScrollBox ScrollBox_199; // 0x4C8 (8)
-	struct USizeBox SizeBox_8; // 0x4D0 (8)
-	struct USpacer Spacer_6018; // 0x4D8 (8)
-	struct USpacer Spacer_6217; // 0x4E0 (8)
-	struct USpacer Spacer_Center; // 0x4E8 (8)
-	struct USpacer Spacer_Center_2; // 0x4F0 (8)
-	struct UTextBlock T_RemainTime_2; // 0x4F8 (8)
-	struct UTextBlock Text_Report; // 0x500 (8)
-	struct UTextBlock TextBlock_3; // 0x508 (8)
-	struct UTextBlock TextBlock_12; // 0x510 (8)
-	struct UTextBlock TextBlock_13; // 0x518 (8)
-	struct UTextBlock TextBlock_14; // 0x520 (8)
-	struct UTextBlock TextBlock_25; // 0x528 (8)
-	struct UTextBlock TextBlock_27; // 0x530 (8)
-	struct UTextBlock TextBlock_1425; // 0x538 (8)
-	struct UTextBlock TextBlock_2242; // 0x540 (8)
-	struct UTextBlock TextBlock_2769; // 0x548 (8)
-	struct UTextBlock TextBlock_3056; // 0x550 (8)
-	struct UTextBlock TextBlock_LocalMatchRP; // 0x558 (8)
-	struct UImage TextGlow01; // 0x560 (8)
-	struct UImage TextGlow02; // 0x568 (8)
-	struct UImage TextGlow03; // 0x570 (8)
-	struct UImage TopLine_3; // 0x578 (8)
-	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList; // 0x580 (8)
-	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList_2; // 0x588 (8)
-	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList_3; // 0x590 (8)
-	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_2; // 0x598 (8)
-	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_3; // 0x5A0 (8)
-	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_4; // 0x5A8 (8)
-	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_5; // 0x5B0 (8)
-	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_369; // 0x5B8 (8)
-	struct UUW-RankPoint_C UW-RankPoint; // 0x5C0 (8)
-	struct UUW-RewardGoldSlot_02_C UW-RewardGoldSlot_02; // 0x5C8 (8)
-	struct UVerticalBox VerticalBox_191; // 0x5D0 (8)
-	struct UWidgetSwitcher WidgetSwitcher_2; // 0x5D8 (8)
-	char MatchEnd : 0; // 0x5E0 (1)
-	struct FMatchEndAnimation AnimationData; // 0x5E1 (2)
-	struct UUW-MatchEndWidget_C MatchEndWidgetRef; // 0x5E8 (8)
-	struct FMatchEndSimpleResult SimpleResult; // 0x5F0 (168)
-	struct FTimerHandle SimpleTimer; // 0x698 (8)
-	char IsWinningCam : 0; // 0x6A0 (1)
-	struct FAudioPlayingHandle StartSound; // 0x6A4 (4)
-	struct FTimerHandle GainGoldHandle; // 0x6A8 (8)
-	struct FTimerHandle GoldHandle; // 0x6B0 (8)
-	struct FMatchEndFinalResult FinalResultData; // 0x6B8 (4)
-	int32_t RandomGold; // 0x6BC (4)
-	int32_t GainGoldValue; // 0x6C0 (4)
-	struct UTextBlock LocalWidget; // 0x6C8 (8)
-	struct ABravoHotelPlayerState PlayerState; // 0x6D0 (8)
-	struct FTimerHandle Timehandle_Rank; // 0x6D8 (8)
-	char Increase : 0; // 0x6E0 (1)
-	char bMaxPrograssbar : 0; // 0x6E1 (1)
-	int32_t CurrentRP; // 0x6E4 (4)
-	int32_t PlayerOriRP; // 0x6E8 (4)
-	int32_t TargetRP; // 0x6EC (4)
-	int32_t NextTireRP; // 0x6F0 (4)
-	int32_t CurrentTierID; // 0x6F4 (4)
-	char IsGiveUp : 0; // 0x6F8 (1)
-	int32_t TempRank; // 0x6FC (4)
-	int32_t TempKill; // 0x700 (4)
-	int32_t TempHit; // 0x704 (4)
-	int32_t TempSuvival; // 0x708 (4)
-	int32_t SeasonRP; // 0x70C (4)
-	int32_t GainedRP; // 0x710 (4)
-	int32_t AminRPText; // 0x714 (4)
-	int32_t StartRP; // 0x718 (4)
-	int32_t EndRP; // 0x71C (4)
-	float ShowTime; // 0x720 (4)
-	char IsTargetCameraKiller : 0; // 0x724 (1)
+	struct UButton Button_DamageInfo; // 0x2B0 (8)
+	struct UButton Button_DeathCam_2; // 0x2B8 (8)
+	struct UButton Button_Exit; // 0x2C0 (8)
+	struct UButton Button_KillCam; // 0x2C8 (8)
+	struct UButton Button_Report; // 0x2D0 (8)
+	struct UButton Button_Spectate; // 0x2D8 (8)
+	struct UCanvasPanel CanvasPanel_3; // 0x2E0 (8)
+	struct UCanvasPanel CanvasPanel_9; // 0x2E8 (8)
+	struct UCanvasPanel CanvasPanel_1174; // 0x2F0 (8)
+	struct UCanvasPanel CanvasPanel_1384; // 0x2F8 (8)
+	struct UImage Glow1; // 0x300 (8)
+	struct UImage Glow2; // 0x308 (8)
+	struct UImage Glow3; // 0x310 (8)
+	struct UImage Glow_01; // 0x318 (8)
+	struct UImage GlowLine; // 0x320 (8)
+	struct UImage Gold; // 0x328 (8)
+	struct UImage Image_26; // 0x330 (8)
+	struct UImage Image_27; // 0x338 (8)
+	struct UImage Image_28; // 0x340 (8)
+	struct UImage Image_29; // 0x348 (8)
+	struct UImage Image_216; // 0x350 (8)
+	struct UImage Image_223; // 0x358 (8)
+	struct UImage Image_458; // 0x360 (8)
+	struct UImage Image_559; // 0x368 (8)
+	struct UImage Image_CurrentRANK; // 0x370 (8)
+	struct UImage Image_DownRANK; // 0x378 (8)
+	struct UImage Image_UpRANK; // 0x380 (8)
+	struct UImage L_Wing01; // 0x388 (8)
+	struct UImage L_Wing01_2; // 0x390 (8)
+	struct UImage L_Wing01_5; // 0x398 (8)
+	struct UImage L_Wing02; // 0x3A0 (8)
+	struct UImage L_Wing02_2; // 0x3A8 (8)
+	struct UImage L_Wing02_5; // 0x3B0 (8)
+	struct UImage L_Wing03; // 0x3B8 (8)
+	struct UImage L_Wing03_2; // 0x3C0 (8)
+	struct UImage L_Wing03_5; // 0x3C8 (8)
+	struct UImage L_WingLine; // 0x3D0 (8)
+	struct UImage L_WingLine_3; // 0x3D8 (8)
+	struct UImage Light_2; // 0x3E0 (8)
+	struct UImage Light_01; // 0x3E8 (8)
+	struct UImage Light_02; // 0x3F0 (8)
+	struct UImage Light_03; // 0x3F8 (8)
+	struct UImage Light_04; // 0x400 (8)
+	struct UImage Light_05; // 0x408 (8)
+	struct UImage Light_06; // 0x410 (8)
+	struct UOverlay Overlay_264; // 0x418 (8)
+	struct UOverlay Overlay_DamageInfo; // 0x420 (8)
+	struct UOverlay Overlay_KillCam; // 0x428 (8)
+	struct UOverlay Overlay_KillCamReplay; // 0x430 (8)
+	struct UOverlay Overlay_Report; // 0x438 (8)
+	struct UOverlay Overlay_Spectate; // 0x440 (8)
+	struct UImage R_Wing01; // 0x448 (8)
+	struct UImage R_Wing01_2; // 0x450 (8)
+	struct UImage R_Wing01_5; // 0x458 (8)
+	struct UImage R_Wing01_6; // 0x460 (8)
+	struct UImage R_Wing02; // 0x468 (8)
+	struct UImage R_Wing02_2; // 0x470 (8)
+	struct UImage R_Wing02_5; // 0x478 (8)
+	struct UImage R_Wing02_6; // 0x480 (8)
+	struct UImage R_Wing03; // 0x488 (8)
+	struct UImage R_Wing03_2; // 0x490 (8)
+	struct UImage R_Wing03_5; // 0x498 (8)
+	struct UImage R_Wing03_6; // 0x4A0 (8)
+	struct UImage R_WingLine; // 0x4A8 (8)
+	struct UImage R_WingLine_3; // 0x4B0 (8)
+	struct UImage Ribbon; // 0x4B8 (8)
+	struct UImage Ring; // 0x4C0 (8)
+	struct UImage RIng_Glow_01; // 0x4C8 (8)
+	struct UScrollBox ScrollBox_2; // 0x4D0 (8)
+	struct UScrollBox ScrollBox_199; // 0x4D8 (8)
+	struct USizeBox SizeBox_8; // 0x4E0 (8)
+	struct UTextBlock T_RemainTime_2; // 0x4E8 (8)
+	struct UTextBlock Text_Report; // 0x4F0 (8)
+	struct UTextBlock TextBlock_3; // 0x4F8 (8)
+	struct UTextBlock TextBlock_4; // 0x500 (8)
+	struct UTextBlock TextBlock_12; // 0x508 (8)
+	struct UTextBlock TextBlock_13; // 0x510 (8)
+	struct UTextBlock TextBlock_14; // 0x518 (8)
+	struct UTextBlock TextBlock_25; // 0x520 (8)
+	struct UTextBlock TextBlock_27; // 0x528 (8)
+	struct UTextBlock TextBlock_1425; // 0x530 (8)
+	struct UTextBlock TextBlock_2242; // 0x538 (8)
+	struct UTextBlock TextBlock_2769; // 0x540 (8)
+	struct UTextBlock TextBlock_3056; // 0x548 (8)
+	struct UTextBlock TextBlock_LocalMatchRP; // 0x550 (8)
+	struct UImage TextGlow01; // 0x558 (8)
+	struct UImage TextGlow02; // 0x560 (8)
+	struct UImage TextGlow03; // 0x568 (8)
+	struct UImage TopLine_3; // 0x570 (8)
+	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList; // 0x578 (8)
+	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList_2; // 0x580 (8)
+	struct UUW-MatchEnd_GoldList_C UW-MatchEnd_GoldList_3; // 0x588 (8)
+	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_2; // 0x590 (8)
+	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_3; // 0x598 (8)
+	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_4; // 0x5A0 (8)
+	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_5; // 0x5A8 (8)
+	struct UUW-MatchEnd_RewardSlot_02_C UW-MatchEnd_RewardSlot_02_369; // 0x5B0 (8)
+	struct UUW-RankPoint_C UW-RankPoint; // 0x5B8 (8)
+	struct UUW-RewardGoldSlot_02_C UW-RewardGoldSlot_02; // 0x5C0 (8)
+	struct UVerticalBox VerticalBox_191; // 0x5C8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_2; // 0x5D0 (8)
+	char MatchEnd : 0; // 0x5D8 (1)
+	struct FMatchEndAnimation AnimationData; // 0x5D9 (2)
+	struct UUW-MatchEndWidget_C MatchEndWidgetRef; // 0x5E0 (8)
+	struct FMatchEndSimpleResult SimpleResult; // 0x5E8 (272)
+	struct FTimerHandle SimpleTimer; // 0x6F8 (8)
+	char IsWinningCam : 0; // 0x700 (1)
+	struct FAudioPlayingHandle StartSound; // 0x704 (4)
+	struct FTimerHandle GainGoldHandle; // 0x708 (8)
+	struct FTimerHandle GoldHandle; // 0x710 (8)
+	struct FMatchEndFinalResult FinalResultData; // 0x718 (4)
+	int32_t RandomGold; // 0x71C (4)
+	int32_t GainGoldValue; // 0x720 (4)
+	struct UTextBlock LocalWidget; // 0x728 (8)
+	struct ABravoHotelPlayerState PlayerState; // 0x730 (8)
+	struct FTimerHandle Timehandle_Rank; // 0x738 (8)
+	char Increase : 0; // 0x740 (1)
+	char bMaxPrograssbar : 0; // 0x741 (1)
+	int32_t CurrentRP; // 0x744 (4)
+	int32_t PlayerOriRP; // 0x748 (4)
+	int32_t TargetRP; // 0x74C (4)
+	int32_t NextTireRP; // 0x750 (4)
+	int32_t CurrentTierID; // 0x754 (4)
+	char IsGiveUp : 0; // 0x758 (1)
+	int32_t TempRank; // 0x75C (4)
+	int32_t TempKill; // 0x760 (4)
+	int32_t TempHit; // 0x764 (4)
+	int32_t TempSuvival; // 0x768 (4)
+	int32_t SeasonRP; // 0x76C (4)
+	int32_t GainedRP; // 0x770 (4)
+	int32_t AminRPText; // 0x774 (4)
+	int32_t StartRP; // 0x778 (4)
+	int32_t EndRP; // 0x77C (4)
+	float ShowTime; // 0x780 (4)
+	char IsTargetCameraKiller : 0; // 0x784 (1)
+	struct FMulticastInlineDelegate EventDispatcher_MoveToDamageInfo; // 0x788 (16)
 
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_2(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_1(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowMAXRPText(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowMAXRPText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RankerDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankerDown(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RankPointSetData(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankPointSetData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetupRankDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetupRankDown(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetupRankUp(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetupRankUp(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetTierRP(int32_t& NextRP, char& Next, int32_t& NowRP, int32_t& PreviousRP, char& Previous); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.GetTierRP(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetItem(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRank(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRank(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPlayInfo(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetPlayInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRankImage(int32_t IDD, struct UImage Widgett); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRankImage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateInputMode(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideSimpleWidget(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.HideSimpleWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Check Report Enablefrom User Name(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Check Report Enablefrom User Name(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Check Exist Report User(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Check Exist Report User(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReportSended(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ReportSended(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetColorTextWidget(struct UTextBlock Widgett, int32_t Valuee, struct FSlateColor Colorr); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetColorTextWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetGold(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetGold(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowDeathCam(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowDeathCam(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Close(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Close(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Destruct(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowGold(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowGold(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetInfo(struct ABravoHotelPlayerState PS, struct FMatchEndFinalResult ResultData, struct UUW-MatchEndWidget_C MatchEndWidget); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EventRankAnimation(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.EventRankAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AsyncLoadTexture(struct TSoftObjectPtr<Object> Imge, struct UImage Widget); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.AsyncLoadTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RankUpDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankUpDown(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-MatchEnd_Ranking2(int32_t EntryPoint); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ExecuteUbergraph_UW-MatchEnd_Ranking2(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_2(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_1(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowMAXRPText(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowMAXRPText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RankerDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankerDown(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RankPointSetData(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankPointSetData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetupRankDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetupRankDown(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetupRankUp(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetupRankUp(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetTierRP(int32_t& NextRP, char& Next, int32_t& NowRP, int32_t& PreviousRP, char& Previous); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.GetTierRP(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetItem(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRank(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRank(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPlayInfo(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetPlayInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRankImage(int32_t IDD, struct UImage widgett); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRankImage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateInputMode(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideSimpleWidget(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.HideSimpleWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Check Report Enablefrom User Name(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Check Report Enablefrom User Name(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Check Exist Report User(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Check Exist Report User(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReportSended(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ReportSended(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetColorTextWidget(struct UTextBlock widgett, int32_t Valuee, struct FSlateColor Colorr); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetColorTextWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetGold(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetGold(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowDeathCam(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowDeathCam(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Close(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Close(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Destruct(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowGold(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ShowGold(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetInfo(struct ABravoHotelPlayerState PS, struct FMatchEndFinalResult ResultData, struct UUW-MatchEndWidget_C MatchEndWidget); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventRankAnimation(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.EventRankAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AsyncLoadTexture(struct TSoftObjectPtr<Object> Imge, struct UImage Widget); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.AsyncLoadTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RankUpDown(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.RankUpDown(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DeathCam_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MoveToMatchEnd(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.MoveToMatchEnd(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-MatchEnd_Ranking2(int32_t EntryPoint); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ExecuteUbergraph_UW-MatchEnd_Ranking2(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventDispatcher_MoveToDamageInfo__DelegateSignature(); // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.EventDispatcher_MoveToDamageInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Ranking2_2
@@ -376,16 +379,16 @@ inline void UUW-MatchEnd_Ranking2_C::Init() {
 }
 
 // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRankImage
-inline void UUW-MatchEnd_Ranking2_C::SetRankImage(int32_t IDD, struct UImage Widgett) {
+inline void UUW-MatchEnd_Ranking2_C::SetRankImage(int32_t IDD, struct UImage widgett) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetRankImage");
 
 	struct SetRankImage_Params {
 		int32_t IDD;
-		struct UImage Widgett;
+		struct UImage widgett;
 	}; SetRankImage_Params Params;
 
 	Params.IDD = IDD;
-	Params.Widgett = Widgett;
+	Params.widgett = widgett;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -463,16 +466,16 @@ inline void UUW-MatchEnd_Ranking2_C::ReportSended() {
 }
 
 // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetColorTextWidget
-inline void UUW-MatchEnd_Ranking2_C::SetColorTextWidget(struct UTextBlock Widgett, int32_t Valuee, struct FSlateColor Colorr) {
+inline void UUW-MatchEnd_Ranking2_C::SetColorTextWidget(struct UTextBlock widgett, int32_t Valuee, struct FSlateColor Colorr) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.SetColorTextWidget");
 
 	struct SetColorTextWidget_Params {
-		struct UTextBlock Widgett;
+		struct UTextBlock widgett;
 		int32_t Valuee;
 		struct FSlateColor Colorr;
 	}; SetColorTextWidget_Params Params;
 
-	Params.Widgett = Widgett;
+	Params.widgett = widgett;
 	Params.Valuee = Valuee;
 	Params.Colorr = Colorr;
 
@@ -786,6 +789,34 @@ inline void UUW-MatchEnd_Ranking2_C::BndEvt__Button_DeathCam_1_K2Node_ComponentB
 	fn->FunctionFlags = flags;
 }
 
+// Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature
+inline void UUW-MatchEnd_Ranking2_C::BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature");
+
+	struct BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature_Params {
+		
+	}; BndEvt__Button_DamageInfo_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.MoveToMatchEnd
+inline void UUW-MatchEnd_Ranking2_C::MoveToMatchEnd() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.MoveToMatchEnd");
+
+	struct MoveToMatchEnd_Params {
+		
+	}; MoveToMatchEnd_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
 // Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ExecuteUbergraph_UW-MatchEnd_Ranking2
 inline void UUW-MatchEnd_Ranking2_C::ExecuteUbergraph_UW-MatchEnd_Ranking2(int32_t EntryPoint) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.ExecuteUbergraph_UW-MatchEnd_Ranking2");
@@ -795,6 +826,20 @@ inline void UUW-MatchEnd_Ranking2_C::ExecuteUbergraph_UW-MatchEnd_Ranking2(int32
 	}; ExecuteUbergraph_UW-MatchEnd_Ranking2_Params Params;
 
 	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.EventDispatcher_MoveToDamageInfo__DelegateSignature
+inline void UUW-MatchEnd_Ranking2_C::EventDispatcher_MoveToDamageInfo__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Ranking2.UW-MatchEnd_Ranking2_C.EventDispatcher_MoveToDamageInfo__DelegateSignature");
+
+	struct EventDispatcher_MoveToDamageInfo__DelegateSignature_Params {
+		
+	}; EventDispatcher_MoveToDamageInfo__DelegateSignature_Params Params;
+
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);

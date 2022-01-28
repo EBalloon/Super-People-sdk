@@ -3,15 +3,15 @@ class AMagicLeapSharedWorldGameMode : public AGameMode {
 
 public:
 
-	struct FMagicLeapSharedWorldSharedData SharedWorldData; // 0x3E8 (16)
-	struct FMulticastInlineDelegate OnNewLocalDataFromClients; // 0x3F8 (16)
-	float PinSelectionConfidenceThreshold; // 0x408 (4)
-	struct AMagicLeapSharedWorldPlayerController ChosenOne; // 0x4B0 (8)
+	struct FMagicLeapSharedWorldSharedData SharedWorldData; // 0x410 (16)
+	struct FMulticastInlineDelegate OnNewLocalDataFromClients; // 0x420 (16)
+	float PinSelectionConfidenceThreshold; // 0x430 (4)
+	struct AMagicLeapSharedWorldPlayerController ChosenOne; // 0x4D8 (8)
 
-	char SendSharedWorldDataToClients(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D6770>
-	void SelectChosenOne(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne(BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D6750>
-	void MagicLeapOnNewLocalDataFromClients__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DetermineSharedWorldData(struct FMagicLeapSharedWorldSharedData& NewSharedWorldData); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData(BlueprintAuthorityOnly|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D6630>
+	char SendSharedWorldDataToClients(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E5150>
+	void SelectChosenOne(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne(BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E5130>
+	void MagicLeapOnNewLocalDataFromClients__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DetermineSharedWorldData(struct FMagicLeapSharedWorldSharedData& NewSharedWorldData); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData(BlueprintAuthorityOnly|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E5010>
 };
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldGameState
@@ -19,15 +19,15 @@ class AMagicLeapSharedWorldGameState : public AGameState {
 
 public:
 
-	struct FMagicLeapSharedWorldSharedData SharedWorldData; // 0x370 (16)
-	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms; // 0x380 (16)
-	struct FMulticastInlineDelegate OnSharedWorldDataUpdated; // 0x390 (16)
-	struct FMulticastInlineDelegate OnAlignmentTransformsUpdated; // 0x3A0 (16)
+	struct FMagicLeapSharedWorldSharedData SharedWorldData; // 0x398 (16)
+	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms; // 0x3A8 (16)
+	struct FMulticastInlineDelegate OnSharedWorldDataUpdated; // 0x3B8 (16)
+	struct FMulticastInlineDelegate OnAlignmentTransformsUpdated; // 0x3C8 (16)
 
-	void OnReplicate_SharedWorldData(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D6730>
-	void OnReplicate_AlignmentTransforms(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D6710>
-	void MagicLeapSharedWorldEvent__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FTransform CalculateXRCameraRootTransform(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform(Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17D64E0>
+	void OnReplicate_SharedWorldData(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E5110>
+	void OnReplicate_AlignmentTransforms(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E50F0>
+	void MagicLeapSharedWorldEvent__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FTransform CalculateXRCameraRootTransform(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform(Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E4EC0>
 };
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldSharedData

@@ -468,43 +468,43 @@ class AAIController : public AController {
 
 public:
 
-	char bStartAILogicOnPossess : 0; // 0x3D0 (1)
-	char bStopAILogicOnUnposses : 0; // 0x3D0 (1)
-	char bLOSflag : 0; // 0x3D0 (1)
-	char bSkipExtraLOSChecks : 0; // 0x3D0 (1)
-	char bAllowStrafe : 0; // 0x3D0 (1)
-	char bWantsPlayerState : 0; // 0x3D0 (1)
-	char bSetControlRotationFromPawnOrientation : 0; // 0x3D0 (1)
-	struct UPathFollowingComponent PathFollowingComponent; // 0x3D8 (8)
-	struct UBrainComponent BrainComponent; // 0x3E0 (8)
-	struct UAIPerceptionComponent PerceptionComponent; // 0x3E8 (8)
-	struct UPawnActionsComponent ActionsComp; // 0x3F0 (8)
-	struct UBlackboardComponent Blackboard; // 0x3F8 (8)
-	struct UGameplayTasksComponent CachedGameplayTasksComponent; // 0x400 (8)
-	struct UClass* DefaultNavigationFilterClass; // 0x408 (8)
-	struct FMulticastInlineDelegate ReceiveMoveCompleted; // 0x410 (16)
+	char bStartAILogicOnPossess : 0; // 0x400 (1)
+	char bStopAILogicOnUnposses : 0; // 0x400 (1)
+	char bLOSflag : 0; // 0x400 (1)
+	char bSkipExtraLOSChecks : 0; // 0x400 (1)
+	char bAllowStrafe : 0; // 0x400 (1)
+	char bWantsPlayerState : 0; // 0x400 (1)
+	char bSetControlRotationFromPawnOrientation : 0; // 0x400 (1)
+	struct UPathFollowingComponent PathFollowingComponent; // 0x408 (8)
+	struct UBrainComponent BrainComponent; // 0x410 (8)
+	struct UAIPerceptionComponent PerceptionComponent; // 0x418 (8)
+	struct UPawnActionsComponent ActionsComp; // 0x420 (8)
+	struct UBlackboardComponent Blackboard; // 0x428 (8)
+	struct UGameplayTasksComponent CachedGameplayTasksComponent; // 0x430 (8)
+	struct UClass* DefaultNavigationFilterClass; // 0x438 (8)
+	struct FMulticastInlineDelegate ReceiveMoveCompleted; // 0x440 (16)
 
-	char UseBlackboard(struct UBlackboardData BlackboardAsset, struct UBlackboardComponent& BlackboardComponent); // Function AIModule.AIController.UseBlackboard(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477BEC0>
-	void UnclaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.UnclaimTaskResource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477BD30>
-	void SetPathFollowingComponent(struct UPathFollowingComponent NewPFComponent); // Function AIModule.AIController.SetPathFollowingComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B860>
-	void SetMoveBlockDetection(char bEnable); // Function AIModule.AIController.SetMoveBlockDetection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B7D0>
-	char RunBehaviorTree(struct UBehaviorTree BTAsset); // Function AIModule.AIController.RunBehaviorTree(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B600>
-	void OnUsingBlackBoard(struct UBlackboardComponent BlackboardComp, struct UBlackboardData BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B390>
-	char MoveToLocation(struct FVector& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B120>
-	char MoveToActor(struct UActor Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477AF00>
-	void K2_SetFocus(struct UActor NewFocus); // Function AIModule.AIController.K2_SetFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477AD70>
-	void K2_SetFocalPoint(struct FVector FP); // Function AIModule.AIController.K2_SetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477ACE0>
-	void K2_ClearFocus(); // Function AIModule.AIController.K2_ClearFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477ACC0>
-	char HasPartialPath(); // Function AIModule.AIController.HasPartialPath(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477AAE0>
-	struct UPathFollowingComponent GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A920>
-	char GetMoveStatus(); // Function AIModule.AIController.GetMoveStatus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A8F0>
-	struct FVector GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A7C0>
-	struct UActor GetFocusActor(); // Function AIModule.AIController.GetFocusActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A790>
-	struct FVector GetFocalPointOnActor(struct UActor Actor); // Function AIModule.AIController.GetFocalPointOnActor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A6E0>
-	struct FVector GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A6A0>
-	struct UAIPerceptionComponent GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A390>
-	void ClaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.ClaimTaskResource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A0B0>
+	char UseBlackboard(struct UBlackboardData BlackboardAsset, struct UBlackboardComponent& BlackboardComponent); // Function AIModule.AIController.UseBlackboard(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479E420>
+	void UnclaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.UnclaimTaskResource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479E290>
+	void SetPathFollowingComponent(struct UPathFollowingComponent NewPFComponent); // Function AIModule.AIController.SetPathFollowingComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DDC0>
+	void SetMoveBlockDetection(char bEnable); // Function AIModule.AIController.SetMoveBlockDetection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DD30>
+	char RunBehaviorTree(struct UBehaviorTree BTAsset); // Function AIModule.AIController.RunBehaviorTree(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DB60>
+	void OnUsingBlackBoard(struct UBlackboardComponent BlackboardComp, struct UBlackboardData BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D8F0>
+	char MoveToLocation(struct FVector& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D680>
+	char MoveToActor(struct UActor Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D460>
+	void K2_SetFocus(struct UActor NewFocus); // Function AIModule.AIController.K2_SetFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D2D0>
+	void K2_SetFocalPoint(struct FVector FP); // Function AIModule.AIController.K2_SetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D240>
+	void K2_ClearFocus(); // Function AIModule.AIController.K2_ClearFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D220>
+	char HasPartialPath(); // Function AIModule.AIController.HasPartialPath(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D040>
+	struct UPathFollowingComponent GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CE80>
+	char GetMoveStatus(); // Function AIModule.AIController.GetMoveStatus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CE50>
+	struct FVector GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CD20>
+	struct UActor GetFocusActor(); // Function AIModule.AIController.GetFocusActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CCF0>
+	struct FVector GetFocalPointOnActor(struct UActor Actor); // Function AIModule.AIController.GetFocalPointOnActor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CC40>
+	struct FVector GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CC00>
+	struct UAIPerceptionComponent GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479C8F0>
+	void ClaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.ClaimTaskResource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479C610>
 };
 
 // Class AIModule.BTService
@@ -526,7 +526,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x38 (16)
 
-	void OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B460>
+	void OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479D9C0>
 };
 
 // Class AIModule.AIDataProvider_QueryParams
@@ -561,15 +561,15 @@ public:
 	struct FMulticastInlineDelegate OnPerceptionUpdated; // 0x160 (16)
 	struct FMulticastInlineDelegate OnTargetPerceptionUpdated; // 0x170 (16)
 
-	void SetSenseEnabled(struct UClass* SenseClass, char bEnable); // Function AIModule.AIPerceptionComponent.SetSenseEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B8E0>
-	void RequestStimuliListenerUpdate(); // Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B5E0>
-	void OnOwnerEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477B520>
-	void GetPerceivedHostileActors(struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477AA30>
-	void GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A940>
-	void GetKnownPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A800>
-	void GetCurrentlyPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A5B0>
-	char GetActorsPerception(struct UActor Actor, struct FActorPerceptionBlueprintInfo& Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A3B0>
-	void ForgetAll(); // Function AIModule.AIPerceptionComponent.ForgetAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477A2F0>
+	void SetSenseEnabled(struct UClass* SenseClass, char bEnable); // Function AIModule.AIPerceptionComponent.SetSenseEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DE40>
+	void RequestStimuliListenerUpdate(); // Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DB40>
+	void OnOwnerEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479DA80>
+	void GetPerceivedHostileActors(struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CF90>
+	void GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CEA0>
+	void GetKnownPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CD60>
+	void GetCurrentlyPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479CB10>
+	char GetActorsPerception(struct UActor Actor, struct FActorPerceptionBlueprintInfo& Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479C910>
+	void ForgetAll(); // Function AIModule.AIPerceptionComponent.ForgetAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x479C850>
 };
 
 // Class AIModule.AIPerceptionStimuliSourceComponent
@@ -580,10 +580,10 @@ public:
 	char bAutoRegisterAsSource : 0; // 0xB0 (1)
 	struct TArray<struct UClass*> RegisterAsSourceForSenses; // 0xB8 (16)
 
-	void UnregisterFromSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47808B0>
-	void UnregisterFromPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4780890>
-	void RegisterWithPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47801B0>
-	void RegisterForSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4780040>
+	void UnregisterFromSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2E10>
+	void UnregisterFromPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2DF0>
+	void RegisterWithPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2710>
+	void RegisterForSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A25A0>
 };
 
 // Class AIModule.AISubsystem
@@ -602,11 +602,11 @@ public:
 	struct TArray<struct UAISense> Senses; // 0x88 (16)
 	float PerceptionAgingRate; // 0x98 (4)
 
-	void ReportPerceptionEvent(struct Object WorldContextObject, struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47805E0>
-	void ReportEvent(struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47803A0>
-	char RegisterPerceptionStimuliSource(struct Object WorldContextObject, struct UClass* Sense, struct UActor Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47800C0>
-	void OnPerceptionStimuliSourceEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477FF80>
-	struct UClass* GetSenseClassForStimulus(struct Object WorldContextObject, struct FAIStimulus& Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477FE50>
+	void ReportPerceptionEvent(struct Object WorldContextObject, struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2B40>
+	void ReportEvent(struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2900>
+	char RegisterPerceptionStimuliSource(struct Object WorldContextObject, struct UClass* Sense, struct UActor Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2620>
+	void OnPerceptionStimuliSourceEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A24E0>
+	struct UClass* GetSenseClassForStimulus(struct Object WorldContextObject, struct FAIStimulus& Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A23B0>
 };
 
 // Class AIModule.AISense
@@ -630,13 +630,13 @@ public:
 	struct TArray<struct UAIPerceptionComponent> ListenerContainer; // 0x88 (16)
 	struct TArray<struct UAISenseEvent> UnprocessedEvents; // 0x98 (16)
 
-	float OnUpdate(struct TArray<struct UAISenseEvent>& EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnListenerUpdated(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnListenerUnregistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnListenerRegistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnNewPawn(struct APawn NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent>& ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477FDA0>
-	void GetAllListenerActors(struct TArray<struct UActor>& ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x477FCF0>
+	float OnUpdate(struct TArray<struct UAISenseEvent>& EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnListenerUpdated(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnListenerUnregistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnListenerRegistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnNewPawn(struct APawn NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent>& ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2300>
+	void GetAllListenerActors(struct TArray<struct UActor>& ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2250>
 };
 
 // Class AIModule.AISense_Damage
@@ -646,7 +646,7 @@ public:
 
 	struct TArray<struct FAIDamageEvent> RegisteredEvents; // 0x80 (16)
 
-	void ReportDamageEvent(struct Object WorldContextObject, struct UActor DamagedActor, struct UActor Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47801D0>
+	void ReportDamageEvent(struct Object WorldContextObject, struct UActor DamagedActor, struct UActor Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2730>
 };
 
 // Class AIModule.AISense_Hearing
@@ -657,7 +657,7 @@ public:
 	struct TArray<struct FAINoiseEvent> NoiseEvents; // 0x80 (16)
 	float SpeedOfSoundSq; // 0x90 (4)
 
-	void ReportNoiseEvent(struct Object WorldContextObject, struct FVector NoiseLocation, float Loudness, struct UActor Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4780420>
+	void ReportNoiseEvent(struct Object WorldContextObject, struct FVector NoiseLocation, float Loudness, struct UActor Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2980>
 };
 
 // Class AIModule.AISense_Prediction
@@ -667,8 +667,8 @@ public:
 
 	struct TArray<struct FAIPredictionEvent> RegisteredEvents; // 0x80 (16)
 
-	void RequestPawnPredictionEvent(struct APawn Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4780790>
-	void RequestControllerPredictionEvent(struct AAIController Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4780690>
+	void RequestPawnPredictionEvent(struct APawn Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2CF0>
+	void RequestControllerPredictionEvent(struct AAIController Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A2BF0>
 };
 
 // Class AIModule.AISense_Sight
@@ -792,8 +792,8 @@ public:
 	struct UAIHotSpotManager HotSpotManager; // 0xC8 (8)
 	struct UNavLocalGridManager NavLocalGrids; // 0xD0 (8)
 
-	void AILoggingVerbose(); // Function AIModule.AISystem.AILoggingVerbose(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B28F0>
-	void AIIgnorePlayers(); // Function AIModule.AISystem.AIIgnorePlayers(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CA6A00>
+	void AILoggingVerbose(); // Function AIModule.AISystem.AILoggingVerbose(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1EC0>
+	void AIIgnorePlayers(); // Function AIModule.AISystem.AIIgnorePlayers(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CC6170>
 };
 
 // Class AIModule.AITask
@@ -813,7 +813,7 @@ public:
 	struct FMulticastInlineDelegate OnMoveFinished; // 0x80 (16)
 	struct FAIMoveRequest MoveRequest; // 0x90 (64)
 
-	struct UAITask_MoveTo AIMoveTo(struct AAIController Controller, struct FVector GoalLocation, struct UActor GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation); // Function AIModule.AITask_MoveTo.AIMoveTo(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784740>
+	struct UAITask_MoveTo AIMoveTo(struct AAIController Controller, struct FVector GoalLocation, struct UActor GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation); // Function AIModule.AITask_MoveTo.AIMoveTo(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A6CA0>
 };
 
 // Class AIModule.BehaviorTree
@@ -835,11 +835,11 @@ public:
 	struct UBlackboardComponent BlackboardComp; // 0xB8 (8)
 	struct AAIController AIOwner; // 0xC0 (8)
 
-	void StopLogic(struct FString reason); // Function AIModule.BrainComponent.StopLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478B4C0>
-	void StartLogic(); // Function AIModule.BrainComponent.StartLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x206F980>
-	void RestartLogic(); // Function AIModule.BrainComponent.RestartLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E756B0>
-	char IsRunning(); // Function AIModule.BrainComponent.IsRunning(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478A7C0>
-	char IsPaused(); // Function AIModule.BrainComponent.IsPaused(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478A790>
+	void StopLogic(struct FString reason); // Function AIModule.BrainComponent.StopLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ADA20>
+	void StartLogic(); // Function AIModule.BrainComponent.StartLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2092480>
+	void RestartLogic(); // Function AIModule.BrainComponent.RestartLogic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E93E30>
+	char IsRunning(); // Function AIModule.BrainComponent.IsRunning(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ACD20>
+	char IsPaused(); // Function AIModule.BrainComponent.IsPaused(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ACCF0>
 };
 
 // Class AIModule.BehaviorTreeComponent
@@ -850,9 +850,9 @@ public:
 	struct TArray<struct UBTNode> NodeInstances; // 0x130 (16)
 	struct UBehaviorTree DefaultBehaviorTreeAsset; // 0x268 (8)
 
-	void SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785640>
-	float GetTagCooldownEndTime(struct FGameplayTag CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784D90>
-	void AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CooldownDuration, char bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784A10>
+	void SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7BA0>
+	float GetTagCooldownEndTime(struct FGameplayTag CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A72F0>
+	void AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CooldownDuration, char bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A6F70>
 };
 
 // Class AIModule.BehaviorTreeManager
@@ -875,30 +875,30 @@ public:
 	struct UBlackboardData BlackboardAsset; // 0xC0 (8)
 	struct TArray<struct UBlackboardKeyType> KeyInstances; // 0xE8 (16)
 
-	void SetValueAsVector(struct FName& KeyName, struct FVector VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785F00>
-	void SetValueAsString(struct FName& KeyName, struct FString StringValue); // Function AIModule.BlackboardComponent.SetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785DB0>
-	void SetValueAsRotator(struct FName& KeyName, struct FRotator VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785CC0>
-	void SetValueAsObject(struct FName& KeyName, struct Object ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785BF0>
-	void SetValueAsName(struct FName& KeyName, struct FName NameValue); // Function AIModule.BlackboardComponent.SetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785B20>
-	void SetValueAsInt(struct FName& KeyName, int32_t IntValue); // Function AIModule.BlackboardComponent.SetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785A50>
-	void SetValueAsFloat(struct FName& KeyName, float FloatValue); // Function AIModule.BlackboardComponent.SetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785980>
-	void SetValueAsEnum(struct FName& KeyName, char EnumValue); // Function AIModule.BlackboardComponent.SetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47858B0>
-	void SetValueAsClass(struct FName& KeyName, struct UClass* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47857E0>
-	void SetValueAsBool(struct FName& KeyName, char BoolValue); // Function AIModule.BlackboardComponent.SetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785710>
-	char IsVectorValueSet(struct FName& KeyName); // Function AIModule.BlackboardComponent.IsVectorValueSet(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47854E0>
-	struct FVector GetValueAsVector(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785430>
-	struct FString GetValueAsString(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785340>
-	struct FRotator GetValueAsRotator(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785290>
-	struct Object GetValueAsObject(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47851F0>
-	struct FName GetValueAsName(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785150>
-	int32_t GetValueAsInt(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47850B0>
-	float GetValueAsFloat(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4785010>
-	char GetValueAsEnum(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784F70>
-	struct UClass* GetValueAsClass(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784ED0>
-	char GetValueAsBool(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784E30>
-	char GetRotationFromEntry(struct FName& KeyName, struct FRotator& ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784CA0>
-	char GetLocationFromEntry(struct FName& KeyName, struct FVector& ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784BB0>
-	void ClearValue(struct FName& KeyName); // Function AIModule.BlackboardComponent.ClearValue(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4784B20>
+	void SetValueAsVector(struct FName& KeyName, struct FVector VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A8460>
+	void SetValueAsString(struct FName& KeyName, struct FString StringValue); // Function AIModule.BlackboardComponent.SetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A8310>
+	void SetValueAsRotator(struct FName& KeyName, struct FRotator VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A8220>
+	void SetValueAsObject(struct FName& KeyName, struct Object ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A8150>
+	void SetValueAsName(struct FName& KeyName, struct FName NameValue); // Function AIModule.BlackboardComponent.SetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A8080>
+	void SetValueAsInt(struct FName& KeyName, int32_t IntValue); // Function AIModule.BlackboardComponent.SetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7FB0>
+	void SetValueAsFloat(struct FName& KeyName, float FloatValue); // Function AIModule.BlackboardComponent.SetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7EE0>
+	void SetValueAsEnum(struct FName& KeyName, char EnumValue); // Function AIModule.BlackboardComponent.SetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7E10>
+	void SetValueAsClass(struct FName& KeyName, struct UClass* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7D40>
+	void SetValueAsBool(struct FName& KeyName, char BoolValue); // Function AIModule.BlackboardComponent.SetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7C70>
+	char IsVectorValueSet(struct FName& KeyName); // Function AIModule.BlackboardComponent.IsVectorValueSet(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7A40>
+	struct FVector GetValueAsVector(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7990>
+	struct FString GetValueAsString(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A78A0>
+	struct FRotator GetValueAsRotator(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A77F0>
+	struct Object GetValueAsObject(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7750>
+	struct FName GetValueAsName(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A76B0>
+	int32_t GetValueAsInt(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7610>
+	float GetValueAsFloat(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7570>
+	char GetValueAsEnum(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A74D0>
+	struct UClass* GetValueAsClass(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7430>
+	char GetValueAsBool(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7390>
+	char GetRotationFromEntry(struct FName& KeyName, struct FRotator& ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7200>
+	char GetLocationFromEntry(struct FName& KeyName, struct FVector& ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7110>
+	void ClearValue(struct FName& KeyName); // Function AIModule.BlackboardComponent.ClearValue(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47A7080>
 };
 
 // Class AIModule.BlackboardData
@@ -1014,20 +1014,20 @@ public:
 	char bCheckConditionOnlyBlackBoardChanges : 0; // 0x98 (1)
 	char bIsObservingBB : 0; // 0x98 (1)
 
-	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveObserverDeactivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveObserverDeactivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveObserverActivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveObserverActivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecutionStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecutionStart(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecutionFinishAI(struct AAIController OwnerController, struct APawn ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecutionFinish(struct UActor OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char PerformConditionCheckAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char PerformConditionCheck(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsDecoratorObserverActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478A760>
-	char IsDecoratorExecutionActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478A730>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveObserverDeactivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveObserverDeactivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveObserverActivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveObserverActivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecutionStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecutionStart(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecutionFinishAI(struct AAIController OwnerController, struct APawn ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecutionFinish(struct UActor OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char PerformConditionCheckAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char PerformConditionCheck(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsDecoratorObserverActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ACCC0>
+	char IsDecoratorExecutionActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ACC90>
 };
 
 // Class AIModule.BTDecorator_CheckGameplayTagsOnActor
@@ -1172,15 +1172,15 @@ public:
 	char bShowPropertyDetails : 0; // 0x90 (1)
 	char bShowEventDetails : 0; // 0x90 (1)
 
-	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveSearchStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveSearchStart(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveDeactivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveDeactivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveActivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveActivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsServiceActive(); // Function AIModule.BTService_BlueprintBase.IsServiceActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E350>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveSearchStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveSearchStart(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveDeactivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveDeactivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveActivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveActivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsServiceActive(); // Function AIModule.BTService_BlueprintBase.IsServiceActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B08B0>
 };
 
 // Class AIModule.BTService_DefaultFocus
@@ -1209,18 +1209,18 @@ public:
 	struct FIntervalCountdown TickInterval; // 0x80 (8)
 	char bShowPropertyDetails : 0; // 0xA0 (1)
 
-	void SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E460>
-	void SetFinishOnMessage(struct FName MessageName); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E3E0>
-	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecuteAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveExecute(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveAbortAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveAbort(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsTaskExecuting(); // Function AIModule.BTTask_BlueprintBase.IsTaskExecuting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E3B0>
-	char IsTaskAborting(); // Function AIModule.BTTask_BlueprintBase.IsTaskAborting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E380>
-	void FinishExecute(char bSuccess); // Function AIModule.BTTask_BlueprintBase.FinishExecute(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E2C0>
-	void FinishAbort(); // Function AIModule.BTTask_BlueprintBase.FinishAbort(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E2A0>
+	void SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B09C0>
+	void SetFinishOnMessage(struct FName MessageName); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B0940>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecuteAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveExecute(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveAbortAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveAbort(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsTaskExecuting(); // Function AIModule.BTTask_BlueprintBase.IsTaskExecuting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B0910>
+	char IsTaskAborting(); // Function AIModule.BTTask_BlueprintBase.IsTaskAborting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B08E0>
+	void FinishExecute(char bSuccess); // Function AIModule.BTTask_BlueprintBase.FinishExecute(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B0820>
+	void FinishAbort(); // Function AIModule.BTTask_BlueprintBase.FinishAbort(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B0800>
 };
 
 // Class AIModule.BTTask_FinishWithResult
@@ -1379,10 +1379,10 @@ public:
 	struct UNavMovementComponent MovementComp; // 0xE8 (8)
 	struct ANavigationData MyNavData; // 0xF8 (8)
 
-	void OnNavDataRegistered(struct ANavigationData NavData); // Function AIModule.PathFollowingComponent.OnNavDataRegistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799910>
-	void OnActorBump(struct UActor SelfActor, struct UActor OtherActor, struct FVector NormalImpulse, struct FHitResult& Hit); // Function AIModule.PathFollowingComponent.OnActorBump(Native|Public|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799780>
-	struct FVector GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47993F0>
-	char GetPathActionType(); // Function AIModule.PathFollowingComponent.GetPathActionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47993C0>
+	void OnNavDataRegistered(struct ANavigationData NavData); // Function AIModule.PathFollowingComponent.OnNavDataRegistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBE50>
+	void OnActorBump(struct UActor SelfActor, struct UActor OtherActor, struct FVector NormalImpulse, struct FHitResult& Hit); // Function AIModule.PathFollowingComponent.OnActorBump(Native|Public|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBCC0>
+	struct FVector GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BB950>
+	char GetPathActionType(); // Function AIModule.PathFollowingComponent.GetPathActionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BB920>
 };
 
 // Class AIModule.CrowdFollowingComponent
@@ -1393,7 +1393,7 @@ public:
 	struct UCharacterMovementComponent CharacterMovement; // 0x260 (8)
 	struct FVector CrowdAgentMoveDirection; // 0x268 (12)
 
-	void SuspendCrowdSteering(char bSuspend); // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x478E520>
+	void SuspendCrowdSteering(char bSuspend); // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B0A80>
 };
 
 // Class AIModule.CrowdManager
@@ -1462,10 +1462,10 @@ public:
 	struct UClass* Context; // 0x68 (8)
 	struct UClass* GeneratedItemType; // 0x70 (8)
 
-	struct Object GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791BC0>
-	void DoItemGeneration(struct TArray<struct FVector>& ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration(Event|Public|HasOutParms|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddGeneratedVector(struct FVector GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector(Final|Native|Public|HasDefaults|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791AA0>
-	void AddGeneratedActor(struct UActor GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791A20>
+	struct Object GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4120>
+	void DoItemGeneration(struct TArray<struct FVector>& ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration(Event|Public|HasOutParms|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddGeneratedVector(struct FVector GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector(Final|Native|Public|HasDefaults|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4000>
+	void AddGeneratedActor(struct UActor GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B3F80>
 };
 
 // Class AIModule.EnvQueryGenerator_Composite
@@ -1573,13 +1573,13 @@ public:
 	int32_t OptionIndex; // 0x60 (4)
 	struct FMulticastInlineDelegate OnQueryFinishedEvent; // 0x68 (16)
 
-	void SetNamedParam(struct FName ParamName, float Value); // Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791FF0>
-	struct TArray<struct FVector> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791DF0>
-	struct TArray<struct UActor> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791D70>
-	char GetQueryResultsAsLocations(struct TArray<struct FVector>& ResultLocations); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791CB0>
-	char GetQueryResultsAsActors(struct TArray<struct UActor>& ResultActors); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791BF0>
-	float GetItemScore(int32_t ItemIndex); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791B30>
-	void EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetNamedParam(struct FName ParamName, float Value); // Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4550>
+	struct TArray<struct FVector> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4350>
+	struct TArray<struct UActor> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B42D0>
+	char GetQueryResultsAsLocations(struct TArray<struct FVector>& ResultLocations); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4210>
+	char GetQueryResultsAsActors(struct TArray<struct UActor>& ResultActors); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4150>
+	float GetItemScore(int32_t ItemIndex); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B4090>
+	void EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Class AIModule.EnvQueryManager
@@ -1595,7 +1595,7 @@ public:
 	int32_t QueryCountWarningThreshold; // 0x134 (4)
 	double QueryCountWarningInterval; // 0x138 (8)
 
-	struct UEnvQueryInstanceBlueprintWrapper RunEQSQuery(struct Object WorldContextObject, struct UEnvQuery QueryTemplate, struct Object Querier, char RunMode, struct UClass* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4791E70>
+	struct UEnvQueryInstanceBlueprintWrapper RunEQSQuery(struct Object WorldContextObject, struct UEnvQuery QueryTemplate, struct Object Querier, char RunMode, struct UClass* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B43D0>
 };
 
 // Class AIModule.EnvQueryOption
@@ -1727,19 +1727,19 @@ class AEQSTestingPawn : public ACharacter {
 
 public:
 
-	struct UEnvQuery QueryTemplate; // 0x5D0 (8)
-	struct TArray<struct FEnvNamedValue> QueryParams; // 0x5D8 (16)
-	struct TArray<struct FAIDynamicParam> QueryConfig; // 0x5E8 (16)
-	float TimeLimitPerStep; // 0x5F8 (4)
-	int32_t StepToDebugDraw; // 0x5FC (4)
-	enum class EEnvQueryHightlightMode HighlightMode; // 0x600 (1)
-	char bDrawLabels : 0; // 0x604 (1)
-	char bDrawFailedItems : 0; // 0x604 (1)
-	char bReRunQueryOnlyOnFinishedMove : 0; // 0x604 (1)
-	char bShouldBeVisibleInGame : 0; // 0x604 (1)
-	char bTickDuringGame : 0; // 0x604 (1)
-	char QueryingMode; // 0x608 (1)
-	struct FNavAgentProperties NavAgentProperties; // 0x610 (48)
+	struct UEnvQuery QueryTemplate; // 0x5F0 (8)
+	struct TArray<struct FEnvNamedValue> QueryParams; // 0x5F8 (16)
+	struct TArray<struct FAIDynamicParam> QueryConfig; // 0x608 (16)
+	float TimeLimitPerStep; // 0x618 (4)
+	int32_t StepToDebugDraw; // 0x61C (4)
+	enum class EEnvQueryHightlightMode HighlightMode; // 0x620 (1)
+	char bDrawLabels : 0; // 0x624 (1)
+	char bDrawFailedItems : 0; // 0x624 (1)
+	char bReRunQueryOnlyOnFinishedMove : 0; // 0x624 (1)
+	char bShouldBeVisibleInGame : 0; // 0x624 (1)
+	char bTickDuringGame : 0; // 0x624 (1)
+	char QueryingMode; // 0x628 (1)
+	struct FNavAgentProperties NavAgentProperties; // 0x630 (48)
 };
 
 // Class AIModule.GridPathFollowingComponent
@@ -1755,17 +1755,17 @@ class ANavLinkProxy : public UActor {
 
 public:
 
-	struct TArray<struct FNavigationLink> PointLinks; // 0x310 (16)
-	struct TArray<struct FNavigationSegmentLink> SegmentLinks; // 0x320 (16)
-	struct UNavLinkCustomComponent SmartLinkComp; // 0x330 (8)
-	char bSmartLinkIsRelevant : 0; // 0x338 (1)
-	struct FMulticastInlineDelegate OnSmartLinkReached; // 0x340 (16)
+	struct TArray<struct FNavigationLink> PointLinks; // 0x338 (16)
+	struct TArray<struct FNavigationSegmentLink> SegmentLinks; // 0x348 (16)
+	struct UNavLinkCustomComponent SmartLinkComp; // 0x358 (8)
+	char bSmartLinkIsRelevant : 0; // 0x360 (1)
+	struct FMulticastInlineDelegate OnSmartLinkReached; // 0x368 (16)
 
-	void SetSmartLinkEnabled(char bEnabled); // Function AIModule.NavLinkProxy.SetSmartLinkEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4797340>
-	void ResumePathFollowing(struct UActor Agent); // Function AIModule.NavLinkProxy.ResumePathFollowing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47971F0>
-	void ReceiveSmartLinkReached(struct UActor Agent, struct FVector& Destination); // Function AIModule.NavLinkProxy.ReceiveSmartLinkReached(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsSmartLinkEnabled(); // Function AIModule.NavLinkProxy.IsSmartLinkEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47970D0>
-	char HasMovingAgents(); // Function AIModule.NavLinkProxy.HasMovingAgents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47970A0>
+	void SetSmartLinkEnabled(char bEnabled); // Function AIModule.NavLinkProxy.SetSmartLinkEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B98A0>
+	void ResumePathFollowing(struct UActor Agent); // Function AIModule.NavLinkProxy.ResumePathFollowing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B9750>
+	void ReceiveSmartLinkReached(struct UActor Agent, struct FVector& Destination); // Function AIModule.NavLinkProxy.ReceiveSmartLinkReached(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsSmartLinkEnabled(); // Function AIModule.NavLinkProxy.IsSmartLinkEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B9630>
+	char HasMovingAgents(); // Function AIModule.NavLinkProxy.HasMovingAgents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47B9600>
 };
 
 // Class AIModule.PawnAction
@@ -1783,9 +1783,9 @@ public:
 	char bShouldPauseMovement : 0; // 0x80 (1)
 	char bAlwaysNotifyOnFinished : 0; // 0x80 (1)
 
-	char GetActionPriority(); // Function AIModule.PawnAction.GetActionPriority(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18AD510>
-	void Finish(char WithResult); // Function AIModule.PawnAction.Finish(Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B5BBF0>
-	struct UPawnAction CreateActionInstance(struct Object WorldContextObject, struct UClass* ActionClass); // Function AIModule.PawnAction.CreateActionInstance(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799300>
+	char GetActionPriority(); // Function AIModule.PawnAction.GetActionPriority(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18BBF00>
+	void Finish(char WithResult); // Function AIModule.PawnAction.Finish(Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B7B1B0>
+	struct UPawnAction CreateActionInstance(struct Object WorldContextObject, struct UClass* ActionClass); // Function AIModule.PawnAction.CreateActionInstance(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BB860>
 };
 
 // Class AIModule.PawnAction_Move
@@ -1844,10 +1844,10 @@ public:
 	struct TArray<struct FPawnActionEvent> ActionEvents; // 0xC8 (16)
 	struct UPawnAction CurrentAction; // 0xD8 (8)
 
-	char K2_PushAction(struct UPawnAction NewAction, char Priority, struct Object Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799680>
-	char K2_PerformAction(struct APawn Pawn, struct UPawnAction Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799590>
-	char K2_ForceAbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799500>
-	char K2_AbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799470>
+	char K2_PushAction(struct UPawnAction NewAction, char Priority, struct Object Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBBC0>
+	char K2_PerformAction(struct APawn Pawn, struct UPawnAction Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBAD0>
+	char K2_ForceAbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBA40>
+	char K2_AbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BB9B0>
 };
 
 // Class AIModule.PawnSensingComponent
@@ -1869,13 +1869,13 @@ public:
 	float PeripheralVisionAngle; // 0xF0 (4)
 	float PeripheralVisionCosine; // 0xF4 (4)
 
-	void SetSensingUpdatesEnabled(char bEnabled); // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799A90>
-	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799A10>
-	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799990>
-	void SeePawnDelegate__DelegateSignature(struct APawn Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HearNoiseDelegate__DelegateSignature(struct APawn Instigator, struct FVector& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799450>
-	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4799430>
+	void SetSensingUpdatesEnabled(char bEnabled); // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBFD0>
+	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBF50>
+	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BBED0>
+	void SeePawnDelegate__DelegateSignature(struct APawn Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HearNoiseDelegate__DelegateSignature(struct APawn Instigator, struct FVector& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47BB990>
+	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x446FD40>
 };
 
 // ScriptStruct AIModule.AIRequestID

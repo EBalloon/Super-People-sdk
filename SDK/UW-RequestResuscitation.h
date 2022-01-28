@@ -25,14 +25,14 @@ public:
 	struct FButtonStyle RequestingButtonStyle; // 0x5A8 (632)
 	struct FButtonStyle CanRequestButtonStyle; // 0x820 (632)
 
-	void Init(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRequestState(char bOnRequest); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetRequestState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetPlayerController(struct ABravoHotelPlayerController& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char Get_Button_Request_bIsEnabled_1(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Get_Button_Request_bIsEnabled_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPrice(int32_t Price); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetPrice(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-RequestResuscitation(int32_t EntryPoint); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.ExecuteUbergraph_UW-RequestResuscitation(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Init(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRequestState(char bOnRequest); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetRequestState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetPlayerController(struct ABravoHotelPlayerController& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char Get_Button_Request_bIsEnabled_1(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Get_Button_Request_bIsEnabled_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPrice(int32_t Price); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetPrice(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-RequestResuscitation(int32_t EntryPoint); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.ExecuteUbergraph_UW-RequestResuscitation(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init

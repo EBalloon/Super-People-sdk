@@ -32,36 +32,51 @@ public:
 	int32_t RecipeCount; // 0x324 (4)
 	struct ABravoHotelCharacter TargetCharacter; // 0x328 (8)
 
-	void SetRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetRecipeList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	enum class ESlateVisibility Get Recipe Visibility(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnBlueZoneStateChanged(enum class EBluseZoneState Pre, enum class EBluseZoneState Cur); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnSurvivalCirclePhaseChanged(int32_t PrevPhase, int32_t CurrentPhase); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnSurvivalCirclePhaseChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetWidget(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ResetWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ToggleMapSize(struct FVector2D WidgetSize); // Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FVector2D GetVectorCurrentTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	float CalcLengthOnWave(float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcLengthOnWave(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	float CalcDistanceRelatedToTarget(struct FVector Vector, float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FVector2D GetTargetTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FVector2D GetTargetToPlayer(); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCircleInfoGroup(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateCircleInfoGroup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateOnShrinking(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateOnShrinking(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateActiveIcon(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateActiveIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateTimeToActivate(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateTimeToActivate(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdatePlayerIcon(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdatePlayerIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState Previous, enum class EBattleRoyaleState Current); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MinimapWidget.UW-MinimapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void NotifyNeedRefreshToMap(); // Function UW-MinimapWidget.UW-MinimapWidget_C.NotifyNeedRefreshToMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetToggleMinimap(char bToggle); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetToggleMinimap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnAttackedWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetMapPlayers(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ChangeRecipeList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(char IsShow); // Function UW-MinimapWidget.UW-MinimapWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-MinimapWidget(int32_t EntryPoint); // Function UW-MinimapWidget.UW-MinimapWidget_C.ExecuteUbergraph_UW-MinimapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UBravoHotelMapCompWidget GetMapCompWidget(); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetMapCompWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetRecipeList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	enum class ESlateVisibility Get Recipe Visibility(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnBlueZoneStateChanged(enum class EBluseZoneState Pre, enum class EBluseZoneState Cur); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnSurvivalCirclePhaseChanged(int32_t PrevPhase, int32_t CurrentPhase); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnSurvivalCirclePhaseChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetWidget(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ResetWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ToggleMapSize(struct FVector2D WidgetSize); // Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FVector2D GetVectorCurrentTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	float CalcLengthOnWave(float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcLengthOnWave(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	float CalcDistanceRelatedToTarget(struct FVector Vector, float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FVector2D GetTargetTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FVector2D GetTargetToPlayer(); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCircleInfoGroup(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateCircleInfoGroup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateOnShrinking(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateOnShrinking(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateActiveIcon(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateActiveIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateTimeToActivate(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateTimeToActivate(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdatePlayerIcon(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdatePlayerIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState Previous, enum class EBattleRoyaleState Current); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MinimapWidget.UW-MinimapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetToggleMinimap(char bToggle); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetToggleMinimap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnAttackedWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ChangeRecipeList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(char IsShow); // Function UW-MinimapWidget.UW-MinimapWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-MinimapWidget(int32_t EntryPoint); // Function UW-MinimapWidget.UW-MinimapWidget_C.ExecuteUbergraph_UW-MinimapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
+
+// Function UW-MinimapWidget.UW-MinimapWidget_C.GetMapCompWidget
+inline struct UBravoHotelMapCompWidget UUW-MinimapWidget_C::GetMapCompWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.GetMapCompWidget");
+
+	struct GetMapCompWidget_Params {
+		
+		struct UBravoHotelMapCompWidget ReturnValue;
+
+	}; GetMapCompWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.SetRecipeList
 inline void UUW-MinimapWidget_C::SetRecipeList() {
@@ -361,39 +376,6 @@ inline void UUW-MinimapWidget_C::Tick(struct FGeometry MyGeometry, float InDelta
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget
-inline void UUW-MinimapWidget_C::AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget");
-
-	struct AddAreaWidget_Params {
-		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
-		struct FAreaWidgetInfo& AreaWidgetInfo;
-	}; AddAreaWidget_Params Params;
-
-	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	AreaWidgetInfo = Params.AreaWidgetInfo;
-
-}
-
-// Function UW-MinimapWidget.UW-MinimapWidget_C.NotifyNeedRefreshToMap
-inline void UUW-MinimapWidget_C::NotifyNeedRefreshToMap() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.NotifyNeedRefreshToMap");
-
-	struct NotifyNeedRefreshToMap_Params {
-		
-	}; NotifyNeedRefreshToMap_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
 // Function UW-MinimapWidget.UW-MinimapWidget_C.SetToggleMinimap
 inline void UUW-MinimapWidget_C::SetToggleMinimap(char bToggle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.SetToggleMinimap");
@@ -443,20 +425,6 @@ inline void UUW-MinimapWidget_C::OnFireWidget(int32_t UniquePlayerId, struct FRo
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-MinimapWidget.UW-MinimapWidget_C.ResetMapPlayers
-inline void UUW-MinimapWidget_C::ResetMapPlayers() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.ResetMapPlayers");
-
-	struct ResetMapPlayers_Params {
-		
-	}; ResetMapPlayers_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
 // Function UW-MinimapWidget.UW-MinimapWidget_C.Construct
 inline void UUW-MinimapWidget_C::Construct() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.Construct");
@@ -483,25 +451,6 @@ inline void UUW-MinimapWidget_C::ChangeRecipeList() {
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
-}
-
-// Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget
-inline void UUW-MinimapWidget_C::RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget");
-
-	struct RemoveAreaWidget_Params {
-		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
-		struct FAreaWidgetInfo& AreaWidgetInfo;
-	}; RemoveAreaWidget_Params Params;
-
-	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	AreaWidgetInfo = Params.AreaWidgetInfo;
-
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.鉹@t元_1

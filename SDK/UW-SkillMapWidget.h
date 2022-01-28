@@ -33,21 +33,38 @@ public:
 	struct FVector2D MapBackGroundPosition; // 0x328 (8)
 	struct FVector2D RadarDummyPosition; // 0x330 (8)
 
-	void MapClickEvent(struct FVector ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CalcAllMapRatioByTargetRadius(float& Ratio); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CalcAllMapRatioByTargetRadius(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMapLeftClick(struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayRadarOpenSound(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.PlayRadarOpenSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckPositionChanged(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CheckPositionChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSkillMapRate(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.SetSkillMapRate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnSkillMapStart(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnSkillMapStart(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetMapPlayers(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-SkillMapWidget(int32_t EntryPoint); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ExecuteUbergraph_UW-SkillMapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UBravoHotelMapCompWidget GetMapCompWidget(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.GetMapCompWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MapClickEvent(struct FVector ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CalcAllMapRatioByTargetRadius(float& Ratio); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CalcAllMapRatioByTargetRadius(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMapLeftClick(struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayRadarOpenSound(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.PlayRadarOpenSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckPositionChanged(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CheckPositionChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSkillMapRate(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.SetSkillMapRate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnSkillMapStart(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnSkillMapStart(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-SkillMapWidget(int32_t EntryPoint); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ExecuteUbergraph_UW-SkillMapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
+
+// Function UW-SkillMapWidget.UW-SkillMapWidget_C.GetMapCompWidget
+inline struct UBravoHotelMapCompWidget UUW-SkillMapWidget_C::GetMapCompWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.GetMapCompWidget");
+
+	struct GetMapCompWidget_Params {
+		
+		struct UBravoHotelMapCompWidget ReturnValue;
+
+	}; GetMapCompWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent
 inline void UUW-SkillMapWidget_C::MapClickEvent(struct FVector ClickLocation) {
@@ -183,25 +200,6 @@ inline void UUW-SkillMapWidget_C::OnSkillMapStart() {
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget
-inline void UUW-SkillMapWidget_C::AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget");
-
-	struct AddAreaWidget_Params {
-		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
-		struct FAreaWidgetInfo& AreaWidgetInfo;
-	}; AddAreaWidget_Params Params;
-
-	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	AreaWidgetInfo = Params.AreaWidgetInfo;
-
-}
-
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 inline void UUW-SkillMapWidget_C::BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
@@ -209,20 +207,6 @@ inline void UUW-SkillMapWidget_C::BndEvt__Button_Nuclear_K2Node_ComponentBoundEv
 	struct BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params {
 		
 	}; BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
-// Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers
-inline void UUW-SkillMapWidget_C::ResetMapPlayers() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers");
-
-	struct ResetMapPlayers_Params {
-		
-	}; ResetMapPlayers_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

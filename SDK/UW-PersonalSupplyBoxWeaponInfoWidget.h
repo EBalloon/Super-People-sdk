@@ -30,30 +30,30 @@ public:
 	struct FInventoryItemInfo WeaponData; // 0x308 (152)
 	struct FMulticastInlineDelegate OnDropEventDispatcher; // 0x3A0 (16)
 	struct FName AmmorKey; // 0x3B0 (8)
-	struct FMulticastInlineDelegate ShowToolTipEventDispatcher; // 0x3B8 (16)
+	struct FMulticastInlineDelegate ShowTooltipEventDispatcher; // 0x3B8 (16)
 	char IsDefaultWeapon : 0; // 0x3C8 (1)
 	int32_t ClickNum; // 0x3CC (4)
 	struct FMulticastInlineDelegate OnDefaultWeaponEventDispatcher; // 0x3D0 (16)
 	struct FKey SaveKey; // 0x3E0 (24)
 
-	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_FEF6479249E52A5D25FBEFB685BA2571(struct Object Loaded); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnLoaded_FEF6479249E52A5D25FBEFB685BA2571(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_6AFA1CC544727820BD519DB93268114A(struct Object Loaded); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnLoaded_6AFA1CC544727820BD519DB93268114A(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetData(struct FInventoryItemInfo& WeaponItem, char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetData(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetDurability(int32_t Durability); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetDurability(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetDefaultWeapon(char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetDefaultWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckClick(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.CheckClick(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-PersonalSupplyBoxWeaponInfoWidget(int32_t EntryPoint); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ExecuteUbergraph_UW-PersonalSupplyBoxWeaponInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDefaultWeaponEventDispatcher__DelegateSignature(struct FInventoryItemInfo Weapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDefaultWeaponEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowToolTipEventDispatcher__DelegateSignature(char IsShow, struct UButton Widget); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowToolTipEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDropEventDispatcher__DelegateSignature(struct FInventoryItemInfo WeaponData); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDropEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_FEF6479249E52A5D25FBEFB685BA2571(struct Object Loaded); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnLoaded_FEF6479249E52A5D25FBEFB685BA2571(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_6AFA1CC544727820BD519DB93268114A(struct Object Loaded); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnLoaded_6AFA1CC544727820BD519DB93268114A(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetData(struct FInventoryItemInfo& WeaponItem, char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetData(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetDurability(int32_t Durability); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetDurability(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetDefaultWeapon(char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.SetDefaultWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckClick(); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.CheckClick(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-PersonalSupplyBoxWeaponInfoWidget(int32_t EntryPoint); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ExecuteUbergraph_UW-PersonalSupplyBoxWeaponInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDefaultWeaponEventDispatcher__DelegateSignature(struct FInventoryItemInfo Weapon); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDefaultWeaponEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowTooltipEventDispatcher__DelegateSignature(char IsShow, struct UButton Widget); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowTooltipEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDropEventDispatcher__DelegateSignature(struct FInventoryItemInfo WeaponData); // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnDropEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.OnMouseButtonUp
@@ -333,14 +333,14 @@ inline void UUW-PersonalSupplyBoxWeaponInfoWidget_C::OnDefaultWeaponEventDispatc
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowToolTipEventDispatcher__DelegateSignature
-inline void UUW-PersonalSupplyBoxWeaponInfoWidget_C::ShowToolTipEventDispatcher__DelegateSignature(char IsShow, struct UButton Widget) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowToolTipEventDispatcher__DelegateSignature");
+// Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowTooltipEventDispatcher__DelegateSignature
+inline void UUW-PersonalSupplyBoxWeaponInfoWidget_C::ShowTooltipEventDispatcher__DelegateSignature(char IsShow, struct UButton Widget) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWeaponInfoWidget.UW-PersonalSupplyBoxWeaponInfoWidget_C.ShowTooltipEventDispatcher__DelegateSignature");
 
-	struct ShowToolTipEventDispatcher__DelegateSignature_Params {
+	struct ShowTooltipEventDispatcher__DelegateSignature_Params {
 		char IsShow;
 		struct UButton Widget;
-	}; ShowToolTipEventDispatcher__DelegateSignature_Params Params;
+	}; ShowTooltipEventDispatcher__DelegateSignature_Params Params;
 
 	Params.IsShow = IsShow;
 	Params.Widget = Widget;

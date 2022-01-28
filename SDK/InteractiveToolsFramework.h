@@ -297,12 +297,12 @@ class UGizmoBaseComponent : public UPrimitiveComponent {
 
 public:
 
-	struct FLinearColor Color; // 0x4A0 (16)
-	float HoverSizeMultiplier; // 0x4B0 (4)
-	float PixelHitDistanceThreshold; // 0x4B4 (4)
+	struct FLinearColor Color; // 0x4B0 (16)
+	float HoverSizeMultiplier; // 0x4C0 (4)
+	float PixelHitDistanceThreshold; // 0x4C4 (4)
 
-	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4825D60>
-	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4825CD0>
+	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4848280>
+	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x48481F0>
 };
 
 // Class InteractiveToolsFramework.GizmoArrowComponent
@@ -310,10 +310,10 @@ class UGizmoArrowComponent : public UGizmoBaseComponent {
 
 public:
 
-	struct FVector Direction; // 0x4C0 (12)
-	float Gap; // 0x4CC (4)
-	float Length; // 0x4D0 (4)
-	float Thickness; // 0x4D4 (4)
+	struct FVector Direction; // 0x4D0 (12)
+	float Gap; // 0x4DC (4)
+	float Length; // 0x4E0 (4)
+	float Thickness; // 0x4E4 (4)
 };
 
 // Class InteractiveToolsFramework.GizmoBoxComponent
@@ -321,12 +321,12 @@ class UGizmoBoxComponent : public UGizmoBaseComponent {
 
 public:
 
-	struct FVector Origin; // 0x4C0 (12)
-	struct FQuat Rotation; // 0x4D0 (16)
-	struct FVector Dimensions; // 0x4E0 (12)
-	float LineThickness; // 0x4EC (4)
-	char bRemoveHiddenLines : 0; // 0x4F0 (1)
-	char bEnableAxisFlip : 0; // 0x4F1 (1)
+	struct FVector Origin; // 0x4D0 (12)
+	struct FQuat Rotation; // 0x4E0 (16)
+	struct FVector Dimensions; // 0x4F0 (12)
+	float LineThickness; // 0x4FC (4)
+	char bRemoveHiddenLines : 0; // 0x500 (1)
+	char bEnableAxisFlip : 0; // 0x501 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoCircleComponent
@@ -334,12 +334,12 @@ class UGizmoCircleComponent : public UGizmoBaseComponent {
 
 public:
 
-	struct FVector Normal; // 0x4C0 (12)
-	float Radius; // 0x4CC (4)
-	float Thickness; // 0x4D0 (4)
-	int32_t NumSides; // 0x4D4 (4)
-	char bViewAligned : 0; // 0x4D8 (1)
-	char bOnlyAllowFrontFacingHits : 0; // 0x4D9 (1)
+	struct FVector Normal; // 0x4D0 (12)
+	float Radius; // 0x4DC (4)
+	float Thickness; // 0x4E0 (4)
+	int32_t NumSides; // 0x4E4 (4)
+	char bViewAligned : 0; // 0x4E8 (1)
+	char bOnlyAllowFrontFacingHits : 0; // 0x4E9 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoLineHandleComponent
@@ -347,12 +347,12 @@ class UGizmoLineHandleComponent : public UGizmoBaseComponent {
 
 public:
 
-	struct FVector Normal; // 0x4C0 (12)
-	float HandleSize; // 0x4CC (4)
-	float Thickness; // 0x4D0 (4)
-	struct FVector Direction; // 0x4D4 (12)
-	float Length; // 0x4E0 (4)
-	char bImageScale : 0; // 0x4E4 (1)
+	struct FVector Normal; // 0x4D0 (12)
+	float HandleSize; // 0x4DC (4)
+	float Thickness; // 0x4E0 (4)
+	struct FVector Direction; // 0x4E4 (12)
+	float Length; // 0x4F0 (4)
+	char bImageScale : 0; // 0x4F4 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoRectangleComponent
@@ -360,14 +360,14 @@ class UGizmoRectangleComponent : public UGizmoBaseComponent {
 
 public:
 
-	struct FVector DirectionX; // 0x4C0 (12)
-	struct FVector DirectionY; // 0x4CC (12)
-	float OffsetX; // 0x4D8 (4)
-	float OffsetY; // 0x4DC (4)
-	float LengthX; // 0x4E0 (4)
-	float LengthY; // 0x4E4 (4)
-	float Thickness; // 0x4E8 (4)
-	char SegmentFlags; // 0x4EC (1)
+	struct FVector DirectionX; // 0x4D0 (12)
+	struct FVector DirectionY; // 0x4DC (12)
+	float OffsetX; // 0x4E8 (4)
+	float OffsetY; // 0x4EC (4)
+	float LengthX; // 0x4F0 (4)
+	float LengthY; // 0x4F4 (4)
+	float Thickness; // 0x4F8 (4)
+	char SegmentFlags; // 0x4FC (1)
 };
 
 // Class InteractiveToolsFramework.GizmoComponentHitTarget
@@ -431,9 +431,9 @@ class AIntervalGizmoActor : public AGizmoActor {
 
 public:
 
-	struct UGizmoLineHandleComponent UpIntervalComponent; // 0x300 (8)
-	struct UGizmoLineHandleComponent DownIntervalComponent; // 0x308 (8)
-	struct UGizmoLineHandleComponent ForwardIntervalComponent; // 0x310 (8)
+	struct UGizmoLineHandleComponent UpIntervalComponent; // 0x328 (8)
+	struct UGizmoLineHandleComponent DownIntervalComponent; // 0x330 (8)
+	struct UGizmoLineHandleComponent ForwardIntervalComponent; // 0x338 (8)
 };
 
 // Class InteractiveToolsFramework.IntervalGizmo
@@ -626,22 +626,22 @@ class ATransformGizmoActor : public AGizmoActor {
 
 public:
 
-	struct UPrimitiveComponent TranslateX; // 0x300 (8)
-	struct UPrimitiveComponent TranslateY; // 0x308 (8)
-	struct UPrimitiveComponent TranslateZ; // 0x310 (8)
-	struct UPrimitiveComponent TranslateYZ; // 0x318 (8)
-	struct UPrimitiveComponent TranslateXZ; // 0x320 (8)
-	struct UPrimitiveComponent TranslateXY; // 0x328 (8)
-	struct UPrimitiveComponent RotateX; // 0x330 (8)
-	struct UPrimitiveComponent RotateY; // 0x338 (8)
-	struct UPrimitiveComponent RotateZ; // 0x340 (8)
-	struct UPrimitiveComponent UniformScale; // 0x348 (8)
-	struct UPrimitiveComponent AxisScaleX; // 0x350 (8)
-	struct UPrimitiveComponent AxisScaleY; // 0x358 (8)
-	struct UPrimitiveComponent AxisScaleZ; // 0x360 (8)
-	struct UPrimitiveComponent PlaneScaleYZ; // 0x368 (8)
-	struct UPrimitiveComponent PlaneScaleXZ; // 0x370 (8)
-	struct UPrimitiveComponent PlaneScaleXY; // 0x378 (8)
+	struct UPrimitiveComponent TranslateX; // 0x328 (8)
+	struct UPrimitiveComponent TranslateY; // 0x330 (8)
+	struct UPrimitiveComponent TranslateZ; // 0x338 (8)
+	struct UPrimitiveComponent TranslateYZ; // 0x340 (8)
+	struct UPrimitiveComponent TranslateXZ; // 0x348 (8)
+	struct UPrimitiveComponent TranslateXY; // 0x350 (8)
+	struct UPrimitiveComponent RotateX; // 0x358 (8)
+	struct UPrimitiveComponent RotateY; // 0x360 (8)
+	struct UPrimitiveComponent RotateZ; // 0x368 (8)
+	struct UPrimitiveComponent UniformScale; // 0x370 (8)
+	struct UPrimitiveComponent AxisScaleX; // 0x378 (8)
+	struct UPrimitiveComponent AxisScaleY; // 0x380 (8)
+	struct UPrimitiveComponent AxisScaleZ; // 0x388 (8)
+	struct UPrimitiveComponent PlaneScaleYZ; // 0x390 (8)
+	struct UPrimitiveComponent PlaneScaleXZ; // 0x398 (8)
+	struct UPrimitiveComponent PlaneScaleXY; // 0x3A0 (8)
 };
 
 // Class InteractiveToolsFramework.TransformGizmo

@@ -3,7 +3,7 @@ class ABP-Projectile_MolotovFireTrapCell_C : public ABravoHotelProjectileMolotov
 
 public:
 
-	float TextureScale; // 0x388 (4)
-	float BurnArea; // 0x38C (4)
+	float TextureScale; // 0x3B0 (4)
+	float BurnArea; // 0x3B4 (4)
 };
 

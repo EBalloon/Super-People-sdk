@@ -101,16 +101,16 @@ public:
 	struct FMulticastInlineDelegate GetPurchaseHistorySuccess; // 0x100 (16)
 	struct FMulticastInlineDelegate GetPurchaseHistoryFailure; // 0x110 (16)
 
-	char TryPurchaseItemAsync(struct FPurchaseItemDetails& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E22C0>
-	char TryGetPurchaseHistoryAsync(int32_t InNumPages); // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E2230>
-	char TryGetItemsDetailsAsync(struct TArray<struct FString>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E2150>
-	void PurchaseConfirmationSuccess__DelegateSignature(struct FPurchaseConfirmation& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<struct FPurchaseConfirmation>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetPurchaseHistoryFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<struct FPurchaseItemDetails>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	char TryPurchaseItemAsync(struct FPurchaseItemDetails& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17F0CC0>
+	char TryGetPurchaseHistoryAsync(int32_t InNumPages); // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17F0C30>
+	char TryGetItemsDetailsAsync(struct TArray<struct FString>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17F0B50>
+	void PurchaseConfirmationSuccess__DelegateSignature(struct FPurchaseConfirmation& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<struct FPurchaseConfirmation>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetPurchaseHistoryFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<struct FPurchaseItemDetails>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Class MagicLeap.LuminApplicationLifecycleComponent
@@ -141,31 +141,31 @@ class UMagicLeapMeshTrackerComponent : public USceneComponent {
 
 public:
 
-	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x228 (16)
-	char ScanWorld : 0; // 0x238 (1)
-	enum class EMagicLeapMeshType MeshType; // 0x239 (1)
-	struct UBoxComponent BoundingVolume; // 0x240 (8)
-	enum class EMagicLeapMeshLOD LevelOfDetail; // 0x248 (1)
-	float PerimeterOfGapsToFill; // 0x24C (4)
-	char Planarize : 0; // 0x250 (1)
-	float DisconnectedSectionArea; // 0x254 (4)
-	char RequestNormals : 0; // 0x258 (1)
-	char RequestVertexConfidence : 0; // 0x259 (1)
-	enum class EMagicLeapMeshVertexColorMode VertexColorMode; // 0x25A (1)
-	struct TArray<struct FColor> BlockVertexColors; // 0x260 (16)
-	struct FLinearColor VertexColorFromConfidenceZero; // 0x270 (16)
-	struct FLinearColor VertexColorFromConfidenceOne; // 0x280 (16)
-	char RemoveOverlappingTriangles : 0; // 0x290 (1)
-	struct UMRMeshComponent MRMesh; // 0x298 (8)
-	int32_t BricksPerFrame; // 0x2A0 (4)
+	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x238 (16)
+	char ScanWorld : 0; // 0x248 (1)
+	enum class EMagicLeapMeshType MeshType; // 0x249 (1)
+	struct UBoxComponent BoundingVolume; // 0x250 (8)
+	enum class EMagicLeapMeshLOD LevelOfDetail; // 0x258 (1)
+	float PerimeterOfGapsToFill; // 0x25C (4)
+	char Planarize : 0; // 0x260 (1)
+	float DisconnectedSectionArea; // 0x264 (4)
+	char RequestNormals : 0; // 0x268 (1)
+	char RequestVertexConfidence : 0; // 0x269 (1)
+	enum class EMagicLeapMeshVertexColorMode VertexColorMode; // 0x26A (1)
+	struct TArray<struct FColor> BlockVertexColors; // 0x270 (16)
+	struct FLinearColor VertexColorFromConfidenceZero; // 0x280 (16)
+	struct FLinearColor VertexColorFromConfidenceOne; // 0x290 (16)
+	char RemoveOverlappingTriangles : 0; // 0x2A0 (1)
+	struct UMRMeshComponent MRMesh; // 0x2A8 (8)
+	int32_t BricksPerFrame; // 0x2B0 (4)
 
-	void SelectMeshBlocks(struct FMagicLeapTrackingMeshInfo& NewMeshInfo, struct TArray<struct FMagicLeapMeshBlockRequest>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E1E30>
-	void OnMeshTrackerUpdated__DelegateSignature(struct FGuid ID, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	int32_t GetNumQueuedBlockUpdates(); // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E18E0>
-	void DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E14B0>
-	void DisconnectBlockSelector(); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E1490>
-	void ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E1410>
-	void ConnectBlockSelector(struct TScriptInterface<IMagicLeapMeshBlockSelectorInterface> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E1370>
+	void SelectMeshBlocks(struct FMagicLeapTrackingMeshInfo& NewMeshInfo, struct TArray<struct FMagicLeapMeshBlockRequest>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17F0830>
+	void OnMeshTrackerUpdated__DelegateSignature(struct FGuid ID, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	int32_t GetNumQueuedBlockUpdates(); // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17F02E0>
+	void DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EFEB0>
+	void DisconnectBlockSelector(); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EFE90>
+	void ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EFE10>
+	void ConnectBlockSelector(struct TScriptInterface<IMagicLeapMeshBlockSelectorInterface> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EFD70>
 };
 
 // Class MagicLeap.MagicLeapSettings

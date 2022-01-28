@@ -27,21 +27,21 @@ public:
 	struct UCanvasPanelSlot CanvasSlot; // 0x4E8 (8)
 	struct FMaterialItemPingInfo MaterialPingInfo; // 0x4F0 (48)
 
-	char SetExpertWeaponPing(struct FExpertWeaponPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char SetLocalPing(struct FBravoHotelLocalPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char SetMaterialPing(struct FMaterialItemPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set_IconSize(float Size); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetWidgetComponentsRenderScale(float ScaleRate); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetWidgetComponentsRenderScale(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetChangeIcon(struct UPaperSprite Texture); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetIcon(int32_t TeamPlayerIndex, enum class EItemPingIconType ItemPingIconType, char IgnoreTeamIndex); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRemoveMaterialPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetIconAlpha(float NewAlpha); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIconAlpha(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetShowDebugLightPole(char IsShow); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetShowDebugLightPole(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetLightPoleValue(float Height, float RadiusCurve, float Diameter, float AlphaCurve, float ADSFOV); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLightPoleValue(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRemoveExpertWeaponPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveExpertWeaponPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetScale(float Scale); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetScale(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_WBP_SPS_Icon(int32_t EntryPoint); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.ExecuteUbergraph_WBP_SPS_Icon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	char SetExpertWeaponPing(struct FExpertWeaponPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char SetLocalPing(struct FBravoHotelLocalPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char SetMaterialPing(struct FMaterialItemPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set_IconSize(float Size); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWidgetComponentsRenderScale(float ScaleRate); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetWidgetComponentsRenderScale(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetChangeIcon(struct UPaperSprite Texture); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetIcon(int32_t TeamPlayerIndex, enum class EItemPingIconType ItemPingIconType, char IgnoreTeamIndex); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRemoveMaterialPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetIconAlpha(float NewAlpha); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIconAlpha(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetShowDebugLightPole(char IsShow); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetShowDebugLightPole(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetLightPoleValue(float Height, float RadiusCurve, float Diameter, float AlphaCurve, float ADSFOV); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLightPoleValue(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRemoveExpertWeaponPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveExpertWeaponPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetScale(float Scale); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetScale(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_WBP_SPS_Icon(int32_t EntryPoint); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.ExecuteUbergraph_WBP_SPS_Icon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing

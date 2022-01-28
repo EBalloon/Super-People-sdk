@@ -3,33 +3,33 @@ class ABP-DeathCam_C : public UActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct UCameraComponent FirstCamera; // 0x308 (8)
-	struct USpringArmComponent FirstSpringArm; // 0x310 (8)
-	struct UCameraComponent ThirdCamera; // 0x318 (8)
-	struct UCameraComponent SecondCamera; // 0x320 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x328 (8)
-	float DeltaSeconds; // 0x330 (4)
-	struct FVector TargetDeltaLocation; // 0x334 (12)
-	struct ABravoHotelCharacter Character; // 0x340 (8)
-	float LowerBoundCameraHeightDelta; // 0x348 (4)
-	char bHeightUpdateFinished : 0; // 0x34C (1)
-	float ThridCameraRotationYawDelta; // 0x350 (4)
-	float ThirdCameraMinHeight; // 0x354 (4)
-	float FirstSpringArmDeltaZ; // 0x358 (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct UCameraComponent FirstCamera; // 0x330 (8)
+	struct USpringArmComponent FirstSpringArm; // 0x338 (8)
+	struct UCameraComponent ThirdCamera; // 0x340 (8)
+	struct UCameraComponent SecondCamera; // 0x348 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x350 (8)
+	float DeltaSeconds; // 0x358 (4)
+	struct FVector TargetDeltaLocation; // 0x35C (12)
+	struct ABravoHotelCharacter Character; // 0x368 (8)
+	float LowerBoundCameraHeightDelta; // 0x370 (4)
+	char bHeightUpdateFinished : 0; // 0x374 (1)
+	float ThridCameraRotationYawDelta; // 0x378 (4)
+	float ThirdCameraMinHeight; // 0x37C (4)
+	float FirstSpringArmDeltaZ; // 0x380 (4)
 
-	void CheckThirdCameraLocationRange(); // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateActorRotationToPelvis(); // Function BP-DeathCam.BP-DeathCam_C.UpdateActorRotationToPelvis(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateLowerBoundCameraHeight(); // Function BP-DeathCam.BP-DeathCam_C.UpdateLowerBoundCameraHeight(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreventCameraWallCollision(); // Function BP-DeathCam.BP-DeathCam_C.PreventCameraWallCollision(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitReferences(char& bSuccess); // Function BP-DeathCam.BP-DeathCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCameraHeightToHead(); // Function BP-DeathCam.BP-DeathCam_C.UpdateCameraHeightToHead(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UserConstructionScript(); // Function BP-DeathCam.BP-DeathCam_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-DeathCam.BP-DeathCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-DeathCam.BP-DeathCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnEndViewTarget(struct APlayerController PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-DeathCam(int32_t EntryPoint); // Function BP-DeathCam.BP-DeathCam_C.ExecuteUbergraph_BP-DeathCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CheckThirdCameraLocationRange(); // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateActorRotationToPelvis(); // Function BP-DeathCam.BP-DeathCam_C.UpdateActorRotationToPelvis(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateLowerBoundCameraHeight(); // Function BP-DeathCam.BP-DeathCam_C.UpdateLowerBoundCameraHeight(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreventCameraWallCollision(); // Function BP-DeathCam.BP-DeathCam_C.PreventCameraWallCollision(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitReferences(char& bSuccess); // Function BP-DeathCam.BP-DeathCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCameraHeightToHead(); // Function BP-DeathCam.BP-DeathCam_C.UpdateCameraHeightToHead(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UserConstructionScript(); // Function BP-DeathCam.BP-DeathCam_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-DeathCam.BP-DeathCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-DeathCam.BP-DeathCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnEndViewTarget(struct APlayerController PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-DeathCam(int32_t EntryPoint); // Function BP-DeathCam.BP-DeathCam_C.ExecuteUbergraph_BP-DeathCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange

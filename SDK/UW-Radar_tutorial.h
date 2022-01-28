@@ -25,11 +25,11 @@ public:
 	struct UVerticalBox VB_Retreat; // 0x2E0 (8)
 	struct UWidgetSwitcher WidgetSwitcher_126; // 0x2E8 (8)
 
-	void SetTutorialInfo(enum class EBuffEventType SkillType); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_22BC0859447517E514C09EA47A9A913D(struct Object Loaded); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.OnLoaded_22BC0859447517E514C09EA47A9A913D(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRadarTutorial(); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetRadarTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetGuideIconAsyncLoad(struct TSoftObjectPtr<Object> Image); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetGuideIconAsyncLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Radar_tutorial(int32_t EntryPoint); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.ExecuteUbergraph_UW-Radar_tutorial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTutorialInfo(enum class EBuffEventType SkillType); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_22BC0859447517E514C09EA47A9A913D(struct Object Loaded); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.OnLoaded_22BC0859447517E514C09EA47A9A913D(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRadarTutorial(); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetRadarTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetGuideIconAsyncLoad(struct TSoftObjectPtr<Object> Image); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetGuideIconAsyncLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Radar_tutorial(int32_t EntryPoint); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.ExecuteUbergraph_UW-Radar_tutorial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo

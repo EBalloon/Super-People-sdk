@@ -3,62 +3,62 @@ class ABP-Amplifier_C : public ABravoHotelAmplifier {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1BB0 (8)
-	struct UPostProcessComponent InternalPP; // 0x1BB8 (8)
-	struct UMaterialInstanceDynamic EffectMaterial; // 0x1BC0 (8)
-	char IsActive : 0; // 0x1BC8 (1)
-	struct UMaterial mRadialBlur; // 0x1BD0 (8)
-	struct UMaterialInstanceDynamic iRadialBlur; // 0x1BD8 (8)
-	struct FAdvancedEffectFeatures Radial Blur - Advanced; // 0x1BE0 (56)
-	float Radial Blur Width; // 0x1C18 (4)
-	int32_t Radial Blur Samples; // 0x1C1C (4)
-	struct FVector2D Radial Blur Center; // 0x1C20 (8)
-	struct FVector2D Radial Blur Sample Offset; // 0x1C28 (8)
-	struct FPostProcessSettings Native Post Process; // 0x1C30 (1472)
-	struct UMaterial mSelectiveColor; // 0x21F0 (8)
-	struct UMaterialInstanceDynamic iSelectiveColor; // 0x21F8 (8)
-	struct FAdvancedEffectFeatures Selective Color - Advanced; // 0x2200 (56)
-	struct FLinearColor Selective Color Mask Color; // 0x2238 (16)
-	float Selective Color Hue Tolerance; // 0x2248 (4)
-	float Selective Color Saturation Tolerance; // 0x224C (4)
-	float Selective Color Value Tolerance; // 0x2250 (4)
-	float CurrentBlur; // 0x2254 (4)
-	float CurrentSelective; // 0x2258 (4)
-	float FadeInSpeed; // 0x225C (4)
-	float FadeOutSpeed; // 0x2260 (4)
-	struct UMaterial mMonochrome; // 0x2268 (8)
-	struct UMaterialInstanceDynamic iMonochrome; // 0x2270 (8)
-	struct FAdvancedEffectFeatures Monochrome - Advanced; // 0x2278 (56)
-	struct FLinearColor Monochrome Color; // 0x22B0 (16)
-	struct UMaterial MBlackColor; // 0x22C0 (8)
-	struct UMaterialInstanceDynamic IBlackColor; // 0x22C8 (8)
-	struct FAdvancedEffectFeatures BlackColor - Advanced; // 0x22D0 (56)
-	float ActiveDelayTime; // 0x2308 (4)
-	struct UBravoHotelMainWidget MainWidget; // 0x2310 (8)
-	struct UBravoHotelTopInfoWidget TopWidget; // 0x2318 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1C10 (8)
+	struct UPostProcessComponent InternalPP; // 0x1C18 (8)
+	struct UMaterialInstanceDynamic EffectMaterial; // 0x1C20 (8)
+	char IsActive : 0; // 0x1C28 (1)
+	struct UMaterial mRadialBlur; // 0x1C30 (8)
+	struct UMaterialInstanceDynamic iRadialBlur; // 0x1C38 (8)
+	struct FAdvancedEffectFeatures Radial Blur - Advanced; // 0x1C40 (56)
+	float Radial Blur Width; // 0x1C78 (4)
+	int32_t Radial Blur Samples; // 0x1C7C (4)
+	struct FVector2D Radial Blur Center; // 0x1C80 (8)
+	struct FVector2D Radial Blur Sample Offset; // 0x1C88 (8)
+	struct FPostProcessSettings Native Post Process; // 0x1C90 (1472)
+	struct UMaterial mSelectiveColor; // 0x2250 (8)
+	struct UMaterialInstanceDynamic iSelectiveColor; // 0x2258 (8)
+	struct FAdvancedEffectFeatures Selective Color - Advanced; // 0x2260 (56)
+	struct FLinearColor Selective Color Mask Color; // 0x2298 (16)
+	float Selective Color Hue Tolerance; // 0x22A8 (4)
+	float Selective Color Saturation Tolerance; // 0x22AC (4)
+	float Selective Color Value Tolerance; // 0x22B0 (4)
+	float CurrentBlur; // 0x22B4 (4)
+	float CurrentSelective; // 0x22B8 (4)
+	float FadeInSpeed; // 0x22BC (4)
+	float FadeOutSpeed; // 0x22C0 (4)
+	struct UMaterial mMonochrome; // 0x22C8 (8)
+	struct UMaterialInstanceDynamic iMonochrome; // 0x22D0 (8)
+	struct FAdvancedEffectFeatures Monochrome - Advanced; // 0x22D8 (56)
+	struct FLinearColor Monochrome Color; // 0x2310 (16)
+	struct UMaterial MBlackColor; // 0x2320 (8)
+	struct UMaterialInstanceDynamic IBlackColor; // 0x2328 (8)
+	struct FAdvancedEffectFeatures BlackColor - Advanced; // 0x2330 (56)
+	float ActiveDelayTime; // 0x2368 (4)
+	struct UBravoHotelMainWidget MainWidget; // 0x2370 (8)
+	struct UBravoHotelTopInfoWidget TopWidget; // 0x2378 (8)
 
-	void GetTopWidget(struct UBravoHotelTopInfoWidget& TopWidget); // Function BP-Amplifier.BP-Amplifier_C.GetTopWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetMainWidget(struct UBravoHotelMainWidget& MainWidget); // Function BP-Amplifier.BP-Amplifier_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void IsOwnerLocallyControlled(char& bIsLocallyControlled); // Function BP-Amplifier.BP-Amplifier_C.IsOwnerLocallyControlled(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BlackColorFunc(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.BlackColorFunc(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Monochrome Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Selective Color Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetEffectPriority(int32_t Priority, struct UMaterial Material); // Function BP-Amplifier.BP-Amplifier_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAdvancedEffectFeatures(struct FAdvancedEffectFeatures Features, struct UMaterial Material, struct UMaterialInstanceDynamic Dynamic Material Instance); // Function BP-Amplifier.BP-Amplifier_C.SetAdvancedEffectFeatures(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Radial Blur Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateEffectMaterialInstance(struct UMaterial Material, struct UMaterialInstanceDynamic& Instance); // Function BP-Amplifier.BP-Amplifier_C.CreateEffectMaterialInstance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ScreenEffectEvent(char RadialBlur, char BlackColor); // Function BP-Amplifier.BP-Amplifier_C.ScreenEffectEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDeactiveAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnDeactiveAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnActiveAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnActiveAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-Amplifier.BP-Amplifier_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnPostEventAtLocationEvent(struct FString EventKey, struct FVector& Location); // Function BP-Amplifier.BP-Amplifier_C.OnPostEventAtLocationEvent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-Amplifier.BP-Amplifier_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddActiveEvent(); // Function BP-Amplifier.BP-Amplifier_C.AddActiveEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnClickedAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnClickedAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnEquip(); // Function BP-Amplifier.BP-Amplifier_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveDestroyed(); // Function BP-Amplifier.BP-Amplifier_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnUnEquip(); // Function BP-Amplifier.BP-Amplifier_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Amplifier(int32_t EntryPoint); // Function BP-Amplifier.BP-Amplifier_C.ExecuteUbergraph_BP-Amplifier(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetTopWidget(struct UBravoHotelTopInfoWidget& TopWidget); // Function BP-Amplifier.BP-Amplifier_C.GetTopWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetMainWidget(struct UBravoHotelMainWidget& MainWidget); // Function BP-Amplifier.BP-Amplifier_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void IsOwnerLocallyControlled(char& bIsLocallyControlled); // Function BP-Amplifier.BP-Amplifier_C.IsOwnerLocallyControlled(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BlackColorFunc(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.BlackColorFunc(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Monochrome Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Selective Color Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetEffectPriority(int32_t Priority, struct UMaterial Material); // Function BP-Amplifier.BP-Amplifier_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAdvancedEffectFeatures(struct FAdvancedEffectFeatures Features, struct UMaterial Material, struct UMaterialInstanceDynamic Dynamic Material Instance); // Function BP-Amplifier.BP-Amplifier_C.SetAdvancedEffectFeatures(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Radial Blur Func(char IsEnabled); // Function BP-Amplifier.BP-Amplifier_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateEffectMaterialInstance(struct UMaterial Material, struct UMaterialInstanceDynamic& Instance); // Function BP-Amplifier.BP-Amplifier_C.CreateEffectMaterialInstance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ScreenEffectEvent(char RadialBlur, char BlackColor); // Function BP-Amplifier.BP-Amplifier_C.ScreenEffectEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDeactiveAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnDeactiveAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnActiveAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnActiveAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-Amplifier.BP-Amplifier_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnPostEventAtLocationEvent(struct FString EventKey, struct FVector& Location); // Function BP-Amplifier.BP-Amplifier_C.OnPostEventAtLocationEvent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-Amplifier.BP-Amplifier_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddActiveEvent(); // Function BP-Amplifier.BP-Amplifier_C.AddActiveEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnClickedAmplifier(); // Function BP-Amplifier.BP-Amplifier_C.OnClickedAmplifier(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnEquip(); // Function BP-Amplifier.BP-Amplifier_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveDestroyed(); // Function BP-Amplifier.BP-Amplifier_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnUnEquip(); // Function BP-Amplifier.BP-Amplifier_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Amplifier(int32_t EntryPoint); // Function BP-Amplifier.BP-Amplifier_C.ExecuteUbergraph_BP-Amplifier(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Amplifier.BP-Amplifier_C.GetTopWidget

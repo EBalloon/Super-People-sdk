@@ -3,11 +3,11 @@ class ABP-ProjectileGrenade_Bomb_Perk_C : public ABravoHotelProjectileGrenadeBom
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x668 (8)
-	struct UAkComponent Ak; // 0x670 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x6C8 (8)
+	struct UAkComponent Ak; // 0x6D0 (8)
 
-	void BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(struct UPrimitiveComponent HitComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, struct FVector NormalImpulse, struct FHitResult& Hit); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(int32_t EntryPoint); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(struct UPrimitiveComponent HitComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, struct FVector NormalImpulse, struct FHitResult& Hit); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(int32_t EntryPoint); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature

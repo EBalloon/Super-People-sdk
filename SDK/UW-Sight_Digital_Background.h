@@ -15,13 +15,13 @@ public:
 	struct UImage Scope_Info_Line; // 0x290 (8)
 	struct UImage Scope_Wing; // 0x298 (8)
 
-	struct FSlateColor Get_Distance_Text_ColorAndOpacity_1(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_Distance_Text_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FText Get_Magnify_Text(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_Magnify_Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FText Get_DistanceText(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_DistanceText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnEnterADS(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.K2_OnEnterADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnExitADS(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.K2_OnExitADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Sight_Digital_Background(int32_t EntryPoint); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.ExecuteUbergraph_UW-Sight_Digital_Background(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FSlateColor Get_Distance_Text_ColorAndOpacity_1(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_Distance_Text_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FText Get_Magnify_Text(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_Magnify_Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FText Get_DistanceText(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_DistanceText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnEnterADS(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.K2_OnEnterADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnExitADS(); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.K2_OnExitADS(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Sight_Digital_Background(int32_t EntryPoint); // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.ExecuteUbergraph_UW-Sight_Digital_Background(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Sight_Digital_Background.UW-Sight_Digital_Background_C.Get_Distance_Text_ColorAndOpacity_1

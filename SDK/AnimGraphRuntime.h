@@ -260,11 +260,11 @@ public:
 	struct FMulticastInlineDelegate OnNotifyBegin; // 0x58 (16)
 	struct FMulticastInlineDelegate OnNotifyEnd; // 0x68 (16)
 
-	void OnNotifyEndReceived(struct FName NotifyName, struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A0BBC0>
-	void OnNotifyBeginReceived(struct FName NotifyName, struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A0BAE0>
-	void OnMontageEnded(struct UAnimMontage Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A0BA10>
-	void OnMontageBlendingOut(struct UAnimMontage Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A0B940>
-	struct UPlayMontageCallbackProxy CreateProxyObjectForPlayMontage(struct USkeletalMeshComponent InSkeletalMeshComponent, struct UAnimMontage MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A0A340>
+	void OnNotifyEndReceived(struct FName NotifyName, struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A2B190>
+	void OnNotifyBeginReceived(struct FName NotifyName, struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A2B0B0>
+	void OnMontageEnded(struct UAnimMontage Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A2AFE0>
+	void OnMontageBlendingOut(struct UAnimMontage Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A2AF10>
+	struct UPlayMontageCallbackProxy CreateProxyObjectForPlayMontage(struct USkeletalMeshComponent InSkeletalMeshComponent, struct UAnimMontage MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A29910>
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase

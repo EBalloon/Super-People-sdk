@@ -27,17 +27,17 @@ public:
 	struct TMap<struct FName, struct UUW-ClassinfoitemWidget_C> ClassInfoItemMap; // 0x2F0 (80)
 	char ListVisibility : 0; // 0x340 (1)
 
-	void UpdateClassCount(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HiddenAllClassLists(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.HiddenAllClassLists(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetClassList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.SetClassList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OpenList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OpenList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CloseList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.CloseList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnBattleRoyalStateChanged_Event_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnUpdateClassCount_Event_1(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnUpdateClassCount_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ClassinfoitemBoardWidget(int32_t EntryPoint); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.ExecuteUbergraph_UW-ClassinfoitemBoardWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdateClassCount(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HiddenAllClassLists(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.HiddenAllClassLists(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetClassList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.SetClassList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OpenList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OpenList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CloseList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.CloseList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnBattleRoyalStateChanged_Event_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnUpdateClassCount_Event_1(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnUpdateClassCount_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ClassinfoitemBoardWidget(int32_t EntryPoint); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.ExecuteUbergraph_UW-ClassinfoitemBoardWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount

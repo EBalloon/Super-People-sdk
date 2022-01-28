@@ -7,10 +7,10 @@ public:
 	struct ABravoHotelInventoryCharacter InventoryCharacterRef; // 0x250 (8)
 	char Visible : 0; // 0x258 (1)
 
-	enum class ESlateVisibility GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply On_DragRect_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void IsHitTest(struct FVector2D Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetInventoryCharacter(struct ABravoHotelInventoryCharacter& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply On_DragRect_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void IsHitTest(struct FVector2D Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetInventoryCharacter(struct ABravoHotelInventoryCharacter& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1

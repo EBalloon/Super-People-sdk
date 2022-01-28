@@ -3,17 +3,17 @@ class ABP-Weapon_Gatling_C : public ABP-RangedWeaponBase_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x22E0 (8)
-	float BarrelHeatEffect_Effect_Intensity_B2A9FBB3451595B9BFEF019625EA581E; // 0x22E8 (4)
-	char BarrelHeatEffect__Direction_B2A9FBB3451595B9BFEF019625EA581E; // 0x22EC (1)
-	struct UTimelineComponent BarrelHeatEffect; // 0x22F0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2370 (8)
+	float BarrelHeatEffect_Effect_Intensity_B2A9FBB3451595B9BFEF019625EA581E; // 0x2378 (4)
+	char BarrelHeatEffect__Direction_B2A9FBB3451595B9BFEF019625EA581E; // 0x237C (1)
+	struct UTimelineComponent BarrelHeatEffect; // 0x2380 (8)
 
-	void BarrelHeatEffect__FinishedFunc(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.BarrelHeatEffect__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BarrelHeatEffect__UpdateFunc(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.BarrelHeatEffect__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnStartSimulateFire(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.K2_OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnEndSimulateFire(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.K2_OnEndSimulateFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Weapon_Gatling(int32_t EntryPoint); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.ExecuteUbergraph_BP-Weapon_Gatling(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BarrelHeatEffect__FinishedFunc(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.BarrelHeatEffect__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BarrelHeatEffect__UpdateFunc(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.BarrelHeatEffect__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnStartSimulateFire(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.K2_OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnEndSimulateFire(); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.K2_OnEndSimulateFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Weapon_Gatling(int32_t EntryPoint); // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.ExecuteUbergraph_BP-Weapon_Gatling(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Weapon_Gatling.BP-Weapon_Gatling_C.BarrelHeatEffect__FinishedFunc

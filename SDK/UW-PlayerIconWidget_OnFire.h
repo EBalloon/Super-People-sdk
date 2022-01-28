@@ -7,9 +7,9 @@ public:
 	struct UWidgetAnimation Anim_OnFire; // 0x250 (8)
 	struct UImage FireLine; // 0x258 (8)
 
-	void SetLineInfo(float Angle, float Length); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-PlayerIconWidget_OnFire(int32_t EntryPoint); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.ExecuteUbergraph_UW-PlayerIconWidget_OnFire(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetLineInfo(float Angle, float Length); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-PlayerIconWidget_OnFire(int32_t EntryPoint); // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.ExecuteUbergraph_UW-PlayerIconWidget_OnFire(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-PlayerIconWidget_OnFire.UW-PlayerIconWidget_OnFire_C.SetLineInfo

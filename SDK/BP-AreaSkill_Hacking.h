@@ -3,14 +3,14 @@ class ABP-AreaSkill_Hacking_C : public ABravoHotelAreaSkillZoneHacking {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x378 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3A0 (8)
 
-	void UserConstructionScript(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ActivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DeactivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartDestroy(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-AreaSkill_Hacking(int32_t EntryPoint); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ExecuteUbergraph_BP-AreaSkill_Hacking(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UserConstructionScript(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ActivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DeactivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartDestroy(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-AreaSkill_Hacking(int32_t EntryPoint); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ExecuteUbergraph_BP-AreaSkill_Hacking(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript

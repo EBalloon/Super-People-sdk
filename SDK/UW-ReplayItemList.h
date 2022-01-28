@@ -18,13 +18,13 @@ public:
 	struct UUW-Inventory_Weapon_C UW-Inventory_Weapon; // 0x2A8 (8)
 	struct FTimerHandle Timer_UpdateItemList; // 0x2B0 (8)
 
-	void SetEquippedSlot(struct FInventoryItemInfo InventoryItemInfo); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetEquippedList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.ResetEquippedList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetEquippedItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetWeaponItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetWeaponItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.UpdateItemList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.HideItemList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.ShowItemList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetEquippedSlot(struct FInventoryItemInfo InventoryItemInfo); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetEquippedList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.ResetEquippedList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetEquippedItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWeaponItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetWeaponItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.UpdateItemList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.HideItemList(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowItemList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.ShowItemList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot

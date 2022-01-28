@@ -125,8 +125,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UAchievementQueryCallbackProxy CacheAchievements(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DEE40>
-	struct UAchievementQueryCallbackProxy CacheAchievementDescriptions(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DED80>
+	struct UAchievementQueryCallbackProxy CacheAchievements(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ECD60>
+	struct UAchievementQueryCallbackProxy CacheAchievementDescriptions(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ECCA0>
 };
 
 // Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
@@ -137,7 +137,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UAchievementWriteCallbackProxy WriteAchievementProgress(struct Object WorldContextObject, struct APlayerController PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E0A70>
+	struct UAchievementWriteCallbackProxy WriteAchievementProgress(struct Object WorldContextObject, struct APlayerController PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EE990>
 };
 
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
@@ -148,7 +148,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UConnectionCallbackProxy ConnectToService(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DEF00>
+	struct UConnectionCallbackProxy ConnectToService(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ECE20>
 };
 
 // Class OnlineSubsystemUtils.CreateSessionCallbackProxy
@@ -159,7 +159,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UCreateSessionCallbackProxy CreateSession(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF4C0>
+	struct UCreateSessionCallbackProxy CreateSession(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED3E0>
 };
 
 // Class OnlineSubsystemUtils.DestroySessionCallbackProxy
@@ -170,7 +170,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UDestroySessionCallbackProxy DestroySession(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF5F0>
+	struct UDestroySessionCallbackProxy DestroySession(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED510>
 };
 
 // Class OnlineSubsystemUtils.EndMatchCallbackProxy
@@ -181,7 +181,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UEndMatchCallbackProxy EndMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF6B0>
+	struct UEndMatchCallbackProxy EndMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED5D0>
 };
 
 // Class OnlineSubsystemUtils.EndTurnCallbackProxy
@@ -192,7 +192,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UEndTurnCallbackProxy EndTurn(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, struct TScriptInterface<ITurnBasedMatchInterface> TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF8E0>
+	struct UEndTurnCallbackProxy EndTurn(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, struct TScriptInterface<ITurnBasedMatchInterface> TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED800>
 };
 
 // Class OnlineSubsystemUtils.FindSessionsCallbackProxy
@@ -203,11 +203,11 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct FString GetServerName(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E0850>
-	int32_t GetPingInMs(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E0670>
-	int32_t GetMaxPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E0490>
-	int32_t GetCurrentPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E02B0>
-	struct UFindSessionsCallbackProxy FindSessions(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t MaxResults, char bUseLAN); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DFA80>
+	struct FString GetServerName(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EE770>
+	int32_t GetPingInMs(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EE590>
+	int32_t GetMaxPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EE3B0>
+	int32_t GetCurrentPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EE1D0>
+	struct UFindSessionsCallbackProxy FindSessions(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t MaxResults, char bUseLAN); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED9A0>
 };
 
 // Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
@@ -218,7 +218,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UFindTurnBasedMatchCallbackProxy FindTurnBasedMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DFBB0>
+	struct UFindTurnBasedMatchCallbackProxy FindTurnBasedMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11EDAD0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
@@ -229,7 +229,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseCallbackProxy CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF0B0>
+	struct UInAppPurchaseCallbackProxy CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ECFD0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy2
@@ -240,9 +240,9 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF440>
-	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseQueryOwned(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF3C0>
-	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest2& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DEFC0>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED360>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseQueryOwned(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED2E0>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest2& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ECEE0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
@@ -253,7 +253,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseQueryCallbackProxy CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF2B0>
+	struct UInAppPurchaseQueryCallbackProxy CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED1D0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
@@ -264,7 +264,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseQueryCallbackProxy2 CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11DF1A0>
+	struct UInAppPurchaseQueryCallbackProxy2 CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11ED0C0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
@@ -275,7 +275,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseRestoreCallbackProxy CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4770>
+	struct UInAppPurchaseRestoreCallbackProxy CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2690>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2
@@ -286,7 +286,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct UInAppPurchaseRestoreCallbackProxy2 CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4650>
+	struct UInAppPurchaseRestoreCallbackProxy2 CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2570>
 };
 
 // Class OnlineSubsystemUtils.JoinSessionCallbackProxy
@@ -297,7 +297,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UJoinSessionCallbackProxy JoinSession(struct Object WorldContextObject, struct APlayerController PlayerController, struct FBlueprintSessionResult& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4950>
+	struct UJoinSessionCallbackProxy JoinSession(struct Object WorldContextObject, struct APlayerController PlayerController, struct FBlueprintSessionResult& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2870>
 };
 
 // Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
@@ -308,7 +308,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct ULeaderboardFlushCallbackProxy CreateProxyObjectForFlush(struct APlayerController PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4590>
+	struct ULeaderboardFlushCallbackProxy CreateProxyObjectForFlush(struct APlayerController PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F24B0>
 };
 
 // Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
@@ -319,7 +319,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(struct APlayerController PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4890>
+	struct ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(struct APlayerController PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F27B0>
 };
 
 // Class OnlineSubsystemUtils.LogoutCallbackProxy
@@ -330,7 +330,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct ULogoutCallbackProxy Logout(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4BB0>
+	struct ULogoutCallbackProxy Logout(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2AD0>
 };
 
 // Class OnlineSubsystemUtils.OnlineBeacon
@@ -338,9 +338,9 @@ class AOnlineBeacon : public UActor {
 
 public:
 
-	float BeaconConnectionInitialTimeout; // 0x308 (4)
-	float BeaconConnectionTimeout; // 0x30C (4)
-	struct UNetDriver NetDriver; // 0x310 (8)
+	float BeaconConnectionInitialTimeout; // 0x330 (4)
+	float BeaconConnectionTimeout; // 0x334 (4)
+	struct UNetDriver NetDriver; // 0x338 (8)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
@@ -348,11 +348,11 @@ class AOnlineBeaconClient : public AOnlineBeacon {
 
 public:
 
-	struct AOnlineBeaconHostObject BeaconOwner; // 0x330 (8)
-	struct UNetConnection BeaconConnection; // 0x338 (8)
-	enum class EBeaconConnectionState ConnectionState; // 0x340 (1)
+	struct AOnlineBeaconHostObject BeaconOwner; // 0x358 (8)
+	struct UNetConnection BeaconConnection; // 0x360 (8)
+	enum class EBeaconConnectionState ConnectionState; // 0x368 (1)
 
-	void ClientOnConnected(); // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4440>
+	void ClientOnConnected(); // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2360>
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
@@ -360,8 +360,8 @@ class AOnlineBeaconHost : public AOnlineBeacon {
 
 public:
 
-	int32_t ListenPort; // 0x330 (4)
-	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x338 (16)
+	int32_t ListenPort; // 0x358 (4)
+	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x360 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
@@ -369,9 +369,9 @@ class AOnlineBeaconHostObject : public UActor {
 
 public:
 
-	struct FString BeaconTypeName; // 0x300 (16)
-	struct UClass* ClientBeaconActorClass; // 0x310 (8)
-	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x318 (16)
+	struct FString BeaconTypeName; // 0x328 (16)
+	struct UClass* ClientBeaconActorClass; // 0x338 (8)
+	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x340 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
@@ -405,20 +405,20 @@ class APartyBeaconClient : public AOnlineBeaconClient {
 
 public:
 
-	struct FString DestSessionId; // 0x3C0 (16)
-	struct FPartyReservation PendingReservation; // 0x3D0 (80)
-	enum class EClientRequestType RequestType; // 0x420 (1)
-	char bPendingReservationSent : 0; // 0x421 (1)
-	char bCancelReservation : 0; // 0x422 (1)
+	struct FString DestSessionId; // 0x3E8 (16)
+	struct FPartyReservation PendingReservation; // 0x3F8 (80)
+	enum class EClientRequestType RequestType; // 0x448 (1)
+	char bPendingReservationSent : 0; // 0x449 (1)
+	char bCancelReservation : 0; // 0x44A (1)
 
-	void ServerUpdateReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E5490>
-	void ServerReservationRequest(struct FString SessionID, struct FPartyReservation Reservation); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E51F0>
-	void ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4F50>
-	void ServerCancelReservationRequest(struct FUniqueNetIdRepl PartyLeader); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4E40>
-	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4500>
-	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E44E0>
-	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4460>
-	void ClientCancelReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E43C0>
+	void ServerUpdateReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F33B0>
+	void ServerReservationRequest(struct FString SessionID, struct FPartyReservation Reservation); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F3110>
+	void ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2E70>
+	void ServerCancelReservationRequest(struct FUniqueNetIdRepl PartyLeader); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2D60>
+	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2420>
+	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2400>
+	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2380>
+	void ClientCancelReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F22E0>
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
@@ -426,10 +426,10 @@ class APartyBeaconHost : public AOnlineBeaconHostObject {
 
 public:
 
-	struct UPartyBeaconState State; // 0x328 (8)
-	char bLogoutOnSessionTimeout : 0; // 0x390 (1)
-	float SessionTimeoutSecs; // 0x394 (4)
-	float TravelSessionTimeoutSecs; // 0x398 (4)
+	struct UPartyBeaconState State; // 0x350 (8)
+	char bLogoutOnSessionTimeout : 0; // 0x3B8 (1)
+	float SessionTimeoutSecs; // 0x3BC (4)
+	float TravelSessionTimeoutSecs; // 0x3C0 (4)
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconState
@@ -458,7 +458,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UQuitMatchCallbackProxy QuitMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4C70>
+	struct UQuitMatchCallbackProxy QuitMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2B90>
 };
 
 // Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
@@ -469,7 +469,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct UShowLoginUICallbackProxy ShowExternalLoginUI(struct Object WorldContextObject, struct APlayerController InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E79F0>
+	struct UShowLoginUICallbackProxy ShowExternalLoginUI(struct Object WorldContextObject, struct APlayerController InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F5910>
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconClient
@@ -477,18 +477,18 @@ class ASpectatorBeaconClient : public AOnlineBeaconClient {
 
 public:
 
-	struct FString DestSessionId; // 0x3C0 (16)
-	struct FSpectatorReservation PendingReservation; // 0x3D0 (120)
-	enum class ESpectatorClientRequestType RequestType; // 0x448 (1)
-	char bPendingReservationSent : 0; // 0x449 (1)
-	char bCancelReservation : 0; // 0x44A (1)
+	struct FString DestSessionId; // 0x3E8 (16)
+	struct FSpectatorReservation PendingReservation; // 0x3F8 (120)
+	enum class ESpectatorClientRequestType RequestType; // 0x470 (1)
+	char bPendingReservationSent : 0; // 0x471 (1)
+	char bCancelReservation : 0; // 0x472 (1)
 
-	void ServerReservationRequest(struct FString SessionID, struct FSpectatorReservation Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E77F0>
-	void ServerCancelReservationRequest(struct FUniqueNetIdRepl Spectator); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E4E40>
-	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E7090>
-	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E7070>
-	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E6FF0>
-	void ClientCancelReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E6F50>
+	void ServerReservationRequest(struct FString SessionID, struct FSpectatorReservation Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F5710>
+	void ServerCancelReservationRequest(struct FUniqueNetIdRepl Spectator); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F2D60>
+	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F4FB0>
+	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F4F90>
+	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F4F10>
+	void ClientCancelReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F4E70>
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconHost
@@ -496,10 +496,10 @@ class ASpectatorBeaconHost : public AOnlineBeaconHostObject {
 
 public:
 
-	struct USpectatorBeaconState State; // 0x328 (8)
-	char bLogoutOnSessionTimeout : 0; // 0x390 (1)
-	float SessionTimeoutSecs; // 0x394 (4)
-	float TravelSessionTimeoutSecs; // 0x398 (4)
+	struct USpectatorBeaconState State; // 0x350 (8)
+	char bLogoutOnSessionTimeout : 0; // 0x3B8 (1)
+	float SessionTimeoutSecs; // 0x3BC (4)
+	float TravelSessionTimeoutSecs; // 0x3C0 (4)
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconState

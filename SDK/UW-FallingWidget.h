@@ -21,8 +21,8 @@ public:
 	struct UProgressBar TerrainHeight; // 0x2E8 (8)
 	char IsParachute : 0; // 0x2F0 (1)
 
-	void SetParachuteInfo(struct FParachuteInfo SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-FallingWidget(int32_t EntryPoint); // Function UW-FallingWidget.UW-FallingWidget_C.ExecuteUbergraph_UW-FallingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetParachuteInfo(struct FParachuteInfo SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-FallingWidget(int32_t EntryPoint); // Function UW-FallingWidget.UW-FallingWidget_C.ExecuteUbergraph_UW-FallingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo

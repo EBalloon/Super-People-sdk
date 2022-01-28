@@ -10,9 +10,9 @@ public:
 	struct UImage uw-bg; // 0x270 (8)
 	struct FText DescriptionText; // 0x278 (24)
 
-	void Construct(); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreConstruct(char IsDesignTime); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ReportUserCompleted(int32_t EntryPoint); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.ExecuteUbergraph_UW-ReportUserCompleted(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreConstruct(char IsDesignTime); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ReportUserCompleted(int32_t EntryPoint); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.ExecuteUbergraph_UW-ReportUserCompleted(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct

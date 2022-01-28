@@ -3,46 +3,46 @@ class ABP_AreaRectLight_C : public UActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct UArrowComponent Arrow; // 0x308 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x310 (8)
-	struct TArray<struct USpotLightComponent> LightList; // 0x318 (16)
-	float Intensity; // 0x328 (4)
-	struct FLinearColor Color; // 0x32C (16)
-	float FocalAngleOuter; // 0x33C (4)
-	float FocalAngleInner; // 0x340 (4)
-	float AttenuationDistance; // 0x344 (4)
-	float LightWidth; // 0x348 (4)
-	float LightLength; // 0x34C (4)
-	char CastShadows : 0; // 0x350 (1)
-	int32_t LightSamplesSquared; // 0x354 (4)
-	float SourceRadiusMult; // 0x358 (4)
-	float CenterOfInterestLength; // 0x35C (4)
-	char Enabled : 0; // 0x360 (1)
-	struct FLightingChannels Channels; // 0x361 (1)
-	float SoftRadius; // 0x364 (4)
-	float ShadowBias; // 0x368 (4)
-	float ShadowResolutionScale; // 0x36C (4)
-	struct TArray<int32_t> LightSet01; // 0x370 (16)
-	struct TArray<int32_t> LightSet02; // 0x380 (16)
-	struct TArray<int32_t> LightSet03; // 0x390 (16)
-	char LightVisibility01 : 0; // 0x3A0 (1)
-	char LightVisibility02 : 0; // 0x3A1 (1)
-	char LightVisibility03 : 0; // 0x3A2 (1)
-	char LightVisibility04 : 0; // 0x3A3 (1)
-	char LightVisibility05 : 0; // 0x3A4 (1)
-	char LightVisibility06 : 0; // 0x3A5 (1)
-	char LightVisibility07 : 0; // 0x3A6 (1)
-	char LightVisibility08 : 0; // 0x3A7 (1)
-	char LightVisibility09 : 0; // 0x3A8 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct UArrowComponent Arrow; // 0x330 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x338 (8)
+	struct TArray<struct USpotLightComponent> LightList; // 0x340 (16)
+	float Intensity; // 0x350 (4)
+	struct FLinearColor Color; // 0x354 (16)
+	float FocalAngleOuter; // 0x364 (4)
+	float FocalAngleInner; // 0x368 (4)
+	float AttenuationDistance; // 0x36C (4)
+	float LightWidth; // 0x370 (4)
+	float LightLength; // 0x374 (4)
+	char CastShadows : 0; // 0x378 (1)
+	int32_t LightSamplesSquared; // 0x37C (4)
+	float SourceRadiusMult; // 0x380 (4)
+	float CenterOfInterestLength; // 0x384 (4)
+	char Enabled : 0; // 0x388 (1)
+	struct FLightingChannels Channels; // 0x389 (1)
+	float SoftRadius; // 0x38C (4)
+	float ShadowBias; // 0x390 (4)
+	float ShadowResolutionScale; // 0x394 (4)
+	struct TArray<int32_t> LightSet01; // 0x398 (16)
+	struct TArray<int32_t> LightSet02; // 0x3A8 (16)
+	struct TArray<int32_t> LightSet03; // 0x3B8 (16)
+	char LightVisibility01 : 0; // 0x3C8 (1)
+	char LightVisibility02 : 0; // 0x3C9 (1)
+	char LightVisibility03 : 0; // 0x3CA (1)
+	char LightVisibility04 : 0; // 0x3CB (1)
+	char LightVisibility05 : 0; // 0x3CC (1)
+	char LightVisibility06 : 0; // 0x3CD (1)
+	char LightVisibility07 : 0; // 0x3CE (1)
+	char LightVisibility08 : 0; // 0x3CF (1)
+	char LightVisibility09 : 0; // 0x3D0 (1)
 
-	void NewFunction_1(); // Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void LightArraySetup(); // Function BP_AreaRectLight.BP_AreaRectLight_C.LightArraySetup(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateLightValues(); // Function BP_AreaRectLight.BP_AreaRectLight_C.UpdateLightValues(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UserConstructionScript(); // Function BP_AreaRectLight.BP_AreaRectLight_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP_AreaRectLight(int32_t EntryPoint); // Function BP_AreaRectLight.BP_AreaRectLight_C.ExecuteUbergraph_BP_AreaRectLight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void NewFunction_1(); // Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void LightArraySetup(); // Function BP_AreaRectLight.BP_AreaRectLight_C.LightArraySetup(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateLightValues(); // Function BP_AreaRectLight.BP_AreaRectLight_C.UpdateLightValues(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UserConstructionScript(); // Function BP_AreaRectLight.BP_AreaRectLight_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP_AreaRectLight(int32_t EntryPoint); // Function BP_AreaRectLight.BP_AreaRectLight_C.ExecuteUbergraph_BP_AreaRectLight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1

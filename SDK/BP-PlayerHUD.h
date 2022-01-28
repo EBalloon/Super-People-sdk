@@ -3,29 +3,29 @@ class ABP-PlayerHUD_C : public ABravoHotelPlayerHUD {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x850 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x858 (8)
-	struct TMap<enum class EHUDMessageTableType, struct UDataTable> TableInfo; // 0x860 (80)
-	struct TArray<struct UClass*> NewVar_1; // 0x8B0 (16)
-	struct TArray<enum class EGuideWidgetType> GuideWidgetStack; // 0x8C0 (16)
-	enum class EHUDMessageType NewVar_2; // 0x8D0 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x878 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x880 (8)
+	struct TMap<enum class EHUDMessageTableType, struct UDataTable> TableInfo; // 0x888 (80)
+	struct TArray<struct UClass*> NewVar_1; // 0x8D8 (16)
+	struct TArray<enum class EGuideWidgetType> GuideWidgetStack; // 0x8E8 (16)
+	enum class EHUDMessageType NewVar_2; // 0x8F8 (1)
 
-	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate

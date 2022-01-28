@@ -19,24 +19,24 @@ public:
 	struct UBravoHotelMainWidget MainWidget; // 0x2B8 (8)
 	int32_t UserNameTooltipsNum; // 0x2C0 (4)
 
-	void SetTargetPawnInfo(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetTargetPawnInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetEnableUserNameTooltips(enum class ECameraType CameraType); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CheckWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetMainWidget(char& IsValid, struct UBravoHotelMainWidget& MainWidget); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RemoveAllUserNameTooltips(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.RemoveAllUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateUserNameTooltip(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set User Name Tooltip(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Set User Name Tooltip(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ToggleTimeline(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleTimeline(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void TogglePlayerList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.TogglePlayerList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ToggleItemList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleItemList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.InitWorldMapOption(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedFreeCamSpeedLevel(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedPlayerInfosDelegate_Event_2(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedPlayerInfosDelegate_Event_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ReplayMainWidget(int32_t EntryPoint); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ExecuteUbergraph_UW-ReplayMainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTargetPawnInfo(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetTargetPawnInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetEnableUserNameTooltips(enum class ECameraType CameraType); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CheckWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetMainWidget(char& IsValid, struct UBravoHotelMainWidget& MainWidget); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RemoveAllUserNameTooltips(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.RemoveAllUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateUserNameTooltip(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set User Name Tooltip(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Set User Name Tooltip(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ToggleTimeline(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleTimeline(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void TogglePlayerList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.TogglePlayerList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ToggleItemList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleItemList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.InitWorldMapOption(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedFreeCamSpeedLevel(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedPlayerInfosDelegate_Event_2(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedPlayerInfosDelegate_Event_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ReplayMainWidget(int32_t EntryPoint); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ExecuteUbergraph_UW-ReplayMainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetTargetPawnInfo

@@ -3,12 +3,12 @@ class ABP-ProjectileGrenade_FireWall_C : public ABravoHotelProjectileGrenadeMolo
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x7E0 (8)
-	float TextureScale; // 0x7E8 (4)
-	float CollisionSize; // 0x7EC (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x840 (8)
+	float TextureScale; // 0x848 (4)
+	float CollisionSize; // 0x84C (4)
 
-	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_FireWall.BP-ProjectileGrenade_FireWall_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-ProjectileGrenade_FireWall(int32_t EntryPoint); // Function BP-ProjectileGrenade_FireWall.BP-ProjectileGrenade_FireWall_C.ExecuteUbergraph_BP-ProjectileGrenade_FireWall(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_FireWall.BP-ProjectileGrenade_FireWall_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-ProjectileGrenade_FireWall(int32_t EntryPoint); // Function BP-ProjectileGrenade_FireWall.BP-ProjectileGrenade_FireWall_C.ExecuteUbergraph_BP-ProjectileGrenade_FireWall(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-ProjectileGrenade_FireWall.BP-ProjectileGrenade_FireWall_C.ActiveThrowingProjectileMainEffect

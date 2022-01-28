@@ -3,13 +3,13 @@ class ABP-PhysicsStaticMeshActor_C : public UActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct UStaticMeshComponent StaticMesh; // 0x308 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x310 (8)
-	float DestructibleMeshLifeTime; // 0x318 (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct UStaticMeshComponent StaticMesh; // 0x330 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x338 (8)
+	float DestructibleMeshLifeTime; // 0x340 (4)
 
-	void ReceiveBeginPlay(); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-PhysicsStaticMeshActor(int32_t EntryPoint); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ExecuteUbergraph_BP-PhysicsStaticMeshActor(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-PhysicsStaticMeshActor(int32_t EntryPoint); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ExecuteUbergraph_BP-PhysicsStaticMeshActor(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay

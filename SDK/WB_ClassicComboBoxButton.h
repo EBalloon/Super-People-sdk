@@ -7,12 +7,12 @@ public:
 	struct UButton VisualNoninteractButton; // 0x250 (8)
 	struct FButtonStyle Original Style; // 0x258 (632)
 
-	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_WB_ClassicComboBoxButton(int32_t EntryPoint); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.ExecuteUbergraph_WB_ClassicComboBoxButton(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_WB_ClassicComboBoxButton(int32_t EntryPoint); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.ExecuteUbergraph_WB_ClassicComboBoxButton(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp

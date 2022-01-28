@@ -3,37 +3,37 @@ class AChat_System_C : public UActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x308 (8)
-	struct TArray<struct AChat_System_C> Muted Players; // 0x310 (16)
-	char Two-way Mute? : 0; // 0x320 (1)
-	struct FString Player Name; // 0x328 (16)
-	struct TArray<struct AChat_System_C> Players to Message; // 0x338 (16)
-	struct UChat_GameInstance_C Game Instance Blueprint; // 0x348 (8)
-	struct TArray<struct FString> Joined Groups; // 0x350 (16)
-	struct TArray<struct FString> Banned Groups; // 0x360 (16)
-	struct TArray<struct FString> Owned Groups; // 0x370 (16)
-	struct UChat_MainWidget_C Chat Widget; // 0x380 (8)
-	struct UHUD_Widget_C HUD Widget; // 0x388 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x330 (8)
+	struct TArray<struct AChat_System_C> Muted Players; // 0x338 (16)
+	char Two-way Mute? : 0; // 0x348 (1)
+	struct FString Player Name; // 0x350 (16)
+	struct TArray<struct AChat_System_C> Players to Message; // 0x360 (16)
+	struct UChat_GameInstance_C Game Instance Blueprint; // 0x370 (8)
+	struct TArray<struct FString> Joined Groups; // 0x378 (16)
+	struct TArray<struct FString> Banned Groups; // 0x388 (16)
+	struct TArray<struct FString> Owned Groups; // 0x398 (16)
+	struct UChat_MainWidget_C Chat Widget; // 0x3A8 (8)
+	struct UHUD_Widget_C HUD Widget; // 0x3B0 (8)
 
-	void Get Current Group(struct FString& Group); // Function Chat_System.Chat_System_C.Get Current Group(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Send Chat Message(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Push Item(struct AChat_System_C To:, struct AChat_System_C From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Create Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Create Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Add Global Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Global Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Join Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Join Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Add Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Add Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Send Chat Message Server(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Add Player to Chat(); // Function Chat_System.Chat_System_C.Add Player to Chat(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function Chat_System.Chat_System_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Spawn Chat(); // Function Chat_System.Chat_System_C.Spawn Chat(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Keyboard Focus to Chat Input(); // Function Chat_System.Chat_System_C.Set Keyboard Focus to Chat Input(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Leave Group(struct FString Group Name, int32_t Index); // Function Chat_System.Chat_System_C.Leave Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Remove Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Remove Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Add Owned Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Owned Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Remove Owned Group On Server(struct FString Group); // Function Chat_System.Chat_System_C.Remove Owned Group On Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Next Tab(char Direction, char Wrap Around at End?); // Function Chat_System.Chat_System_C.Next Tab(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_Chat_System(int32_t EntryPoint); // Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Get Current Group(struct FString& Group); // Function Chat_System.Chat_System_C.Get Current Group(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Send Chat Message(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Push Item(struct AChat_System_C To:, struct AChat_System_C From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Create Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Create Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Add Global Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Global Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Join Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Join Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Add Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Add Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Send Chat Message Server(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Add Player to Chat(); // Function Chat_System.Chat_System_C.Add Player to Chat(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function Chat_System.Chat_System_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Spawn Chat(); // Function Chat_System.Chat_System_C.Spawn Chat(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Keyboard Focus to Chat Input(); // Function Chat_System.Chat_System_C.Set Keyboard Focus to Chat Input(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Leave Group(struct FString Group Name, int32_t Index); // Function Chat_System.Chat_System_C.Leave Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Remove Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Remove Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Add Owned Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Owned Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Remove Owned Group On Server(struct FString Group); // Function Chat_System.Chat_System_C.Remove Owned Group On Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Next Tab(char Direction, char Wrap Around at End?); // Function Chat_System.Chat_System_C.Next Tab(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_Chat_System(int32_t EntryPoint); // Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function Chat_System.Chat_System_C.Get Current Group

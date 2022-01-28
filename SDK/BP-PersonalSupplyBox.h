@@ -3,23 +3,23 @@ class ABP-PersonalSupplyBox_C : public ABHPersonalSupplyBox {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x368 (8)
-	struct UStaticMeshComponent StaticMeshUnassigned; // 0x370 (8)
-	struct UStaticMeshComponent StaticMeshAssigned; // 0x378 (8)
-	float LandingTimer; // 0x380 (4)
-	char bLanding : 0; // 0x384 (1)
-	struct TArray<struct FSpawnItemResult> ItemResult; // 0x388 (16)
-	float ParachuteTimer; // 0x398 (4)
-	float VisibleValue; // 0x39C (4)
-	char VisibleAnimationState : 0; // 0x3A0 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x390 (8)
+	struct UStaticMeshComponent StaticMeshUnassigned; // 0x398 (8)
+	struct UStaticMeshComponent StaticMeshAssigned; // 0x3A0 (8)
+	float LandingTimer; // 0x3A8 (4)
+	char bLanding : 0; // 0x3AC (1)
+	struct TArray<struct FSpawnItemResult> ItemResult; // 0x3B0 (16)
+	float ParachuteTimer; // 0x3C0 (4)
+	float VisibleValue; // 0x3C4 (4)
+	char VisibleAnimationState : 0; // 0x3C8 (1)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateEffect(float InterpValue); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.UpdateEffect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeBoxMesh(char IsMyBox); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ChangeBoxMesh(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Visible Animation(char IsShow); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.Visible Animation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangeState(enum class EBoxStateType StateType); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-PersonalSupplyBox(int32_t EntryPoint); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ExecuteUbergraph_BP-PersonalSupplyBox(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateEffect(float InterpValue); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.UpdateEffect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeBoxMesh(char IsMyBox); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ChangeBoxMesh(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Visible Animation(char IsShow); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.Visible Animation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangeState(enum class EBoxStateType StateType); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-PersonalSupplyBox(int32_t EntryPoint); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ExecuteUbergraph_BP-PersonalSupplyBox(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveTick

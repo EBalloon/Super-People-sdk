@@ -3,17 +3,17 @@ class ABP-DefaultWaterVehicle_C : public ABP-DefaultWheeledVehicle_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD60 (8)
-	struct FTimerHandle Handle_IsAnyHit; // 0xD68 (8)
-	char IsAnyHit : 0; // 0xD70 (1)
-	struct UActor LastHitActor; // 0xD78 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD70 (8)
+	struct FTimerHandle Handle_IsAnyHit; // 0xD78 (8)
+	char IsAnyHit : 0; // 0xD80 (1)
+	struct UActor LastHitActor; // 0xD88 (8)
 
-	void CheckLastHitActor(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void IsLandscape(char& IsLandscape); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.IsLandscape(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveHit(struct UPrimitiveComponent MyComp, struct UActor Other, struct UPrimitiveComponent OtherComp, char bSelfMoved, struct FVector HitLocation, struct FVector HitNormal, struct FVector NormalImpulse, struct FHitResult& Hit); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ReceiveHit(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckAnyHit(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckAnyHit(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetGate(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ResetGate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-DefaultWaterVehicle(int32_t EntryPoint); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ExecuteUbergraph_BP-DefaultWaterVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CheckLastHitActor(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void IsLandscape(char& IsLandscape); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.IsLandscape(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveHit(struct UPrimitiveComponent MyComp, struct UActor Other, struct UPrimitiveComponent OtherComp, char bSelfMoved, struct FVector HitLocation, struct FVector HitNormal, struct FVector NormalImpulse, struct FHitResult& Hit); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ReceiveHit(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckAnyHit(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckAnyHit(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetGate(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ResetGate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-DefaultWaterVehicle(int32_t EntryPoint); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ExecuteUbergraph_BP-DefaultWaterVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor

@@ -13,112 +13,113 @@ public:
 	struct UCanvasPanel ComboBoxType; // 0x520 (8)
 	struct UImage Down; // 0x528 (8)
 	struct UEditableText EditableText_80; // 0x530 (8)
-	struct UHorizontalBox HorizontalBox_191; // 0x538 (8)
-	struct UImage Image_153; // 0x540 (8)
-	struct UImage Image_204; // 0x548 (8)
-	struct UImage Image_414; // 0x550 (8)
-	struct UCanvasPanel Key; // 0x558 (8)
-	struct UKeyImageWidget_C KeyImageMain; // 0x560 (8)
-	struct UKeyImageWidget_C KeyImageSub; // 0x568 (8)
-	struct UTextBlock KeyLock; // 0x570 (8)
-	struct UArrowBtn_C LeftA; // 0x578 (8)
-	struct UArrowBtn_C LeftA_2; // 0x580 (8)
-	struct UImage LockMain; // 0x588 (8)
-	struct UImage LockSub; // 0x590 (8)
-	struct UImage MainBG; // 0x598 (8)
-	struct UInputKeySelector MainKeyInput; // 0x5A0 (8)
-	struct UOverlay Overlay_215; // 0x5A8 (8)
-	struct UProgressBar ProgressBar_150; // 0x5B0 (8)
-	struct UArrowBtn_C RightA; // 0x5B8 (8)
-	struct UArrowBtn_C RightA_2; // 0x5C0 (8)
-	struct UselectTypeBtn_C SelectBtn1; // 0x5C8 (8)
-	struct UselectTypeBtn_C SelectBtn2; // 0x5D0 (8)
-	struct UselectTypeBtn_C SelectBtn3; // 0x5D8 (8)
-	struct UselectTypeBtn_C SelectBtn4; // 0x5E0 (8)
-	struct UselectTypeBtn_C SelectBtn5; // 0x5E8 (8)
-	struct UselectTypeBtn_C SelectBtn6; // 0x5F0 (8)
-	struct UCanvasPanel SelectType; // 0x5F8 (8)
-	struct UTextBlock SelectValue; // 0x600 (8)
-	struct USlider Slider_139; // 0x608 (8)
-	struct UCanvasPanel SliderType; // 0x610 (8)
-	struct UImage SubBG; // 0x618 (8)
-	struct UInputKeySelector SubKeyInput; // 0x620 (8)
-	struct UTextBlock T_Button; // 0x628 (8)
-	struct UTextBlock Title_Text; // 0x630 (8)
-	struct UImage Up; // 0x638 (8)
-	struct UTextBlock Value; // 0x640 (8)
-	struct UTextBlock Value_2; // 0x648 (8)
-	struct UWidgetSwitcher WidgetSwitcher_1; // 0x650 (8)
-	struct UWidgetSwitcher WidgetSwitcher_281; // 0x658 (8)
-	char Lock : 0; // 0x660 (1)
-	int32_t Selected SeleteValue; // 0x664 (4)
-	int32_t TotalListSize; // 0x668 (4)
-	struct TArray<struct TSoftObjectPtr<UTexture2D>> Empty; // 0x670 (16)
-	struct FButtonStyle ButtonStyle; // 0x680 (632)
-	struct FPointerEvent NewVar_1; // 0x8F8 (112)
-	char SliderIsInit : 0; // 0x968 (1)
-	struct FText EmptyText; // 0x970 (24)
-	int32_t TempSaveComboBoxIndex; // 0x988 (4)
-	struct FInputChord Temp; // 0x990 (32)
-	float TempValue; // 0x9B0 (4)
-	struct FText PreSliderText; // 0x9B8 (24)
-	struct FString LResultString; // 0x9D0 (16)
-	char have. : 0; // 0x9E0 (1)
-	char IsOnEditableText : 0; // 0x9E1 (1)
-	char CompletSettingData : 0; // 0x9E2 (1)
-	struct FSettingInfo CompleteSettingInfo; // 0x9E8 (136)
-	struct FSettingInfo TempSetting; // 0xA70 (136)
-	char ReMarkComboBox : 0; // 0xAF8 (1)
+	struct UHorizontalBox HorizontalBox_1; // 0x538 (8)
+	struct UHorizontalBox HorizontalBox_191; // 0x540 (8)
+	struct UImage Image_153; // 0x548 (8)
+	struct UImage Image_204; // 0x550 (8)
+	struct UImage Image_414; // 0x558 (8)
+	struct UCanvasPanel Key; // 0x560 (8)
+	struct UKeyImageWidget_C KeyImageMain; // 0x568 (8)
+	struct UKeyImageWidget_C KeyImageSub; // 0x570 (8)
+	struct UTextBlock KeyLock; // 0x578 (8)
+	struct UArrowBtn_C LeftA; // 0x580 (8)
+	struct UArrowBtn_C LeftA_2; // 0x588 (8)
+	struct UImage LockMain; // 0x590 (8)
+	struct UImage LockSub; // 0x598 (8)
+	struct UImage MainBG; // 0x5A0 (8)
+	struct UInputKeySelector MainKeyInput; // 0x5A8 (8)
+	struct UOverlay Overlay_215; // 0x5B0 (8)
+	struct UProgressBar ProgressBar_150; // 0x5B8 (8)
+	struct UArrowBtn_C RightA; // 0x5C0 (8)
+	struct UArrowBtn_C RightA_2; // 0x5C8 (8)
+	struct UselectTypeBtn_C SelectBtn1; // 0x5D0 (8)
+	struct UselectTypeBtn_C SelectBtn2; // 0x5D8 (8)
+	struct UselectTypeBtn_C SelectBtn3; // 0x5E0 (8)
+	struct UselectTypeBtn_C SelectBtn4; // 0x5E8 (8)
+	struct UselectTypeBtn_C SelectBtn5; // 0x5F0 (8)
+	struct UselectTypeBtn_C SelectBtn6; // 0x5F8 (8)
+	struct UCanvasPanel SelectType; // 0x600 (8)
+	struct UTextBlock SelectValue; // 0x608 (8)
+	struct USlider Slider_139; // 0x610 (8)
+	struct UCanvasPanel SliderType; // 0x618 (8)
+	struct UImage SubBG; // 0x620 (8)
+	struct UInputKeySelector SubKeyInput; // 0x628 (8)
+	struct UTextBlock T_Button; // 0x630 (8)
+	struct UTextBlock Title_Text; // 0x638 (8)
+	struct UImage Up; // 0x640 (8)
+	struct UTextBlock Value; // 0x648 (8)
+	struct UTextBlock Value_2; // 0x650 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x658 (8)
+	struct UWidgetSwitcher WidgetSwitcher_281; // 0x660 (8)
+	char Lock : 0; // 0x668 (1)
+	int32_t Selected SeleteValue; // 0x66C (4)
+	int32_t TotalListSize; // 0x670 (4)
+	struct TArray<struct TSoftObjectPtr<UTexture2D>> Empty; // 0x678 (16)
+	struct FButtonStyle ButtonStyle; // 0x688 (632)
+	struct FPointerEvent NewVar_1; // 0x900 (112)
+	char SliderIsInit : 0; // 0x970 (1)
+	struct FText EmptyText; // 0x978 (24)
+	int32_t TempSaveComboBoxIndex; // 0x990 (4)
+	struct FInputChord Temp; // 0x998 (32)
+	float TempValue; // 0x9B8 (4)
+	struct FText PreSliderText; // 0x9C0 (24)
+	struct FString LResultString; // 0x9D8 (16)
+	char have. : 0; // 0x9E8 (1)
+	char IsOnEditableText : 0; // 0x9E9 (1)
+	char CompletSettingData : 0; // 0x9EA (1)
+	struct FSettingInfo CompleteSettingInfo; // 0x9F0 (136)
+	struct FSettingInfo TempSetting; // 0xA78 (136)
+	char ReMarkComboBox : 0; // 0xB00 (1)
 
-	void GetOrgKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetCurKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetCurKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function SlotItemWidget.SlotItemWidget_C.OnKeyUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckMinMaxValue(float CheckValue, struct FString& RetString); // Function SlotItemWidget.SlotItemWidget_C.CheckMinMaxValue(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckConvertFloatToString(float Value, struct FString& Ret); // Function SlotItemWidget.SlotItemWidget_C.CheckConvertFloatToString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetEnable(char State); // Function SlotItemWidget.SlotItemWidget_C.SetEnable(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSliderValue(float InputValue, float& OutValue); // Function SlotItemWidget.SlotItemWidget_C.SetSliderValue(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct UWidget OnGenerateWidget_1(struct FString Item); // Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function SlotItemWidget.SlotItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetValue(float Value); // Function SlotItemWidget.SlotItemWidget_C.SetValue(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Broadcast Change Index(float ValueIndex); // Function SlotItemWidget.SlotItemWidget_C.Broadcast Change Index(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitDataByKeyInfo(char IsSub, struct FInputActionKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPercentValue(float Value); // Function SlotItemWidget.SlotItemWidget_C.SetPercentValue(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSelectIndexComboBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexComboBox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSelectIndexSelectBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexSelectBox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitDataByAxisKeyInfo(char IsSub, struct FInputAxisKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SubSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.SubSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MainSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.MainSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__LeftA_K2Node_ComponentBoundEvent_13_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__LeftA_K2Node_ComponentBoundEvent_13_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Type_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_Type_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResolutionSelected(int32_t Index, int32_t ResolutionX, int32_t ResolutionY); // Function SlotItemWidget.SlotItemWidget_C.ResolutionSelected(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetDisplayMode(char WindowMode); // Function SlotItemWidget.SlotItemWidget_C.SetDisplayMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReMakeComboBox(); // Function SlotItemWidget.SlotItemWidget_C.ReMakeComboBox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_82_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_82_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(int32_t LanguageIndex); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Destruct(); // Function SlotItemWidget.SlotItemWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__LeftA_1_K2Node_ComponentBoundEvent_9_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__LeftA_1_K2Node_ComponentBoundEvent_9_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__RightA_1_K2Node_ComponentBoundEvent_14_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__RightA_1_K2Node_ComponentBoundEvent_14_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__EditableText_79_K2Node_ComponentBoundEvent_15_OnEditableTextChangedEvent__DelegateSignature(struct FText& Text); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__EditableText_79_K2Node_ComponentBoundEvent_15_OnEditableTextChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__EditableText_79_K2Node_ComponentBoundEvent_16_OnEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__EditableText_79_K2Node_ComponentBoundEvent_16_OnEditableTextCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_440_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_440_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_2(int32_t Index); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetKeyLock(char IsLock); // Function SlotItemWidget.SlotItemWidget_C.SetKeyLock(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_3(int32_t LanguageIndex); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetData(); // Function SlotItemWidget.SlotItemWidget_C.SetData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_SlotItemWidget(int32_t EntryPoint); // Function SlotItemWidget.SlotItemWidget_C.ExecuteUbergraph_SlotItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetOrgKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetCurKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetCurKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function SlotItemWidget.SlotItemWidget_C.OnKeyUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckMinMaxValue(float CheckValue, struct FString& RetString); // Function SlotItemWidget.SlotItemWidget_C.CheckMinMaxValue(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckConvertFloatToString(float Value, struct FString& Ret); // Function SlotItemWidget.SlotItemWidget_C.CheckConvertFloatToString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetEnable(char State); // Function SlotItemWidget.SlotItemWidget_C.SetEnable(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSliderValue(float InputValue, float& OutValue); // Function SlotItemWidget.SlotItemWidget_C.SetSliderValue(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct UWidget OnGenerateWidget_1(struct FString Item); // Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function SlotItemWidget.SlotItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetValue(float Value); // Function SlotItemWidget.SlotItemWidget_C.SetValue(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_4_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Broadcast Change Index(float ValueIndex); // Function SlotItemWidget.SlotItemWidget_C.Broadcast Change Index(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitDataByKeyInfo(char IsSub, struct FInputActionKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPercentValue(float Value); // Function SlotItemWidget.SlotItemWidget_C.SetPercentValue(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSelectIndexComboBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexComboBox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSelectIndexSelectBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexSelectBox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitDataByAxisKeyInfo(char IsSub, struct FInputAxisKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SubSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.SubSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MainSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.MainSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__LeftA_K2Node_ComponentBoundEvent_13_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__LeftA_K2Node_ComponentBoundEvent_13_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Type_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_Type_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResolutionSelected(int32_t Index, int32_t ResolutionX, int32_t ResolutionY); // Function SlotItemWidget.SlotItemWidget_C.ResolutionSelected(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetDisplayMode(char WindowMode); // Function SlotItemWidget.SlotItemWidget_C.SetDisplayMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReMakeComboBox(); // Function SlotItemWidget.SlotItemWidget_C.ReMakeComboBox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_82_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_82_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(int32_t LanguageIndex); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Destruct(); // Function SlotItemWidget.SlotItemWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__LeftA_1_K2Node_ComponentBoundEvent_9_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__LeftA_1_K2Node_ComponentBoundEvent_9_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__RightA_1_K2Node_ComponentBoundEvent_14_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__RightA_1_K2Node_ComponentBoundEvent_14_CilckBtn__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__EditableText_79_K2Node_ComponentBoundEvent_15_OnEditableTextChangedEvent__DelegateSignature(struct FText& Text); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__EditableText_79_K2Node_ComponentBoundEvent_15_OnEditableTextChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__EditableText_79_K2Node_ComponentBoundEvent_16_OnEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__EditableText_79_K2Node_ComponentBoundEvent_16_OnEditableTextCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_440_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_440_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_2(int32_t Index); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetKeyLock(char IsLock); // Function SlotItemWidget.SlotItemWidget_C.SetKeyLock(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_3(int32_t LanguageIndex); // Function SlotItemWidget.SlotItemWidget_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetData(); // Function SlotItemWidget.SlotItemWidget_C.SetData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_SlotItemWidget(int32_t EntryPoint); // Function SlotItemWidget.SlotItemWidget_C.ExecuteUbergraph_SlotItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey

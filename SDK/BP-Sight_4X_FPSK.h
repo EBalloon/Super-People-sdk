@@ -3,11 +3,11 @@ class ABP-Sight_4X_FPSK_C : public ABP-Sight_Base_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x410 (8)
-	struct UStaticMeshComponent Sphere; // 0x418 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x438 (8)
+	struct UStaticMeshComponent Sphere; // 0x440 (8)
 
-	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm

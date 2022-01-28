@@ -15,9 +15,9 @@ public:
 	struct UUW-StatupWidget_Item_C UW-StatupWidget_Item_Speed; // 0x290 (8)
 	struct UVerticalBox VerticalBox_Stats; // 0x298 (8)
 
-	void SetStatInfo(struct FStatupAnimParameters& StatupParams, char IsUpAnim); // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-StatupWidget.UW-StatupWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-StatupWidget(int32_t EntryPoint); // Function UW-StatupWidget.UW-StatupWidget_C.ExecuteUbergraph_UW-StatupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetStatInfo(struct FStatupAnimParameters& StatupParams, char IsUpAnim); // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-StatupWidget.UW-StatupWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-StatupWidget(int32_t EntryPoint); // Function UW-StatupWidget.UW-StatupWidget_C.ExecuteUbergraph_UW-StatupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo

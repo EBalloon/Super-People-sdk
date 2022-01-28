@@ -3,15 +3,15 @@ class ACrossActor : public AStaticMeshActor {
 
 public:
 
-	struct FString UniqueKey; // 0x310 (16)
-	struct TArray<struct FCrossActorManager> SideActors; // 0x320 (16)
-	struct TArray<struct FCrossMeshManager> SideMeshes; // 0x330 (16)
+	struct FString UniqueKey; // 0x338 (16)
+	struct TArray<struct FCrossActorManager> SideActors; // 0x348 (16)
+	struct TArray<struct FCrossMeshManager> SideMeshes; // 0x358 (16)
 
-	void UpdateSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3900>
-	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3420>
-	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2E00>
-	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2920>
-	void DestroySideObjects(); // Function RoadRuntime.CrossActor.DestroySideObjects(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2640>
+	void UpdateSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C14B0>
+	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0FD0>
+	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C09B0>
+	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C04D0>
+	void DestroySideObjects(); // Function RoadRuntime.CrossActor.DestroySideObjects(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C01F0>
 };
 
 // Class RoadRuntime.RoadActor
@@ -19,33 +19,33 @@ class ARoadActor : public UActor {
 
 public:
 
-	char SplineMeshAxis; // 0x300 (1)
-	struct FVector LocalOffset; // 0x304 (12)
-	struct ARoadActor Father; // 0x310 (8)
-	struct FString UniqueKey; // 0x318 (16)
-	struct USplineComponent Spline; // 0x328 (8)
-	int32_t Index; // 0x330 (4)
-	int32_t Segmentation; // 0x334 (4)
-	int32_t StepGeneration; // 0x338 (4)
-	float Size; // 0x33C (4)
-	struct UStaticMesh RoadMesh; // 0x340 (8)
-	struct TArray<struct USplineMeshComponent> RoadMeshesComp; // 0x348 (16)
-	struct TArray<struct FSideActorManager> SideActors; // 0x358 (16)
-	struct TArray<struct FSideMeshManager> SideMeshes; // 0x368 (16)
-	struct TArray<struct FCurbsManager> SideCurbs; // 0x378 (16)
+	char SplineMeshAxis; // 0x328 (1)
+	struct FVector LocalOffset; // 0x32C (12)
+	struct ARoadActor Father; // 0x338 (8)
+	struct FString UniqueKey; // 0x340 (16)
+	struct USplineComponent Spline; // 0x350 (8)
+	int32_t Index; // 0x358 (4)
+	int32_t Segmentation; // 0x35C (4)
+	int32_t StepGeneration; // 0x360 (4)
+	float Size; // 0x364 (4)
+	struct UStaticMesh RoadMesh; // 0x368 (8)
+	struct TArray<struct USplineMeshComponent> RoadMeshesComp; // 0x370 (16)
+	struct TArray<struct FSideActorManager> SideActors; // 0x380 (16)
+	struct TArray<struct FSideMeshManager> SideMeshes; // 0x390 (16)
+	struct TArray<struct FCurbsManager> SideCurbs; // 0x3A0 (16)
 
-	void UpdateSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.UpdateSplineMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3DE0>
-	void UpdateSideMeshes(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideMeshes(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3B30>
-	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3650>
-	void UpdateSegment(int32_t SegmentIndex, struct USplineComponent SplineComponent, struct UStaticMesh StaticMesh, char InAxis); // Function RoadRuntime.RoadActor.UpdateSegment(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B32E0>
-	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B3030>
-	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2B50>
-	void PushCurbsMeshes(struct UStaticMesh InPrototype, struct UStaticMesh InStartPrototype, struct UStaticMesh InEndPrototype, struct FVector MeshRelativeLocation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable); // Function RoadRuntime.RoadActor.PushCurbsMeshes(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2680>
-	void DestroySideObjects(); // Function RoadRuntime.RoadActor.DestroySideObjects(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2660>
-	void DestroySideCurbs(); // Function RoadRuntime.RoadActor.DestroySideCurbs(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2620>
-	void ClearSplineMeshes(); // Function RoadRuntime.RoadActor.ClearSplineMeshes(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2600>
-	float ApproxLength(struct FInterpCurveVector& SplineInfo, float Start, float End, int32_t ApproxSections); // Function RoadRuntime.RoadActor.ApproxLength(Final|Native|Static|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2480>
-	void AddSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.AddSplineMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10B2400>
+	void UpdateSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.UpdateSplineMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C1990>
+	void UpdateSideMeshes(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideMeshes(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C16E0>
+	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C1200>
+	void UpdateSegment(int32_t SegmentIndex, struct USplineComponent SplineComponent, struct UStaticMesh StaticMesh, char InAxis); // Function RoadRuntime.RoadActor.UpdateSegment(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0E90>
+	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideMesh(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0BE0>
+	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideActor(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0700>
+	void PushCurbsMeshes(struct UStaticMesh InPrototype, struct UStaticMesh InStartPrototype, struct UStaticMesh InEndPrototype, struct FVector MeshRelativeLocation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable); // Function RoadRuntime.RoadActor.PushCurbsMeshes(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0230>
+	void DestroySideObjects(); // Function RoadRuntime.RoadActor.DestroySideObjects(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0210>
+	void DestroySideCurbs(); // Function RoadRuntime.RoadActor.DestroySideCurbs(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C01D0>
+	void ClearSplineMeshes(); // Function RoadRuntime.RoadActor.ClearSplineMeshes(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C01B0>
+	float ApproxLength(struct FInterpCurveVector& SplineInfo, float Start, float End, int32_t ApproxSections); // Function RoadRuntime.RoadActor.ApproxLength(Final|Native|Static|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10C0030>
+	void AddSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.AddSplineMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10BFFB0>
 };
 
 // ScriptStruct RoadRuntime.CrossMeshManager

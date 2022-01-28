@@ -8,10 +8,10 @@ public:
 	struct UImage Image_585; // 0x258 (8)
 	struct UImage Image_Grade_Color_Line; // 0x260 (8)
 
-	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Object Loaded); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(int32_t EntryPoint); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Object Loaded); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(int32_t EntryPoint); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo

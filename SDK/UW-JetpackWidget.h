@@ -8,9 +8,9 @@ public:
 	struct UImage FuelIcon; // 0x278 (8)
 	struct UTextBlock FuelText; // 0x280 (8)
 
-	void SetNativeValues(); // Function UW-JetpackWidget.UW-JetpackWidget_C.SetNativeValues(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-JetpackWidget.UW-JetpackWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-JetpackWidget(int32_t EntryPoint); // Function UW-JetpackWidget.UW-JetpackWidget_C.ExecuteUbergraph_UW-JetpackWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetNativeValues(); // Function UW-JetpackWidget.UW-JetpackWidget_C.SetNativeValues(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-JetpackWidget.UW-JetpackWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-JetpackWidget(int32_t EntryPoint); // Function UW-JetpackWidget.UW-JetpackWidget_C.ExecuteUbergraph_UW-JetpackWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-JetpackWidget.UW-JetpackWidget_C.SetNativeValues

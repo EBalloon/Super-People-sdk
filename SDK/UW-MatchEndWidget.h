@@ -3,33 +3,36 @@ class UUW-MatchEndWidget_C : public UBravoHotelGameMatchEndWidget {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x360 (8)
-	struct UUW-MatchEnd_Animation_02_C UW-MatchEnd_Animation_02; // 0x368 (8)
-	struct UUW-MatchEnd_Ranking2_C UW-MatchEnd_Ranking2; // 0x370 (8)
-	struct UUW-MatchEnd_Animation_C UW_SimpleResult; // 0x378 (8)
-	struct UUW-MainWidget_C MainWidgetRef; // 0x380 (8)
-	struct ABravoHotelPlayerHUD PlayerHUDRef; // 0x388 (8)
-	struct UUW-MatchEnd_Ranking_C UW_FinalResult; // 0x390 (8)
-	struct UUW-MatchEnd_Animation_C UW_Animation; // 0x398 (8)
-	struct ABravoHotelPlayerController PlayerControllerRef; // 0x3A0 (8)
-	char NewResult : 0; // 0x3A8 (1)
-	struct FMatchEndFinalResult ResultData; // 0x3A9 (4)
-	char IsGiveUp : 0; // 0x3AD (1)
-	float WinMatchEndResultShowTime; // 0x3B0 (4)
-	struct FMatchEndAnimation ResultMatchEndAnimation; // 0x3B4 (2)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3C8 (8)
+	struct UUW-MatchEnd_Animation_02_C UW-MatchEnd_Animation_02; // 0x3D0 (8)
+	struct UUW-MatchEnd_Ranking2_C UW-MatchEnd_Ranking2; // 0x3D8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Type; // 0x3E0 (8)
+	struct UUW-MatchEnd_Animation_C UW_SimpleResult; // 0x3E8 (8)
+	struct UUW-MainWidget_C MainWidgetRef; // 0x3F0 (8)
+	struct ABravoHotelPlayerHUD PlayerHUDRef; // 0x3F8 (8)
+	struct UUW-MatchEnd_Ranking_C UW_FinalResult; // 0x400 (8)
+	struct UUW-MatchEnd_Animation_C UW_Animation; // 0x408 (8)
+	struct ABravoHotelPlayerController PlayerControllerRef; // 0x410 (8)
+	char NewResult : 0; // 0x418 (1)
+	struct FMatchEndFinalResult ResultData; // 0x419 (4)
+	char IsGiveUp : 0; // 0x41D (1)
+	float WinMatchEndResultShowTime; // 0x420 (4)
+	struct FMatchEndAnimation ResultMatchEndAnimation; // 0x424 (2)
 
-	char IsVisibleMatchEndWidget(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetPlayerState(struct ABravoHotelPlayerState& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_ShowSimpleResult(struct FMatchEndSimpleResult& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_HideSimpleResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideSimpleResult(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_ShowFinalResult(struct FMatchEndFinalResult& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_HideFinalResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideFinalResult(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_ShowMatchEndAnimation(struct FMatchEndAnimation& MatchEndAnimation, struct FMatchEndSimpleResult& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_HideMatchEndAnimation(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideMatchEndAnimation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Init(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-MatchEndWidget(int32_t EntryPoint); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.ExecuteUbergraph_UW-MatchEndWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	char IsVisibleMatchEndWidget(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetPlayerState(struct ABravoHotelPlayerState& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_ShowSimpleResult(struct FMatchEndSimpleResult& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_HideSimpleResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideSimpleResult(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_ShowFinalResult(struct FMatchEndFinalResult& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_HideFinalResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideFinalResult(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_ShowMatchEndAnimation(struct FMatchEndAnimation& MatchEndAnimation, struct FMatchEndSimpleResult& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_HideMatchEndAnimation(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideMatchEndAnimation(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Init(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventDispatcher_MoveToMatchEnd_Event_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToMatchEnd_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventDispatcher_MoveToDamageInfo_Event_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToDamageInfo_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-MatchEndWidget(int32_t EntryPoint); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.ExecuteUbergraph_UW-MatchEndWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget
@@ -199,6 +202,34 @@ inline void UUW-MatchEndWidget_C::鉹@t元_1() {
 	struct 鉹@t元_1_Params {
 		
 	}; 鉹@t元_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToMatchEnd_Event_1
+inline void UUW-MatchEndWidget_C::EventDispatcher_MoveToMatchEnd_Event_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToMatchEnd_Event_1");
+
+	struct EventDispatcher_MoveToMatchEnd_Event_1_Params {
+		
+	}; EventDispatcher_MoveToMatchEnd_Event_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToDamageInfo_Event_1
+inline void UUW-MatchEndWidget_C::EventDispatcher_MoveToDamageInfo_Event_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.EventDispatcher_MoveToDamageInfo_Event_1");
+
+	struct EventDispatcher_MoveToDamageInfo_Event_1_Params {
+		
+	}; EventDispatcher_MoveToDamageInfo_Event_1_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

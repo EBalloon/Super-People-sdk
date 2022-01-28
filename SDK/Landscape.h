@@ -117,7 +117,7 @@ class AControlPointMeshActor : public UActor {
 
 public:
 
-	struct UControlPointMeshComponent ControlPointMeshComponent; // 0x300 (8)
+	struct UControlPointMeshComponent ControlPointMeshComponent; // 0x328 (8)
 };
 
 // Class Landscape.ControlPointMeshComponent
@@ -125,7 +125,7 @@ class UControlPointMeshComponent : public UStaticMeshComponent {
 
 public:
 
-	float VirtualTextureMainPassMaxDrawDistance; // 0x538 (4)
+	float VirtualTextureMainPassMaxDrawDistance; // 0x548 (4)
 };
 
 // Class Landscape.LandscapeProxy
@@ -133,76 +133,76 @@ class ALandscapeProxy : public UActor {
 
 public:
 
-	struct ULandscapeSplinesComponent SplineComponent; // 0x300 (8)
-	struct FGuid LandscapeGuid; // 0x308 (16)
-	struct FIntPoint LandscapeSectionOffset; // 0x328 (8)
-	int32_t MaxLODLevel; // 0x330 (4)
-	float LODDistanceFactor; // 0x334 (4)
-	char LODFalloff; // 0x338 (1)
-	float ComponentScreenSizeToUseSubSections; // 0x33C (4)
-	float LOD0ScreenSize; // 0x340 (4)
-	float LOD0DistributionSetting; // 0x344 (4)
-	float LODDistributionSetting; // 0x348 (4)
-	float TessellationComponentScreenSize; // 0x34C (4)
-	char UseTessellationComponentScreenSizeFalloff : 0; // 0x350 (1)
-	float TessellationComponentScreenSizeFalloff; // 0x354 (4)
-	int32_t OccluderGeometryLOD; // 0x358 (4)
-	int32_t StaticLightingLOD; // 0x35C (4)
-	struct UPhysicalMaterial DefaultPhysMaterial; // 0x360 (8)
-	float StreamingDistanceMultiplier; // 0x368 (4)
-	struct UMaterialInterface LandscapeMaterial; // 0x370 (8)
-	struct UMaterialInterface LandscapeHoleMaterial; // 0x398 (8)
-	struct TArray<struct FLandscapeProxyMaterialOverride> LandscapeMaterialsOverride; // 0x3A0 (16)
-	char bMeshHoles : 0; // 0x3B0 (1)
-	char MeshHolesMaxLod; // 0x3B1 (1)
-	struct TArray<struct URuntimeVirtualTexture> RuntimeVirtualTextures; // 0x3B8 (16)
-	int32_t VirtualTextureNumLods; // 0x3C8 (4)
-	int32_t VirtualTextureLodBias; // 0x3CC (4)
-	enum class ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType; // 0x3D0 (1)
-	float NegativeZBoundsExtension; // 0x3D4 (4)
-	float PositiveZBoundsExtension; // 0x3D8 (4)
-	struct TArray<struct ULandscapeComponent> LandscapeComponents; // 0x3E0 (16)
-	struct TArray<struct ULandscapeHeightfieldCollisionComponent> CollisionComponents; // 0x3F0 (16)
-	struct TArray<struct UHierarchicalInstancedStaticMeshComponent> FoliageComponents; // 0x400 (16)
-	char bHasLandscapeGrass : 0; // 0x474 (1)
-	float StaticLightingResolution; // 0x478 (4)
-	char bCastStaticShadow : 0; // 0x47C (1)
-	char bCastShadowAsTwoSided : 0; // 0x47C (1)
-	char bCastFarShadow : 0; // 0x47C (1)
-	char bAffectDistanceFieldLighting : 0; // 0x480 (1)
-	struct FLightingChannels LightingChannels; // 0x481 (1)
-	char bUseMaterialPositionOffsetInStaticLighting : 0; // 0x484 (1)
-	char bRenderCustomDepth : 0; // 0x484 (1)
-	int32_t CustomDepthStencilValue; // 0x488 (4)
-	float LDMaxDrawDistance; // 0x48C (4)
-	struct FLightmassPrimitiveSettings LightmassSettings; // 0x490 (24)
-	int32_t CollisionMipLevel; // 0x4A8 (4)
-	int32_t SimpleCollisionMipLevel; // 0x4AC (4)
-	float CollisionThickness; // 0x4B0 (4)
-	struct FBodyInstance BodyInstance; // 0x4B8 (400)
-	char bGenerateOverlapEvents : 0; // 0x648 (1)
-	char bBakeMaterialPositionOffsetIntoCollision : 0; // 0x648 (1)
-	int32_t ComponentSizeQuads; // 0x64C (4)
-	int32_t SubsectionSizeQuads; // 0x650 (4)
-	int32_t NumSubsections; // 0x654 (4)
-	char bUsedForNavigation : 0; // 0x658 (1)
-	char bFillCollisionUnderLandscapeForNavmesh : 0; // 0x658 (1)
-	char bUseDynamicMaterialInstance : 0; // 0x65C (1)
-	enum class ENavDataGatheringMode NavigationGeometryGatheringMode; // 0x65D (1)
-	char bUseLandscapeForCullingInvisibleHLODVertices : 0; // 0x65E (1)
-	char bHasLayersContent : 0; // 0x65F (1)
-	struct TMap<struct UTexture2D, struct ULandscapeWeightmapUsage> WeightmapUsageMap; // 0x660 (80)
+	struct ULandscapeSplinesComponent SplineComponent; // 0x328 (8)
+	struct FGuid LandscapeGuid; // 0x330 (16)
+	struct FIntPoint LandscapeSectionOffset; // 0x350 (8)
+	int32_t MaxLODLevel; // 0x358 (4)
+	float LODDistanceFactor; // 0x35C (4)
+	char LODFalloff; // 0x360 (1)
+	float ComponentScreenSizeToUseSubSections; // 0x364 (4)
+	float LOD0ScreenSize; // 0x368 (4)
+	float LOD0DistributionSetting; // 0x36C (4)
+	float LODDistributionSetting; // 0x370 (4)
+	float TessellationComponentScreenSize; // 0x374 (4)
+	char UseTessellationComponentScreenSizeFalloff : 0; // 0x378 (1)
+	float TessellationComponentScreenSizeFalloff; // 0x37C (4)
+	int32_t OccluderGeometryLOD; // 0x380 (4)
+	int32_t StaticLightingLOD; // 0x384 (4)
+	struct UPhysicalMaterial DefaultPhysMaterial; // 0x388 (8)
+	float StreamingDistanceMultiplier; // 0x390 (4)
+	struct UMaterialInterface LandscapeMaterial; // 0x398 (8)
+	struct UMaterialInterface LandscapeHoleMaterial; // 0x3C0 (8)
+	struct TArray<struct FLandscapeProxyMaterialOverride> LandscapeMaterialsOverride; // 0x3C8 (16)
+	char bMeshHoles : 0; // 0x3D8 (1)
+	char MeshHolesMaxLod; // 0x3D9 (1)
+	struct TArray<struct URuntimeVirtualTexture> RuntimeVirtualTextures; // 0x3E0 (16)
+	int32_t VirtualTextureNumLods; // 0x3F0 (4)
+	int32_t VirtualTextureLodBias; // 0x3F4 (4)
+	enum class ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType; // 0x3F8 (1)
+	float NegativeZBoundsExtension; // 0x3FC (4)
+	float PositiveZBoundsExtension; // 0x400 (4)
+	struct TArray<struct ULandscapeComponent> LandscapeComponents; // 0x408 (16)
+	struct TArray<struct ULandscapeHeightfieldCollisionComponent> CollisionComponents; // 0x418 (16)
+	struct TArray<struct UHierarchicalInstancedStaticMeshComponent> FoliageComponents; // 0x428 (16)
+	char bHasLandscapeGrass : 0; // 0x49C (1)
+	float StaticLightingResolution; // 0x4A0 (4)
+	char bCastStaticShadow : 0; // 0x4A4 (1)
+	char bCastShadowAsTwoSided : 0; // 0x4A4 (1)
+	char bCastFarShadow : 0; // 0x4A4 (1)
+	char bAffectDistanceFieldLighting : 0; // 0x4A8 (1)
+	struct FLightingChannels LightingChannels; // 0x4A9 (1)
+	char bUseMaterialPositionOffsetInStaticLighting : 0; // 0x4AC (1)
+	char bRenderCustomDepth : 0; // 0x4AC (1)
+	int32_t CustomDepthStencilValue; // 0x4B0 (4)
+	float LDMaxDrawDistance; // 0x4B4 (4)
+	struct FLightmassPrimitiveSettings LightmassSettings; // 0x4B8 (24)
+	int32_t CollisionMipLevel; // 0x4D0 (4)
+	int32_t SimpleCollisionMipLevel; // 0x4D4 (4)
+	float CollisionThickness; // 0x4D8 (4)
+	struct FBodyInstance BodyInstance; // 0x4E0 (400)
+	char bGenerateOverlapEvents : 0; // 0x670 (1)
+	char bBakeMaterialPositionOffsetIntoCollision : 0; // 0x670 (1)
+	int32_t ComponentSizeQuads; // 0x674 (4)
+	int32_t SubsectionSizeQuads; // 0x678 (4)
+	int32_t NumSubsections; // 0x67C (4)
+	char bUsedForNavigation : 0; // 0x680 (1)
+	char bFillCollisionUnderLandscapeForNavmesh : 0; // 0x680 (1)
+	char bUseDynamicMaterialInstance : 0; // 0x684 (1)
+	enum class ENavDataGatheringMode NavigationGeometryGatheringMode; // 0x685 (1)
+	char bUseLandscapeForCullingInvisibleHLODVertices : 0; // 0x686 (1)
+	char bHasLayersContent : 0; // 0x687 (1)
+	struct TMap<struct UTexture2D, struct ULandscapeWeightmapUsage> WeightmapUsageMap; // 0x688 (80)
 
-	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct FLinearColor Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392CCC0>
-	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct UTexture Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392CC00>
-	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392CB30>
-	void EditorSetLandscapeMaterial(struct UMaterialInterface NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC0B0>
-	void EditorApplySpline(struct USplineComponent InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct ULandscapeLayerInfoObject PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392C7F0>
-	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392C760>
-	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F40070>
-	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392C6E0>
-	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392C660>
-	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3FFD0>
+	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct FLinearColor Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394C250>
+	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct UTexture Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394C190>
+	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394C0C0>
+	void EditorSetLandscapeMaterial(struct UMaterialInterface NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16DAA70>
+	void EditorApplySpline(struct USplineComponent InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct ULandscapeLayerInfoObject PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394BD80>
+	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394BCF0>
+	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F5F860>
+	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394BC70>
+	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394BBF0>
+	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F5F7C0>
 };
 
 // Class Landscape.LandscapeComponent
@@ -210,47 +210,47 @@ class ULandscapeComponent : public UPrimitiveComponent {
 
 public:
 
-	int32_t SectionBaseX; // 0x4A0 (4)
-	int32_t SectionBaseY; // 0x4A4 (4)
-	int32_t ComponentSizeQuads; // 0x4A8 (4)
-	int32_t SubsectionSizeQuads; // 0x4AC (4)
-	int32_t NumSubsections; // 0x4B0 (4)
-	struct UMaterialInterface OverrideMaterial; // 0x4B8 (8)
-	struct UMaterialInterface OverrideHoleMaterial; // 0x4C0 (8)
-	struct TArray<struct FLandscapeComponentMaterialOverride> OverrideMaterials; // 0x4C8 (16)
-	struct TArray<struct UMaterialInstanceConstant> MaterialInstances; // 0x4D8 (16)
-	struct TArray<struct UMaterialInstanceDynamic> MaterialInstancesDynamic; // 0x4E8 (16)
-	struct TArray<int8_t> LODIndexToMaterialIndex; // 0x4F8 (16)
-	struct TArray<int8_t> MaterialIndexToDisabledTessellationMaterial; // 0x508 (16)
-	struct UTexture2D XYOffsetmapTexture; // 0x518 (8)
-	struct FVector4 WeightmapScaleBias; // 0x520 (16)
-	float WeightmapSubsectionOffset; // 0x530 (4)
-	struct FVector4 HeightmapScaleBias; // 0x540 (16)
-	struct FBox CachedLocalBox; // 0x550 (28)
-	LazyObjectProperty CollisionComponent; // 0x56C (28)
-	struct UTexture2D HeightmapTexture; // 0x588 (8)
-	struct TArray<struct FWeightmapLayerAllocationInfo> WeightmapLayerAllocations; // 0x590 (16)
-	struct TArray<struct UTexture2D> WeightmapTextures; // 0x5A0 (16)
-	struct FGuid MapBuildDataId; // 0x5B0 (16)
-	struct TArray<struct FGuid> IrrelevantLights; // 0x5C0 (16)
-	int32_t CollisionMipLevel; // 0x5D0 (4)
-	int32_t SimpleCollisionMipLevel; // 0x5D4 (4)
-	float NegativeZBoundsExtension; // 0x5D8 (4)
-	float PositiveZBoundsExtension; // 0x5DC (4)
-	float StaticLightingResolution; // 0x5E0 (4)
-	int32_t ForcedLOD; // 0x5E4 (4)
-	int32_t LODBias; // 0x5E8 (4)
-	struct FGuid StateID; // 0x5EC (16)
-	struct FGuid BakedTextureMaterialGuid; // 0x5FC (16)
-	struct UTexture2D GIBakedBaseColorTexture; // 0x610 (8)
-	char MobileBlendableLayerMask; // 0x618 (1)
-	struct UMaterialInterface MobileMaterialInterface; // 0x620 (8)
-	struct TArray<struct UMaterialInterface> MobileMaterialInterfaces; // 0x628 (16)
-	struct TArray<struct UTexture2D> MobileWeightmapTextures; // 0x638 (16)
+	int32_t SectionBaseX; // 0x4B0 (4)
+	int32_t SectionBaseY; // 0x4B4 (4)
+	int32_t ComponentSizeQuads; // 0x4B8 (4)
+	int32_t SubsectionSizeQuads; // 0x4BC (4)
+	int32_t NumSubsections; // 0x4C0 (4)
+	struct UMaterialInterface OverrideMaterial; // 0x4C8 (8)
+	struct UMaterialInterface OverrideHoleMaterial; // 0x4D0 (8)
+	struct TArray<struct FLandscapeComponentMaterialOverride> OverrideMaterials; // 0x4D8 (16)
+	struct TArray<struct UMaterialInstanceConstant> MaterialInstances; // 0x4E8 (16)
+	struct TArray<struct UMaterialInstanceDynamic> MaterialInstancesDynamic; // 0x4F8 (16)
+	struct TArray<int8_t> LODIndexToMaterialIndex; // 0x508 (16)
+	struct TArray<int8_t> MaterialIndexToDisabledTessellationMaterial; // 0x518 (16)
+	struct UTexture2D XYOffsetmapTexture; // 0x528 (8)
+	struct FVector4 WeightmapScaleBias; // 0x530 (16)
+	float WeightmapSubsectionOffset; // 0x540 (4)
+	struct FVector4 HeightmapScaleBias; // 0x550 (16)
+	struct FBox CachedLocalBox; // 0x560 (28)
+	LazyObjectProperty CollisionComponent; // 0x57C (28)
+	struct UTexture2D HeightmapTexture; // 0x598 (8)
+	struct TArray<struct FWeightmapLayerAllocationInfo> WeightmapLayerAllocations; // 0x5A0 (16)
+	struct TArray<struct UTexture2D> WeightmapTextures; // 0x5B0 (16)
+	struct FGuid MapBuildDataId; // 0x5C0 (16)
+	struct TArray<struct FGuid> IrrelevantLights; // 0x5D0 (16)
+	int32_t CollisionMipLevel; // 0x5E0 (4)
+	int32_t SimpleCollisionMipLevel; // 0x5E4 (4)
+	float NegativeZBoundsExtension; // 0x5E8 (4)
+	float PositiveZBoundsExtension; // 0x5EC (4)
+	float StaticLightingResolution; // 0x5F0 (4)
+	int32_t ForcedLOD; // 0x5F4 (4)
+	int32_t LODBias; // 0x5F8 (4)
+	struct FGuid StateID; // 0x5FC (16)
+	struct FGuid BakedTextureMaterialGuid; // 0x60C (16)
+	struct UTexture2D GIBakedBaseColorTexture; // 0x620 (8)
+	char MobileBlendableLayerMask; // 0x628 (1)
+	struct UMaterialInterface MobileMaterialInterface; // 0x630 (8)
+	struct TArray<struct UMaterialInterface> MobileMaterialInterfaces; // 0x638 (16)
+	struct TArray<struct UTexture2D> MobileWeightmapTextures; // 0x648 (16)
 
-	struct UMaterialInstanceDynamic GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392A1E0>
-	float EditorGetPaintLayerWeightByNameAtLocation(struct FVector& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392A100>
-	float EditorGetPaintLayerWeightAtLocation(struct FVector& InLocation, struct ULandscapeLayerInfoObject PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392A100>
+	struct UMaterialInstanceDynamic GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3949780>
+	float EditorGetPaintLayerWeightByNameAtLocation(struct FVector& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39496A0>
+	float EditorGetPaintLayerWeightAtLocation(struct FVector& InLocation, struct ULandscapeLayerInfoObject PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39496A0>
 };
 
 // Class Landscape.LandscapeGrassType
@@ -274,19 +274,19 @@ class ULandscapeHeightfieldCollisionComponent : public UPrimitiveComponent {
 
 public:
 
-	struct TArray<struct ULandscapeLayerInfoObject> ComponentLayerInfos; // 0x4A0 (16)
-	int32_t SectionBaseX; // 0x4B0 (4)
-	int32_t SectionBaseY; // 0x4B4 (4)
-	int32_t CollisionSizeQuads; // 0x4B8 (4)
-	float CollisionScale; // 0x4BC (4)
-	int32_t SimpleCollisionSizeQuads; // 0x4C0 (4)
-	struct TArray<char> CollisionQuadFlags; // 0x4C8 (16)
-	struct FGuid HeightfieldGuid; // 0x4D8 (16)
-	struct FBox CachedLocalBox; // 0x4E8 (28)
-	LazyObjectProperty RenderComponent; // 0x504 (28)
-	struct TArray<struct UPhysicalMaterial> CookedPhysicalMaterials; // 0x530 (16)
+	struct TArray<struct ULandscapeLayerInfoObject> ComponentLayerInfos; // 0x4B0 (16)
+	int32_t SectionBaseX; // 0x4C0 (4)
+	int32_t SectionBaseY; // 0x4C4 (4)
+	int32_t CollisionSizeQuads; // 0x4C8 (4)
+	float CollisionScale; // 0x4CC (4)
+	int32_t SimpleCollisionSizeQuads; // 0x4D0 (4)
+	struct TArray<char> CollisionQuadFlags; // 0x4D8 (16)
+	struct FGuid HeightfieldGuid; // 0x4E8 (16)
+	struct FBox CachedLocalBox; // 0x4F8 (28)
+	LazyObjectProperty RenderComponent; // 0x514 (28)
+	struct TArray<struct UPhysicalMaterial> CookedPhysicalMaterials; // 0x540 (16)
 
-	struct ULandscapeComponent GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392CB00>
+	struct ULandscapeComponent GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394C090>
 };
 
 // Class Landscape.LandscapeInfo
@@ -331,7 +331,7 @@ class ULandscapeMeshCollisionComponent : public ULandscapeHeightfieldCollisionCo
 
 public:
 
-	struct FGuid MeshGuid; // 0x580 (16)
+	struct FGuid MeshGuid; // 0x590 (16)
 };
 
 // Class Landscape.LandscapeMeshProxyActor
@@ -339,7 +339,7 @@ class ALandscapeMeshProxyActor : public UActor {
 
 public:
 
-	struct ULandscapeMeshProxyComponent LandscapeMeshProxyComponent; // 0x300 (8)
+	struct ULandscapeMeshProxyComponent LandscapeMeshProxyComponent; // 0x328 (8)
 };
 
 // Class Landscape.LandscapeMeshProxyComponent
@@ -347,9 +347,9 @@ class ULandscapeMeshProxyComponent : public UStaticMeshComponent {
 
 public:
 
-	struct FGuid LandscapeGuid; // 0x538 (16)
-	struct TArray<struct FIntPoint> ProxyComponentBases; // 0x548 (16)
-	int8_t ProxyLOD; // 0x558 (1)
+	struct FGuid LandscapeGuid; // 0x548 (16)
+	struct TArray<struct FIntPoint> ProxyComponentBases; // 0x558 (16)
+	int8_t ProxyLOD; // 0x568 (1)
 };
 
 // Class Landscape.LandscapeSettings
@@ -365,11 +365,11 @@ class ULandscapeSplinesComponent : public UPrimitiveComponent {
 
 public:
 
-	struct TArray<struct ULandscapeSplineControlPoint> ControlPoints; // 0x4A0 (16)
-	struct TArray<struct ULandscapeSplineSegment> Segments; // 0x4B0 (16)
-	struct TArray<struct UMeshComponent> CookedForeignMeshComponents; // 0x4C0 (16)
+	struct TArray<struct ULandscapeSplineControlPoint> ControlPoints; // 0x4B0 (16)
+	struct TArray<struct ULandscapeSplineSegment> Segments; // 0x4C0 (16)
+	struct TArray<struct UMeshComponent> CookedForeignMeshComponents; // 0x4D0 (16)
 
-	struct TArray<struct USplineMeshComponent> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x392FCF0>
+	struct TArray<struct USplineMeshComponent> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x394F280>
 };
 
 // Class Landscape.LandscapeSplineControlPoint
@@ -410,7 +410,7 @@ class ALandscapeStreamingProxy : public ALandscapeProxy {
 
 public:
 
-	LazyObjectProperty LandscapeActor; // 0x6B0 (28)
+	LazyObjectProperty LandscapeActor; // 0x6D8 (28)
 };
 
 // Class Landscape.LandscapeWeightmapUsage

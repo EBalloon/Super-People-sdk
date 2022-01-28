@@ -3,32 +3,32 @@ class ABP-DefaultWheeledVehicle_C : public ABravoHotelVehicle {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD38 (8)
-	struct UTeamInfoUpdaterComponent TeamInfoUpdater; // 0xD40 (8)
-	float Timeline_0_NewTrack_0_FB4F6B44434A25E409AE66987076220A; // 0xD48 (4)
-	char Timeline_0__Direction_FB4F6B44434A25E409AE66987076220A; // 0xD4C (1)
-	struct UTimelineComponent Timeline_1; // 0xD50 (8)
-	struct UAudioComponent EngineSound; // 0xD58 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD48 (8)
+	struct UTeamInfoUpdaterComponent TeamInfoUpdater; // 0xD50 (8)
+	float Timeline_0_NewTrack_0_FB4F6B44434A25E409AE66987076220A; // 0xD58 (4)
+	char Timeline_0__Direction_FB4F6B44434A25E409AE66987076220A; // 0xD5C (1)
+	struct UTimelineComponent Timeline_1; // 0xD60 (8)
+	struct UAudioComponent EngineSound; // 0xD68 (8)
 
-	void SetWaterLevelZ_Func(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	float GetCameraTargetArmLength(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.GetCameraTargetArmLength(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetupCamera(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetupCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Timeline_0__FinishedFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Timeline_0__UpdateFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_One_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_One_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Two_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Two_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Three_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Three_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Four_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Four_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_Five_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Five_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetWaterLevelZ(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnNitroJumpEnd(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnNitroJumpEnd(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnBoosterChanged(char bIsBoosted); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnBoosterChanged(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-DefaultWheeledVehicle(int32_t EntryPoint); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ExecuteUbergraph_BP-DefaultWheeledVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetWaterLevelZ_Func(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	float GetCameraTargetArmLength(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.GetCameraTargetArmLength(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetupCamera(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetupCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Timeline_0__FinishedFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Timeline_0__UpdateFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_One_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_One_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Two_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Two_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Three_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Three_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Four_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Four_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_Five_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Five_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWaterLevelZ(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnNitroJumpEnd(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnNitroJumpEnd(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnBoosterChanged(char bIsBoosted); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnBoosterChanged(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-DefaultWheeledVehicle(int32_t EntryPoint); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ExecuteUbergraph_BP-DefaultWheeledVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func

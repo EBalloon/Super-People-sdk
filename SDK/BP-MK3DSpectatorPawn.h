@@ -3,16 +3,16 @@ class ABP-MK3DSpectatorPawn_C : public ABravoHotelMK3DSpectatorPawn {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3B0 (8)
-	struct UCameraComponent FreeCam; // 0x3B8 (8)
-	struct USpringArmComponent SpringArm; // 0x3C0 (8)
-	struct UUW-ReplayMainWidget_C ReplayMainWidget; // 0x3C8 (8)
-	char ViewMode; // 0x3D0 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3D8 (8)
+	struct UCameraComponent FreeCam; // 0x3E0 (8)
+	struct USpringArmComponent SpringArm; // 0x3E8 (8)
+	struct UUW-ReplayMainWidget_C ReplayMainWidget; // 0x3F0 (8)
+	char ViewMode; // 0x3F8 (1)
 
-	void GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedCurrentSpeedLevel(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.OnChangedCurrentSpeedLevel(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-MK3DSpectatorPawn(int32_t EntryPoint); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ExecuteUbergraph_BP-MK3DSpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedCurrentSpeedLevel(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.OnChangedCurrentSpeedLevel(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-MK3DSpectatorPawn(int32_t EntryPoint); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ExecuteUbergraph_BP-MK3DSpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget

@@ -6,8 +6,8 @@ public:
 	struct UHorizontalBox HorizontalBox_Rarity; // 0x248 (8)
 	struct UTextBlock T_WeaponName; // 0x250 (8)
 
-	void SetNameByID(int32_t ItemId); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetNameByID(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetName(struct FText Name, int32_t Rarity); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetNameByID(int32_t ItemId); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetNameByID(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetName(struct FText Name, int32_t Rarity); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetNameByID

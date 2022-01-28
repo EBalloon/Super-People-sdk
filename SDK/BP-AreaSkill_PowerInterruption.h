@@ -3,17 +3,17 @@ class ABP-AreaSkill_PowerInterruption_C : public ABravoHotelAreaSkillZonePowerIn
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x378 (8)
-	float SkillDelayTime; // 0x380 (4)
-	struct UMaterialInstanceDynamic BlackOutDynamicMaterial; // 0x388 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3A0 (8)
+	float SkillDelayTime; // 0x3A8 (4)
+	struct UMaterialInstanceDynamic BlackOutDynamicMaterial; // 0x3B0 (8)
 
-	void UserConstructionScript(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ActivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DeactivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartDestroy(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-AreaSkill_PowerInterruption(int32_t EntryPoint); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ExecuteUbergraph_BP-AreaSkill_PowerInterruption(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UserConstructionScript(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ActivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DeactivateEffect(struct ABravoHotelCharacter Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartDestroy(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-AreaSkill_PowerInterruption(int32_t EntryPoint); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ExecuteUbergraph_BP-AreaSkill_PowerInterruption(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript

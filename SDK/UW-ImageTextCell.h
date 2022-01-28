@@ -8,8 +8,8 @@ public:
 	struct FTextBlockStyle DefaultTextStyle; // 0x258 (616)
 	struct FText TextString; // 0x4C0 (24)
 
-	void Construct(); // Function UW-ImageTextCell.UW-ImageTextCell_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ImageTextCell(int32_t EntryPoint); // Function UW-ImageTextCell.UW-ImageTextCell_C.ExecuteUbergraph_UW-ImageTextCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function UW-ImageTextCell.UW-ImageTextCell_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ImageTextCell(int32_t EntryPoint); // Function UW-ImageTextCell.UW-ImageTextCell_C.ExecuteUbergraph_UW-ImageTextCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ImageTextCell.UW-ImageTextCell_C.Construct

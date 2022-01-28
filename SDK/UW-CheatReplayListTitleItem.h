@@ -5,7 +5,7 @@ public:
 
 	struct UTextBlock TextBlock_62; // 0x248 (8)
 
-	void Init(struct FString Str); // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Init(struct FString Str); // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init

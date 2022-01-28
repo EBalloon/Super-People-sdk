@@ -3,14 +3,14 @@ class ABP-OutGameParachute_C : public ABravoHotelOutGameParachuteActor {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x300 (8)
-	struct USkeletalMeshComponent ParachuteBag_SkeletalMesh; // 0x308 (8)
-	struct USkeletalMeshComponent Parachute_SkeletalMesh; // 0x310 (8)
-	struct USceneComponent DefaultSceneRoot; // 0x318 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct USkeletalMeshComponent ParachuteBag_SkeletalMesh; // 0x330 (8)
+	struct USkeletalMeshComponent Parachute_SkeletalMesh; // 0x338 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x340 (8)
 
-	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetSkinMaterial(struct UMaterialInterface Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetSkinMaterial(struct UMaterialInterface Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay

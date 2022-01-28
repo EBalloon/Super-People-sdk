@@ -8,9 +8,9 @@ public:
 	struct UTextBlock T_CamSpeed; // 0x258 (8)
 	struct FTimerHandle Handle_HideFreeCamSpeed; // 0x260 (8)
 
-	void HideFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.ShowFreeCamSpeed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.OnChangedFreeCamSpeedLevel(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void HideFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.ShowFreeCamSpeed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.OnChangedFreeCamSpeedLevel(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed

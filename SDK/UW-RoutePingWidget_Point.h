@@ -8,10 +8,10 @@ public:
 	struct UTextBlock T_Num; // 0x258 (8)
 	struct FMulticastInlineDelegate OnMarkerClicked; // 0x260 (16)
 
-	void SetPointAngle(float Angle); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetPointAngle(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectPointIcon(int32_t Index, char IsLastPoint, char IsUpdate); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SelectPointIcon(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTeamColor(struct FLinearColor LinearColor); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetPointAngle(float Angle); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetPointAngle(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectPointIcon(int32_t Index, char IsLastPoint, char IsUpdate); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SelectPointIcon(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTeamColor(struct FLinearColor LinearColor); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetPointAngle

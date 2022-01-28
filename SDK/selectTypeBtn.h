@@ -9,10 +9,10 @@ public:
 	struct FMulticastInlineDelegate SelectEventDispatcher; // 0x260 (16)
 	int32_t Index; // 0x270 (4)
 
-	void BndEvt__Button_42_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function selectTypeBtn.selectTypeBtn_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectIndex(int32_t Index); // Function selectTypeBtn.selectTypeBtn_C.SelectIndex(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_selectTypeBtn(int32_t EntryPoint); // Function selectTypeBtn.selectTypeBtn_C.ExecuteUbergraph_selectTypeBtn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SelectEventDispatcher__DelegateSignature(int32_t Index); // Function selectTypeBtn.selectTypeBtn_C.SelectEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void BndEvt__Button_42_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function selectTypeBtn.selectTypeBtn_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectIndex(int32_t Index); // Function selectTypeBtn.selectTypeBtn_C.SelectIndex(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_selectTypeBtn(int32_t EntryPoint); // Function selectTypeBtn.selectTypeBtn_C.ExecuteUbergraph_selectTypeBtn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SelectEventDispatcher__DelegateSignature(int32_t Index); // Function selectTypeBtn.selectTypeBtn_C.SelectEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function selectTypeBtn.selectTypeBtn_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature

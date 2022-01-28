@@ -3,19 +3,19 @@ class UMagicLeapImageTrackerComponent : public USceneComponent {
 
 public:
 
-	struct UTexture2D TargetImageTexture; // 0x220 (8)
-	struct FString Name; // 0x228 (16)
-	float LongerDimension; // 0x238 (4)
-	char bIsStationary : 0; // 0x23C (1)
-	char bUseUnreliablePose : 0; // 0x23D (1)
-	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; // 0x240 (16)
-	struct FMulticastInlineDelegate OnSetImageTargetFailed; // 0x250 (16)
-	struct FMulticastInlineDelegate OnImageTargetFound; // 0x260 (16)
-	struct FMulticastInlineDelegate OnImageTargetLost; // 0x270 (16)
-	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x280 (16)
+	struct UTexture2D TargetImageTexture; // 0x230 (8)
+	struct FString Name; // 0x238 (16)
+	float LongerDimension; // 0x248 (4)
+	char bIsStationary : 0; // 0x24C (1)
+	char bUseUnreliablePose : 0; // 0x24D (1)
+	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; // 0x250 (16)
+	struct FMulticastInlineDelegate OnSetImageTargetFailed; // 0x260 (16)
+	struct FMulticastInlineDelegate OnImageTargetFound; // 0x270 (16)
+	struct FMulticastInlineDelegate OnImageTargetLost; // 0x280 (16)
+	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x290 (16)
 
-	char SetTargetAsync(struct UTexture2D ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1803550>
-	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18034B0>
+	char SetTargetAsync(struct UTexture2D ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1811F50>
+	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1811EB0>
 };
 
 // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync

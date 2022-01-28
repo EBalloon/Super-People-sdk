@@ -23,19 +23,19 @@ public:
 	float FinishTime; // 0x3BC (4)
 	enum class EPerkSlotFlag PerkSlot; // 0x3C0 (1)
 
-	struct FText Get_TextBlock_1_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FSlateBrush Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FSlateBrush Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FText Get_TextMountablewea_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextMountablewea_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	enum class ESlateVisibility Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	enum class ESlateVisibility Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartFinish(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartSpin(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartSpin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EndFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.EndFinish(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPerkInfo(struct FPerkInfo PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RemoveSelf(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.RemoveSelf(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-PerkLevelUp(int32_t EntryPoint); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.ExecuteUbergraph_UW-PerkLevelUp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FText Get_TextBlock_1_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FSlateBrush Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FSlateBrush Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FText Get_TextMountablewea_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextMountablewea_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	enum class ESlateVisibility Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	enum class ESlateVisibility Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartFinish(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartSpin(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartSpin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EndFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.EndFinish(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPerkInfo(struct FPerkInfo PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RemoveSelf(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.RemoveSelf(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-PerkLevelUp(int32_t EntryPoint); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.ExecuteUbergraph_UW-PerkLevelUp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1

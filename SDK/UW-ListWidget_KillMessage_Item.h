@@ -10,15 +10,15 @@ public:
 	struct UScaleBox ScaleBox_KillerIcon; // 0x268 (8)
 	struct UImage T_ClassIcon; // 0x270 (8)
 	struct UTextBlock T_Level; // 0x278 (8)
-	struct UTextBlock T_LV; // 0x280 (8)
+	struct UTextBlock T_Lv; // 0x280 (8)
 	struct UTextBlock T_Name; // 0x288 (8)
 	struct FMulticastInlineDelegate OnTimeOut; // 0x290 (16)
 	struct ABravoHotelPlayerState LocalPlayerState; // 0x2A0 (8)
 
-	void OnLoaded_9DF86FA64782B378E42DBB813545BD34(struct Object Loaded); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPlayerInfo(struct ABravoHotelPlayerState PlayerState, struct FSlateColor InfoColor); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.SetPlayerInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ListWidget_KillMessage_Item(int32_t EntryPoint); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.ExecuteUbergraph_UW-ListWidget_KillMessage_Item(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct UUW-ListWidget_KillMessage_C Slot); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void OnLoaded_9DF86FA64782B378E42DBB813545BD34(struct Object Loaded); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPlayerInfo(struct ABravoHotelPlayerState PlayerState, struct FSlateColor InfoColor); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.SetPlayerInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ListWidget_KillMessage_Item(int32_t EntryPoint); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.ExecuteUbergraph_UW-ListWidget_KillMessage_Item(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct UUW-ListWidget_KillMessage_C Slot); // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget_KillMessage_Item.UW-ListWidget_KillMessage_Item_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34

@@ -3,13 +3,13 @@ class UAnimSharingStateInstance : public UAnimInstance {
 
 public:
 
-	struct UAnimSequence AnimationToPlay; // 0x270 (8)
-	float PermutationTimeOffset; // 0x278 (4)
-	float PlayRate; // 0x27C (4)
-	char bStateBool : 0; // 0x280 (1)
-	struct UAnimSharingInstance Instance; // 0x288 (8)
+	struct UAnimSequence AnimationToPlay; // 0x268 (8)
+	float PermutationTimeOffset; // 0x270 (4)
+	float PlayRate; // 0x274 (4)
+	char bStateBool : 0; // 0x278 (1)
+	struct UAnimSharingInstance Instance; // 0x280 (8)
 
-	void GetInstancedActors(struct TArray<struct UActor>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BDA30>
+	void GetInstancedActors(struct TArray<struct UActor>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC3F0>
 };
 
 // Class AnimationSharing.AnimSharingTransitionInstance
@@ -17,10 +17,10 @@ class UAnimSharingTransitionInstance : public UAnimInstance {
 
 public:
 
-	struct TWeakObjectPtr<struct USkeletalMeshComponent> FromComponent; // 0x270 (8)
-	struct TWeakObjectPtr<struct USkeletalMeshComponent> ToComponent; // 0x278 (8)
-	float BlendTime; // 0x280 (4)
-	char bBlendBool : 0; // 0x284 (1)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> FromComponent; // 0x268 (8)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> ToComponent; // 0x270 (8)
+	float BlendTime; // 0x278 (4)
+	char bBlendBool : 0; // 0x27C (1)
 };
 
 // Class AnimationSharing.AnimSharingAdditiveInstance
@@ -28,10 +28,10 @@ class UAnimSharingAdditiveInstance : public UAnimInstance {
 
 public:
 
-	struct TWeakObjectPtr<struct USkeletalMeshComponent> baseComponent; // 0x270 (8)
-	struct TWeakObjectPtr<struct UAnimSequence> AdditiveAnimation; // 0x278 (8)
-	float ALPHA; // 0x280 (4)
-	char bStateBool : 0; // 0x284 (1)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> baseComponent; // 0x268 (8)
+	struct TWeakObjectPtr<struct UAnimSequence> AdditiveAnimation; // 0x270 (8)
+	float ALPHA; // 0x278 (4)
+	char bStateBool : 0; // 0x27C (1)
 };
 
 // Class AnimationSharing.AnimSharingInstance
@@ -51,13 +51,13 @@ class UAnimationSharingManager : public Object {
 
 public:
 
-	struct TArray<struct USkeleton> Skeletons; // 0x38 (16)
+	struct TArray<struct USkeleton> Skeletons; // 0x48 (16)
 	struct TArray<struct UAnimSharingInstance> PerSkeletonData; // 0x28 (16)
 
-	void RegisterActorWithSkeletonBP(struct UActor InActor, struct USkeleton SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BDC90>
-	struct UAnimationSharingManager GetAnimationSharingManager(struct Object WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BD980>
-	char CreateAnimationSharingManager(struct Object WorldContextObject, struct UAnimationSharingSetup Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BD8C0>
-	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BD890>
+	void RegisterActorWithSkeletonBP(struct UActor InActor, struct USkeleton SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC650>
+	struct UAnimationSharingManager GetAnimationSharingManager(struct Object WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC340>
+	char CreateAnimationSharingManager(struct Object WorldContextObject, struct UAnimationSharingSetup Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC280>
+	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC250>
 };
 
 // Class AnimationSharing.AnimationSharingSetup
@@ -76,8 +76,8 @@ public:
 
 	struct TSoftObjectPtr<UEnum> AnimationStateEnum; // 0x28 (40)
 
-	void ProcessActorState(int32_t& OutState, struct UActor InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BDAE0>
-	struct UEnum GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BDA00>
+	void ProcessActorState(int32_t& OutState, struct UActor InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC4A0>
+	struct UEnum GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC3C0>
 };
 
 // ScriptStruct AnimationSharing.AnimationSharingScalability
@@ -90,12 +90,12 @@ struct FAnimationSharingScalability {
 
 // ScriptStruct AnimationSharing.PerSkeletonAnimationSharingSetup
 struct FPerSkeletonAnimationSharingSetup {
-	struct USkeleton Skeleton; // 0x30 (8)
+	struct USkeleton Skeleton; // 0x18 (8)
 	struct USkeletalMesh SkeletalMesh; // 0x10 (8)
 	struct UClass* BlendAnimBlueprint; // 0x8 (8)
-	struct UClass* AdditiveAnimBlueprint; // 0x28 (8)
+	struct UClass* AdditiveAnimBlueprint; // 0x30 (8)
 	struct UClass* StateProcessorClass; // 0x0 (8)
-	struct TArray<struct FAnimationStateEntry> AnimationStates; // 0x18 (16)
+	struct TArray<struct FAnimationStateEntry> AnimationStates; // 0x20 (16)
 };
 
 // ScriptStruct AnimationSharing.AnimationStateEntry

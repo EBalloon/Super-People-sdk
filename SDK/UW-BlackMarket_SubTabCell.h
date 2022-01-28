@@ -13,10 +13,10 @@ public:
 	struct FName TabIndex; // 0x290 (8)
 	char Selected : 0; // 0x298 (1)
 
-	struct FSlateColor Get_TextBlock_TabName_ColorAndOpacity_1(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.Get_TextBlock_TabName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	enum class ESlateVisibility Get_Image_Check_Visibility_1(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.Get_Image_Check_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_Tab_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.BndEvt__Button_Tab_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-BlackMarket_SubTabCell(int32_t EntryPoint); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.ExecuteUbergraph_UW-BlackMarket_SubTabCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct FSlateColor Get_TextBlock_TabName_ColorAndOpacity_1(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.Get_TextBlock_TabName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	enum class ESlateVisibility Get_Image_Check_Visibility_1(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.Get_Image_Check_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_Tab_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.BndEvt__Button_Tab_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-BlackMarket_SubTabCell(int32_t EntryPoint); // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.ExecuteUbergraph_UW-BlackMarket_SubTabCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-BlackMarket_SubTabCell.UW-BlackMarket_SubTabCell_C.Get_TextBlock_TabName_ColorAndOpacity_1

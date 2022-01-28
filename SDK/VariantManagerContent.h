@@ -20,9 +20,9 @@ public:
 	struct UBlueprintGeneratedClass* DirectorClass; // 0x28 (8)
 	struct TArray<struct UVariantSet> VariantSets; // 0x30 (16)
 
-	struct UVariantSet GetVariantSetByName(struct FString VariantSetName); // Function VariantManagerContent.LevelVariantSets.GetVariantSetByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5DE0>
-	struct UVariantSet GetVariantSet(int32_t VariantSetIndex); // Function VariantManagerContent.LevelVariantSets.GetVariantSet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5D50>
-	int32_t GetNumVariantSets(); // Function VariantManagerContent.LevelVariantSets.GetNumVariantSets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1086920>
+	struct UVariantSet GetVariantSetByName(struct FString VariantSetName); // Function VariantManagerContent.LevelVariantSets.GetVariantSetByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E47A0>
+	struct UVariantSet GetVariantSet(int32_t VariantSetIndex); // Function VariantManagerContent.LevelVariantSets.GetVariantSet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4710>
+	int32_t GetNumVariantSets(); // Function VariantManagerContent.LevelVariantSets.GetNumVariantSets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10944D0>
 };
 
 // Class VariantManagerContent.LevelVariantSetsActor
@@ -30,12 +30,12 @@ class ALevelVariantSetsActor : public UActor {
 
 public:
 
-	struct FSoftObjectPath LevelVariantSets; // 0x300 (24)
+	struct FSoftObjectPath LevelVariantSets; // 0x328 (24)
 
-	char SwitchOnVariantByName(struct FString VariantSetName, struct FString VariantName); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D61F0>
-	char SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D6130>
-	void SetLevelVariantSets(struct ULevelVariantSets InVariantSets); // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D6090>
-	struct ULevelVariantSets GetLevelVariantSets(char bLoad); // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5970>
+	char SwitchOnVariantByName(struct FString VariantSetName, struct FString VariantName); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4BB0>
+	char SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4AF0>
+	void SetLevelVariantSets(struct ULevelVariantSets InVariantSets); // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4A50>
+	struct ULevelVariantSets GetLevelVariantSets(char bLoad); // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4330>
 };
 
 // Class VariantManagerContent.PropertyValue
@@ -54,9 +54,9 @@ public:
 	struct TArray<char> ValueBytes; // 0x138 (16)
 	enum class EPropertyValueCategory PropCategory; // 0x148 (1)
 
-	char HasRecordedData(); // Function VariantManagerContent.PropertyValue.HasRecordedData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5EE0>
-	struct FText GetPropertyTooltip(); // Function VariantManagerContent.PropertyValue.GetPropertyTooltip(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5AF0>
-	struct FString GetFullDisplayString(); // Function VariantManagerContent.PropertyValue.GetFullDisplayString(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5930>
+	char HasRecordedData(); // Function VariantManagerContent.PropertyValue.HasRecordedData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E48A0>
+	struct FText GetPropertyTooltip(); // Function VariantManagerContent.PropertyValue.GetPropertyTooltip(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E44B0>
+	struct FString GetFullDisplayString(); // Function VariantManagerContent.PropertyValue.GetFullDisplayString(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E42F0>
 };
 
 // Class VariantManagerContent.SwitchActor
@@ -64,12 +64,12 @@ class ASwitchActor : public UActor {
 
 public:
 
-	struct USceneComponent SceneComponent; // 0x318 (8)
-	int32_t LastSelectedOption; // 0x320 (4)
+	struct USceneComponent SceneComponent; // 0x340 (8)
+	int32_t LastSelectedOption; // 0x348 (4)
 
-	void SelectOption(int32_t OptionIndex); // Function VariantManagerContent.SwitchActor.SelectOption(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5F40>
-	int32_t GetSelectedOption(); // Function VariantManagerContent.SwitchActor.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5B90>
-	struct TArray<struct UActor> GetOptions(); // Function VariantManagerContent.SwitchActor.GetOptions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5A70>
+	void SelectOption(int32_t OptionIndex); // Function VariantManagerContent.SwitchActor.SelectOption(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4900>
+	int32_t GetSelectedOption(); // Function VariantManagerContent.SwitchActor.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4550>
+	struct TArray<struct UActor> GetOptions(); // Function VariantManagerContent.SwitchActor.GetOptions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4430>
 };
 
 // Class VariantManagerContent.Variant
@@ -81,13 +81,13 @@ public:
 	struct TArray<struct UVariantObjectBinding> ObjectBindings; // 0x58 (16)
 	struct UTexture2D Thumbnail; // 0x68 (8)
 
-	void SwitchOn(); // Function VariantManagerContent.Variant.SwitchOn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D6110>
-	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.Variant.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5FC0>
-	char IsActive(); // Function VariantManagerContent.Variant.IsActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5F10>
-	struct UTexture2D GetThumbnail(); // Function VariantManagerContent.Variant.GetThumbnail(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x153B4B0>
-	int32_t GetNumActors(); // Function VariantManagerContent.Variant.GetNumActors(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5A10>
-	struct FText GetDisplayText(); // Function VariantManagerContent.Variant.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5890>
-	struct UActor GetActor(int32_t ActorIndex); // Function VariantManagerContent.Variant.GetActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5800>
+	void SwitchOn(); // Function VariantManagerContent.Variant.SwitchOn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4AD0>
+	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.Variant.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4980>
+	char IsActive(); // Function VariantManagerContent.Variant.IsActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E48D0>
+	struct UTexture2D GetThumbnail(); // Function VariantManagerContent.Variant.GetThumbnail(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1549E10>
+	int32_t GetNumActors(); // Function VariantManagerContent.Variant.GetNumActors(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E43D0>
+	struct FText GetDisplayText(); // Function VariantManagerContent.Variant.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4250>
+	struct UActor GetActor(int32_t ActorIndex); // Function VariantManagerContent.Variant.GetActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E41C0>
 };
 
 // Class VariantManagerContent.VariantObjectBinding
@@ -111,11 +111,11 @@ public:
 	char bExpanded : 0; // 0x58 (1)
 	struct TArray<struct UVariant> Variants; // 0x60 (16)
 
-	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.VariantSet.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5FC0>
-	struct UVariant GetVariantByName(struct FString VariantName); // Function VariantManagerContent.VariantSet.GetVariantByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5C50>
-	struct UVariant GetVariant(int32_t VariantIndex); // Function VariantManagerContent.VariantSet.GetVariant(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5BC0>
-	int32_t GetNumVariants(); // Function VariantManagerContent.VariantSet.GetNumVariants(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5A40>
-	struct FText GetDisplayText(); // Function VariantManagerContent.VariantSet.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D5890>
+	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.VariantSet.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4980>
+	struct UVariant GetVariantByName(struct FString VariantName); // Function VariantManagerContent.VariantSet.GetVariantByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4610>
+	struct UVariant GetVariant(int32_t VariantIndex); // Function VariantManagerContent.VariantSet.GetVariant(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4580>
+	int32_t GetNumVariants(); // Function VariantManagerContent.VariantSet.GetNumVariants(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4400>
+	struct FText GetDisplayText(); // Function VariantManagerContent.VariantSet.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E4250>
 };
 
 // ScriptStruct VariantManagerContent.FunctionCaller

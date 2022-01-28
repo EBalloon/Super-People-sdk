@@ -14,9 +14,9 @@ public:
 	char IsFadeInOutEvent : 0; // 0x288 (1)
 	float CurrentFade; // 0x28C (4)
 
-	void Construct(); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_WBP-HeartBeatSensorEffect(int32_t EntryPoint); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.ExecuteUbergraph_WBP-HeartBeatSensorEffect(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_WBP-HeartBeatSensorEffect(int32_t EntryPoint); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.ExecuteUbergraph_WBP-HeartBeatSensorEffect(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Construct

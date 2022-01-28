@@ -3,10 +3,10 @@ class ABP-SkillTargetingBombing_C : public ABravoHotelSkillTargetingBombing {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x358 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x380 (8)
 
-	void ReceiveBeginPlay(); // Function BP-SkillTargetingBombing.BP-SkillTargetingBombing_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-SkillTargetingBombing(int32_t EntryPoint); // Function BP-SkillTargetingBombing.BP-SkillTargetingBombing_C.ExecuteUbergraph_BP-SkillTargetingBombing(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-SkillTargetingBombing.BP-SkillTargetingBombing_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-SkillTargetingBombing(int32_t EntryPoint); // Function BP-SkillTargetingBombing.BP-SkillTargetingBombing_C.ExecuteUbergraph_BP-SkillTargetingBombing(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-SkillTargetingBombing.BP-SkillTargetingBombing_C.ReceiveBeginPlay

@@ -83,18 +83,18 @@ class AReplicationGraphDebugActor : public UActor {
 
 public:
 
-	struct UReplicationGraph ReplicationGraph; // 0x300 (8)
-	struct UNetReplicationGraphConnection ConnectionManager; // 0x308 (8)
+	struct UReplicationGraph ReplicationGraph; // 0x328 (8)
+	struct UNetReplicationGraphConnection ConnectionManager; // 0x330 (8)
 
-	void ServerStopDebugging(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124EBD0>
-	void ServerStartDebugging(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124EBB0>
-	void ServerSetPeriodFrameForClass(struct UClass* Class, int32_t PeriodFrame); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124EAE0>
-	void ServerSetCullDistanceForClass(struct UClass* Class, float CullDistance); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124EA10>
-	void ServerSetConditionalActorBreakpoint(struct UActor Actor); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetConditionalActorBreakpoint(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E980>
-	void ServerPrintCullDistances(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintCullDistances(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E960>
-	void ServerPrintAllActorInfo(struct FString Str); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E8B0>
-	void ServerCellInfo(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E890>
-	void ClientCellInfo(struct FVector CellLocation, struct FVector CellExtent, struct TArray<struct UActor> Actors); // Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E750>
+	void ServerStopDebugging(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125CAF0>
+	void ServerStartDebugging(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125CAD0>
+	void ServerSetPeriodFrameForClass(struct UClass* Class, int32_t PeriodFrame); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125CA00>
+	void ServerSetCullDistanceForClass(struct UClass* Class, float CullDistance); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C930>
+	void ServerSetConditionalActorBreakpoint(struct UActor Actor); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetConditionalActorBreakpoint(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C8A0>
+	void ServerPrintCullDistances(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintCullDistances(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C880>
+	void ServerPrintAllActorInfo(struct FString Str); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C7D0>
+	void ServerCellInfo(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C7B0>
+	void ClientCellInfo(struct FVector CellLocation, struct FVector CellExtent, struct TArray<struct UActor> Actors); // Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125C670>
 };
 
 // ScriptStruct ReplicationGraph.ConnectionAlwaysRelevantNodePair

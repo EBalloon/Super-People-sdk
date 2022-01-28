@@ -3,135 +3,135 @@ class ABP_MoveElevator_C : public ABravoHotelMoveElevator {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x310 (8)
-	struct UBoxComponent Box2; // 0x318 (8)
-	struct UBoxComponent Box1; // 0x320 (8)
-	struct UBravoHotelAudioEmitterComponent BravoHotelAudioEmitter; // 0x328 (8)
-	struct UStaticMeshComponent Upper_Rear_Display_Sub; // 0x330 (8)
-	struct UStaticMeshComponent Upper_Front_Display_Sub; // 0x338 (8)
-	struct UStaticMeshComponent Lower_Rear_Display_Sub; // 0x340 (8)
-	struct UStaticMeshComponent Lower_Front_Display_Sub; // 0x348 (8)
-	struct UBoxComponent PointBox; // 0x350 (8)
-	struct UBoxComponent FloorBox; // 0x358 (8)
-	struct UStaticMeshComponent Main_Display; // 0x360 (8)
-	struct UBoxComponent Box; // 0x368 (8)
-	struct UTextRenderComponent TextRender5; // 0x370 (8)
-	struct UTextRenderComponent TextRender7; // 0x378 (8)
-	struct UTextRenderComponent TextRender6; // 0x380 (8)
-	struct UTextRenderComponent TextRender1; // 0x388 (8)
-	struct UTextRenderComponent TextRender4; // 0x390 (8)
-	struct UTextRenderComponent TextRender3; // 0x398 (8)
-	struct UTextRenderComponent TextRender; // 0x3A0 (8)
-	struct UTextRenderComponent TextRender2; // 0x3A8 (8)
-	struct UBoxComponent Upper_Front_Button_Area; // 0x3B0 (8)
-	struct UBoxComponent Upper_Rear_Button_Area; // 0x3B8 (8)
-	struct UBoxComponent Lower_Rear_Button_Area; // 0x3C0 (8)
-	struct UBoxComponent Lower_Front_Button_Area; // 0x3C8 (8)
-	struct UBoxComponent Main_Rear_Button_Area; // 0x3D0 (8)
-	struct UBoxComponent Main_Front_Button_Area; // 0x3D8 (8)
-	struct UStaticMeshComponent Main_Front_Button; // 0x3E0 (8)
-	struct UStaticMeshComponent Main_Rear_Button; // 0x3E8 (8)
-	struct UStaticMeshComponent Upper_Rear_Display; // 0x3F0 (8)
-	struct UStaticMeshComponent Upper_Front_Display; // 0x3F8 (8)
-	struct UStaticMeshComponent Lower_Rear_Display; // 0x400 (8)
-	struct UStaticMeshComponent Lower_Front_Display; // 0x408 (8)
-	struct UStaticMeshComponent Upper_Rear_Button; // 0x410 (8)
-	struct UStaticMeshComponent Upper_Front_Button; // 0x418 (8)
-	struct UStaticMeshComponent Lower_Rear_Button; // 0x420 (8)
-	struct UStaticMeshComponent Lower_Front_Button; // 0x428 (8)
-	struct UStaticMeshComponent Upper_Rear_Left; // 0x430 (8)
-	struct UStaticMeshComponent Upper_Rear_Right; // 0x438 (8)
-	struct UStaticMeshComponent Upper_Front_Left; // 0x440 (8)
-	struct UStaticMeshComponent Upper_Front_Right; // 0x448 (8)
-	struct UStaticMeshComponent Lower_Rear_Right; // 0x450 (8)
-	struct UStaticMeshComponent Lower_Front_Right; // 0x458 (8)
-	struct UStaticMeshComponent Lower_Front_Left; // 0x460 (8)
-	struct UStaticMeshComponent Lower_Rear_Left; // 0x468 (8)
-	struct USceneComponent Upper_Rear; // 0x470 (8)
-	struct USceneComponent Upper_Front; // 0x478 (8)
-	struct USceneComponent Lower_Rear; // 0x480 (8)
-	struct USceneComponent Lower_Front; // 0x488 (8)
-	struct USceneComponent Upper_Floor; // 0x490 (8)
-	struct USceneComponent Front_Door; // 0x498 (8)
-	struct USceneComponent Rear_Door; // 0x4A0 (8)
-	struct USceneComponent Lower_Floor; // 0x4A8 (8)
-	struct UStaticMeshComponent Main_Front_Right; // 0x4B0 (8)
-	struct UStaticMeshComponent Main_Front_Left; // 0x4B8 (8)
-	struct UStaticMeshComponent Main_Body; // 0x4C0 (8)
-	struct USceneComponent Scene1; // 0x4C8 (8)
-	struct UStaticMeshComponent Main_Rear_Right; // 0x4D0 (8)
-	struct UStaticMeshComponent Main_Rear_Left; // 0x4D8 (8)
-	float ElevatorCloseDoor______0_70C4393D45E164D3C8B473964F68015B; // 0x4E0 (4)
-	char ElevatorCloseDoor__Direction_70C4393D45E164D3C8B473964F68015B; // 0x4E4 (1)
-	struct UTimelineComponent ElevatorCloseDoor; // 0x4E8 (8)
-	float LowerMoving______0_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x4F0 (4)
-	char LowerMoving__Direction_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x4F4 (1)
-	struct UTimelineComponent LowerMoving; // 0x4F8 (8)
-	float ElevatorOpenDoor______0_5DABF5354368A8D3121A6FB4685095FB; // 0x500 (4)
-	char ElevatorOpenDoor__Direction_5DABF5354368A8D3121A6FB4685095FB; // 0x504 (1)
-	struct UTimelineComponent ElevatorOpenDoor; // 0x508 (8)
-	float UpperMoving______0_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x510 (4)
-	char UpperMoving__Direction_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x514 (1)
-	struct UTimelineComponent UpperMoving; // 0x518 (8)
-	struct FVector Upper_Location; // 0x520 (12)
-	struct FVector Body_Position; // 0x52C (12)
-	char IsLower : 0; // 0x538 (1)
-	float DoorTravel; // 0x53C (4)
-	float DoorMoveTime; // 0x540 (4)
-	char IsMoving : 0; // 0x544 (1)
-	struct FVector RoomPos; // 0x548 (12)
-	struct USceneComponent MoveFloor; // 0x558 (8)
-	struct TArray<struct ABravoHotelCharacter> AddCharacters; // 0x560 (16)
-	float AddMoveOffest; // 0x570 (4)
-	struct UAkAudioEvent OpenDoorCompleted; // 0x578 (8)
-	struct UAkAudioEvent OpeningDoor; // 0x580 (8)
-	struct UAkAudioEvent ClosingDoor; // 0x588 (8)
-	struct UAkAudioEvent CloseDoorCompleted; // 0x590 (8)
-	struct UAkAudioEvent SoundEventForMoved; // 0x598 (8)
-	struct UAkAudioEvent SoundEventForMoving; // 0x5A0 (8)
-	char IsTraceMoving : 0; // 0x5A8 (1)
-	struct FVector TraceLocation; // 0x5AC (12)
-	struct TArray<struct UActor> AttachActors; // 0x5B8 (16)
-	char NewVar_1 : 0; // 0x5C8 (1)
-	char NewVar_2 : 0; // 0x5C9 (1)
-	struct UAkComponent ElevatorAKComponent; // 0x5D0 (8)
-	struct UAkAudioEvent ButtonSound; // 0x5D8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x338 (8)
+	struct UBoxComponent Box2; // 0x340 (8)
+	struct UBoxComponent Box1; // 0x348 (8)
+	struct UBravoHotelAudioEmitterComponent BravoHotelAudioEmitter; // 0x350 (8)
+	struct UStaticMeshComponent Upper_Rear_Display_Sub; // 0x358 (8)
+	struct UStaticMeshComponent Upper_Front_Display_Sub; // 0x360 (8)
+	struct UStaticMeshComponent Lower_Rear_Display_Sub; // 0x368 (8)
+	struct UStaticMeshComponent Lower_Front_Display_Sub; // 0x370 (8)
+	struct UBoxComponent PointBox; // 0x378 (8)
+	struct UBoxComponent FloorBox; // 0x380 (8)
+	struct UStaticMeshComponent Main_Display; // 0x388 (8)
+	struct UBoxComponent Box; // 0x390 (8)
+	struct UTextRenderComponent TextRender5; // 0x398 (8)
+	struct UTextRenderComponent TextRender7; // 0x3A0 (8)
+	struct UTextRenderComponent TextRender6; // 0x3A8 (8)
+	struct UTextRenderComponent TextRender1; // 0x3B0 (8)
+	struct UTextRenderComponent TextRender4; // 0x3B8 (8)
+	struct UTextRenderComponent TextRender3; // 0x3C0 (8)
+	struct UTextRenderComponent TextRender; // 0x3C8 (8)
+	struct UTextRenderComponent TextRender2; // 0x3D0 (8)
+	struct UBoxComponent Upper_Front_Button_Area; // 0x3D8 (8)
+	struct UBoxComponent Upper_Rear_Button_Area; // 0x3E0 (8)
+	struct UBoxComponent Lower_Rear_Button_Area; // 0x3E8 (8)
+	struct UBoxComponent Lower_Front_Button_Area; // 0x3F0 (8)
+	struct UBoxComponent Main_Rear_Button_Area; // 0x3F8 (8)
+	struct UBoxComponent Main_Front_Button_Area; // 0x400 (8)
+	struct UStaticMeshComponent Main_Front_Button; // 0x408 (8)
+	struct UStaticMeshComponent Main_Rear_Button; // 0x410 (8)
+	struct UStaticMeshComponent Upper_Rear_Display; // 0x418 (8)
+	struct UStaticMeshComponent Upper_Front_Display; // 0x420 (8)
+	struct UStaticMeshComponent Lower_Rear_Display; // 0x428 (8)
+	struct UStaticMeshComponent Lower_Front_Display; // 0x430 (8)
+	struct UStaticMeshComponent Upper_Rear_Button; // 0x438 (8)
+	struct UStaticMeshComponent Upper_Front_Button; // 0x440 (8)
+	struct UStaticMeshComponent Lower_Rear_Button; // 0x448 (8)
+	struct UStaticMeshComponent Lower_Front_Button; // 0x450 (8)
+	struct UStaticMeshComponent Upper_Rear_Left; // 0x458 (8)
+	struct UStaticMeshComponent Upper_Rear_Right; // 0x460 (8)
+	struct UStaticMeshComponent Upper_Front_Left; // 0x468 (8)
+	struct UStaticMeshComponent Upper_Front_Right; // 0x470 (8)
+	struct UStaticMeshComponent Lower_Rear_Right; // 0x478 (8)
+	struct UStaticMeshComponent Lower_Front_Right; // 0x480 (8)
+	struct UStaticMeshComponent Lower_Front_Left; // 0x488 (8)
+	struct UStaticMeshComponent Lower_Rear_Left; // 0x490 (8)
+	struct USceneComponent Upper_Rear; // 0x498 (8)
+	struct USceneComponent Upper_Front; // 0x4A0 (8)
+	struct USceneComponent Lower_Rear; // 0x4A8 (8)
+	struct USceneComponent Lower_Front; // 0x4B0 (8)
+	struct USceneComponent Upper_Floor; // 0x4B8 (8)
+	struct USceneComponent Front_Door; // 0x4C0 (8)
+	struct USceneComponent Rear_Door; // 0x4C8 (8)
+	struct USceneComponent Lower_Floor; // 0x4D0 (8)
+	struct UStaticMeshComponent Main_Front_Right; // 0x4D8 (8)
+	struct UStaticMeshComponent Main_Front_Left; // 0x4E0 (8)
+	struct UStaticMeshComponent Main_Body; // 0x4E8 (8)
+	struct USceneComponent Scene1; // 0x4F0 (8)
+	struct UStaticMeshComponent Main_Rear_Right; // 0x4F8 (8)
+	struct UStaticMeshComponent Main_Rear_Left; // 0x500 (8)
+	float ElevatorCloseDoor______0_70C4393D45E164D3C8B473964F68015B; // 0x508 (4)
+	char ElevatorCloseDoor__Direction_70C4393D45E164D3C8B473964F68015B; // 0x50C (1)
+	struct UTimelineComponent ElevatorCloseDoor; // 0x510 (8)
+	float LowerMoving______0_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x518 (4)
+	char LowerMoving__Direction_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x51C (1)
+	struct UTimelineComponent LowerMoving; // 0x520 (8)
+	float ElevatorOpenDoor______0_5DABF5354368A8D3121A6FB4685095FB; // 0x528 (4)
+	char ElevatorOpenDoor__Direction_5DABF5354368A8D3121A6FB4685095FB; // 0x52C (1)
+	struct UTimelineComponent ElevatorOpenDoor; // 0x530 (8)
+	float UpperMoving______0_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x538 (4)
+	char UpperMoving__Direction_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x53C (1)
+	struct UTimelineComponent UpperMoving; // 0x540 (8)
+	struct FVector Upper_Location; // 0x548 (12)
+	struct FVector Body_Position; // 0x554 (12)
+	char IsLower : 0; // 0x560 (1)
+	float DoorTravel; // 0x564 (4)
+	float DoorMoveTime; // 0x568 (4)
+	char IsMoving : 0; // 0x56C (1)
+	struct FVector RoomPos; // 0x570 (12)
+	struct USceneComponent MoveFloor; // 0x580 (8)
+	struct TArray<struct ABravoHotelCharacter> AddCharacters; // 0x588 (16)
+	float AddMoveOffest; // 0x598 (4)
+	struct UAkAudioEvent OpenDoorCompleted; // 0x5A0 (8)
+	struct UAkAudioEvent OpeningDoor; // 0x5A8 (8)
+	struct UAkAudioEvent ClosingDoor; // 0x5B0 (8)
+	struct UAkAudioEvent CloseDoorCompleted; // 0x5B8 (8)
+	struct UAkAudioEvent SoundEventForMoved; // 0x5C0 (8)
+	struct UAkAudioEvent SoundEventForMoving; // 0x5C8 (8)
+	char IsTraceMoving : 0; // 0x5D0 (1)
+	struct FVector TraceLocation; // 0x5D4 (12)
+	struct TArray<struct UActor> AttachActors; // 0x5E0 (16)
+	char NewVar_1 : 0; // 0x5F0 (1)
+	char NewVar_2 : 0; // 0x5F1 (1)
+	struct UAkComponent ElevatorAKComponent; // 0x5F8 (8)
+	struct UAkAudioEvent ButtonSound; // 0x600 (8)
 
-	void SetScalarParameterList(struct TArray<struct UStaticMeshComponent>& StaticMeshList, struct FName ParameterName, float ParameterValue); // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CloseLowerSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseLowerSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CloseUpperSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseUpperSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CloseDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UserConstructionScript(); // Function BP_MoveElevator.BP_MoveElevator_C.UserConstructionScript(Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpperMoving__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpperMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ElevatorCloseDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ElevatorCloseDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ElevatorOpenDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ElevatorOpenDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void LowerMoving__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.LowerMoving__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void LowerMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.LowerMoving__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP_MoveElevator.BP_MoveElevator_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMoveUp(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveUp(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InteractDoor(struct UPrimitiveComponent ElevatorComponet); // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMoveDown(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveDown(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AttachItem(struct UActor AttachActor); // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangeElevatorState(); // Function BP_MoveElevator.BP_MoveElevator_C.OnChangeElevatorState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MoveStartEvent(float StartTime, char IsInit); // Function BP_MoveElevator.BP_MoveElevator_C.MoveStartEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OpenDoorEvent(float StartTime, char IsSound); // Function BP_MoveElevator.BP_MoveElevator_C.OpenDoorEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ElevatorMovingEvent(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorMovingEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MovingSatrtEvent(float StartTime); // Function BP_MoveElevator.BP_MoveElevator_C.MovingSatrtEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetImpartBase(char IsImpartBase); // Function BP_MoveElevator.BP_MoveElevator_C.SetImpartBase(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MoveTraceObject(); // Function BP_MoveElevator.BP_MoveElevator_C.MoveTraceObject(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DetachCharacter(struct ABravoHotelCharacter Character); // Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CharactersMovingEvent(char StopElevator); // Function BP_MoveElevator.BP_MoveElevator_C.CharactersMovingEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DoorOutImpulse(struct UBoxComponent DoorBox); // Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP_MoveElevator(int32_t EntryPoint); // Function BP_MoveElevator.BP_MoveElevator_C.ExecuteUbergraph_BP_MoveElevator(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetScalarParameterList(struct TArray<struct UStaticMeshComponent>& StaticMeshList, struct FName ParameterName, float ParameterValue); // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CloseLowerSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseLowerSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CloseUpperSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseUpperSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CloseDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UserConstructionScript(); // Function BP_MoveElevator.BP_MoveElevator_C.UserConstructionScript(Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpperMoving__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpperMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ElevatorCloseDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ElevatorCloseDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ElevatorOpenDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ElevatorOpenDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void LowerMoving__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.LowerMoving__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void LowerMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.LowerMoving__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP_MoveElevator.BP_MoveElevator_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMoveUp(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveUp(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InteractDoor(struct UPrimitiveComponent ElevatorComponet); // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMoveDown(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveDown(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AttachItem(struct UActor AttachActor); // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangeElevatorState(); // Function BP_MoveElevator.BP_MoveElevator_C.OnChangeElevatorState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MoveStartEvent(float StartTime, char IsInit); // Function BP_MoveElevator.BP_MoveElevator_C.MoveStartEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OpenDoorEvent(float StartTime, char IsSound); // Function BP_MoveElevator.BP_MoveElevator_C.OpenDoorEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ElevatorMovingEvent(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorMovingEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MovingSatrtEvent(float StartTime); // Function BP_MoveElevator.BP_MoveElevator_C.MovingSatrtEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetImpartBase(char IsImpartBase); // Function BP_MoveElevator.BP_MoveElevator_C.SetImpartBase(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MoveTraceObject(); // Function BP_MoveElevator.BP_MoveElevator_C.MoveTraceObject(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DetachCharacter(struct ABravoHotelCharacter Character); // Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CharactersMovingEvent(char StopElevator); // Function BP_MoveElevator.BP_MoveElevator_C.CharactersMovingEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DoorOutImpulse(struct UBoxComponent DoorBox); // Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP_MoveElevator(int32_t EntryPoint); // Function BP_MoveElevator.BP_MoveElevator_C.ExecuteUbergraph_BP_MoveElevator(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList

@@ -3,15 +3,15 @@ class ABP-Weapon_RPG_C : public ABP-RangedWeaponBase_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x22E0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2370 (8)
 
-	void GetTargetEffectorLocationR(struct FVector& TargetEffectorLocationR); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnUnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckWeaponScale(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.CheckWeaponScale(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Weapon_RPG(int32_t EntryPoint); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ExecuteUbergraph_BP-Weapon_RPG(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetTargetEffectorLocationR(struct FVector& TargetEffectorLocationR); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnUnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckWeaponScale(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.CheckWeaponScale(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Weapon_RPG(int32_t EntryPoint); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ExecuteUbergraph_BP-Weapon_RPG(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR

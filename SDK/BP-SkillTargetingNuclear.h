@@ -3,10 +3,10 @@ class ABP-SkillTargetingNuclear_C : public ABravoHotelSkillTargetingNuclear {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x348 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x370 (8)
 
-	void UpdateTargetSize(); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-SkillTargetingNuclear(int32_t EntryPoint); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.ExecuteUbergraph_BP-SkillTargetingNuclear(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdateTargetSize(); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-SkillTargetingNuclear(int32_t EntryPoint); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.ExecuteUbergraph_BP-SkillTargetingNuclear(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize

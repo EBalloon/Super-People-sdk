@@ -3,35 +3,35 @@ class ABP-MK3DReplayController_C : public ABravoHotelMK3DReplayController {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0xAB8 (8)
-	struct UBP-HUDInteractionComponent_C BP-HUDInteractionComponent; // 0xAC0 (8)
-	int32_t OpenedWidgetNum; // 0xAC8 (4)
-	char ViewMode; // 0xACC (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xAD0 (8)
+	struct UBP-HUDInteractionComponent_C BP-HUDInteractionComponent; // 0xAD8 (8)
+	int32_t OpenedWidgetNum; // 0xAE0 (4)
+	char ViewMode; // 0xAE4 (1)
 
-	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckItemListHide(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetReplaySpectatorPawn(struct ABP-MK3DSpectatorPawn_C& ReplaySpectatorPawn); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InitWorldMapOption(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InitWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetMaxViewportSize(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetMaxViewportSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangeViewMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeViewMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangeCameraType(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetVisibilityPerkDeck(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetVisibilityPerkDeck(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeInputMode(char ShowMouse); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckInputMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputWorldMap(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputWorldMap(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputReplayTimelineWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputReplayTimelineWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputItemListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemListWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputPlayerListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputPlayerListWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeViewModeDelegate_Event_1(char ViewMode); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeViewModeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnViewportSizedBP(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnViewportSizedBP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputItemList(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-MK3DReplayController(int32_t EntryPoint); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ExecuteUbergraph_BP-MK3DReplayController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckItemListHide(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetReplaySpectatorPawn(struct ABP-MK3DSpectatorPawn_C& ReplaySpectatorPawn); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InitWorldMapOption(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InitWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetMaxViewportSize(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetMaxViewportSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangeViewMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeViewMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangeCameraType(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetVisibilityPerkDeck(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetVisibilityPerkDeck(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeInputMode(char ShowMouse); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckInputMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputWorldMap(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputWorldMap(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputReplayTimelineWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputReplayTimelineWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputItemListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemListWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputPlayerListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputPlayerListWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeViewModeDelegate_Event_1(char ViewMode); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeViewModeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnViewportSizedBP(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnViewportSizedBP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputItemList(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemList(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-MK3DReplayController(int32_t EntryPoint); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ExecuteUbergraph_BP-MK3DReplayController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent

@@ -8,11 +8,11 @@ public:
 	struct UImage Image_436; // 0x258 (8)
 	struct UActor Pawn; // 0x260 (8)
 
-	void SetDiedPawnInfo(struct FKillBroadcastUIInfo BroadCastInfo); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.SetDiedPawnInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartAnim(); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.StartAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StartSetPosition(); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.StartSetPosition(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-DeathUserWidget(int32_t EntryPoint); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.ExecuteUbergraph_UW-DeathUserWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetDiedPawnInfo(struct FKillBroadcastUIInfo BroadCastInfo); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.SetDiedPawnInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartAnim(); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.StartAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StartSetPosition(); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.StartSetPosition(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-DeathUserWidget(int32_t EntryPoint); // Function UW-DeathUserWidget.UW-DeathUserWidget_C.ExecuteUbergraph_UW-DeathUserWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-DeathUserWidget.UW-DeathUserWidget_C.SetDiedPawnInfo

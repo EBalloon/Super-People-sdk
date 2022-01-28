@@ -34,9 +34,9 @@ public:
 	enum class ETaskResourceOverlapPolicy ResourceOverlapPolicy; // 0x3A (1)
 	struct UGameplayTask ChildTask; // 0x60 (8)
 
-	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688930>
-	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46885E0>
+	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AAC20>
+	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AA8D0>
 };
 
 // Class GameplayTasks.GameplayTask_SpawnActor
@@ -48,9 +48,9 @@ public:
 	struct FMulticastInlineDelegate DidNotSpawn; // 0x78 (16)
 	struct UClass* ClassToSpawn; // 0xA0 (8)
 
-	struct UGameplayTask_SpawnActor SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688950>
-	void FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688600>
-	char BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688210>
+	struct UGameplayTask_SpawnActor SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AAC40>
+	void FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AA8F0>
+	char BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AA500>
 };
 
 // Class GameplayTasks.GameplayTask_TimeLimitedExecution
@@ -69,8 +69,8 @@ public:
 
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
-	struct UGameplayTask_WaitDelay TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688B00>
-	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UGameplayTask_WaitDelay TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AADF0>
+	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Class GameplayTasks.GameplayTaskResource
@@ -95,8 +95,8 @@ public:
 	struct TArray<struct UGameplayTask> KnownTasks; // 0x100 (16)
 	struct FMulticastInlineDelegate OnClaimedResourcesChange; // 0x110 (16)
 
-	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4688910>
-	enum class EGameplayTaskRunResult K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46886D0>
+	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AAC00>
+	enum class EGameplayTaskRunResult K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x46AA9C0>
 };
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation

@@ -19,13 +19,13 @@ public:
 	float LogTime; // 0xE20 (4)
 	float LogStackValidTime; // 0xE24 (4)
 
-	void DamageResultText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.DamageResultText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DamageText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.DamageText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void WeaponText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.WeaponText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void TargetText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.TargetText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StackDamageLog(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.StackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckCanStackDamage Log(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.CheckCanStackDamage Log(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetHitDamageLogInfo(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.SetHitDamageLogInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void DamageResultText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.DamageResultText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DamageText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.DamageText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void WeaponText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.WeaponText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void TargetText(struct FText& Result); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.TargetText(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StackDamageLog(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.StackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckCanStackDamage Log(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.CheckCanStackDamage Log(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetHitDamageLogInfo(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.SetHitDamageLogInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget_DamageLog.UW-ListWidget_DamageLog_C.DamageResultText

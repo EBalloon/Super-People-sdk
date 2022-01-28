@@ -8,10 +8,10 @@ public:
 	struct UUW-TeamInfoItemWidget_C UW-TeamInfoItemWidget_C_2; // 0x268 (8)
 	struct UVerticalBox VerticalBox_InfoList; // 0x270 (8)
 
-	struct UBravoHotelTeamInfoSlotWidget CreateSlot(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateInvalidationbox(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.UpdateInvalidationbox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-TeamInfoWidget(int32_t EntryPoint); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.ExecuteUbergraph_UW-TeamInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UBravoHotelTeamInfoSlotWidget CreateSlot(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateInvalidationbox(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.UpdateInvalidationbox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-TeamInfoWidget(int32_t EntryPoint); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.ExecuteUbergraph_UW-TeamInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot

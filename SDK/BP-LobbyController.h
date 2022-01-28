@@ -3,38 +3,38 @@ class ABP-LobbyController_C : public ABravoHotelLobbyPlayerController {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x728 (8)
-	struct UBP-HUDInteractionComponentBase_C BP-HUDInteractionComponentBase; // 0x730 (8)
-	struct FMulticastInlineDelegate EventDispatcher_PlayLobbySound; // 0x738 (16)
-	struct FMulticastInlineDelegate EventDispatcher_StopLobbySound; // 0x748 (16)
-	struct UMediaSoundComponent MediaSoundComponent; // 0x758 (8)
-	struct UUserWidget OperationMessageWidget; // 0x760 (8)
-	enum class ESceneType CurrentSceneType; // 0x768 (1)
-	struct UBP-LobbyWidget_Web_C LobbyWidgetRef; // 0x770 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x740 (8)
+	struct UBP-HUDInteractionComponentBase_C BP-HUDInteractionComponentBase; // 0x748 (8)
+	struct FMulticastInlineDelegate EventDispatcher_PlayLobbySound; // 0x750 (16)
+	struct FMulticastInlineDelegate EventDispatcher_StopLobbySound; // 0x760 (16)
+	struct UMediaSoundComponent MediaSoundComponent; // 0x770 (8)
+	struct UUserWidget OperationMessageWidget; // 0x778 (8)
+	enum class ESceneType CurrentSceneType; // 0x780 (1)
+	struct UBP-LobbyWidget_Web_C LobbyWidgetRef; // 0x788 (8)
 
-	void CanInput(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CanInput(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckCohLoad(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckCohLoad(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckWantPopupEvent(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckWantPopupEvent(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMouseWheel(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMouseY(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMouseX(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateDefaultSkin(); // Function BP-LobbyController.BP-LobbyController_C.CreateDefaultSkin(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetLobbyMainWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpAxisEvt_Turn_K2Node_InputAxisEvent_1(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayTutorial(); // Function BP-LobbyController.BP-LobbyController_C.PlayTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP-LobbyController.BP-LobbyController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void NotifyOperationMessage(struct FText& NotifyText); // Function BP-LobbyController.BP-LobbyController_C.NotifyOperationMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangedSceneDelegate_Event_1(enum class ESceneType SceneType); // Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputPopupEvent(); // Function BP-LobbyController.BP-LobbyController_C.OnInputPopupEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateOptionPopup(); // Function BP-LobbyController.BP-LobbyController_C.CreateOptionPopup(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-LobbyController(int32_t EntryPoint); // Function BP-LobbyController.BP-LobbyController_C.ExecuteUbergraph_BP-LobbyController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EventDispatcher_StopLobbySound__DelegateSignature(); // Function BP-LobbyController.BP-LobbyController_C.EventDispatcher_StopLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void EventDispatcher_PlayLobbySound__DelegateSignature(); // Function BP-LobbyController.BP-LobbyController_C.EventDispatcher_PlayLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CanInput(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CanInput(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckCohLoad(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckCohLoad(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckWantPopupEvent(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckWantPopupEvent(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMouseWheel(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMouseY(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMouseX(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateDefaultSkin(); // Function BP-LobbyController.BP-LobbyController_C.CreateDefaultSkin(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetLobbyMainWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpAxisEvt_Turn_K2Node_InputAxisEvent_1(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayTutorial(); // Function BP-LobbyController.BP-LobbyController_C.PlayTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP-LobbyController.BP-LobbyController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void NotifyOperationMessage(struct FText& NotifyText); // Function BP-LobbyController.BP-LobbyController_C.NotifyOperationMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangedSceneDelegate_Event_1(enum class ESceneType SceneType); // Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputPopupEvent(); // Function BP-LobbyController.BP-LobbyController_C.OnInputPopupEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateOptionPopup(); // Function BP-LobbyController.BP-LobbyController_C.CreateOptionPopup(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-LobbyController(int32_t EntryPoint); // Function BP-LobbyController.BP-LobbyController_C.ExecuteUbergraph_BP-LobbyController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventDispatcher_StopLobbySound__DelegateSignature(); // Function BP-LobbyController.BP-LobbyController_C.EventDispatcher_StopLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void EventDispatcher_PlayLobbySound__DelegateSignature(); // Function BP-LobbyController.BP-LobbyController_C.EventDispatcher_PlayLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-LobbyController.BP-LobbyController_C.CanInput

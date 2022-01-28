@@ -10,14 +10,14 @@ public:
 	struct UCanvasPanel CanvasPanel_1; // 0x268 (8)
 	struct UUW-ScenarioQuest_C UW-ScenarioQuest; // 0x270 (8)
 
-	enum class ESlateVisibility GetVisibility_1(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Finished_619E7E41423DCBE2E8D2AC87D77B76F6(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_619E7E41423DCBE2E8D2AC87D77B76F6(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnUpdateScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnStartScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnStopScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnEndScenario(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnEndScenario(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ScenarioWidget(int32_t EntryPoint); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.ExecuteUbergraph_UW-ScenarioWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Finished_619E7E41423DCBE2E8D2AC87D77B76F6(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_619E7E41423DCBE2E8D2AC87D77B76F6(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnUpdateScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnStartScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnStopScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnEndScenario(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnEndScenario(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ScenarioWidget(int32_t EntryPoint); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.ExecuteUbergraph_UW-ScenarioWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1

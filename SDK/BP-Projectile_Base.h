@@ -3,11 +3,11 @@ class ABP-Projectile_Base_C : public ABravoHotelProjectileBullet {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x510 (8)
-	struct UParticleSystemComponent ParticleSystem; // 0x518 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x550 (8)
+	struct UParticleSystemComponent ParticleSystem; // 0x558 (8)
 
-	void ReceiveBeginPlay(); // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-Projectile_Base(int32_t EntryPoint); // Function BP-Projectile_Base.BP-Projectile_Base_C.ExecuteUbergraph_BP-Projectile_Base(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-Projectile_Base(int32_t EntryPoint); // Function BP-Projectile_Base.BP-Projectile_Base_C.ExecuteUbergraph_BP-Projectile_Base(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay

@@ -14,7 +14,7 @@ public:
 	struct UTextBlock PerkLastLevel; // 0x2A0 (8)
 	struct UCanvasPanel PerkSlotHover; // 0x2A8 (8)
 	struct URichTextBlock RichTextBlock_Desc; // 0x2B0 (8)
-	struct UTextBlock T_LV; // 0x2B8 (8)
+	struct UTextBlock T_Lv; // 0x2B8 (8)
 	struct UTextBlock T_PerkLevel; // 0x2C0 (8)
 	struct UTextBlock T_PerkName; // 0x2C8 (8)
 	struct UTextBlock TextBlock_1; // 0x2D0 (8)
@@ -28,11 +28,11 @@ public:
 	struct FPerkInGameData PerInGameData; // 0x400 (456)
 	struct FVector2D DefaultPosition; // 0x5C8 (8)
 
-	void PlayUpDownAnim(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.PlayUpDownAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsUltimateLevel(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.IsUltimateLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPerkNameDesc(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.SetPerkNameDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetGainPerkInfo(struct FPerkUIInfo& PerkUIInfo, int32_t CurrentLevel, int32_t LastLevel, char IsPlayingUltimateSound); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.SetGainPerkInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FLinearColor Get_PerkName_ColorAndOpacity_1(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayUpDownAnim(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.PlayUpDownAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsUltimateLevel(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.IsUltimateLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPerkNameDesc(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.SetPerkNameDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetGainPerkInfo(struct FPerkUIInfo& PerkUIInfo, int32_t CurrentLevel, int32_t LastLevel, char IsPlayingUltimateSound); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.SetGainPerkInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FLinearColor Get_PerkName_ColorAndOpacity_1(); // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ListWidget_GainPerk.UW-ListWidget_GainPerk_C.PlayUpDownAnim

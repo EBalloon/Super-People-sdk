@@ -11,9 +11,9 @@ public:
 	struct UUW-MapComp_C MapCompRef; // 0x278 (8)
 	struct Object TmpPingTypeTexture; // 0x280 (8)
 
-	void UpdatePersonalSupplyBox(); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.UpdatePersonalSupplyBox(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPersonalSupplyBox(struct UUW-MapComp_C MapCompRef); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.SetPersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdatePersonalSupplyBox(); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.UpdatePersonalSupplyBox(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPersonalSupplyBox(struct UUW-MapComp_C MapCompRef); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.SetPersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-WorldMapMarkerWidget.UW-WorldMapMarkerWidget_C.UpdatePersonalSupplyBox

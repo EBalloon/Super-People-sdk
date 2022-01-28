@@ -17,20 +17,20 @@ public:
 	float EndFocusDist; // 0x2B0 (4)
 	float CurrentFocusDist; // 0x2B4 (4)
 
-	void UpdateMouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMouseY(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMouseX(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCharacter(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCamera(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PercentDist(float CurDist, float& Percent); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.PercentDist(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Reset(char ForceSnap); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Hide(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Show(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-CustomizedCharacter(int32_t EntryPoint); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.ExecuteUbergraph_UW-CustomizedCharacter(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void UpdateMouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMouseY(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMouseX(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCharacter(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCamera(float DeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PercentDist(float CurDist, float& Percent); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.PercentDist(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Reset(char ForceSnap); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Hide(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Show(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-CustomizedCharacter(int32_t EntryPoint); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.ExecuteUbergraph_UW-CustomizedCharacter(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.UpdateMouseWheel

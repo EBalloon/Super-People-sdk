@@ -49,20 +49,20 @@ public:
 	struct UTextBlock AliveCount_Text_1_1; // 0x3D8 (8)
 	struct UTextBlock KillCount_Text_1_1; // 0x3E0 (8)
 
-	enum class ESlateVisibility Get_HorizontalBox_CurrentGold_Visibility_1(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetBGImageMarginValue(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetBGImageMarginValue(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAliveCount(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetKillCount(int32_t KillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetKillCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideKillCount(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.HideKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowKillCount(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ShowKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetKillCount_BP(int32_t NewKillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetKillCount_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAliveTeamCount_BP(int32_t NewAliveTeamCount, int32_t TeamSize); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveTeamCount_BP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowResuscitation(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ShowResuscitation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Show_GoldDesc(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Show_GoldDesc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Hide_GoldDesc(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Hide_GoldDesc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAssistCount_BP(int32_t NewKillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAssistCount_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAliveCount_BP(int32_t NewAliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveCount_BP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-AliveInfoWidget(int32_t EntryPoint); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ExecuteUbergraph_UW-AliveInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	enum class ESlateVisibility Get_HorizontalBox_CurrentGold_Visibility_1(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetBGImageMarginValue(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetBGImageMarginValue(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAliveCount(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetKillCount(int32_t KillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetKillCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideKillCount(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.HideKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowKillCount(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ShowKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetKillCount_BP(int32_t NewKillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetKillCount_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAliveTeamCount_BP(int32_t NewAliveTeamCount, int32_t TeamSize); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveTeamCount_BP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowResuscitation(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ShowResuscitation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Show_GoldDesc(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Show_GoldDesc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Hide_GoldDesc(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Hide_GoldDesc(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAssistCount_BP(int32_t NewKillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAssistCount_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAliveCount_BP(int32_t NewAliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveCount_BP(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-AliveInfoWidget(int32_t EntryPoint); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.ExecuteUbergraph_UW-AliveInfoWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1

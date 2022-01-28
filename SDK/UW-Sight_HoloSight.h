@@ -6,8 +6,8 @@ public:
 	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
 	struct UImage Image_1; // 0x250 (8)
 
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Sight_HoloSight(int32_t EntryPoint); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.ExecuteUbergraph_UW-Sight_HoloSight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Sight_HoloSight(int32_t EntryPoint); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.ExecuteUbergraph_UW-Sight_HoloSight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle

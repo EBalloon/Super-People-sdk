@@ -15,14 +15,14 @@ public:
 
 	struct UBravoHotelPatchService PatchService; // 0x268 (8)
 
-	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20899A0>
-	void ReceiveStartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveStartPatchService(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveReadyToStartGame(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToStartGame(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveReadyToInstallPatch(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToInstallPatch(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveErrorPatchService(enum class EPatchServiceError ErrorCode, struct FText& ErrorText); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FText GetVersionText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetVersionText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2089900>
-	struct FString GetGameDefaultMap(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetGameDefaultMap(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2089880>
-	struct FText GetDownloadText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20897E0>
+	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20AC6A0>
+	void ReceiveStartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveStartPatchService(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveReadyToStartGame(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToStartGame(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveReadyToInstallPatch(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToInstallPatch(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveErrorPatchService(enum class EPatchServiceError ErrorCode, struct FText& ErrorText); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FText GetVersionText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetVersionText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20AC600>
+	struct FString GetGameDefaultMap(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetGameDefaultMap(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20AC580>
+	struct FText GetDownloadText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20AC4E0>
 };
 
 // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService

@@ -3,90 +3,174 @@ class UUW-MapComp_C : public UBravoHotelMapCompWidget {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x500 (8)
-	struct UCanvasPanel Aircraft; // 0x508 (8)
-	struct UImage Background; // 0x510 (8)
-	struct UCanvasPanel Canvas; // 0x518 (8)
-	struct UInvalidationBox InvalidationBox_1; // 0x520 (8)
-	struct UImage TestDescentEndPoint_2; // 0x528 (8)
-	struct UImage TestDescentStartPoint_2; // 0x530 (8)
-	struct UImage TestLineRouteDotline_2; // 0x538 (8)
-	int32_t MapDisplayInfoFlag; // 0x540 (4)
-	struct FMulticastInlineDelegate OnWheelOnMap; // 0x548 (16)
-	struct FMulticastInlineDelegate OnMouseButtonUpOnMap; // 0x558 (16)
-	struct FMulticastInlineDelegate OnObjectClickOnMap; // 0x568 (16)
-	struct FMulticastInlineDelegate OnDragginOnMap; // 0x578 (16)
-	char IsDragging : 0; // 0x588 (1)
-	float DeltaValue; // 0x58C (4)
-	struct TArray<struct FString> GridString_XAxis; // 0x590 (16)
-	struct TArray<struct FString> GridString_YAxis; // 0x5A0 (16)
-	struct UUW-WorldMapMarkerWidget_C PersonalSupplyBoxRef; // 0x5B0 (8)
-	struct UUW-PlayerIconWidget_C ReplayFreeCamWidget; // 0x5B8 (8)
-	float MapScaleInterpSpeed; // 0x5C0 (4)
-	char MouseRightBtnDown : 0; // 0x5C4 (1)
-	struct FTimerHandle SelectPingMenuTimer; // 0x5C8 (8)
-	struct UWBP_SPS_SelectionMenu_C SelectionMenu; // 0x5D0 (8)
-	struct FMulticastInlineDelegate OnMouseButtonDownOnMap; // 0x5D8 (16)
-	struct FVector2D MouseButtonDownPos; // 0x5E8 (8)
-	char IsUpdateMapScale : 0; // 0x5F0 (1)
-	float MapScaleInerpSpeedRatio; // 0x5F4 (4)
-	char IsDrawingRoutePing : 0; // 0x5F8 (1)
-	struct TArray<struct FVector2D> IgnoreAreaCircleLines; // 0x600 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x518 (8)
+	struct UCanvasPanel Aircraft; // 0x520 (8)
+	struct UImage Background; // 0x528 (8)
+	struct UCanvasPanel Canvas; // 0x530 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x538 (8)
+	struct UImage TestDescentEndPoint_2; // 0x540 (8)
+	struct UImage TestDescentStartPoint_2; // 0x548 (8)
+	struct UImage TestLineRouteDotline_2; // 0x550 (8)
+	int32_t MapDisplayInfoFlag; // 0x558 (4)
+	struct FMulticastInlineDelegate OnWheelOnMap; // 0x560 (16)
+	struct FMulticastInlineDelegate OnMouseButtonUpOnMap; // 0x570 (16)
+	struct FMulticastInlineDelegate OnObjectClickOnMap; // 0x580 (16)
+	struct FMulticastInlineDelegate OnDragginOnMap; // 0x590 (16)
+	char IsDragging : 0; // 0x5A0 (1)
+	float DeltaValue; // 0x5A4 (4)
+	struct TArray<struct FString> GridString_XAxis; // 0x5A8 (16)
+	struct TArray<struct FString> GridString_YAxis; // 0x5B8 (16)
+	struct UUW-WorldMapMarkerWidget_C PersonalSupplyBoxRef; // 0x5C8 (8)
+	struct UUW-PlayerIconWidget_C ReplayFreeCamWidget; // 0x5D0 (8)
+	float MapScaleInterpSpeed; // 0x5D8 (4)
+	char MouseRightBtnDown : 0; // 0x5DC (1)
+	struct FTimerHandle SelectPingMenuTimer; // 0x5E0 (8)
+	struct UWBP_SPS_SelectionMenu_C SelectionMenu; // 0x5E8 (8)
+	struct FMulticastInlineDelegate OnMouseButtonDownOnMap; // 0x5F0 (16)
+	struct FVector2D MouseButtonDownPos; // 0x600 (8)
+	char IsUpdateMapScale : 0; // 0x608 (1)
+	float MapScaleInerpSpeedRatio; // 0x60C (4)
+	char IsDrawingRoutePing : 0; // 0x610 (1)
+	struct TArray<struct FVector2D> IgnoreAreaCircleLines; // 0x618 (16)
 
-	void CheckAgreePing(char& bRet, struct FVector& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Get Cur Mouse Point(struct FVector2D& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CalcMapScaleInterpSpeed(int32_t TargetZoomLevel); // Function UW-MapComp.UW-MapComp_C.CalcMapScaleInterpSpeed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Remove Area Widget(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info); // Function UW-MapComp.UW-MapComp_C.Remove Area Widget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateReplayCircleMask(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleMask(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMapPos(); // Function UW-MapComp.UW-MapComp_C.UpdateMapPos(Public|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCircleMask(struct FVector2D centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct UMaterialInstanceDynamic MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Update Circle Masks(); // Function UW-MapComp.UW-MapComp_C.Update Circle Masks(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCircleInfosImpl(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfosImpl(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMapScale(); // Function UW-MapComp.UW-MapComp_C.UpdateMapScale(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayTargetPosAnim(); // Function UW-MapComp.UW-MapComp_C.PlayTargetPosAnim(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreatePersonalSupplyBox(); // Function UW-MapComp.UW-MapComp_C.CreatePersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateFreeCamWidget(); // Function UW-MapComp.UW-MapComp_C.CreateFreeCamWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateAirCraftWidget(); // Function UW-MapComp.UW-MapComp_C.CreateAirCraftWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateMapPlayerWidget_Impl(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MapComp.UW-MapComp_C.OnAttackedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetSkillMapFactor(float Distance, float& Factor); // Function UW-MapComp.UW-MapComp_C.GetSkillMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Add Area Widget(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area Widget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void WantChangeVisibility(enum class ESlateVisibility WantVisibility, struct UWidget ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetMiniMapFactor(float& Factor); // Function UW-MapComp.UW-MapComp_C.GetMiniMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ConvertSizeWorldToMap(struct FVector2D Size, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMarkerClicked(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CalPosRelatedMapOnViewport(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ConvertPosViewportToMap(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetMarker(char isOn, struct FVector2D PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnPaint(struct FPaintContext& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddWidgetComp(struct UClass* WidgetClass, struct FVector2D Anchor, struct FVector2D Pivot, struct FVector2D Size, int32_t ZOrder, struct UUserWidget& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ConvertForwardToDegree(struct FVector Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Object Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DebugStringOnMapEvent(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CreateMapPlayerWidget(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateSupplyBoxInfo(); // Function UW-MapComp.UW-MapComp_C.UpdateSupplyBoxInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateFreeCamPosition(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamPosition(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateFreeCamAngle(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamAngle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetFreeCamEnable(char bEnable); // Function UW-MapComp.UW-MapComp_C.SetFreeCamEnable(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetAircraftVisibility(char bVisible); // Function UW-MapComp.UW-MapComp_C.SetAircraftVisibility(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PreUpdateComponents(); // Function UW-MapComp.UW-MapComp_C.PreUpdateComponents(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateReplayCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleInfos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetVisiblePingMenu(char Visible); // Function UW-MapComp.UW-MapComp_C.SetVisiblePingMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ChangeMap(char IsWeightMap); // Function UW-MapComp.UW-MapComp_C.ChangeMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseUp(struct FPointerEvent Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-MapComp(int32_t EntryPoint); // Function UW-MapComp.UW-MapComp_C.ExecuteUbergraph_UW-MapComp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseButtonDownOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDragginOnMap__DelegateSignature(struct FVector2D Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnObjectClickOnMap__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseButtonUpOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnWheelOnMap__DelegateSignature(float Delta, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UBravoHotelWorldMapAreaWidget K2_CreateAreaWidget(); // Function UW-MapComp.UW-MapComp_C.K2_CreateAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Remove Area WidgetImpl(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info); // Function UW-MapComp.UW-MapComp_C.Remove Area WidgetImpl(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Add Area WidgetImpl(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area WidgetImpl(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetWorldMapSetting(); // Function UW-MapComp.UW-MapComp_C.SetWorldMapSetting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetEnabledInvalidationbox(char Enabled); // Function UW-MapComp.UW-MapComp_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckAgreePing(char& bRet, struct FVector& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Get Cur Mouse Point(struct FVector2D& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CalcMapScaleInterpSpeed(int32_t TargetZoomLevel); // Function UW-MapComp.UW-MapComp_C.CalcMapScaleInterpSpeed(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateReplayCircleMask(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleMask(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMapPos(); // Function UW-MapComp.UW-MapComp_C.UpdateMapPos(Public|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCircleMask(struct FVector2D centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct UMaterialInstanceDynamic MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Update Circle Masks(); // Function UW-MapComp.UW-MapComp_C.Update Circle Masks(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCircleInfosImpl(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfosImpl(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMapScale(); // Function UW-MapComp.UW-MapComp_C.UpdateMapScale(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayTargetPosAnim(); // Function UW-MapComp.UW-MapComp_C.PlayTargetPosAnim(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreatePersonalSupplyBox(); // Function UW-MapComp.UW-MapComp_C.CreatePersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateFreeCamWidget(); // Function UW-MapComp.UW-MapComp_C.CreateFreeCamWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateAirCraftWidget(); // Function UW-MapComp.UW-MapComp_C.CreateAirCraftWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateMapPlayerWidget_Impl(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MapComp.UW-MapComp_C.OnAttackedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetSkillMapFactor(float Distance, float& Factor); // Function UW-MapComp.UW-MapComp_C.GetSkillMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void WantChangeVisibility(enum class ESlateVisibility WantVisibility, struct UWidget ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetMiniMapFactor(float& Factor); // Function UW-MapComp.UW-MapComp_C.GetMiniMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ConvertSizeWorldToMap(struct FVector2D Size, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMarkerClicked(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CalPosRelatedMapOnViewport(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ConvertPosViewportToMap(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetMarker(char isOn, struct FVector2D PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnPaint(struct FPaintContext& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddWidgetComp(struct UClass* WidgetClass, struct FVector2D Anchor, struct FVector2D Pivot, struct FVector2D Size, int32_t ZOrder, struct UUserWidget& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ConvertForwardToDegree(struct FVector Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Object Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DebugStringOnMapEvent(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CreateMapPlayerWidget(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateSupplyBoxInfo(); // Function UW-MapComp.UW-MapComp_C.UpdateSupplyBoxInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateFreeCamPosition(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamPosition(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateFreeCamAngle(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamAngle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetFreeCamEnable(char bEnable); // Function UW-MapComp.UW-MapComp_C.SetFreeCamEnable(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetAircraftVisibility(char bVisible); // Function UW-MapComp.UW-MapComp_C.SetAircraftVisibility(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PreUpdateComponents(); // Function UW-MapComp.UW-MapComp_C.PreUpdateComponents(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateReplayCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleInfos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetVisiblePingMenu(char Visible); // Function UW-MapComp.UW-MapComp_C.SetVisiblePingMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ChangeMap(char IsWeightMap); // Function UW-MapComp.UW-MapComp_C.ChangeMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseUp(struct FPointerEvent Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-MapComp(int32_t EntryPoint); // Function UW-MapComp.UW-MapComp_C.ExecuteUbergraph_UW-MapComp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseButtonDownOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDragginOnMap__DelegateSignature(struct FVector2D Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnObjectClickOnMap__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseButtonUpOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnWheelOnMap__DelegateSignature(float Delta, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
+
+// Function UW-MapComp.UW-MapComp_C.K2_CreateAreaWidget
+inline struct UBravoHotelWorldMapAreaWidget UUW-MapComp_C::K2_CreateAreaWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.K2_CreateAreaWidget");
+
+	struct K2_CreateAreaWidget_Params {
+		
+		struct UBravoHotelWorldMapAreaWidget ReturnValue;
+
+	}; K2_CreateAreaWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function UW-MapComp.UW-MapComp_C.Remove Area WidgetImpl
+inline void UUW-MapComp_C::Remove Area WidgetImpl(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Remove Area WidgetImpl");
+
+	struct Remove Area WidgetImpl_Params {
+		enum class EWorldMapAreaWidgetType Type;
+		struct FAreaWidgetInfo Info;
+	}; Remove Area WidgetImpl_Params Params;
+
+	Params.Type = Type;
+	Params.Info = Info;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MapComp.UW-MapComp_C.Add Area WidgetImpl
+inline void UUW-MapComp_C::Add Area WidgetImpl(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Add Area WidgetImpl");
+
+	struct Add Area WidgetImpl_Params {
+		enum class EWorldMapAreaWidgetType AreaWidgetType;
+		struct FAreaWidgetInfo AreaWidgetInfo;
+	}; Add Area WidgetImpl_Params Params;
+
+	Params.AreaWidgetType = AreaWidgetType;
+	Params.AreaWidgetInfo = AreaWidgetInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MapComp.UW-MapComp_C.SetWorldMapSetting
+inline void UUW-MapComp_C::SetWorldMapSetting() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.SetWorldMapSetting");
+
+	struct SetWorldMapSetting_Params {
+		
+	}; SetWorldMapSetting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function UW-MapComp.UW-MapComp_C.SetEnabledInvalidationbox
+inline void UUW-MapComp_C::SetEnabledInvalidationbox(char Enabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.SetEnabledInvalidationbox");
+
+	struct SetEnabledInvalidationbox_Params {
+		char Enabled;
+	}; SetEnabledInvalidationbox_Params Params;
+
+	Params.Enabled = Enabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 
 // Function UW-MapComp.UW-MapComp_C.CheckAgreePing
 inline void UUW-MapComp_C::CheckAgreePing(char& bRet, struct FVector& Location) {
@@ -133,23 +217,6 @@ inline void UUW-MapComp_C::CalcMapScaleInterpSpeed(int32_t TargetZoomLevel) {
 	}; CalcMapScaleInterpSpeed_Params Params;
 
 	Params.TargetZoomLevel = TargetZoomLevel;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
-// Function UW-MapComp.UW-MapComp_C.Remove Area Widget
-inline void UUW-MapComp_C::Remove Area Widget(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Remove Area Widget");
-
-	struct Remove Area Widget_Params {
-		enum class EWorldMapAreaWidgetType Type;
-		struct FAreaWidgetInfo Info;
-	}; Remove Area Widget_Params Params;
-
-	Params.Type = Type;
-	Params.Info = Info;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -372,23 +439,6 @@ inline void UUW-MapComp_C::GetSkillMapFactor(float Distance, float& Factor) {
 
 	Factor = Params.Factor;
 
-}
-
-// Function UW-MapComp.UW-MapComp_C.Add Area Widget
-inline void UUW-MapComp_C::Add Area Widget(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Add Area Widget");
-
-	struct Add Area Widget_Params {
-		enum class EWorldMapAreaWidgetType AreaWidgetType;
-		struct FAreaWidgetInfo AreaWidgetInfo;
-	}; Add Area Widget_Params Params;
-
-	Params.AreaWidgetType = AreaWidgetType;
-	Params.AreaWidgetInfo = AreaWidgetInfo;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
 }
 
 // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility

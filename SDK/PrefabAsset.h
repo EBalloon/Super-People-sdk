@@ -23,14 +23,14 @@ class APrefabToolActor : public UActor {
 
 public:
 
-	struct UPrefabToolComponent PrefabComponent; // 0x300 (8)
+	struct UPrefabToolComponent PrefabComponent; // 0x328 (8)
 
-	void SetPrefab(struct UPrefabAsset NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264690>
-	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264610>
-	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12645E0>
-	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264340>
-	struct UPrefabAsset GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264310>
-	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264280>
+	void SetPrefab(struct UPrefabAsset NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12725A0>
+	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1272520>
+	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12724F0>
+	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1272250>
+	struct UPrefabAsset GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1272220>
+	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1272190>
 };
 
 // Class PrefabAsset.PrefabAsset
@@ -47,8 +47,8 @@ public:
 	int32_t NumActors; // 0xD8 (4)
 	struct FVector PrefabPivot; // 0xDC (12)
 
-	void SetSimplifiedMeshAssetReference(struct FSoftObjectPath& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1264760>
-	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12643C0>
+	void SetSimplifiedMeshAssetReference(struct FSoftObjectPath& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1272670>
+	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12722D0>
 };
 
 // Class PrefabAsset.PrefabVariantAsset
@@ -64,15 +64,15 @@ class UPrefabToolComponent : public UPrimitiveComponent {
 
 public:
 
-	char bConnected : 0; // 0x4A0 (1)
-	char bLockSelection : 0; // 0x4A0 (1)
-	struct UPrefabAsset Prefab; // 0x4A8 (8)
-	struct UBlueprint GeneratedBlueprint; // 0x4B0 (8)
-	struct UStaticMesh SimplifiedMesh; // 0x4B8 (8)
-	struct TMap<struct FName, struct UActor> PrefabInstancesMap; // 0x4C0 (80)
-	struct TArray<struct FPrefabVariantRule> VariantRulesOverwrite; // 0x510 (16)
-	char bTransient : 0; // 0x520 (1)
-	struct UClass* ParentClass; // 0x528 (8)
+	char bConnected : 0; // 0x4B0 (1)
+	char bLockSelection : 0; // 0x4B0 (1)
+	struct UPrefabAsset Prefab; // 0x4B8 (8)
+	struct UBlueprint GeneratedBlueprint; // 0x4C0 (8)
+	struct UStaticMesh SimplifiedMesh; // 0x4C8 (8)
+	struct TMap<struct FName, struct UActor> PrefabInstancesMap; // 0x4D0 (80)
+	struct TArray<struct FPrefabVariantRule> VariantRulesOverwrite; // 0x520 (16)
+	char bTransient : 0; // 0x530 (1)
+	struct UClass* ParentClass; // 0x538 (8)
 };
 
 // Class PrefabAsset.PrefabToolSettings

@@ -3,16 +3,16 @@ class ABP-SpectatorPawn_C : public ABravoHotelSpectatorPawn {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3C0 (8)
-	struct UCameraComponent Camera; // 0x3C8 (8)
-	struct USpringArmComponent SpringArm; // 0x3D0 (8)
-	char bKillCam : 0; // 0x3D8 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3E8 (8)
+	struct UCameraComponent Camera; // 0x3F0 (8)
+	struct USpringArmComponent SpringArm; // 0x3F8 (8)
+	char bKillCam : 0; // 0x400 (1)
 
-	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetTargetByUID(int32_t UID, struct APawn& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetTargetByUID(int32_t UID, struct APawn& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting

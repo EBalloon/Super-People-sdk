@@ -9,13 +9,13 @@ public:
 	struct UImage Image_69; // 0x260 (8)
 	char NextScene : 0; // 0x268 (1)
 
-	void SequenceEvent__ENTRYPOINTUW-SupportProgram_2(); // Function UW-SupportProgram.UW-SupportProgram_C.SequenceEvent__ENTRYPOINTUW-SupportProgram_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SequenceEvent__ENTRYPOINTUW-SupportProgram_1(); // Function UW-SupportProgram.UW-SupportProgram_C.SequenceEvent__ENTRYPOINTUW-SupportProgram_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Destory(); // Function UW-SupportProgram.UW-SupportProgram_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void MoveNextScene(); // Function UW-SupportProgram.UW-SupportProgram_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-SupportProgram.UW-SupportProgram_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CustomEvent_1(); // Function UW-SupportProgram.UW-SupportProgram_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-SupportProgram(int32_t EntryPoint); // Function UW-SupportProgram.UW-SupportProgram_C.ExecuteUbergraph_UW-SupportProgram(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SequenceEvent__ENTRYPOINTUW-SupportProgram_2(); // Function UW-SupportProgram.UW-SupportProgram_C.SequenceEvent__ENTRYPOINTUW-SupportProgram_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SequenceEvent__ENTRYPOINTUW-SupportProgram_1(); // Function UW-SupportProgram.UW-SupportProgram_C.SequenceEvent__ENTRYPOINTUW-SupportProgram_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Destory(); // Function UW-SupportProgram.UW-SupportProgram_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void MoveNextScene(); // Function UW-SupportProgram.UW-SupportProgram_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-SupportProgram.UW-SupportProgram_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CustomEvent_1(); // Function UW-SupportProgram.UW-SupportProgram_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-SupportProgram(int32_t EntryPoint); // Function UW-SupportProgram.UW-SupportProgram_C.ExecuteUbergraph_UW-SupportProgram(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-SupportProgram.UW-SupportProgram_C.SequenceEvent__ENTRYPOINTUW-SupportProgram_2

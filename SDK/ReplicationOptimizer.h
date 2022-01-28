@@ -39,11 +39,11 @@ public:
 	char bEnabled : 0; // 0xB4 (1)
 	struct APlayerState PlayerState; // 0xB8 (8)
 
-	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1224890>
-	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1224840>
-	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1224820>
-	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1224800>
-	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12247E0>
+	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12327B0>
+	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1232760>
+	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1232740>
+	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1232720>
+	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1232700>
 };
 
 // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing

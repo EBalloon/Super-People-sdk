@@ -8,12 +8,12 @@ public:
 	struct UTextBlock T_TeamNum; // 0x270 (8)
 	struct UVerticalBox VB_PlayerList; // 0x278 (8)
 
-	void CheckEmptyGroup(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTeamColor(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTeamNumText(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamNumText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Init(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void CheckEmptyGroup(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTeamColor(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTeamNumText(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamNumText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Init(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup

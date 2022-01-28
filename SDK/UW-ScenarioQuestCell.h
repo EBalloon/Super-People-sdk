@@ -16,7 +16,7 @@ public:
 	struct FQuestTaskInfo TaskInfo; // 0x298 (32)
 	struct FQuestTaskElement TaskData; // 0x2B8 (176)
 
-	void SetTaskInfo(struct FQuestTaskInfo TaskInfo); // Function UW-ScenarioQuestCell.UW-ScenarioQuestCell_C.SetTaskInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetTaskInfo(struct FQuestTaskInfo TaskInfo); // Function UW-ScenarioQuestCell.UW-ScenarioQuestCell_C.SetTaskInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-ScenarioQuestCell.UW-ScenarioQuestCell_C.SetTaskInfo

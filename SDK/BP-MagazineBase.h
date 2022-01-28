@@ -3,16 +3,16 @@ class ABP-MagazineBase_C : public ABravoHotelMagazineForDrop {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x350 (8)
-	float PhysicsSimulateTime; // 0x358 (4)
-	float LifeTime; // 0x35C (4)
-	float AddImpulse; // 0x360 (4)
-	char Stance; // 0x364 (1)
-	float AddImpulse_Crouched; // 0x368 (4)
-	float AddImpulse_Proned; // 0x36C (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x370 (8)
+	float PhysicsSimulateTime; // 0x378 (4)
+	float LifeTime; // 0x37C (4)
+	float AddImpulse; // 0x380 (4)
+	char Stance; // 0x384 (1)
+	float AddImpulse_Crouched; // 0x388 (4)
+	float AddImpulse_Proned; // 0x38C (4)
 
-	void ReceiveBeginPlay(); // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-MagazineBase(int32_t EntryPoint); // Function BP-MagazineBase.BP-MagazineBase_C.ExecuteUbergraph_BP-MagazineBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveBeginPlay(); // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-MagazineBase(int32_t EntryPoint); // Function BP-MagazineBase.BP-MagazineBase_C.ExecuteUbergraph_BP-MagazineBase(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay

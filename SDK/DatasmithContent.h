@@ -109,22 +109,22 @@ class ADatasmithAreaLightActor : public UActor {
 
 public:
 
-	enum class EDatasmithAreaLightActorType LightType; // 0x300 (1)
-	enum class EDatasmithAreaLightActorShape LightShape; // 0x301 (1)
-	struct FVector2D Dimensions; // 0x304 (8)
-	float Intensity; // 0x30C (4)
-	enum class ELightUnits IntensityUnits; // 0x310 (1)
-	struct FLinearColor Color; // 0x314 (16)
-	float Temperature; // 0x324 (4)
-	struct UTextureLightProfile IESTexture; // 0x328 (8)
-	char bUseIESBrightness : 0; // 0x330 (1)
-	float IESBrightnessScale; // 0x334 (4)
-	struct FRotator Rotation; // 0x338 (12)
-	float SourceRadius; // 0x344 (4)
-	float SourceLength; // 0x348 (4)
-	float AttenuationRadius; // 0x34C (4)
-	float SpotlightInnerAngle; // 0x350 (4)
-	float SpotlightOuterAngle; // 0x354 (4)
+	enum class EDatasmithAreaLightActorType LightType; // 0x328 (1)
+	enum class EDatasmithAreaLightActorShape LightShape; // 0x329 (1)
+	struct FVector2D Dimensions; // 0x32C (8)
+	float Intensity; // 0x334 (4)
+	enum class ELightUnits IntensityUnits; // 0x338 (1)
+	struct FLinearColor Color; // 0x33C (16)
+	float Temperature; // 0x34C (4)
+	struct UTextureLightProfile IESTexture; // 0x350 (8)
+	char bUseIESBrightness : 0; // 0x358 (1)
+	float IESBrightnessScale; // 0x35C (4)
+	struct FRotator Rotation; // 0x360 (12)
+	float SourceRadius; // 0x36C (4)
+	float SourceLength; // 0x370 (4)
+	float AttenuationRadius; // 0x374 (4)
+	float SpotlightInnerAngle; // 0x378 (4)
+	float SpotlightOuterAngle; // 0x37C (4)
 };
 
 // Class DatasmithContent.DatasmithAreaLightActorTemplate
@@ -256,9 +256,9 @@ class ADatasmithImportedSequencesActor : public UActor {
 
 public:
 
-	struct TArray<struct ULevelSequence> ImportedSequences; // 0x300 (16)
+	struct TArray<struct ULevelSequence> ImportedSequences; // 0x328 (16)
 
-	void PlayLevelSequence(struct ULevelSequence SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CC0B0>
+	void PlayLevelSequence(struct ULevelSequence SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16DAA70>
 };
 
 // Class DatasmithContent.DatasmithCommonTessellationOptions
@@ -352,8 +352,8 @@ class ADatasmithSceneActor : public UActor {
 
 public:
 
-	struct UDatasmithScene Scene; // 0x300 (8)
-	struct TMap<struct FName, struct TSoftObjectPtr<UActor>> RelatedActors; // 0x308 (80)
+	struct UDatasmithScene Scene; // 0x328 (8)
+	struct TMap<struct FName, struct TSoftObjectPtr<UActor>> RelatedActors; // 0x330 (80)
 };
 
 // Class DatasmithContent.DatasmithSceneComponentTemplate

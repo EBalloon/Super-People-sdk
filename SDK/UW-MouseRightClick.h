@@ -9,8 +9,8 @@ public:
 	struct UImage Image_292; // 0x260 (8)
 	struct UImage Image_503; // 0x268 (8)
 
-	void HideMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.HideMouse(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.ShowMouse(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void HideMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.HideMouse(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.ShowMouse(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-MouseRightClick.UW-MouseRightClick_C.HideMouse

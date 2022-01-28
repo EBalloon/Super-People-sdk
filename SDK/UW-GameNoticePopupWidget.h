@@ -8,9 +8,9 @@ public:
 	struct UTextBlock Notice; // 0x258 (8)
 	struct UWidgetSwitcher WidgetSwitcher_1; // 0x260 (8)
 
-	void SetMessage(struct FText Str); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.SetMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-GameNoticePopupWidget(int32_t EntryPoint); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.ExecuteUbergraph_UW-GameNoticePopupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetMessage(struct FText Str); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.SetMessage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-GameNoticePopupWidget(int32_t EntryPoint); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.ExecuteUbergraph_UW-GameNoticePopupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.SetMessage

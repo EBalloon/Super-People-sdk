@@ -8,10 +8,10 @@ public:
 	struct UUW-CustomizedCharacter_C UW-CustomizedCharacter; // 0x318 (8)
 	enum class ESceneType CurrentSceneType; // 0x320 (1)
 
-	void Construct(); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CustomEvent_1(enum class ESceneType SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-CreateCharacterWidget_Web(int32_t EntryPoint); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.ExecuteUbergraph_BP-CreateCharacterWidget_Web(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Construct(); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CustomEvent_1(enum class ESceneType SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-CreateCharacterWidget_Web(int32_t EntryPoint); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.ExecuteUbergraph_BP-CreateCharacterWidget_Web(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct

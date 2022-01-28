@@ -30,12 +30,12 @@ public:
 	struct UWidgetSwitcher WidgetSwitcher_167; // 0x308 (8)
 	struct FVector2D NewVar_1; // 0x310 (8)
 
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_4X.UW-Sight_4X_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTexture5mm(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTexture7mm(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTexture7mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetTextureSniper(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTextureSniper(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void K2_OnSetAllowdAmmo(enum class EWeaponType WeaponType, struct FName& AllowdAmmoName); // Function UW-Sight_4X.UW-Sight_4X_C.K2_OnSetAllowdAmmo(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Sight_4X(int32_t EntryPoint); // Function UW-Sight_4X.UW-Sight_4X_C.ExecuteUbergraph_UW-Sight_4X(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_4X.UW-Sight_4X_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTexture5mm(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTexture7mm(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTexture7mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetTextureSniper(); // Function UW-Sight_4X.UW-Sight_4X_C.SetTextureSniper(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void K2_OnSetAllowdAmmo(enum class EWeaponType WeaponType, struct FName& AllowdAmmoName); // Function UW-Sight_4X.UW-Sight_4X_C.K2_OnSetAllowdAmmo(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Sight_4X(int32_t EntryPoint); // Function UW-Sight_4X.UW-Sight_4X_C.ExecuteUbergraph_UW-Sight_4X(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Sight_4X.UW-Sight_4X_C.SetScopeImageAngle

@@ -3,40 +3,40 @@ class ABP_BlueZone_C : public ABravoHotelBlueZone {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x7B0 (8)
-	struct UStaticMeshComponent StaticMesh; // 0x7B8 (8)
-	struct UDecalComponent MagneticDecal; // 0x7C0 (8)
-	float Puls_PulsScale_0F5B0359412DDBACBDF407BB69788854; // 0x7C8 (4)
-	char Puls__Direction_0F5B0359412DDBACBDF407BB69788854; // 0x7CC (1)
-	struct UTimelineComponent Puls; // 0x7D0 (8)
-	float Height; // 0x7D8 (4)
-	float SeaLevelZ; // 0x7DC (4)
-	char bIsMatchEnded : 0; // 0x7E0 (1)
-	float ModifyingOpacityTime; // 0x7E4 (4)
-	float CurrentOpacity; // 0x7E8 (4)
-	float ScaleModifier; // 0x7EC (4)
-	struct UCurveVector ParametersCurve; // 0x7F0 (8)
-	float MaterialParameterRadius; // 0x7F8 (4)
-	char bWasMpUpdated : 0; // 0x7FC (1)
-	float PreRadius; // 0x800 (4)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x7E0 (8)
+	struct UStaticMeshComponent StaticMesh; // 0x7E8 (8)
+	struct UDecalComponent MagneticDecal; // 0x7F0 (8)
+	float Puls_PulsScale_0F5B0359412DDBACBDF407BB69788854; // 0x7F8 (4)
+	char Puls__Direction_0F5B0359412DDBACBDF407BB69788854; // 0x7FC (1)
+	struct UTimelineComponent Puls; // 0x800 (8)
+	float Height; // 0x808 (4)
+	float SeaLevelZ; // 0x80C (4)
+	char bIsMatchEnded : 0; // 0x810 (1)
+	float ModifyingOpacityTime; // 0x814 (4)
+	float CurrentOpacity; // 0x818 (4)
+	float ScaleModifier; // 0x81C (4)
+	struct UCurveVector ParametersCurve; // 0x820 (8)
+	float MaterialParameterRadius; // 0x828 (4)
+	char bWasMpUpdated : 0; // 0x82C (1)
+	float PreRadius; // 0x830 (4)
 
-	void ShouldUpdateParameter(char& Result); // Function BP_BlueZone.BP_BlueZone_C.ShouldUpdateParameter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateMaterialParameterCollections(); // Function BP_BlueZone.BP_BlueZone_C.UpdateMaterialParameterCollections(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ToggleVisibility(); // Function BP_BlueZone.BP_BlueZone_C.ToggleVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	char IsRequiredUpdateBlueZone(); // Function BP_BlueZone.BP_BlueZone_C.IsRequiredUpdateBlueZone(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Puls__FinishedFunc(); // Function BP_BlueZone.BP_BlueZone_C.Puls__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Puls__UpdateFunc(); // Function BP_BlueZone.BP_BlueZone_C.Puls__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnBattleRotyaleStateChanged(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function BP_BlueZone.BP_BlueZone_C.OnBattleRotyaleStateChanged(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateOpacityToZero(); // Function BP_BlueZone.BP_BlueZone_C.UpdateOpacityToZero(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void On SurvivalCirclePhaseChanged(int32_t PrevPhase, int32_t CurrentPhase); // Function BP_BlueZone.BP_BlueZone_C.On SurvivalCirclePhaseChanged(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnWorldShifted(struct UWorld InWorld, struct FIntVector PreviousOrigin, struct FIntVector CurrentOrigin); // Function BP_BlueZone.BP_BlueZone_C.OnWorldShifted(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetCharacterLocation(struct FVector CharacterLocation); // Function BP_BlueZone.BP_BlueZone_C.SetCharacterLocation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StopPulsAnimation(); // Function BP_BlueZone.BP_BlueZone_C.StopPulsAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateBlueZone(); // Function BP_BlueZone.BP_BlueZone_C.UpdateBlueZone(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCenterAndRadius(struct FVector Center, float Radius); // Function BP_BlueZone.BP_BlueZone_C.UpdateCenterAndRadius(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveTick(float DeltaSeconds); // Function BP_BlueZone.BP_BlueZone_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ReceiveBeginPlay(); // Function BP_BlueZone.BP_BlueZone_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP_BlueZone(int32_t EntryPoint); // Function BP_BlueZone.BP_BlueZone_C.ExecuteUbergraph_BP_BlueZone(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ShouldUpdateParameter(char& Result); // Function BP_BlueZone.BP_BlueZone_C.ShouldUpdateParameter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateMaterialParameterCollections(); // Function BP_BlueZone.BP_BlueZone_C.UpdateMaterialParameterCollections(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ToggleVisibility(); // Function BP_BlueZone.BP_BlueZone_C.ToggleVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	char IsRequiredUpdateBlueZone(); // Function BP_BlueZone.BP_BlueZone_C.IsRequiredUpdateBlueZone(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Puls__FinishedFunc(); // Function BP_BlueZone.BP_BlueZone_C.Puls__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Puls__UpdateFunc(); // Function BP_BlueZone.BP_BlueZone_C.Puls__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnBattleRotyaleStateChanged(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function BP_BlueZone.BP_BlueZone_C.OnBattleRotyaleStateChanged(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateOpacityToZero(); // Function BP_BlueZone.BP_BlueZone_C.UpdateOpacityToZero(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void On SurvivalCirclePhaseChanged(int32_t PrevPhase, int32_t CurrentPhase); // Function BP_BlueZone.BP_BlueZone_C.On SurvivalCirclePhaseChanged(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnWorldShifted(struct UWorld InWorld, struct FIntVector PreviousOrigin, struct FIntVector CurrentOrigin); // Function BP_BlueZone.BP_BlueZone_C.OnWorldShifted(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetCharacterLocation(struct FVector CharacterLocation); // Function BP_BlueZone.BP_BlueZone_C.SetCharacterLocation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StopPulsAnimation(); // Function BP_BlueZone.BP_BlueZone_C.StopPulsAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateBlueZone(); // Function BP_BlueZone.BP_BlueZone_C.UpdateBlueZone(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCenterAndRadius(struct FVector Center, float Radius); // Function BP_BlueZone.BP_BlueZone_C.UpdateCenterAndRadius(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveTick(float DeltaSeconds); // Function BP_BlueZone.BP_BlueZone_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ReceiveBeginPlay(); // Function BP_BlueZone.BP_BlueZone_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP_BlueZone(int32_t EntryPoint); // Function BP_BlueZone.BP_BlueZone_C.ExecuteUbergraph_BP_BlueZone(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP_BlueZone.BP_BlueZone_C.ShouldUpdateParameter

@@ -14,7 +14,7 @@ public:
 	struct UUW-ClassinfoitemBoardWidget_C UW-ClassinfoitemBoardWidget; // 0x2F8 (8)
 	struct UWidgetSwitcher WidgetSwitcher_1; // 0x300 (8)
 	int32_t MAX_ZOOM_LEVEL; // 0x308 (4)
-	int32_t ZoomLevel; // 0x30C (4)
+	int32_t zoomLevel; // 0x30C (4)
 	float MAX_SCALE_FACTOR; // 0x310 (4)
 	int32_t InitializeCount; // 0x314 (4)
 	struct FVector2D PosOnViewport; // 0x318 (8)
@@ -26,51 +26,66 @@ public:
 	int32_t MaxRoutePointCount; // 0x344 (4)
 	struct TArray<struct FVector> RoutePointArray; // 0x348 (16)
 
-	void SetClassInfoBoardVisibilityByZoomLevel(int32_t LastZoomLevel, int32_t NewZoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetClassInfoBoardVisibilityByZoomLevel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void GetZoomLevel(int32_t& ZoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void StopRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.StopRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.UpdateRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void IsFullRoutePing(char& NewParam); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsFullRoutePing(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CheckRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.CheckRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ResetRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.AddRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetRoutePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetVisiblePingMenu(char Visible); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetVisiblePingMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DebugStringOnMap(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.DebugStringOnMap(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMapDragging(struct FVector2D deltaOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapDragging(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RemoveMarker(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.RemoveMarker(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMapRightClick(struct FVector2D PosOnViewport, char IsAgree, struct FVector ForceLocation); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapRightClick(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetZoom(int32_t NewZoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetZoom(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMapZoomOut(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapZoomOut(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMapZoomIn(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapZoomIn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CalcScaleFactorByZoom(int32_t ZoomLevel, float& ScaleFactor); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.CalcScaleFactorByZoom(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void IsZoomLevelInRange(int32_t ZoomLevel, char& Ret); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsZoomLevelInRange(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__Button_0_K2Node_ComponentBoundEvent_91_OnButtonClickedEvent__DelegateSignature(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_91_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void BndEvt__ShowHelBoxButton_K2Node_ComponentBoundEvent_452_OnButtonClickedEvent__DelegateSignature(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.BndEvt__ShowHelBoxButton_K2Node_ComponentBoundEvent_452_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void NotifyNeedRefreshToMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.NotifyNeedRefreshToMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnAttackedWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ResetMapPlayers(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnViewportSized(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnViewportSized(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void NotifyTargetPawnPos(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.NotifyTargetPawnPos(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.RemoveAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateWorldMapClassInfo(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.UpdateWorldMapClassInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputSmartPingAgreeWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingAgreeWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputStopSmartPingWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputStopSmartPingWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputSmartPingMenuWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingMenuWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnInputSmartPingWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void 鉹@t元_1(char IsShow); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowPingMenu(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ShowPingMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseButtonDownOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMouseButtonDownOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnMouseButtonUpOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMouseButtonUpOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnDraggingOnMap(struct FVector2D Delta); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnDraggingOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnWheelOnMap(float Delta, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnWheelOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnObjectClickOnMap(struct FKey Button, char mapObjectID); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnObjectClickOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-WorldMapWidget(int32_t EntryPoint); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ExecuteUbergraph_UW-WorldMapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	struct UBravoHotelMapCompWidget GetMapCompWidget(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetMapCompWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetClassInfoBoardVisibilityByZoomLevel(int32_t LastZoomLevel, int32_t NewZoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetClassInfoBoardVisibilityByZoomLevel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void GetZoomLevel(int32_t& zoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void StopRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.StopRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.UpdateRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void IsFullRoutePing(char& NewParam); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsFullRoutePing(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CheckRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.CheckRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ResetRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ResetRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void AddRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.AddRoutePing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetRoutePing(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetRoutePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetVisiblePingMenu(char Visible); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetVisiblePingMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DebugStringOnMap(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.DebugStringOnMap(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMapDragging(struct FVector2D deltaOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapDragging(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void RemoveMarker(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.RemoveMarker(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMapRightClick(struct FVector2D PosOnViewport, char IsAgree, struct FVector ForceLocation); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapRightClick(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetZoom(int32_t NewZoomLevel); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetZoom(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMapZoomOut(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapZoomOut(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMapZoomIn(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMapZoomIn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CalcScaleFactorByZoom(int32_t zoomLevel, float& ScaleFactor); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.CalcScaleFactorByZoom(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void IsZoomLevelInRange(int32_t zoomLevel, char& Ret); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsZoomLevelInRange(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__Button_0_K2Node_ComponentBoundEvent_91_OnButtonClickedEvent__DelegateSignature(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_91_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void BndEvt__ShowHelBoxButton_K2Node_ComponentBoundEvent_452_OnButtonClickedEvent__DelegateSignature(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.BndEvt__ShowHelBoxButton_K2Node_ComponentBoundEvent_452_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnAttackedWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnViewportSized(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnViewportSized(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void NotifyTargetPawnPos(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.NotifyTargetPawnPos(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateWorldMapClassInfo(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.UpdateWorldMapClassInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputSmartPingAgreeWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingAgreeWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputStopSmartPingWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputStopSmartPingWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputSmartPingMenuWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingMenuWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnInputSmartPingWorldMap(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnInputSmartPingWorldMap(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void 鉹@t元_1(char IsShow); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowPingMenu(); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ShowPingMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseButtonDownOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMouseButtonDownOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnMouseButtonUpOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnMouseButtonUpOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnDraggingOnMap(struct FVector2D Delta); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnDraggingOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnWheelOnMap(float Delta, struct FVector2D PosOnViewport); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnWheelOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnObjectClickOnMap(struct FKey Button, char mapObjectID); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnObjectClickOnMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-WorldMapWidget(int32_t EntryPoint); // Function UW-WorldMapWidget.UW-WorldMapWidget_C.ExecuteUbergraph_UW-WorldMapWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
+
+// Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetMapCompWidget
+inline struct UBravoHotelMapCompWidget UUW-WorldMapWidget_C::GetMapCompWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetMapCompWidget");
+
+	struct GetMapCompWidget_Params {
+		
+		struct UBravoHotelMapCompWidget ReturnValue;
+
+	}; GetMapCompWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.SetClassInfoBoardVisibilityByZoomLevel
 inline void UUW-WorldMapWidget_C::SetClassInfoBoardVisibilityByZoomLevel(int32_t LastZoomLevel, int32_t NewZoomLevel) {
@@ -90,11 +105,11 @@ inline void UUW-WorldMapWidget_C::SetClassInfoBoardVisibilityByZoomLevel(int32_t
 }
 
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetZoomLevel
-inline void UUW-WorldMapWidget_C::GetZoomLevel(int32_t& ZoomLevel) {
+inline void UUW-WorldMapWidget_C::GetZoomLevel(int32_t& zoomLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.GetZoomLevel");
 
 	struct GetZoomLevel_Params {
-		int32_t& ZoomLevel;
+		int32_t& zoomLevel;
 	}; GetZoomLevel_Params Params;
 
 
@@ -102,7 +117,7 @@ inline void UUW-WorldMapWidget_C::GetZoomLevel(int32_t& ZoomLevel) {
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	ZoomLevel = Params.ZoomLevel;
+	zoomLevel = Params.zoomLevel;
 
 }
 
@@ -335,15 +350,15 @@ inline void UUW-WorldMapWidget_C::OnMapZoomIn() {
 }
 
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.CalcScaleFactorByZoom
-inline void UUW-WorldMapWidget_C::CalcScaleFactorByZoom(int32_t ZoomLevel, float& ScaleFactor) {
+inline void UUW-WorldMapWidget_C::CalcScaleFactorByZoom(int32_t zoomLevel, float& ScaleFactor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.CalcScaleFactorByZoom");
 
 	struct CalcScaleFactorByZoom_Params {
-		int32_t ZoomLevel;
+		int32_t zoomLevel;
 		float& ScaleFactor;
 	}; CalcScaleFactorByZoom_Params Params;
 
-	Params.ZoomLevel = ZoomLevel;
+	Params.zoomLevel = zoomLevel;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -354,15 +369,15 @@ inline void UUW-WorldMapWidget_C::CalcScaleFactorByZoom(int32_t ZoomLevel, float
 }
 
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsZoomLevelInRange
-inline void UUW-WorldMapWidget_C::IsZoomLevelInRange(int32_t ZoomLevel, char& Ret) {
+inline void UUW-WorldMapWidget_C::IsZoomLevelInRange(int32_t zoomLevel, char& Ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.IsZoomLevelInRange");
 
 	struct IsZoomLevelInRange_Params {
-		int32_t ZoomLevel;
+		int32_t zoomLevel;
 		char& Ret;
 	}; IsZoomLevelInRange_Params Params;
 
-	Params.ZoomLevel = ZoomLevel;
+	Params.zoomLevel = zoomLevel;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -431,39 +446,6 @@ inline void UUW-WorldMapWidget_C::BndEvt__ShowHelBoxButton_K2Node_ComponentBound
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-WorldMapWidget.UW-WorldMapWidget_C.AddAreaWidget
-inline void UUW-WorldMapWidget_C::AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.AddAreaWidget");
-
-	struct AddAreaWidget_Params {
-		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
-		struct FAreaWidgetInfo& AreaWidgetInfo;
-	}; AddAreaWidget_Params Params;
-
-	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	AreaWidgetInfo = Params.AreaWidgetInfo;
-
-}
-
-// Function UW-WorldMapWidget.UW-WorldMapWidget_C.NotifyNeedRefreshToMap
-inline void UUW-WorldMapWidget_C::NotifyNeedRefreshToMap() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.NotifyNeedRefreshToMap");
-
-	struct NotifyNeedRefreshToMap_Params {
-		
-	}; NotifyNeedRefreshToMap_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnAttackedWidget
 inline void UUW-WorldMapWidget_C::OnAttackedWidget(int32_t UniquePlayerId) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnAttackedWidget");
@@ -498,20 +480,6 @@ inline void UUW-WorldMapWidget_C::OnFireWidget(int32_t UniquePlayerId, struct FR
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-WorldMapWidget.UW-WorldMapWidget_C.ResetMapPlayers
-inline void UUW-WorldMapWidget_C::ResetMapPlayers() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.ResetMapPlayers");
-
-	struct ResetMapPlayers_Params {
-		
-	}; ResetMapPlayers_Params Params;
-
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnViewportSized
 inline void UUW-WorldMapWidget_C::OnViewportSized() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.OnViewportSized");
@@ -538,25 +506,6 @@ inline void UUW-WorldMapWidget_C::NotifyTargetPawnPos() {
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
-}
-
-// Function UW-WorldMapWidget.UW-WorldMapWidget_C.RemoveAreaWidget
-inline void UUW-WorldMapWidget_C::RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-WorldMapWidget.UW-WorldMapWidget_C.RemoveAreaWidget");
-
-	struct RemoveAreaWidget_Params {
-		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
-		struct FAreaWidgetInfo& AreaWidgetInfo;
-	}; RemoveAreaWidget_Params Params;
-
-	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	AreaWidgetInfo = Params.AreaWidgetInfo;
-
 }
 
 // Function UW-WorldMapWidget.UW-WorldMapWidget_C.UpdateWorldMapClassInfo

@@ -16,9 +16,9 @@ public:
 	struct UImage Image_318; // 0x298 (8)
 	struct UImage Image_319; // 0x2A0 (8)
 
-	void GetImage(int32_t Index, struct UImage& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Set Info(struct TArray<struct FVector2D>& List); // Function Temp.Temp_C.Set Info(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetImage(int32_t Index, struct UImage& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Set Info(struct TArray<struct FVector2D>& List); // Function Temp.Temp_C.Set Info(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function Temp.Temp_C.GetImage

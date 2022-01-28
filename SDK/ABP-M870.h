@@ -3,19 +3,19 @@ class UABP-M870_C : public UBravoHotelAnimInstanceWeapon {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0x340 (8)
-	struct FAnimNode_Root AnimGraphNode_Root; // 0x348 (48)
-	struct FAnimNode_Slot AnimGraphNode_Slot_3; // 0x378 (72)
-	struct FAnimNode_TwoWayBlend AnimGraphNode_TwoWayBlend; // 0x3C0 (200)
-	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose_3; // 0x488 (24)
-	struct FAnimNode_Slot AnimGraphNode_Slot_2; // 0x4A0 (72)
-	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose_2; // 0x4E8 (24)
-	struct FAnimNode_BlendListByBool AnimGraphNode_BlendListByBool; // 0x500 (160)
-	struct FAnimNode_Slot AnimGraphNode_Slot; // 0x5A0 (72)
-	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose; // 0x5E8 (24)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x330 (8)
+	struct FAnimNode_Root AnimGraphNode_Root; // 0x338 (48)
+	struct FAnimNode_Slot AnimGraphNode_Slot_3; // 0x368 (72)
+	struct FAnimNode_TwoWayBlend AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct FAnimNode_Slot AnimGraphNode_Slot_2; // 0x490 (72)
+	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
+	struct FAnimNode_BlendListByBool AnimGraphNode_BlendListByBool; // 0x4F0 (160)
+	struct FAnimNode_Slot AnimGraphNode_Slot; // 0x590 (72)
+	struct FAnimNode_RefPose AnimGraphNode_LocalRefPose; // 0x5D8 (24)
 
-	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-M870.ABP-M870_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_ABP-M870(int32_t EntryPoint); // Function ABP-M870.ABP-M870_C.ExecuteUbergraph_ABP-M870(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-M870.ABP-M870_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_ABP-M870(int32_t EntryPoint); // Function ABP-M870.ABP-M870_C.ExecuteUbergraph_ABP-M870(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function ABP-M870.ABP-M870_C.AnimGraph

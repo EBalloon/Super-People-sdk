@@ -16,17 +16,17 @@ public:
 	struct UWidgetAnimation Anim_MouseClicked; // 0x298 (8)
 	struct UUW-Radar_Cursor_Dummy_C DummyWidgetRef; // 0x2A0 (8)
 
-	void PlayClickSound(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetCursorSize(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetCursorByBuffEventType(enum class EBuffEventType BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnClicked_Event_1(struct UActor TouchedActor, struct FKey ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayMouseCursorAnimation(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayMouseCursorAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void UpdateCursorPosition(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.UpdateCursorPosition(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ShowCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ShowCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void HideCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.HideCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Radar_Cursor(int32_t EntryPoint); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ExecuteUbergraph_UW-Radar_Cursor(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void PlayClickSound(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetCursorSize(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetCursorByBuffEventType(enum class EBuffEventType BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnClicked_Event_1(struct UActor TouchedActor, struct FKey ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayMouseCursorAnimation(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayMouseCursorAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void UpdateCursorPosition(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.UpdateCursorPosition(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ShowCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ShowCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void HideCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.HideCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Radar_Cursor(int32_t EntryPoint); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ExecuteUbergraph_UW-Radar_Cursor(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound

@@ -3,13 +3,13 @@ class ABP-DefaultAmphibianVehicle_C : public ABP-DefaultWheeledVehicle_C {
 
 public:
 
-	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD60 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xD70 (8)
 
-	void ReceiveUnpossessed(struct AController OldController); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void PlayCameraShake_ModeChange(); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.PlayCameraShake_ModeChange(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnPlaySplashParticle(char IsToWater); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnPlaySplashParticle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void OnChangedAmphibiousMode(char bTrue); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnChangedAmphibiousMode(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_BP-DefaultAmphibianVehicle(int32_t EntryPoint); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ExecuteUbergraph_BP-DefaultAmphibianVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void ReceiveUnpossessed(struct AController OldController); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void PlayCameraShake_ModeChange(); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.PlayCameraShake_ModeChange(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnPlaySplashParticle(char IsToWater); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnPlaySplashParticle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void OnChangedAmphibiousMode(char bTrue); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnChangedAmphibiousMode(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_BP-DefaultAmphibianVehicle(int32_t EntryPoint); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ExecuteUbergraph_BP-DefaultAmphibianVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed

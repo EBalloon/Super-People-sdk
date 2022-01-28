@@ -9,13 +9,13 @@ public:
 	struct UImage Image_CharacterSilBody; // 0x260 (8)
 	struct ABP-BravoHotel-PlayerController_C ControllerRef; // 0x268 (8)
 
-	void GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef

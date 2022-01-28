@@ -8,7 +8,7 @@ public:
 	struct FSlateColor ColorType1; // 0x258 (40)
 	struct FSlateColor ColorType2; // 0x280 (40)
 
-	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
+	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
 };
 
 // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init

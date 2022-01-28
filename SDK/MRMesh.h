@@ -11,20 +11,20 @@ class UMockDataMeshTrackerComponent : public USceneComponent {
 
 public:
 
-	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x220 (16)
-	char ScanWorld : 0; // 0x230 (1)
-	char RequestNormals : 0; // 0x231 (1)
-	char RequestVertexConfidence : 0; // 0x232 (1)
-	enum class EMeshTrackerVertexColorMode VertexColorMode; // 0x233 (1)
-	struct TArray<struct FColor> BlockVertexColors; // 0x238 (16)
-	struct FLinearColor VertexColorFromConfidenceZero; // 0x248 (16)
-	struct FLinearColor VertexColorFromConfidenceOne; // 0x258 (16)
-	float UpdateInterval; // 0x268 (4)
-	struct UMRMeshComponent MRMesh; // 0x270 (8)
+	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x230 (16)
+	char ScanWorld : 0; // 0x240 (1)
+	char RequestNormals : 0; // 0x241 (1)
+	char RequestVertexConfidence : 0; // 0x242 (1)
+	enum class EMeshTrackerVertexColorMode VertexColorMode; // 0x243 (1)
+	struct TArray<struct FColor> BlockVertexColors; // 0x248 (16)
+	struct FLinearColor VertexColorFromConfidenceZero; // 0x258 (16)
+	struct FLinearColor VertexColorFromConfidenceOne; // 0x268 (16)
+	float UpdateInterval; // 0x278 (4)
+	struct UMRMeshComponent MRMesh; // 0x280 (8)
 
-	void OnMockDataMeshTrackerUpdated__DelegateSignature(int32_t Index, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence); // DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B86EC0>
-	void DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B2910>
-	void ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B2870>
+	void OnMockDataMeshTrackerUpdated__DelegateSignature(int32_t Index, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence); // DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2BA5C80>
+	void DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1EE0>
+	void ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1E40>
 };
 
 // Class MRMesh.MRMeshComponent
@@ -32,17 +32,17 @@ class UMRMeshComponent : public UPrimitiveComponent {
 
 public:
 
-	struct UMaterialInterface Material; // 0x4A8 (8)
-	char bCreateMeshProxySections : 0; // 0x4B0 (1)
-	char bUpdateNavMeshOnMeshUpdate : 0; // 0x4B1 (1)
-	char bNeverCreateCollisionMesh : 0; // 0x4B2 (1)
-	struct UBodySetup CachedBodySetup; // 0x4B8 (8)
-	struct TArray<struct UBodySetup> BodySetups; // 0x4C0 (16)
-	struct UMaterialInterface WireframeMaterial; // 0x4D0 (8)
+	struct UMaterialInterface Material; // 0x4B8 (8)
+	char bCreateMeshProxySections : 0; // 0x4C0 (1)
+	char bUpdateNavMeshOnMeshUpdate : 0; // 0x4C1 (1)
+	char bNeverCreateCollisionMesh : 0; // 0x4C2 (1)
+	struct UBodySetup CachedBodySetup; // 0x4C8 (8)
+	struct TArray<struct UBodySetup> BodySetups; // 0x4D0 (16)
+	struct UMaterialInterface WireframeMaterial; // 0x4E0 (8)
 
-	char IsConnected(); // Function MRMesh.MRMeshComponent.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B29B0>
-	void ForceNavMeshUpdate(); // Function MRMesh.MRMeshComponent.ForceNavMeshUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B2990>
-	void Clear(); // Function MRMesh.MRMeshComponent.Clear(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B27B0>
+	char IsConnected(); // Function MRMesh.MRMeshComponent.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1F80>
+	void ForceNavMeshUpdate(); // Function MRMesh.MRMeshComponent.ForceNavMeshUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1F60>
+	void Clear(); // Function MRMesh.MRMeshComponent.Clear(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36D1D80>
 };
 
 // DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature
